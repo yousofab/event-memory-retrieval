@@ -1,0 +1,21 @@
+{
+  "protocol_version": "phase1-2026-10-06",
+  "dataset": "LoCoMo (snap-research/locomo)",
+  "source_url": "https://github.com/snap-research/locomo/blob/main/data/locomo10.json",
+  "git_blob_sha1": "d95b872480b413d935821fdc3c84f8a8f5f29e73",
+  "sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "development_conversations": ["conv-26", "conv-43", "conv-50"],
+  "held_out_conversations": ["conv-30", "conv-41", "conv-42", "conv-44", "conv-47", "conv-48", "conv-49"],
+  "included_categories": [1, 2, 4],
+  "exclusion_rules": [
+    "category outside 1, 2, or 4",
+    "missing or empty evidence list",
+    "any evidence dialog ID absent from the conversation",
+    "any evidence dialog turn has an img_url (conservative text-only scope)",
+    "exact duplicate (question, category, answer, evidence) within a conversation; retain first eligible occurrence"
+  ],
+  "gold_evidence_policy": "Use IDs only in offline scoring; no method may use QA labels or event_summary to segment or rank.",
+  "precommitted_primary_metric": "question-level all-evidence recall under equal retrieved-text budget",
+  "analysis_unit": "conversation, with question counts reported as descriptive denominators",
+  "note": "Phase 1 fixes data eligibility and split. Retrieval budgets and segmentation settings must be frozen on development conversations before held-out runs."
+}
