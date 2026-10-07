@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 1 complete (data and protocol); retrieval methods have not been implemented or evaluated.**
+**Status: Phase 2 complete: fixed and session baselines evaluated on development conversations only. Event segmentation and held-out evaluation are pending.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -22,7 +22,7 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 ## Planned phases
 
 1. Data audit and precommitted eligibility (this commit).
-2. Fixed and session baselines with a shared lexical ranker.
+2. Fixed and session baselines with a shared lexical ranker (development run complete).
 3. Lightweight event segmentation; development-only tuning.
 4. Held-out comparison at equal retrieved-text budgets, error analysis, and cost measurements.
 5. Reproducible results, demo, and Persian RTL B Nazanin undergraduate thesis.
@@ -34,5 +34,9 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 - `scripts/audit_data.py`: audit and deterministic eligibility manifest.
 - `results/phase1_audit.json`: observed counts and selected evidence IDs, no conversational text.
 - `docs/phase1.md`: methodological decisions, risks, and next checkpoint.
+- `scripts/run_baselines.py`: shared BM25 ranker and fixed/session development baselines.
+- `tests/test_baselines.py`: partition, budget and leakage invariants.
+- `results/phase2_development_baselines.json`: development-only question and conversation results.
+- `docs/phase2.md`: precise cost, selection, and scoring contracts and provisional observations.
 
-**No held-out model results exist at this stage.**
+**No held-out results exist at this stage.**
