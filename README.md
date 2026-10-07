@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 2 complete: fixed and session baselines evaluated on development conversations only. Event segmentation and held-out evaluation are pending.**
+**Status: Phase 3 complete: event segmentation and fixed/session baselines evaluated on development conversations. Held-out evaluation is pending.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -23,7 +23,7 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 
 1. Data audit and precommitted eligibility (this commit).
 2. Fixed and session baselines with a shared lexical ranker (development run complete).
-3. Lightweight event segmentation; development-only tuning.
+3. Lightweight event segmentation; development-only tuning (complete; selected settings frozen).
 4. Held-out comparison at equal retrieved-text budgets, error analysis, and cost measurements.
 5. Reproducible results, demo, and Persian RTL B Nazanin undergraduate thesis.
 
@@ -38,5 +38,10 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 - `tests/test_baselines.py`: partition, budget and leakage invariants.
 - `results/phase2_development_baselines.json`: development-only question and conversation results.
 - `docs/phase2.md`: precise cost, selection, and scoring contracts and provisional observations.
+- `configs/phase3_search.json`: small development search and selection rule.
+- `configs/phase3_frozen.json`: selected method and budgets for the held-out run.
+- `scripts/run_event_development.py`: lexical change-point segmentation and development selection.
+- `results/phase3_development_event.json`: development results for all four settings.
+- `docs/phase3.md`: method, provisional comparison, and limitations.
 
 **No held-out results exist at this stage.**

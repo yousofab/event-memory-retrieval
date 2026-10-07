@@ -1,0 +1,16 @@
+{
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "development_selected_config": "w3-max160",
+  "event_minimum_words": 64,
+  "event_preferred_words": 128,
+  "event_maximum_words": 160,
+  "event_window_turns": 3,
+  "fixed_words": 128,
+  "primary_budget_words": 1024,
+  "secondary_budgets_words": [
+    512,
+    2048
+  ],
+  "selection_rule": "highest unweighted mean of all-evidence recall across the three development conversations at 1024 words; ties choose smaller maximum segment words, then smaller window",
+  "primary_metric": "question-level all-evidence recall under equal retrieved-text budget"
+}

@@ -1,0 +1,15 @@
+{
+  "selection_split": "development",
+  "selection_budget_words": 1024,
+  "other_reported_budgets_words": [512, 2048],
+  "minimum_segment_words": 64,
+  "preferred_segment_words": 128,
+  "candidates": [
+    {"window_turns": 2, "maximum_segment_words": 160},
+    {"window_turns": 3, "maximum_segment_words": 160},
+    {"window_turns": 2, "maximum_segment_words": 224},
+    {"window_turns": 3, "maximum_segment_words": 224}
+  ],
+  "selection_rule": "highest unweighted mean of all-evidence recall across the three development conversations at 1024 words; ties choose smaller maximum segment words, then smaller window",
+  "boundary_rule": "within session, prefer the admissible turn boundary of highest adjacent-window TF-IDF cosine dissimilarity; ties prefer segment length closest to 128 words, then earlier boundary; do not split turns"
+}
