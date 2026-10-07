@@ -1,0 +1,569 @@
+{
+  "analysis_status": "post_hoc_descriptive_after_phase4",
+  "source_phase4_sha256": "af00ec3ee66f70df5b5482485ccf3ddb2b9ca64ef9da72ddd8429d32c52ac4d5",
+  "phase5_plan_sha256": "c3e1d95931d1a67b2466b6cd90fd037f95f11640c1408604070cef715920a9ac",
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "primary_budget_words": 1024,
+  "questions_verified": 599,
+  "primary_rows_recomputed_and_matched": 1797,
+  "method_diagnostics": {
+    "fixed": {
+      "questions": 599,
+      "outcome_counts": {
+        "feasible_missed": 139,
+        "success": 460
+      },
+      "structural_ceiling_count": 599,
+      "median_worst_gold_rank": 1,
+      "multi_evidence_questions": 90,
+      "multi_evidence_split_across_segments": 72,
+      "mean_gold_segment_word_cost": 129.25876460767947
+    },
+    "event": {
+      "questions": 599,
+      "outcome_counts": {
+        "feasible_missed": 132,
+        "success": 467
+      },
+      "structural_ceiling_count": 599,
+      "median_worst_gold_rank": 1,
+      "multi_evidence_questions": 90,
+      "multi_evidence_split_across_segments": 72,
+      "mean_gold_segment_word_cost": 140.567612687813
+    },
+    "session": {
+      "questions": 599,
+      "outcome_counts": {
+        "feasible_missed": 160,
+        "structural_budget": 40,
+        "success": 399
+      },
+      "structural_ceiling_count": 559,
+      "median_worst_gold_rank": 1,
+      "multi_evidence_questions": 90,
+      "multi_evidence_split_across_segments": 65,
+      "mean_gold_segment_word_cost": 573.4590984974958
+    }
+  },
+  "discordance_summary": [
+    {
+      "winner": "event",
+      "loser_status": "structural_budget",
+      "count": 0
+    },
+    {
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "count": 26
+    },
+    {
+      "winner": "fixed",
+      "loser_status": "structural_budget",
+      "count": 0
+    },
+    {
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "count": 19
+    }
+  ],
+  "discordant_cases_no_text": [
+    {
+      "sample_id": "conv-30",
+      "question_index": 43,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 61,
+      "event_gold_cost": 157
+    },
+    {
+      "sample_id": "conv-30",
+      "question_index": 57,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 116,
+      "event_gold_cost": 79
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 1,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 103,
+      "event_gold_cost": 80
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 9,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 2,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 224,
+      "event_gold_cost": 277
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 36,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 2,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 196,
+      "event_gold_cost": 230
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 51,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 104,
+      "event_gold_cost": 146
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 69,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 103,
+      "event_gold_cost": 80
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 92,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 84,
+      "event_gold_cost": 96
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 93,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 128,
+      "event_gold_cost": 96
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 118,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 126,
+      "event_gold_cost": 94
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 122,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 121,
+      "event_gold_cost": 71
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 123,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 120,
+      "event_gold_cost": 81
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 132,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 104,
+      "event_gold_cost": 146
+    },
+    {
+      "sample_id": "conv-41",
+      "question_index": 136,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 128,
+      "event_gold_cost": 107
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 5,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 2,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 223,
+      "event_gold_cost": 261
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 8,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 124,
+      "event_gold_cost": 156
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 22,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 119,
+      "event_gold_cost": 119
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 45,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 100,
+      "event_gold_cost": 139
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 93,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 2,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 217,
+      "event_gold_cost": 146
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 103,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 106,
+      "event_gold_cost": 140
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 108,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 95,
+      "event_gold_cost": 148
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 151,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 90,
+      "event_gold_cost": 100
+    },
+    {
+      "sample_id": "conv-42",
+      "question_index": 160,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 120,
+      "event_gold_cost": 139
+    },
+    {
+      "sample_id": "conv-44",
+      "question_index": 73,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 119,
+      "event_gold_cost": 109
+    },
+    {
+      "sample_id": "conv-44",
+      "question_index": 95,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 128,
+      "event_gold_cost": 120
+    },
+    {
+      "sample_id": "conv-44",
+      "question_index": 105,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 127,
+      "event_gold_cost": 132
+    },
+    {
+      "sample_id": "conv-44",
+      "question_index": 111,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 113,
+      "event_gold_cost": 117
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 61,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 126,
+      "event_gold_cost": 234
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 62,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 2,
+      "event_gold_segments": 3,
+      "fixed_gold_cost": 222,
+      "event_gold_cost": 299
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 81,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 90,
+      "event_gold_cost": 159
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 94,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 128,
+      "event_gold_cost": 151
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 138,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 104,
+      "event_gold_cost": 160
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 142,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 2,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 206,
+      "event_gold_cost": 141
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 143,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 126,
+      "event_gold_cost": 234
+    },
+    {
+      "sample_id": "conv-47",
+      "question_index": 144,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 126,
+      "event_gold_cost": 109
+    },
+    {
+      "sample_id": "conv-48",
+      "question_index": 50,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 115,
+      "event_gold_cost": 152
+    },
+    {
+      "sample_id": "conv-48",
+      "question_index": 59,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 113,
+      "event_gold_cost": 79
+    },
+    {
+      "sample_id": "conv-48",
+      "question_index": 81,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 72,
+      "event_gold_cost": 116
+    },
+    {
+      "sample_id": "conv-49",
+      "question_index": 39,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 2,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 230,
+      "event_gold_cost": 257
+    },
+    {
+      "sample_id": "conv-49",
+      "question_index": 52,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 102,
+      "event_gold_cost": 196
+    },
+    {
+      "sample_id": "conv-49",
+      "question_index": 53,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 2,
+      "fixed_gold_cost": 102,
+      "event_gold_cost": 196
+    },
+    {
+      "sample_id": "conv-49",
+      "question_index": 88,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 104,
+      "event_gold_cost": 140
+    },
+    {
+      "sample_id": "conv-49",
+      "question_index": 91,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 127,
+      "event_gold_cost": 120
+    },
+    {
+      "sample_id": "conv-49",
+      "question_index": 112,
+      "winner": "fixed",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 115,
+      "event_gold_cost": 115
+    },
+    {
+      "sample_id": "conv-49",
+      "question_index": 114,
+      "winner": "event",
+      "loser_status": "feasible_missed",
+      "fixed_gold_segments": 1,
+      "event_gold_segments": 1,
+      "fixed_gold_cost": 102,
+      "event_gold_cost": 158
+    }
+  ],
+  "leave_one_conversation_out_mean_differences": {
+    "conv-30": 0.0061446471198793136,
+    "conv-41": 0.0013912306017569247,
+    "conv-42": 0.003258644233876451,
+    "conv-44": 0.011195152170384378,
+    "conv-47": 0.014528485503717714,
+    "conv-48": 0.012878653853886072,
+    "conv-49": 0.017774099538805415
+  },
+  "budget_success_to_failure_transitions": [
+    {
+      "method": "fixed",
+      "from_budget": 512,
+      "to_budget": 1024,
+      "success_to_failure": 1
+    },
+    {
+      "method": "event",
+      "from_budget": 512,
+      "to_budget": 1024,
+      "success_to_failure": 2
+    },
+    {
+      "method": "session",
+      "from_budget": 512,
+      "to_budget": 1024,
+      "success_to_failure": 15
+    },
+    {
+      "method": "fixed",
+      "from_budget": 1024,
+      "to_budget": 2048,
+      "success_to_failure": 0
+    },
+    {
+      "method": "event",
+      "from_budget": 1024,
+      "to_budget": 2048,
+      "success_to_failure": 0
+    },
+    {
+      "method": "session",
+      "from_budget": 1024,
+      "to_budget": 2048,
+      "success_to_failure": 0
+    }
+  ]
+}
