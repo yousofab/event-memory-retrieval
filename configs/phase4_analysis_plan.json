@@ -1,0 +1,11 @@
+{
+  "frozen_config_sha256": "f7c984e9b7f7bccc4bdaa058112aa48ae6578bfb2c3ca81cfac9aa59d1c22a77",
+  "phase1_manifest_sha256": "58ce27f949ef055923900dfadff249689a92dd005bb665b4450b7e0940835fcc",
+  "expected_held_out_questions": 599,
+  "expected_held_out_conversations": 7,
+  "primary_comparison": "event minus fixed, unweighted mean of seven within-conversation question-level all-evidence success rates at 1024 retrieved words",
+  "secondary_comparisons": "session baseline; 512 and 2048 word budgets; categories 1,2,4; single versus multiple gold turns; same versus different gold sessions",
+  "uncertainty": "descriptive paired conversation differences and exploratory exact two-sided sign-flip over seven paired differences; no inference from 599 independent questions",
+  "cost_proxies": "number of indexed segments, source text words, average retrieved words and retrieved segments; no API calls or hardware runtime comparison",
+  "no_retuning": "Do not change segmentation, ranker, budget, eligibility or selection after seeing held-out labels. Error analysis is descriptive only."
+}
