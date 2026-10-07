@@ -1,0 +1,14 @@
+{
+  "analysis_status": "post_hoc_descriptive_after_phase4",
+  "source_result": "results/phase4_held_out.json",
+  "primary_budget_words": 1024,
+  "no_tuning": "No method, split, ranker, budget, or primary result is modified by this audit.",
+  "diagnostics": [
+    "At 1024 words, partition each failure into gold segment union exceeds budget versus feasible but missed by ranking/packing.",
+    "Measure how many gold segments hold multi-turn evidence under each fixed method.",
+    "For event-only and fixed-only questions, report the losing method's budget-feasibility and segment count.",
+    "Remove one held-out conversation at a time from the seven paired differences as a descriptive stability check.",
+    "Count success-to-failure transitions across the two recorded budget changes."
+  ],
+  "interpretation": "These analyses follow observation of phase-4 outcomes. They are not preregistered hypothesis tests, independent validation, or grounds for retuning."
+}
