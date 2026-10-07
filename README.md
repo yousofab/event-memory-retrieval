@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 3 complete: event segmentation and fixed/session baselines evaluated on development conversations. Held-out evaluation is pending.**
+**Status: Phase 4 complete: the frozen three-way comparison has been run once on seven held-out conversations. The observed event-over-fixed difference is small and mixed across conversations; thesis writing is pending.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -24,7 +24,7 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 1. Data audit and precommitted eligibility (this commit).
 2. Fixed and session baselines with a shared lexical ranker (development run complete).
 3. Lightweight event segmentation; development-only tuning (complete; selected settings frozen).
-4. Held-out comparison at equal retrieved-text budgets, error analysis, and cost measurements.
+4. Held-out comparison at equal retrieved-text budgets and descriptive error/cost analysis (complete).
 5. Reproducible results, demo, and Persian RTL B Nazanin undergraduate thesis.
 
 ## Repository map
@@ -43,5 +43,10 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 - `scripts/run_event_development.py`: lexical change-point segmentation and development selection.
 - `results/phase3_development_event.json`: development results for all four settings.
 - `docs/phase3.md`: method, provisional comparison, and limitations.
+- `docs/phase4_plan.md`: analysis contract committed before the held-out run.
+- `scripts/run_held_out.py`: one-time frozen evaluation, with checksum and overwrite guards.
+- `scripts/validate_held_out.py`: consistency checks on the recorded results, without re-running retrieval.
+- `results/phase4_held_out.json`: 599 held-out questions, three methods, three budgets, no source text.
+- `docs/phase4.md`: Persian results, paired conversation comparison, error and cost analysis.
 
-**No held-out results exist at this stage.**
+**The held-out result is recorded. It does not establish a reliable advantage for event segmentation over fixed chunks.**
