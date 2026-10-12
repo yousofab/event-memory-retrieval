@@ -1,5 +1,6 @@
 data/raw/
 data/parts/
+results/phase7_external.json
 __pycache__/
 .venv/
 .pytest_cache/
