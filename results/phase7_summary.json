@@ -1,0 +1,995 @@
+{
+  "phase": 7,
+  "status": "external exploratory transfer; not official QA benchmark",
+  "external_dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "locomo_training_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "phase7_plan_sha256": "fcd2c57f6d0989c6d7ea60c41698d8a2ba55e664ef011dfc76a1561cc709ca5e",
+  "phase7_label_amendment_sha256": "13a11b7df7db96abcb35fd15760b588de694a2be02bf04188b9e82ca9b6ccd67",
+  "phase7_source_audit_amendment_sha256": "52a1a5368e07eed5cdd0de394ed7d9e6c0fee56091ed60a5fb54fd96ec0c5f43",
+  "phase6_plan_sha256": "380e09537205488fccc7907de6394a628082886b1eaaa813611f21b918573ada",
+  "phase3_frozen_sha256": "f7c984e9b7f7bccc4bdaa058112aa48ae6578bfb2c3ca81cfac9aa59d1c22a77",
+  "primary_budget_words": 1024,
+  "budgets_words": [
+    512,
+    1024,
+    2048
+  ],
+  "training": {
+    "training_turns": 1667,
+    "vocabulary_size": 2874,
+    "dimensions": 64,
+    "explained_variance_ratio_sum": 0.3005043511498292,
+    "training_text_sha256": "7eead514e3db0fbad21fbaaeb36c7ae470c835507af36ba684fdaceab6691b9d"
+  },
+  "audit_counts": {
+    "abstention_excluded": 30,
+    "abstention_with_answer_session_ids": 30,
+    "abstention_with_marked_turns": 9,
+    "answerable": 470,
+    "duplicate_session_ids_abstention": 1,
+    "duplicate_session_ids_answerable": 12,
+    "external_turns": 231606,
+    "incomplete_turn_label_sessions": 32,
+    "lsa_zero_vocabulary_turns": 821,
+    "marked_turns": 886,
+    "segments_event": 208874,
+    "segments_fixed": 214171,
+    "segments_semantic_lsa": 208911,
+    "segments_session": 22419
+  },
+  "timing_seconds_observed_machine": {
+    "model_fit": 0.13851978399998188,
+    "external_processing": 141.3595984430001
+  },
+  "summary": [
+    {
+      "method": "event",
+      "budget_words": 512,
+      "questions": 470,
+      "all_marked_turns_count": 284,
+      "all_official_sessions_count": 345,
+      "structural_budget_count": 4,
+      "mean_retrieved_words": 510.97446808510637
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "questions": 470,
+      "all_marked_turns_count": 320,
+      "all_official_sessions_count": 371,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1022.9808510638297
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "questions": 470,
+      "all_marked_turns_count": 353,
+      "all_official_sessions_count": 405,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.0085106382978
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "questions": 470,
+      "all_marked_turns_count": 284,
+      "all_official_sessions_count": 350,
+      "structural_budget_count": 4,
+      "mean_retrieved_words": 511.13829787234044
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "questions": 470,
+      "all_marked_turns_count": 323,
+      "all_official_sessions_count": 374,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.1276595744681
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "questions": 470,
+      "all_marked_turns_count": 354,
+      "all_official_sessions_count": 406,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.1148936170214
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "questions": 470,
+      "all_marked_turns_count": 284,
+      "all_official_sessions_count": 345,
+      "structural_budget_count": 4,
+      "mean_retrieved_words": 510.9957446808511
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "questions": 470,
+      "all_marked_turns_count": 320,
+      "all_official_sessions_count": 370,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.0085106382978
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "questions": 470,
+      "all_marked_turns_count": 354,
+      "all_official_sessions_count": 407,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.9340425531916
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "questions": 470,
+      "all_marked_turns_count": 13,
+      "all_official_sessions_count": 13,
+      "structural_budget_count": 457,
+      "mean_retrieved_words": 417.32978723404256
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "questions": 470,
+      "all_marked_turns_count": 39,
+      "all_official_sessions_count": 39,
+      "structural_budget_count": 431,
+      "mean_retrieved_words": 924.3404255319149
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "questions": 470,
+      "all_marked_turns_count": 79,
+      "all_official_sessions_count": 77,
+      "structural_budget_count": 389,
+      "mean_retrieved_words": 1960.2106382978723
+    }
+  ],
+  "by_question_type": [
+    {
+      "method": "event",
+      "budget_words": 512,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 54,
+      "all_official_sessions_count": 65,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 510.81944444444446
+    },
+    {
+      "method": "event",
+      "budget_words": 512,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 41,
+      "all_official_sessions_count": 61,
+      "structural_budget_count": 1,
+      "mean_retrieved_words": 510.9669421487603
+    },
+    {
+      "method": "event",
+      "budget_words": 512,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 47,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 3,
+      "mean_retrieved_words": 511.39285714285717
+    },
+    {
+      "method": "event",
+      "budget_words": 512,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 9,
+      "all_official_sessions_count": 20,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.06666666666666
+    },
+    {
+      "method": "event",
+      "budget_words": 512,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 60,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.015625
+    },
+    {
+      "method": "event",
+      "budget_words": 512,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 73,
+      "all_official_sessions_count": 79,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 510.84251968503935
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 61,
+      "all_official_sessions_count": 69,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.125
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 48,
+      "all_official_sessions_count": 70,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1022.7933884297521
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 52,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.2678571428571
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 12,
+      "all_official_sessions_count": 23,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.0
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 60,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1022.859375
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 87,
+      "all_official_sessions_count": 89,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.007874015748
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 63,
+      "all_official_sessions_count": 70,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.0972222222222
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 65,
+      "all_official_sessions_count": 90,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.0743801652893
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 53,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.982142857143
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 14,
+      "all_official_sessions_count": 27,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.7666666666667
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 61,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.921875
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 97,
+      "all_official_sessions_count": 98,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.007874015748
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 54,
+      "all_official_sessions_count": 65,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.09722222222223
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 41,
+      "all_official_sessions_count": 65,
+      "structural_budget_count": 1,
+      "mean_retrieved_words": 511.1487603305785
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 47,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 3,
+      "mean_retrieved_words": 511.25
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 9,
+      "all_official_sessions_count": 21,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.3333333333333
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 59,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.171875
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 74,
+      "all_official_sessions_count": 79,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.03937007874015
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 61,
+      "all_official_sessions_count": 69,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.0833333333334
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 52,
+      "all_official_sessions_count": 73,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1022.9256198347107
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 52,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.4821428571429
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 12,
+      "all_official_sessions_count": 23,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.1333333333333
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 60,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.140625
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 86,
+      "all_official_sessions_count": 89,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.1811023622047
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 64,
+      "all_official_sessions_count": 70,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.986111111111
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 65,
+      "all_official_sessions_count": 92,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.2396694214876
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 54,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.0535714285713
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 14,
+      "all_official_sessions_count": 26,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.3333333333333
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 60,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.109375
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 97,
+      "all_official_sessions_count": 98,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.0472440944882
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 54,
+      "all_official_sessions_count": 65,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 510.94444444444446
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 41,
+      "all_official_sessions_count": 61,
+      "structural_budget_count": 1,
+      "mean_retrieved_words": 510.9669421487603
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 47,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 3,
+      "mean_retrieved_words": 511.30357142857144
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 9,
+      "all_official_sessions_count": 20,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.1
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 60,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 511.03125
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 73,
+      "all_official_sessions_count": 79,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 510.87401574803147
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 60,
+      "all_official_sessions_count": 68,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.1527777777778
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 49,
+      "all_official_sessions_count": 70,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1022.8842975206611
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 52,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.1785714285714
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 12,
+      "all_official_sessions_count": 23,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.1
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 60,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1022.859375
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 87,
+      "all_official_sessions_count": 89,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.0236220472441
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 64,
+      "all_official_sessions_count": 71,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.9722222222222
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 65,
+      "all_official_sessions_count": 91,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.0
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 53,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.75
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 14,
+      "all_official_sessions_count": 27,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.9666666666667
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 61,
+      "all_official_sessions_count": 64,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.84375
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 97,
+      "all_official_sessions_count": 98,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.9685039370079
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 72,
+      "mean_retrieved_words": 419.6666666666667
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 121,
+      "mean_retrieved_words": 412.39669421487605
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 13,
+      "all_official_sessions_count": 13,
+      "structural_budget_count": 43,
+      "mean_retrieved_words": 430.55357142857144
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 30,
+      "mean_retrieved_words": 420.1333333333333
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 64,
+      "mean_retrieved_words": 410.046875
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 127,
+      "mean_retrieved_words": 417.88188976377955
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 72,
+      "mean_retrieved_words": 936.5
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 121,
+      "mean_retrieved_words": 915.1735537190083
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 38,
+      "all_official_sessions_count": 38,
+      "structural_budget_count": 18,
+      "mean_retrieved_words": 929.0178571428571
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 30,
+      "mean_retrieved_words": 923.7
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 1,
+      "all_official_sessions_count": 1,
+      "structural_budget_count": 63,
+      "mean_retrieved_words": 925.484375
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 0,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 127,
+      "mean_retrieved_words": 923.6929133858267
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "question_type": "knowledge-update",
+      "questions": 72,
+      "all_marked_turns_count": 1,
+      "all_official_sessions_count": 0,
+      "structural_budget_count": 71,
+      "mean_retrieved_words": 1970.1944444444443
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "question_type": "multi-session",
+      "questions": 121,
+      "all_marked_turns_count": 1,
+      "all_official_sessions_count": 1,
+      "structural_budget_count": 120,
+      "mean_retrieved_words": 1954.297520661157
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "question_type": "single-session-assistant",
+      "questions": 56,
+      "all_marked_turns_count": 56,
+      "all_official_sessions_count": 56,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1941.9464285714287
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "question_type": "single-session-preference",
+      "questions": 30,
+      "all_marked_turns_count": 1,
+      "all_official_sessions_count": 1,
+      "structural_budget_count": 28,
+      "mean_retrieved_words": 1979.3333333333333
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "question_type": "single-session-user",
+      "questions": 64,
+      "all_marked_turns_count": 16,
+      "all_official_sessions_count": 16,
+      "structural_budget_count": 47,
+      "mean_retrieved_words": 1965.921875
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "question_type": "temporal-reasoning",
+      "questions": 127,
+      "all_marked_turns_count": 4,
+      "all_official_sessions_count": 3,
+      "structural_budget_count": 123,
+      "mean_retrieved_words": 1960.8425196850394
+    }
+  ],
+  "unique_session_id_subset_summary": [
+    {
+      "method": "event",
+      "budget_words": 512,
+      "questions": 458,
+      "all_marked_turns_count": 279,
+      "all_official_sessions_count": 336,
+      "structural_budget_count": 3,
+      "mean_retrieved_words": 510.9759825327511
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "questions": 458,
+      "all_marked_turns_count": 314,
+      "all_official_sessions_count": 361,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1022.9847161572052
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "questions": 458,
+      "all_marked_turns_count": 344,
+      "all_official_sessions_count": 394,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.0131004366813
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "questions": 458,
+      "all_marked_turns_count": 280,
+      "all_official_sessions_count": 341,
+      "structural_budget_count": 3,
+      "mean_retrieved_words": 511.1375545851528
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "questions": 458,
+      "all_marked_turns_count": 317,
+      "all_official_sessions_count": 364,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.1331877729258
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "questions": 458,
+      "all_marked_turns_count": 346,
+      "all_official_sessions_count": 395,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2047.1266375545852
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "questions": 458,
+      "all_marked_turns_count": 279,
+      "all_official_sessions_count": 336,
+      "structural_budget_count": 3,
+      "mean_retrieved_words": 511.00218340611355
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "questions": 458,
+      "all_marked_turns_count": 314,
+      "all_official_sessions_count": 360,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 1023.0109170305677
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "questions": 458,
+      "all_marked_turns_count": 345,
+      "all_official_sessions_count": 396,
+      "structural_budget_count": 0,
+      "mean_retrieved_words": 2046.9344978165939
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "questions": 458,
+      "all_marked_turns_count": 13,
+      "all_official_sessions_count": 13,
+      "structural_budget_count": 445,
+      "mean_retrieved_words": 418.72052401746726
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "questions": 458,
+      "all_marked_turns_count": 38,
+      "all_official_sessions_count": 38,
+      "structural_budget_count": 420,
+      "mean_retrieved_words": 924.910480349345
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "questions": 458,
+      "all_marked_turns_count": 77,
+      "all_official_sessions_count": 75,
+      "structural_budget_count": 379,
+      "mean_retrieved_words": 1960.7882096069868
+    }
+  ],
+  "discordance_primary_lsa_vs_lexical": {
+    "both": 319,
+    "semantic_only": 1,
+    "lexical_only": 1,
+    "neither": 149
+  },
+  "full_result_sha256": "de4af7a2c8fe924fb6e6f608f17125214cf851902e53a377358fd85900ec44e4",
+  "compressed_result_sha256": "614d8779c87a409c942ce4a02079728591b96d7d199d6a2d4091c6d0dd08ae32",
+  "full_result_rows": 5640
+}
