@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 6 exploratory semantic-boundary extension complete on `main` (merged via pull request #1). The frozen Phase 4 comparison and Phase 5 audit remain unchanged. Phase 6 finds no stable advantage for the CPU LSA method over the frozen lexical boundary method; the final thesis is a later deliverable.**
+**Status: Phase 7 external transfer complete on LongMemEval-S, with protocol and data-quality amendments recorded before scoring. At 1,024 words, semantic LSA and lexical event boundaries each retrieved all marked evidence for 320/470 answerable questions; fixed chunks retrieved 323/470. This is an evidence-retrieval result, not an official answer-generation score. The final thesis remains a later deliverable.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -26,8 +26,9 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 3. Lightweight event segmentation; development-only tuning (complete; selected settings frozen).
 4. Held-out comparison at equal retrieved-text budgets and descriptive error/cost analysis (complete).
 5. Post hoc diagnostic audit of structural feasibility, discordant pairs, and leave-one-conversation-out sensitivity (complete; descriptive only).
-6. Post-Phase-4 exploratory extension: local LSA boundary representation compared with the frozen lexical method (complete on `main`, with a Persian RTL progress report).
-7. Independent external validation if feasible, evidence-quality review, and final Persian thesis/report, pending.
+6. Post-Phase-4 exploratory extension: local LSA boundary representation compared with the frozen lexical method (complete; exploratory).
+7. External transfer to LongMemEval-S with frozen methods, evidence-label audit and paired retrieval comparison (complete; exploratory).
+8. Evidence-boundary quality study or online writer only with a suitable operational target; final Persian thesis/report, pending.
 
 ## Repository map
 
@@ -62,8 +63,14 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 - `results/phase6_development_lsa.json`, `results/phase6_held_out_lsa.json`, `results/phase6_diagnostics.json`: question-level numeric results and diagnostics without conversation or question text.
 - `docs/phase6.md`: full Persian interpretation of the exploratory result and its limits.
 - `deliverables/گزارش-پژوهشی-مرحله-۶-مرزبندی-معنایی.docx` and `.pdf`: editable and fixed-layout Persian progress report.
+- `configs/phase7_external_plan.json`, `docs/phase7_plan.md`, `docs/phase7_label_amendment.md`, `docs/phase7_source_audit_amendment.md`: protocol and pre-score source-data amendments, all preserved in Git history.
+- `scripts/fetch_phase7_data.py`, `scripts/run_phase7_external.py`, `scripts/validate_phase7.py`: pinned LongMemEval-S download, frozen transfer and integrity checks.
+- `scripts/run_phase7_boundary_audit.py`: post hoc label-free boundary diagnostics.
+- `results/phase7_summary.json`, `results/phase7_external.json.gz`, `results/phase7_boundary_audit.json`: browsable summary, compressed full per-question record and structural diagnostics; no source text.
+- [`docs/phase7.md`](docs/phase7.md): full Persian external-transfer report and limitations.
+- `deliverables/گزارش-پژوهشی-مرحله-۷-آزمون-بیرونی.docx` and `.pdf`: editable RTL and fixed-layout Persian progress report.
 
-The optional Word builders are `scripts/build_phase5_report.py` and `scripts/build_phase6_report.py`. They need `python-docx` and a locally installed B Nazanin font to reproduce the intended layout; the font is not redistributed. Phases 1-5 retain their standard-library-only runtime. Phase 6 additionally requires `numpy`, `scipy`, and `scikit-learn` on CPU. It does not download a pretrained model or call an API.
+The optional Word builders are `scripts/build_phase5_report.py`, `scripts/build_phase6_report.py` and `scripts/build_phase7_report.py`. They need `python-docx` and a locally installed B Nazanin font to reproduce the intended layout; the font is not redistributed. Phases 1-5 retain their standard-library-only runtime. Phases 6-7 additionally require `numpy`, `scipy`, and `scikit-learn` on CPU. They do not download pretrained model weights or call an API.
 
 Phase 6 reproduction, after fetching the pinned data and installing `requirements-phase6.txt`:
 
@@ -80,3 +87,15 @@ python scripts/run_phase6_analysis.py --output /tmp/phase6-analysis-recheck.json
 ```
 
 **The Phase 4 held-out result is recorded. The Phase 6 exploratory comparison (468 versus 467 of 599 at 1,024 words) does not establish a reliable LSA advantage. Neither phase measures answer generation or philosophical understanding.**
+
+Phase 7 reproduction, after installing `requirements-phase6.txt` and fetching the pinned LoCoMo data:
+
+```bash
+python scripts/fetch_phase7_data.py
+python -m unittest discover -s tests -v
+python scripts/validate_phase7.py
+python scripts/run_phase7_external.py --output /tmp/phase7-recheck.json
+python scripts/run_phase7_boundary_audit.py --output /tmp/phase7-boundary-recheck.json
+```
+
+The official LongMemEval-S source is downloaded to ignored `data/raw/`; its SHA-256 and dataset revision are fixed in `configs/phase7_external_plan.json`. The recorded question-level result is compressed in `results/phase7_external.json.gz`; `scripts/validate_phase7.py` reads it directly and checks its digest against the browsable summary. The post hoc diagnostic output is a separate file. The 30 abstention questions are excluded from evidence retrieval, and the discovered label/session-ID irregularities are disclosed in the two pre-score amendments. Under the 1,024-word budget, LSA and lexical boundaries both recover all marked evidence on 320/470 answerable questions; the difference was one case each in opposite directions.
