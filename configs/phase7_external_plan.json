@@ -1,0 +1,25 @@
+{
+  "plan_version": "phase7-longmemeval-s-external-transfer-2026-10-12",
+  "status": "registered before running Phase 7 retrieval or examining its outcome labels",
+  "design": "External transfer of frozen LoCoMo segmenters and the LoCoMo-development-only LSA model to the official cleaned LongMemEval-S corpus; no tuning on LongMemEval",
+  "external_dataset": {
+    "name": "LongMemEval-S cleaned",
+    "official_repository": "https://github.com/xiaowu0162/LongMemEval",
+    "source_url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/98d7416c24c778c2fee6e6f3006e7a073259d48f/longmemeval_s_cleaned.json",
+    "revision": "98d7416c24c778c2fee6e6f3006e7a073259d48f",
+    "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442"
+  },
+  "training_source": "Pinned LoCoMo three development conversations, turn text only, identical Phase 6 TF-IDF/SVD configuration; no LongMemEval text, labels or query in model fitting",
+  "eligibility": "All non-abstention records (question_id not ending _abs) with at least one has_answer:true turn and structurally valid parallel session arrays; fail the run if any non-abstention record lacks labels or has inconsistent answer_session_ids; abstention records counted and excluded because no evidence target exists",
+  "adaptation": "Within each LongMemEval question, session index becomes session_N and turn index becomes a unique turn ID; content alone becomes turn text. role, date, answer, answer_session_ids and has_answer are excluded from segmentation and ranking inputs. No cross-session segment spans.",
+  "methods": ["fixed", "event", "semantic_lsa", "session"],
+  "frozen_method_contract": "Fixed 128-word turn-aligned chunks; lexical event and semantic LSA with 64/128/160-word greedy chunks and 3-turn windows; full session; the identical LoCoMo BM25 ranking code and skip-if-over-budget whole-segment packing",
+  "primary_budget_words": 1024,
+  "secondary_budgets_words": [512, 2048],
+  "primary_outcome": "All has_answer:true turn IDs are present in the retrieved whole segments for a question under 1024 Unicode-regex word tokens",
+  "primary_comparison": "semantic_lsa versus lexical event on exactly the same eligible questions",
+  "secondary_comparisons": ["fixed", "session"],
+  "report": ["eligibility and labeling audit", "per-method counts and rates at all budgets", "paired discordance", "question-type breakdown", "structural budget ceiling", "zero-vocabulary turn rate", "coverage and timing"],
+  "interpretation": "External corpus but exploratory transfer: one question has its own constructed haystack, fillers may recur and question rows need not be independent. This is a turn-evidence retrieval comparison, not the official answer-generation score, human boundary quality or online memory test.",
+  "output_policy": "Do not commit source datasets, question/answer/conversation text, gold turn IDs, model weights or embeddings. Preserve Phase 1-6 results byte-for-byte. Do not adjust method or eligibility after seeing outcome."
+}
