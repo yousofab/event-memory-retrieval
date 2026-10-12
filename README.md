@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 6 exploratory semantic-boundary extension complete on the `phase6-lsa-episodic` research branch. The frozen Phase 4 comparison and Phase 5 audit remain unchanged. Phase 6 finds no stable advantage for the CPU LSA method over the frozen lexical boundary method; the final thesis is a later deliverable.**
+**Status: Phase 6 exploratory semantic-boundary extension complete on `main` (merged via pull request #1). The frozen Phase 4 comparison and Phase 5 audit remain unchanged. Phase 6 finds no stable advantage for the CPU LSA method over the frozen lexical boundary method; the final thesis is a later deliverable.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -26,7 +26,7 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 3. Lightweight event segmentation; development-only tuning (complete; selected settings frozen).
 4. Held-out comparison at equal retrieved-text budgets and descriptive error/cost analysis (complete).
 5. Post hoc diagnostic audit of structural feasibility, discordant pairs, and leave-one-conversation-out sensitivity (complete; descriptive only).
-6. Post-Phase-4 exploratory extension: local LSA boundary representation compared with the frozen lexical method (complete on a research branch, with a Persian RTL progress report).
+6. Post-Phase-4 exploratory extension: local LSA boundary representation compared with the frozen lexical method (complete on `main`, with a Persian RTL progress report).
 7. Independent external validation if feasible, evidence-quality review, and final Persian thesis/report, pending.
 
 ## Repository map
