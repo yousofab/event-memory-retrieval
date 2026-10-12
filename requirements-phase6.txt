@@ -1,0 +1,5 @@
+# Recorded CPU execution environment for the Phase 6 LSA experiment.
+# The repository's original Phase 1-5 scripts remain standard-library-only.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
