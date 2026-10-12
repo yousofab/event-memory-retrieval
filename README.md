@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 5 research audit complete. The frozen Phase 4 comparison remains unchanged. Phase 5 explains structural budget limits and checks descriptive stability; the final thesis is a later deliverable.**
+**Status: Phase 6 exploratory semantic-boundary extension complete on the `phase6-lsa-episodic` research branch. The frozen Phase 4 comparison and Phase 5 audit remain unchanged. Phase 6 finds no stable advantage for the CPU LSA method over the frozen lexical boundary method; the final thesis is a later deliverable.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -26,7 +26,8 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 3. Lightweight event segmentation; development-only tuning (complete; selected settings frozen).
 4. Held-out comparison at equal retrieved-text budgets and descriptive error/cost analysis (complete).
 5. Post hoc diagnostic audit of structural feasibility, discordant pairs, and leave-one-conversation-out sensitivity (complete; descriptive only).
-6. Independent evidence-quality review and final Persian thesis/report, pending.
+6. Post-Phase-4 exploratory extension: local LSA boundary representation compared with the frozen lexical method (complete on a research branch, with a Persian RTL progress report).
+7. Independent external validation if feasible, evidence-quality review, and final Persian thesis/report, pending.
 
 ## Repository map
 
@@ -55,7 +56,27 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 - `results/phase5_diagnostics.json`: diagnostic counts and discordant case identifiers, no source text.
 - `docs/phase5.md`: Persian Phase 5 research progress report.
 - `deliverables/گزارش-پژوهشی-مرحله-۵-ممیزی.docx` and `.pdf`: editable and fixed-layout versions of that progress report.
+- `configs/phase6_semantic_plan.json` and `docs/phase6_plan.md`: exploratory protocol registered on GitHub before Phase 6 computation; the seven evaluation conversations were already examined in Phases 4 and 5.
+- `requirements-phase6.txt`: exact observed CPU environment for the optional LSA experiment.
+- `scripts/run_phase6_semantic.py`, `scripts/validate_phase6.py`, `scripts/run_phase6_analysis.py`: label-free text fitting and segmentation, integrity validation, descriptive analysis.
+- `results/phase6_development_lsa.json`, `results/phase6_held_out_lsa.json`, `results/phase6_diagnostics.json`: question-level numeric results and diagnostics without conversation or question text.
+- `docs/phase6.md`: full Persian interpretation of the exploratory result and its limits.
+- `deliverables/گزارش-پژوهشی-مرحله-۶-مرزبندی-معنایی.docx` and `.pdf`: editable and fixed-layout Persian progress report.
 
-The optional Word builder is `scripts/build_phase5_report.py`. It reads `docs/phase5.md` and needs `python-docx` and a locally installed B Nazanin font to reproduce the intended layout; the font is not redistributed in this repository. The source Markdown, research scripts, tests, and result validators use the Python standard library.
+The optional Word builders are `scripts/build_phase5_report.py` and `scripts/build_phase6_report.py`. They need `python-docx` and a locally installed B Nazanin font to reproduce the intended layout; the font is not redistributed. Phases 1-5 retain their standard-library-only runtime. Phase 6 additionally requires `numpy`, `scipy`, and `scikit-learn` on CPU. It does not download a pretrained model or call an API.
 
-**The held-out result is recorded. It does not establish a reliable advantage for event segmentation over fixed chunks.**
+Phase 6 reproduction, after fetching the pinned data and installing `requirements-phase6.txt`:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/validate_held_out.py
+python scripts/validate_phase5_audit.py
+python scripts/validate_phase6.py --split development
+python scripts/validate_phase6.py --split held_out
+# Fresh paths only: the recorded outputs are never overwritten by the runner.
+python scripts/run_phase6_semantic.py --split development --output /tmp/phase6-dev-recheck.json
+python scripts/run_phase6_semantic.py --split held_out --output /tmp/phase6-eval-recheck.json
+python scripts/run_phase6_analysis.py --output /tmp/phase6-analysis-recheck.json
+```
+
+**The Phase 4 held-out result is recorded. The Phase 6 exploratory comparison (468 versus 467 of 599 at 1,024 words) does not establish a reliable LSA advantage. Neither phase measures answer generation or philosophical understanding.**

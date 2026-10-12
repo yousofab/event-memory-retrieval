@@ -1,0 +1,264 @@
+{
+  "phase": 6,
+  "interpretation": "exploratory and descriptive; exact boundary overlap is not human event validity",
+  "input_sha256": {
+    "semantic": "11d5a642d99c444d4ac2d82a9db30afacd3a32d005b4f472352c888e3faca6e2",
+    "lexical": "af00ec3ee66f70df5b5482485ccf3ddb2b9ca64ef9da72ddd8429d32c52ac4d5",
+    "plan": "380e09537205488fccc7907de6394a628082886b1eaaa813611f21b918573ada",
+    "protocol": "f11846638200881a78f8ac3428329031e46f122fcf154f4ded9cafd380f5db15"
+  },
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "budget_summary": [
+    {
+      "method": "semantic_lsa",
+      "budget_words": 512,
+      "successes": 417,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.6956254527329273,
+      "unweighted_mean_retrieved_words": 505.60107162482217
+    },
+    {
+      "method": "event",
+      "budget_words": 512,
+      "successes": 421,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.7026830955667753,
+      "unweighted_mean_retrieved_words": 506.0438214009687
+    },
+    {
+      "method": "fixed",
+      "budget_words": 512,
+      "successes": 427,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.7192661626053931,
+      "unweighted_mean_retrieved_words": 507.0245382554936
+    },
+    {
+      "method": "session",
+      "budget_words": 512,
+      "successes": 259,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.4274962233697307,
+      "unweighted_mean_retrieved_words": 420.6804533551858
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 1024,
+      "successes": 468,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.7765767997789227,
+      "unweighted_mean_retrieved_words": 1017.5986197030646
+    },
+    {
+      "method": "event",
+      "budget_words": 1024,
+      "successes": 467,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.7759550199665194,
+      "unweighted_mean_retrieved_words": 1017.7332297065557
+    },
+    {
+      "method": "fixed",
+      "budget_words": 1024,
+      "successes": 460,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.766359175249047,
+      "unweighted_mean_retrieved_words": 1019.6286099639218
+    },
+    {
+      "method": "session",
+      "budget_words": 1024,
+      "successes": 399,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.669603018240789,
+      "unweighted_mean_retrieved_words": 916.6174086923446
+    },
+    {
+      "method": "semantic_lsa",
+      "budget_words": 2048,
+      "successes": 499,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.8282964732942618,
+      "unweighted_mean_retrieved_words": 2041.7701377456885
+    },
+    {
+      "method": "event",
+      "budget_words": 2048,
+      "successes": 501,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.8329867130265185,
+      "unweighted_mean_retrieved_words": 2041.0872519215022
+    },
+    {
+      "method": "fixed",
+      "budget_words": 2048,
+      "successes": 498,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.8288100439537857,
+      "unweighted_mean_retrieved_words": 2043.4890284981616
+    },
+    {
+      "method": "session",
+      "budget_words": 2048,
+      "successes": 483,
+      "questions": 599,
+      "unweighted_mean_conversation_rate": 0.8050957288816643,
+      "unweighted_mean_retrieved_words": 1937.508957803217
+    }
+  ],
+  "subgroup_primary": [
+    {
+      "field": "category",
+      "value": 1,
+      "questions": 60,
+      "semantic_successes": 14,
+      "lexical_successes": 14
+    },
+    {
+      "field": "category",
+      "value": 2,
+      "questions": 126,
+      "semantic_successes": 98,
+      "lexical_successes": 98
+    },
+    {
+      "field": "category",
+      "value": 4,
+      "questions": 413,
+      "semantic_successes": 356,
+      "lexical_successes": 355
+    },
+    {
+      "field": "gold_turn_group",
+      "value": "multiple",
+      "questions": 90,
+      "semantic_successes": 35,
+      "lexical_successes": 32
+    },
+    {
+      "field": "gold_turn_group",
+      "value": "one",
+      "questions": 509,
+      "semantic_successes": 433,
+      "lexical_successes": 435
+    },
+    {
+      "field": "gold_session_group",
+      "value": "multiple",
+      "questions": 65,
+      "semantic_successes": 18,
+      "lexical_successes": 17
+    },
+    {
+      "field": "gold_session_group",
+      "value": "one",
+      "questions": 534,
+      "semantic_successes": 450,
+      "lexical_successes": 450
+    }
+  ],
+  "semantic_primary": {
+    "structural_budget": 0,
+    "feasible_missed": 131,
+    "multiturn_gold_questions": 90,
+    "multiturn_gold_split_across_segments": 73
+  },
+  "paired_primary": {
+    "conversation_differences_semantic_minus_lexical": {
+      "conv-30": -0.015151515151515138,
+      "conv-41": -0.02941176470588236,
+      "conv-42": -0.03809523809523807,
+      "conv-44": -0.019607843137254832,
+      "conv-47": 0.04999999999999993,
+      "conv-48": 0.030303030303030276,
+      "conv-49": 0.02631578947368418
+    },
+    "mean_conversation_difference": 0.0006217798124034271,
+    "exact_two_sided_sign_flip_reference_exploratory": 0.96875
+  },
+  "discordance_primary": {
+    "semantic_only": 19,
+    "lexical_only": 18,
+    "both": 449,
+    "neither": 113
+  },
+  "leave_one_conversation_out_difference": {
+    "conv-30": 0.0032506623063898545,
+    "conv-41": 0.005627370565451058,
+    "conv-42": 0.0070746161303436765,
+    "conv-44": 0.00399338363734647,
+    "conv-47": -0.00760792355219599,
+    "conv-48": -0.004325095269367714,
+    "conv-49": -0.003660555131143365
+  },
+  "boundary_overlap": {
+    "per_conversation": [
+      {
+        "sample_id": "conv-30",
+        "lexical_segments": 78,
+        "semantic_segments": 81,
+        "lexical_internal_boundaries": 59,
+        "semantic_internal_boundaries": 62,
+        "shared_exact_boundaries": 35
+      },
+      {
+        "sample_id": "conv-41",
+        "lexical_segments": 148,
+        "semantic_segments": 149,
+        "lexical_internal_boundaries": 116,
+        "semantic_internal_boundaries": 117,
+        "shared_exact_boundaries": 80
+      },
+      {
+        "sample_id": "conv-42",
+        "lexical_segments": 125,
+        "semantic_segments": 123,
+        "lexical_internal_boundaries": 96,
+        "semantic_internal_boundaries": 94,
+        "shared_exact_boundaries": 55
+      },
+      {
+        "sample_id": "conv-44",
+        "lexical_segments": 144,
+        "semantic_segments": 146,
+        "lexical_internal_boundaries": 116,
+        "semantic_internal_boundaries": 118,
+        "shared_exact_boundaries": 68
+      },
+      {
+        "sample_id": "conv-47",
+        "lexical_segments": 141,
+        "semantic_segments": 140,
+        "lexical_internal_boundaries": 110,
+        "semantic_internal_boundaries": 109,
+        "shared_exact_boundaries": 53
+      },
+      {
+        "sample_id": "conv-48",
+        "lexical_segments": 120,
+        "semantic_segments": 126,
+        "lexical_internal_boundaries": 90,
+        "semantic_internal_boundaries": 96,
+        "shared_exact_boundaries": 45
+      },
+      {
+        "sample_id": "conv-49",
+        "lexical_segments": 111,
+        "semantic_segments": 104,
+        "lexical_internal_boundaries": 86,
+        "semantic_internal_boundaries": 79,
+        "shared_exact_boundaries": 42
+      }
+    ],
+    "total_lexical_internal_boundaries": 673,
+    "total_semantic_internal_boundaries": 675,
+    "shared_exact_boundaries": 378
+  },
+  "held_out_vocabulary_coverage": {
+    "total_tokens": 96806,
+    "out_of_vocabulary_tokens": 7171,
+    "total_turns": 4215,
+    "nonempty_turns_without_known_tokens": 0,
+    "empty_turns": 1
+  }
+}
