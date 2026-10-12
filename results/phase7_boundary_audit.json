@@ -1,0 +1,19 @@
+{
+  "status": "post_hoc_label_free_diagnostic",
+  "external_dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "phase7_result_sha256": "de4af7a2c8fe924fb6e6f608f17125214cf851902e53a377358fd85900ec44e4",
+  "counts": {
+    "different_segment_endpoints": 5201,
+    "identical_partitions": 6,
+    "oversized_single_turn_segments_lexical": 92595,
+    "oversized_single_turn_segments_semantic_lsa": 92595,
+    "questions": 470,
+    "segments_lexical": 208874,
+    "segments_semantic_lsa": 208911,
+    "shared_segment_endpoints": 206292,
+    "single_turn_segments_lexical": 193656,
+    "single_turn_segments_semantic_lsa": 193797,
+    "turns": 231606,
+    "turns_over_160_words": 92595
+  }
+}
