@@ -1,0 +1,32 @@
+{
+  "plan_version": "phase6-lsa-exploratory-2026-10-12",
+  "status": "prospective relative to phase6 computation, post hoc relative to phase4/5 data review",
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "training_split": "development conversation text only; no questions, answers, evidence IDs, event summaries or observations",
+  "method": "TF-IDF word unigrams followed by 64-dimensional truncated SVD (LSA), normalize individual turn vectors, compare means of adjacent three-turn windows by one-minus-cosine",
+  "vectorizer": {
+    "token_pattern": "(?u)\\b\\w+\\b",
+    "lowercase": true,
+    "ngram_range": [1, 1],
+    "min_df": 1,
+    "max_features": 20000,
+    "norm": "l2",
+    "use_idf": true,
+    "smooth_idf": true
+  },
+  "svd_components": 64,
+  "svd_n_iter": 7,
+  "random_state": 17,
+  "segment_size_policy": "the same greedy boundary selection and 64/128/160 word constraints as frozen lexical event method; oversized single turns preserved",
+  "semantic_feature_policy": "Only conversation turn text; do not claim direct goal, causal, temporal or philosophical understanding",
+  "primary_comparison": "LSA segmentation versus frozen lexical event segmentation at 1024 words, using identical BM25 code and whole-segment packing",
+  "secondary_comparisons": ["fixed 128-word chunks", "full sessions"],
+  "secondary_budgets_words": [512, 2048],
+  "primary_metric": "question-level all-evidence recall, averaged as paired conversation rates across the same seven previously examined conversations",
+  "inference_policy": "exploratory only; report paired differences, descriptive discordances, an exact sign-flip reference calculation and all conversation rates without confirmatory p-value interpretation",
+  "development_policy": "development is for technical verification only; no hyperparameter selection after seeing outcome",
+  "failure_audit": "gold-bearing segment word cost, feasible missed, structural budget, multi-evidence fragmentation and selected word cost",
+  "online_claim_policy": "retrospective indexing only; a separate causal writer is needed for online agent memory",
+  "external_validation": "optional future study, not a requirement for reporting this exploratory phase",
+  "output_policy": "never overwrite phases 1-5 or store source conversation text, questions, answers, embeddings, model matrices or gold IDs in git"
+}
