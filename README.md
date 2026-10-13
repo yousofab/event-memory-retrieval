@@ -28,7 +28,7 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 5. Post hoc diagnostic audit of structural feasibility, discordant pairs, and leave-one-conversation-out sensitivity (complete; descriptive only).
 6. Post-Phase-4 exploratory extension: local LSA boundary representation compared with the frozen lexical method (complete; exploratory).
 7. External transfer to LongMemEval-S with frozen methods, evidence-label audit and paired retrieval comparison (complete; exploratory).
-8. Evidence-boundary quality study or online writer only with a suitable operational target; final Persian thesis/report, pending.
+8. Causal turn-arrival memory writer with immutable segments and exploratory transfer (complete); independently labeled event-boundary study and final thesis remain future work.
 
 ## Repository map
 
@@ -99,3 +99,22 @@ python scripts/run_phase7_boundary_audit.py --output /tmp/phase7-boundary-rechec
 ```
 
 The official LongMemEval-S source is downloaded to ignored `data/raw/`; its SHA-256 and dataset revision are fixed in `configs/phase7_external_plan.json`. The recorded question-level result is compressed in `results/phase7_external.json.gz`; `scripts/validate_phase7.py` reads it directly and checks its digest against the browsable summary. The post hoc diagnostic output is a separate file. The 30 abstention questions are excluded from evidence retrieval, and the discovered label/session-ID irregularities are disclosed in the two pre-score amendments. Under the 1,024-word budget, LSA and lexical boundaries both recover all marked evidence on 320/470 answerable questions; the difference was one case each in opposite directions.
+
+
+## Phase 8 causal writer
+
+`configs/phase8_causal_plan.json` and `docs/phase8_plan.md` were committed on the Phase 8 branch before scoring. Earlier LoCoMo and LongMemEval outcomes had already been inspected, so this is exploratory even with a timestamped plan. `scripts/run_phase8_causal.py` builds immutable segments using only the current and three previous turns, then queries the final index using the same BM25 ranker and word budgets. Tests exercise prefix stability, immutable closure, session reset and label isolation. `scripts/validate_phase8.py` compares the frozen methods exactly to the Phase 4 and Phase 7 records.
+
+- `docs/phase8.md`: Persian full report with the research gap, method, results, limitations and next study.
+- `results/phase8_summary.json`, `results/phase8_causal.json.gz`: numeric summaries and full question-level result with provenance, without raw conversation text.
+- `deliverables/گزارش-پژوهشی-مرحله-۸-نویسنده-علّی-حافظه.docx` and `.pdf`: editable RTL B Nazanin and fixed-layout reports.
+
+Reproduce on CPU after fetching both pinned datasets and installing `requirements-phase6.txt`:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/validate_phase8.py
+python scripts/run_phase8_causal.py --output /tmp/phase8-recheck.json
+```
+
+The official cleaned LongMemEval-S file must match the SHA-256 in `configs/phase7_external_plan.json`; the runner refuses a truncated or modified copy. At 1,024 words, the online writer covered 463/599 LoCoMo held-out questions versus 467/599 for the retrospective boundary and 460/599 for fixed chunks. External coverage was 320/470 for both online and retrospective methods. These are evidence retrieval results, not generated-answer accuracy or human event-boundary judgments.
