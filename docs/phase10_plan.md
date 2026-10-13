@@ -38,6 +38,8 @@
 
 [۲] Zou et al. (2026), ES-Mem: Event Segmentation-Based Memory for Long-Term Dialogue Agents, arXiv:2601.07582v2. https://arxiv.org/abs/2601.07582
 
-[۳] Nguyen et al. (2026), Multiple event segmentation mechanisms in the human brain, eLife 15:RP107955. https://elifesciences.org/articles/107955
+[۳] Nguyen et al. (2026), Multiple event segmentation mechanisms in the human brain, eLife 14:RP107955. https://elifesciences.org/articles/107955
 
 [۴] QMSum official dataset, pinned source revision and MIT license. https://github.com/Yale-LILY/QMSum
+
+**یادداشت ویراستاری پس از ثبت نتایج:** فقط شماره‌ی جلد منبع [۳] از ۱۵ به ۱۴ مطابق رکورد ناشر اصلاح شد. معیارها، طرح و فهرست هش فایل‌ها همان نسخه‌ی ثبت‌شده پیش از امتیازدهی هستند؛ متن اصلی آن نسخه در تاریخچه‌ی گیت محفوظ است.
