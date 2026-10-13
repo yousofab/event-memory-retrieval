@@ -1,0 +1,26 @@
+{
+  "plan_version": "phase8-online-writer-2026-10-13",
+  "status": "method specification committed before Phase 8 scoring; all LoCoMo and LongMemEval outcomes from prior stages have already been seen, so Phase 8 is exploratory",
+  "research_question": "Can immutable, causal turn-arrival segmentation preserve evidence retrieval under the same text budget as retrospective lexical event and fixed-turn segmentation?",
+  "datasets": ["pinned LoCoMo with Phase 1 eligibility, 3 development and 7 previously examined held-out conversations", "pinned LongMemEval-S cleaned, 470 answerable records under Phase 7 label audit, as descriptive external check"],
+  "causal_writer": {
+    "input": "turn text and session boundary only; no future turns, query, labels, summaries, roles, or dates",
+    "tokenization": "Phase 2 lowercase Unicode regex word tokens",
+    "novelty": "1 - Jaccard(set(current-turn tokens), union of sets of the previous three turns in the same session); if both sets empty, novelty is zero; no idf fit",
+    "minimum_open_words_for_novelty_boundary": 64,
+    "novelty_threshold_inclusive": 0.85,
+    "maximum_segment_words": 160,
+    "boundary_order": "before accepting turn t, close the current open segment if adding t exceeds 160 words, else close if open has at least 64 words and novelty >= 0.85; then append t; close remainder at session end",
+    "oversized_turn": "an individual >160-word turn is stored whole; close before next turn",
+    "immutability": "closed segments never change; a boundary recognized on arrival of t may close the previous segment at t, with no lookahead beyond t",
+    "memory_scope": "only final segment index is queried after the full history; streaming retrieval or answer generation is not measured"
+  },
+  "comparators": ["Phase 3 frozen retrospective lexical event, w3, min64/preferred128/max160", "Phase 2 online fixed turn-aligned 128-word chunks", "full session as contextual baseline on LoCoMo"],
+  "ranker": "unchanged Phase 2 BM25 and whole-segment skip-if-over-budget retrieval",
+  "primary_budget_words": 1024,
+  "secondary_budgets_words": [512, 2048],
+  "primary_outcome": "question-level all annotated evidence turn IDs in selected segments at 1024 words",
+  "primary_comparison": "causal writer versus Phase 3 retrospective lexical event on 599 previously examined LoCoMo held-out questions, paired by conversation",
+  "secondary": ["causal writer versus fixed 128", "segment counts, word sizes and boundaries", "prefix invariance and no-future input tests", "external LongMemEval-S transfer without tuning"],
+  "interpretation": "all outcomes exploratory, including the reused held-out set; evidence retrieval is not generated-answer accuracy, psychological event-boundary quality, or meaning in Searle's sense"
+}
