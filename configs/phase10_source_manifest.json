@@ -1,0 +1,219 @@
+{
+  "source": "https://github.com/Yale-LILY/QMSum",
+  "revision": "83d7768c1f2b4dfeb091385d3dc7e239b8e5bb7e",
+  "subset": "data/ALL/test",
+  "split": "test",
+  "repository_license": "MIT",
+  "files": [
+    {
+      "name": "Bed003.json",
+      "size": 153132,
+      "sha": "7acef2f16f8029b4b715b561dd21dc6d2b90ab9e",
+      "domain": "academic"
+    },
+    {
+      "name": "Bed008.json",
+      "size": 125694,
+      "sha": "e81e603d0b34fe9187b70d7a0f5c2f894a514373",
+      "domain": "academic"
+    },
+    {
+      "name": "Bed016.json",
+      "size": 102160,
+      "sha": "1d4c5e1c775b17544ac19b1574e9e8d9cbfe77e3",
+      "domain": "academic"
+    },
+    {
+      "name": "Bmr006.json",
+      "size": 222693,
+      "sha": "6286960cda6fc462f9851c1f7b836fe897f7e998",
+      "domain": "academic"
+    },
+    {
+      "name": "Bmr014.json",
+      "size": 122795,
+      "sha": "acb5ff8c7451c5c8f705142550b4ea3151fd6eed",
+      "domain": "academic"
+    },
+    {
+      "name": "Bmr023.json",
+      "size": 128433,
+      "sha": "1cbe8643039c4cca5c774cf389948de51a3dae67",
+      "domain": "academic"
+    },
+    {
+      "name": "Bro004.json",
+      "size": 131872,
+      "sha": "dad91381bc84bb171f4765f4c1a5c2e6c16efebc",
+      "domain": "academic"
+    },
+    {
+      "name": "Bro019.json",
+      "size": 135818,
+      "sha": "40419e5a2107503a02634e84f826a73a03ce759a",
+      "domain": "academic"
+    },
+    {
+      "name": "Bro027.json",
+      "size": 173204,
+      "sha": "296f01f07ab2de4d51cf5f4f295f03706aeb132e",
+      "domain": "academic"
+    },
+    {
+      "name": "ES2004a.json",
+      "size": 49030,
+      "sha": "6972a29a1f3a3865cb6423b4549960abe2f9bdcf",
+      "domain": "product"
+    },
+    {
+      "name": "ES2004b.json",
+      "size": 91249,
+      "sha": "fba8b79dd710764c953f75de21abf074e5e1c484",
+      "domain": "product"
+    },
+    {
+      "name": "ES2004c.json",
+      "size": 103738,
+      "sha": "33628b2b6b0fa618a760d68626704c843457570c",
+      "domain": "product"
+    },
+    {
+      "name": "ES2004d.json",
+      "size": 109419,
+      "sha": "c631e3b04aadbfa3455785722e5deb722adc4a27",
+      "domain": "product"
+    },
+    {
+      "name": "ES2011a.json",
+      "size": 45255,
+      "sha": "565263124e9be0bcaec25b8120ae23d2ed912c47",
+      "domain": "product"
+    },
+    {
+      "name": "ES2011b.json",
+      "size": 63231,
+      "sha": "146d5d8ca5798b7bcfe4e15953ff6b7550054987",
+      "domain": "product"
+    },
+    {
+      "name": "ES2011c.json",
+      "size": 81576,
+      "sha": "4aa20e73a91dd1881fa458e428ce28f05adcfc2e",
+      "domain": "product"
+    },
+    {
+      "name": "ES2011d.json",
+      "size": 86965,
+      "sha": "9c641355b42e6332e9c61553402a06b9876aba6a",
+      "domain": "product"
+    },
+    {
+      "name": "IS1003a.json",
+      "size": 41427,
+      "sha": "ea794611baa73a849a034498e0f3bdef47ff4fb9",
+      "domain": "product"
+    },
+    {
+      "name": "IS1003b.json",
+      "size": 66117,
+      "sha": "6065cc2b2c117a39c3284120d80627040d4876ea",
+      "domain": "product"
+    },
+    {
+      "name": "IS1003c.json",
+      "size": 92786,
+      "sha": "05e95c0eb2ad91735cbe7739550fba01f8ffd9b7",
+      "domain": "product"
+    },
+    {
+      "name": "IS1003d.json",
+      "size": 135180,
+      "sha": "9b939590d3c59808c12d2d6616d3dae1a011004d",
+      "domain": "product"
+    },
+    {
+      "name": "TS3004a.json",
+      "size": 62124,
+      "sha": "8778c709e4449bc51b6ebb33f36228f57fc8830f",
+      "domain": "product"
+    },
+    {
+      "name": "TS3004b.json",
+      "size": 100520,
+      "sha": "b13903545585fea4b712599116035c5deceecaad",
+      "domain": "product"
+    },
+    {
+      "name": "TS3004c.json",
+      "size": 119603,
+      "sha": "f3869b92ab9e0b37b7d4e3fb407ce0a22f3a7f71",
+      "domain": "product"
+    },
+    {
+      "name": "TS3004d.json",
+      "size": 123370,
+      "sha": "45e3857524ad1620b6bcb5bd2306464a7ac9ee1a",
+      "domain": "product"
+    },
+    {
+      "name": "TS3011a.json",
+      "size": 52301,
+      "sha": "c257a42e5c6285bfba44b90d7b5bab2583d2db43",
+      "domain": "product"
+    },
+    {
+      "name": "TS3011b.json",
+      "size": 94727,
+      "sha": "fd06d25e9a82275790ea6a86e03ce354151af411",
+      "domain": "product"
+    },
+    {
+      "name": "TS3011c.json",
+      "size": 97801,
+      "sha": "6dc875a690c3b83f4eda383ca9304aa0081a5c22",
+      "domain": "product"
+    },
+    {
+      "name": "TS3011d.json",
+      "size": 94350,
+      "sha": "2201ef392b155a01c110ee3f9198deaf16498080",
+      "domain": "product"
+    },
+    {
+      "name": "covid_4.json",
+      "size": 138581,
+      "sha": "82e018dc8fa61937406cac485d609329f7895698",
+      "domain": "committee"
+    },
+    {
+      "name": "covid_9.json",
+      "size": 154377,
+      "sha": "6d008b9bb2e1f34104a5c6f4ac51e4a42e957470",
+      "domain": "committee"
+    },
+    {
+      "name": "education_13.json",
+      "size": 78616,
+      "sha": "0458456fd39cfb5458253da1d3cf7423562ff5f3",
+      "domain": "committee"
+    },
+    {
+      "name": "education_17.json",
+      "size": 74109,
+      "sha": "e649d59bd5c631f44eac230b08b1e359ecb1fe08",
+      "domain": "committee"
+    },
+    {
+      "name": "education_4.json",
+      "size": 117394,
+      "sha": "3d83e03803f12e221a7a82a9af0c0f7922bdb95f",
+      "domain": "committee"
+    },
+    {
+      "name": "education_9.json",
+      "size": 108839,
+      "sha": "773b1d8e463cb2be849e5e2c9b09b74116d15391",
+      "domain": "committee"
+    }
+  ]
+}
