@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 7 external transfer complete on LongMemEval-S, with protocol and data-quality amendments recorded before scoring. At 1,024 words, semantic LSA and lexical event boundaries each retrieved all marked evidence for 320/470 answerable questions; fixed chunks retrieved 323/470. This is an evidence-retrieval result, not an official answer-generation score. The final thesis remains a later deliverable.**
+**Status: Phase 9 exploratory matched-count boundary control complete. At 1,024 words on LoCoMo, the causal writer retrieved all marked evidence for 463/599 questions; the median of 20 random valid boundaries with identical per-session segment counts was 453.5/599 (range 444–471). Four controls tied or exceeded 463. This is an evidence-retrieval result on previously inspected data, not an answer-generation or human event-perception score. The final thesis remains a later deliverable.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -28,7 +28,8 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 5. Post hoc diagnostic audit of structural feasibility, discordant pairs, and leave-one-conversation-out sensitivity (complete; descriptive only).
 6. Post-Phase-4 exploratory extension: local LSA boundary representation compared with the frozen lexical method (complete; exploratory).
 7. External transfer to LongMemEval-S with frozen methods, evidence-label audit and paired retrieval comparison (complete; exploratory).
-8. Causal turn-arrival memory writer with immutable segments and exploratory transfer (complete); independently labeled event-boundary study and final thesis remain future work.
+8. Causal turn-arrival memory writer with immutable segments and exploratory transfer (complete).
+9. Random valid boundaries with exactly matched per-session segment counts, 20 seeds and fixed retrieval budgets (complete; exploratory); independently labeled event-boundary study and final thesis remain future work.
 
 ## Repository map
 
@@ -118,3 +119,26 @@ python scripts/run_phase8_causal.py --output /tmp/phase8-recheck.json
 ```
 
 The official cleaned LongMemEval-S file must match the SHA-256 in `configs/phase7_external_plan.json`; the runner refuses a truncated or modified copy. At 1,024 words, the online writer covered 463/599 LoCoMo held-out questions versus 467/599 for the retrospective boundary and 460/599 for fixed chunks. External coverage was 320/470 for both online and retrospective methods. These are evidence retrieval results, not generated-answer accuracy or human event-boundary judgments.
+
+## Phase 9 matched-count boundary control
+
+The plan in `configs/phase9_boundary_plan.json` and [`docs/phase9_plan.md`](docs/phase9_plan.md) was committed on the research branch before Phase 9 scoring. Earlier LoCoMo results had already been seen. `scripts/run_phase9_controls.py` uniformly samples valid contiguous partitions with the online writer's **exact segment count in every session**, preserving full turns and the 160-word cap except a single overlong turn. The 20 deterministic seeds (0–19) use turn lengths and the online segment count, without question or evidence labels for boundary placement. The control sees each session's final count, so it is retrospective, not a deployable streaming writer.
+
+- [`docs/phase9.md`](docs/phase9.md): Persian report with the research gap, exact method, sensitivity and limits.
+- `results/phase9_summary.json`, `results/phase9_controls.json.gz`: numeric summary and full question-level record with checksums, without source text.
+- `scripts/validate_phase9.py` and `tests/test_phase9_controls.py`: integrity and sampler tests.
+- `deliverables/گزارش-پژوهشی-مرحله-۹-کنترل-مرزها.docx` and `.pdf`: Persian RTL B Nazanin editable and fixed-layout reports.
+
+Reproduce on CPU after fetching pinned LoCoMo data and installing `requirements-phase6.txt`:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/validate_phase9.py
+python scripts/run_phase9_controls.py --output /tmp/phase9-recheck.json
+```
+
+The primary observed outcome was 463/599 for the online writer versus a random-control median of 453.5/599, range 444–471. Four of 20 sampled controls tied or exceeded the writer. The count is descriptive, not a p-value. Segment length distributions and BM25 ties can differ, and the benchmark does not label human event boundaries or measure philosophical understanding.
+
+## Educational acknowledgement
+
+The researcher credits **FARDIAT**, a specialized brain and cognition institute, and **Dr Arash Fekri**, their teacher and, according to the researcher, its founder, for the Cognitive Neuroscience education that inspired the question linking event segmentation and conversational memory. This acknowledgement does not imply formal sponsorship, endorsement, data provision or authorship of the independent methods and results. A supplied FARDIAT mark appears in the printable Phase 9 report.

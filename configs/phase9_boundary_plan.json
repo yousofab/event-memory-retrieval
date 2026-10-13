@@ -1,0 +1,22 @@
+{
+  "plan_version": "phase9-conditional-random-boundaries-2026-10-13",
+  "status": "registered before Phase 9 scoring; prior LoCoMo outcomes and partitions from Phases 1-8 have been seen, so this is exploratory",
+  "question": "Does the placement of lexical-novelty boundaries add evidence-retrieval value beyond the number of causal-writer segments and the 160-word whole-turn size constraint?",
+  "source": "Pinned LoCoMo SHA-256 from configs/protocol.json and Phase 1 eligibility; seven previously examined held-out conversations (599 eligible questions) plus three development conversations (274 questions), without new sampling",
+  "reference": "Phase 8 online causal writer, exactly as frozen in configs/phase8_causal_plan.json; Phase 3 retrospective event and Phase 2 fixed 128-word rows from recorded Phase 8 results as contextual comparisons",
+  "null_control": {
+    "unit": "each session independently",
+    "constraints": "exactly the same number of segments as the Phase 8 online writer within that session; contiguous turn-aligned exhaustive non-overlapping partition; every segment <=160 Unicode-regex words unless it contains exactly one source turn longer than 160 words",
+    "sampling": "uniform over all valid partitions conditional on those constraints, using dynamic-programming completion counts and integer-weighted choices; no rejection sampling",
+    "seeds": "integers 0 through 19 inclusive, SHA-256 of seed|sample_id|session_key initializes local Python Random; each seed generates one independent partition per session",
+    "inputs": "turn word counts and the Phase 8 online segment count for the same session; no turn tokens, question, answer, evidence, event summary or session-global semantic representation enter boundary choice",
+    "causality": "a retrospective diagnostic negative control, not an online deployable writer; the target count is known only after the session ends"
+  },
+  "retrieval": "unchanged Phase 2 BM25 and whole-segment skip-if-over-budget selection",
+  "budgets_words": [512, 1024, 2048],
+  "primary_budget_words": 1024,
+  "primary_outcome": "count of previously eligible 599 held-out LoCoMo questions whose full gold evidence turn-ID set is retrieved at 1024 words",
+  "primary_readout": "observed online count, all 20 null-control counts, median, range, and empirical fraction of null runs with count >= online; the fraction is descriptive, not a hypothesis-test p-value",
+  "secondary": ["per-conversation counts", "question-level success overlap and structural budget ceiling", "segment-length distribution and resource cost", "development-set descriptive replication", "512 and 2048 sensitivity"],
+  "interpretation": "A null control with exact matched segment count and cap isolates some granularity effects, but valid partition word-size distributions and BM25 score ties can still differ. This is evidence retrieval, not answer quality, human boundary annotation or proof of semantic understanding. No inferential claim from 20 seeds or previously inspected questions."
+}

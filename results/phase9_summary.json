@@ -1,0 +1,2335 @@
+{
+  "phase": 9,
+  "status": "exploratory retrospective matched-count diagnostic",
+  "plan_sha256": "9cbbb4b310bd95116312312c606dd46b2a7949eb5d9b38ba8ce18599afb90b14",
+  "locomo_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "phase8_result_sha256": "fefbf4c32f99ab8eacff0eb49865f956784d1d1eaa9a65cfcaa278394100dc77",
+  "budgets_words": [
+    512,
+    1024,
+    2048
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "summary": [
+    {
+      "split": "development",
+      "budget_words": 512,
+      "online_successes": 201,
+      "null_successes_by_seed": [
+        189,
+        193,
+        197,
+        203,
+        188,
+        197,
+        197,
+        189,
+        195,
+        196,
+        187,
+        192,
+        190,
+        193,
+        197,
+        195,
+        201,
+        199,
+        194,
+        193
+      ],
+      "null_min": 187,
+      "null_median": 194.5,
+      "null_max": 203,
+      "null_at_least_online": 2,
+      "null_repetitions": 20
+    },
+    {
+      "split": "development",
+      "budget_words": 1024,
+      "online_successes": 219,
+      "null_successes_by_seed": [
+        215,
+        214,
+        218,
+        220,
+        207,
+        214,
+        218,
+        212,
+        212,
+        213,
+        204,
+        215,
+        212,
+        208,
+        218,
+        215,
+        214,
+        210,
+        215,
+        209
+      ],
+      "null_min": 204,
+      "null_median": 214.0,
+      "null_max": 220,
+      "null_at_least_online": 1,
+      "null_repetitions": 20
+    },
+    {
+      "split": "development",
+      "budget_words": 2048,
+      "online_successes": 235,
+      "null_successes_by_seed": [
+        230,
+        230,
+        236,
+        236,
+        224,
+        232,
+        231,
+        224,
+        227,
+        228,
+        216,
+        234,
+        227,
+        224,
+        228,
+        226,
+        235,
+        229,
+        235,
+        226
+      ],
+      "null_min": 216,
+      "null_median": 228.5,
+      "null_max": 236,
+      "null_at_least_online": 4,
+      "null_repetitions": 20
+    },
+    {
+      "split": "held_out",
+      "budget_words": 512,
+      "online_successes": 420,
+      "null_successes_by_seed": [
+        407,
+        414,
+        416,
+        416,
+        415,
+        418,
+        425,
+        403,
+        412,
+        420,
+        407,
+        439,
+        410,
+        411,
+        423,
+        411,
+        405,
+        418,
+        409,
+        426
+      ],
+      "null_min": 403,
+      "null_median": 414.5,
+      "null_max": 439,
+      "null_at_least_online": 5,
+      "null_repetitions": 20
+    },
+    {
+      "split": "held_out",
+      "budget_words": 1024,
+      "online_successes": 463,
+      "null_successes_by_seed": [
+        447,
+        453,
+        460,
+        449,
+        456,
+        462,
+        459,
+        452,
+        457,
+        469,
+        452,
+        463,
+        453,
+        451,
+        465,
+        471,
+        444,
+        454,
+        444,
+        452
+      ],
+      "null_min": 444,
+      "null_median": 453.5,
+      "null_max": 471,
+      "null_at_least_online": 4,
+      "null_repetitions": 20
+    },
+    {
+      "split": "held_out",
+      "budget_words": 2048,
+      "online_successes": 491,
+      "null_successes_by_seed": [
+        495,
+        474,
+        488,
+        485,
+        492,
+        487,
+        497,
+        487,
+        491,
+        500,
+        483,
+        497,
+        484,
+        479,
+        490,
+        501,
+        476,
+        489,
+        488,
+        488
+      ],
+      "null_min": 474,
+      "null_median": 488.0,
+      "null_max": 501,
+      "null_at_least_online": 7,
+      "null_repetitions": 20
+    }
+  ],
+  "per_conversation": [
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "online_successes": 65,
+      "null_by_seed": [
+        64,
+        64,
+        68,
+        65,
+        62,
+        69,
+        66,
+        61,
+        68,
+        63,
+        59,
+        61,
+        63,
+        63,
+        63,
+        66,
+        64,
+        63,
+        63,
+        61
+      ],
+      "null_median": 63.0,
+      "null_min": 59,
+      "null_max": 69
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "online_successes": 87,
+      "null_by_seed": [
+        87,
+        84,
+        83,
+        88,
+        83,
+        82,
+        89,
+        85,
+        83,
+        85,
+        83,
+        87,
+        85,
+        83,
+        88,
+        85,
+        87,
+        84,
+        88,
+        84
+      ],
+      "null_median": 85.0,
+      "null_min": 82,
+      "null_max": 89
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "online_successes": 67,
+      "null_by_seed": [
+        64,
+        66,
+        67,
+        67,
+        62,
+        63,
+        63,
+        66,
+        61,
+        65,
+        62,
+        67,
+        64,
+        62,
+        67,
+        64,
+        63,
+        63,
+        64,
+        64
+      ],
+      "null_median": 64.0,
+      "null_min": 61,
+      "null_max": 67
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "online_successes": 50,
+      "null_by_seed": [
+        48,
+        50,
+        50,
+        47,
+        49,
+        51,
+        48,
+        45,
+        49,
+        51,
+        48,
+        46,
+        45,
+        52,
+        49,
+        50,
+        45,
+        47,
+        48,
+        50
+      ],
+      "null_median": 48.5,
+      "null_min": 45,
+      "null_max": 52
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "online_successes": 71,
+      "null_by_seed": [
+        68,
+        72,
+        73,
+        71,
+        72,
+        72,
+        68,
+        71,
+        73,
+        71,
+        71,
+        73,
+        69,
+        74,
+        74,
+        74,
+        70,
+        71,
+        67,
+        71
+      ],
+      "null_median": 71.0,
+      "null_min": 67,
+      "null_max": 74
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "online_successes": 83,
+      "null_by_seed": [
+        81,
+        78,
+        81,
+        77,
+        85,
+        84,
+        82,
+        83,
+        81,
+        76,
+        76,
+        82,
+        82,
+        76,
+        86,
+        79,
+        80,
+        79,
+        82,
+        77
+      ],
+      "null_median": 81.0,
+      "null_min": 76,
+      "null_max": 86
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "online_successes": 38,
+      "null_by_seed": [
+        38,
+        38,
+        37,
+        42,
+        39,
+        38,
+        38,
+        40,
+        39,
+        39,
+        40,
+        39,
+        40,
+        37,
+        36,
+        38,
+        38,
+        39,
+        40,
+        39
+      ],
+      "null_median": 39.0,
+      "null_min": 36,
+      "null_max": 42
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "online_successes": 78,
+      "null_by_seed": [
+        76,
+        74,
+        79,
+        75,
+        72,
+        75,
+        77,
+        75,
+        74,
+        84,
+        77,
+        80,
+        78,
+        73,
+        77,
+        80,
+        72,
+        74,
+        71,
+        71
+      ],
+      "null_median": 75.0,
+      "null_min": 71,
+      "null_max": 84
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "online_successes": 83,
+      "null_by_seed": [
+        74,
+        76,
+        79,
+        71,
+        80,
+        79,
+        83,
+        78,
+        78,
+        85,
+        76,
+        81,
+        75,
+        76,
+        80,
+        85,
+        75,
+        79,
+        75,
+        80
+      ],
+      "null_median": 78.5,
+      "null_min": 71,
+      "null_max": 85
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "online_successes": 60,
+      "null_by_seed": [
+        62,
+        65,
+        61,
+        66,
+        59,
+        63,
+        63,
+        60,
+        63,
+        63,
+        64,
+        62,
+        64,
+        63,
+        63,
+        65,
+        64,
+        65,
+        61,
+        64
+      ],
+      "null_median": 63.0,
+      "null_min": 59,
+      "null_max": 66
+    }
+  ],
+  "shape": [
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 0,
+      "segments": 130,
+      "one_turn_segments": 24,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 1,
+      "segments": 130,
+      "one_turn_segments": 25,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 2,
+      "segments": 130,
+      "one_turn_segments": 28,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 3,
+      "segments": 130,
+      "one_turn_segments": 28,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 4,
+      "segments": 130,
+      "one_turn_segments": 29,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 5,
+      "segments": 130,
+      "one_turn_segments": 22,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 6,
+      "segments": 130,
+      "one_turn_segments": 24,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 7,
+      "segments": 130,
+      "one_turn_segments": 28,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 8,
+      "segments": 130,
+      "one_turn_segments": 21,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 9,
+      "segments": 130,
+      "one_turn_segments": 25,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 10,
+      "segments": 130,
+      "one_turn_segments": 26,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 11,
+      "segments": 130,
+      "one_turn_segments": 24,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 12,
+      "segments": 130,
+      "one_turn_segments": 24,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 13,
+      "segments": 130,
+      "one_turn_segments": 23,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 14,
+      "segments": 130,
+      "one_turn_segments": 25,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 15,
+      "segments": 130,
+      "one_turn_segments": 32,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 16,
+      "segments": 130,
+      "one_turn_segments": 29,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 17,
+      "segments": 130,
+      "one_turn_segments": 24,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 18,
+      "segments": 130,
+      "one_turn_segments": 28,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "seed": 19,
+      "segments": 130,
+      "one_turn_segments": 27,
+      "words_total": 10875,
+      "mean_words": 83.65384615384616
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 0,
+      "segments": 204,
+      "one_turn_segments": 42,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 1,
+      "segments": 204,
+      "one_turn_segments": 37,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 2,
+      "segments": 204,
+      "one_turn_segments": 40,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 3,
+      "segments": 204,
+      "one_turn_segments": 33,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 4,
+      "segments": 204,
+      "one_turn_segments": 44,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 5,
+      "segments": 204,
+      "one_turn_segments": 38,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 6,
+      "segments": 204,
+      "one_turn_segments": 38,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 7,
+      "segments": 204,
+      "one_turn_segments": 38,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 8,
+      "segments": 204,
+      "one_turn_segments": 38,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 9,
+      "segments": 204,
+      "one_turn_segments": 48,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 10,
+      "segments": 204,
+      "one_turn_segments": 43,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 11,
+      "segments": 204,
+      "one_turn_segments": 42,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 12,
+      "segments": 204,
+      "one_turn_segments": 47,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 13,
+      "segments": 204,
+      "one_turn_segments": 38,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 14,
+      "segments": 204,
+      "one_turn_segments": 41,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 15,
+      "segments": 204,
+      "one_turn_segments": 46,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 16,
+      "segments": 204,
+      "one_turn_segments": 46,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 17,
+      "segments": 204,
+      "one_turn_segments": 36,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 18,
+      "segments": 204,
+      "one_turn_segments": 42,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "seed": 19,
+      "segments": 204,
+      "one_turn_segments": 39,
+      "words_total": 16449,
+      "mean_words": 80.63235294117646
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 0,
+      "segments": 176,
+      "one_turn_segments": 30,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 1,
+      "segments": 176,
+      "one_turn_segments": 31,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 2,
+      "segments": 176,
+      "one_turn_segments": 37,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 3,
+      "segments": 176,
+      "one_turn_segments": 24,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 4,
+      "segments": 176,
+      "one_turn_segments": 36,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 5,
+      "segments": 176,
+      "one_turn_segments": 32,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 6,
+      "segments": 176,
+      "one_turn_segments": 32,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 7,
+      "segments": 176,
+      "one_turn_segments": 31,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 8,
+      "segments": 176,
+      "one_turn_segments": 27,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 9,
+      "segments": 176,
+      "one_turn_segments": 32,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 10,
+      "segments": 176,
+      "one_turn_segments": 33,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 11,
+      "segments": 176,
+      "one_turn_segments": 32,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 12,
+      "segments": 176,
+      "one_turn_segments": 30,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 13,
+      "segments": 176,
+      "one_turn_segments": 28,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 14,
+      "segments": 176,
+      "one_turn_segments": 36,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 15,
+      "segments": 176,
+      "one_turn_segments": 31,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 16,
+      "segments": 176,
+      "one_turn_segments": 31,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 17,
+      "segments": 176,
+      "one_turn_segments": 32,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 18,
+      "segments": 176,
+      "one_turn_segments": 32,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "seed": 19,
+      "segments": 176,
+      "one_turn_segments": 31,
+      "words_total": 15464,
+      "mean_words": 87.86363636363636
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 0,
+      "segments": 105,
+      "one_turn_segments": 17,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 1,
+      "segments": 105,
+      "one_turn_segments": 17,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 2,
+      "segments": 105,
+      "one_turn_segments": 18,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 3,
+      "segments": 105,
+      "one_turn_segments": 14,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 4,
+      "segments": 105,
+      "one_turn_segments": 16,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 5,
+      "segments": 105,
+      "one_turn_segments": 22,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 6,
+      "segments": 105,
+      "one_turn_segments": 16,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 7,
+      "segments": 105,
+      "one_turn_segments": 20,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 8,
+      "segments": 105,
+      "one_turn_segments": 21,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 9,
+      "segments": 105,
+      "one_turn_segments": 22,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 10,
+      "segments": 105,
+      "one_turn_segments": 20,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 11,
+      "segments": 105,
+      "one_turn_segments": 20,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 12,
+      "segments": 105,
+      "one_turn_segments": 11,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 13,
+      "segments": 105,
+      "one_turn_segments": 15,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 14,
+      "segments": 105,
+      "one_turn_segments": 19,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 15,
+      "segments": 105,
+      "one_turn_segments": 21,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 16,
+      "segments": 105,
+      "one_turn_segments": 21,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 17,
+      "segments": 105,
+      "one_turn_segments": 19,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 18,
+      "segments": 105,
+      "one_turn_segments": 16,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "seed": 19,
+      "segments": 105,
+      "one_turn_segments": 21,
+      "words_total": 8448,
+      "mean_words": 80.45714285714286
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 0,
+      "segments": 202,
+      "one_turn_segments": 37,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 1,
+      "segments": 202,
+      "one_turn_segments": 42,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 2,
+      "segments": 202,
+      "one_turn_segments": 38,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 3,
+      "segments": 202,
+      "one_turn_segments": 41,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 4,
+      "segments": 202,
+      "one_turn_segments": 34,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 5,
+      "segments": 202,
+      "one_turn_segments": 30,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 6,
+      "segments": 202,
+      "one_turn_segments": 35,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 7,
+      "segments": 202,
+      "one_turn_segments": 42,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 8,
+      "segments": 202,
+      "one_turn_segments": 36,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 9,
+      "segments": 202,
+      "one_turn_segments": 31,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 10,
+      "segments": 202,
+      "one_turn_segments": 35,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 11,
+      "segments": 202,
+      "one_turn_segments": 43,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 12,
+      "segments": 202,
+      "one_turn_segments": 35,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 13,
+      "segments": 202,
+      "one_turn_segments": 34,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 14,
+      "segments": 202,
+      "one_turn_segments": 33,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 15,
+      "segments": 202,
+      "one_turn_segments": 30,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 16,
+      "segments": 202,
+      "one_turn_segments": 44,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 17,
+      "segments": 202,
+      "one_turn_segments": 40,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 18,
+      "segments": 202,
+      "one_turn_segments": 39,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "seed": 19,
+      "segments": 202,
+      "one_turn_segments": 42,
+      "words_total": 16878,
+      "mean_words": 83.55445544554455
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 0,
+      "segments": 183,
+      "one_turn_segments": 34,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 1,
+      "segments": 183,
+      "one_turn_segments": 34,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 2,
+      "segments": 183,
+      "one_turn_segments": 44,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 3,
+      "segments": 183,
+      "one_turn_segments": 40,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 4,
+      "segments": 183,
+      "one_turn_segments": 36,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 5,
+      "segments": 183,
+      "one_turn_segments": 41,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 6,
+      "segments": 183,
+      "one_turn_segments": 34,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 7,
+      "segments": 183,
+      "one_turn_segments": 26,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 8,
+      "segments": 183,
+      "one_turn_segments": 37,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 9,
+      "segments": 183,
+      "one_turn_segments": 33,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 10,
+      "segments": 183,
+      "one_turn_segments": 34,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 11,
+      "segments": 183,
+      "one_turn_segments": 37,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 12,
+      "segments": 183,
+      "one_turn_segments": 31,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 13,
+      "segments": 183,
+      "one_turn_segments": 28,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 14,
+      "segments": 183,
+      "one_turn_segments": 33,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 15,
+      "segments": 183,
+      "one_turn_segments": 33,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 16,
+      "segments": 183,
+      "one_turn_segments": 44,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 17,
+      "segments": 183,
+      "one_turn_segments": 37,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 18,
+      "segments": 183,
+      "one_turn_segments": 40,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "seed": 19,
+      "segments": 183,
+      "one_turn_segments": 36,
+      "words_total": 13879,
+      "mean_words": 75.8415300546448
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 0,
+      "segments": 189,
+      "one_turn_segments": 28,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 1,
+      "segments": 189,
+      "one_turn_segments": 37,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 2,
+      "segments": 189,
+      "one_turn_segments": 26,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 3,
+      "segments": 189,
+      "one_turn_segments": 35,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 4,
+      "segments": 189,
+      "one_turn_segments": 38,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 5,
+      "segments": 189,
+      "one_turn_segments": 33,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 6,
+      "segments": 189,
+      "one_turn_segments": 34,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 7,
+      "segments": 189,
+      "one_turn_segments": 33,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 8,
+      "segments": 189,
+      "one_turn_segments": 32,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 9,
+      "segments": 189,
+      "one_turn_segments": 38,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 10,
+      "segments": 189,
+      "one_turn_segments": 31,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 11,
+      "segments": 189,
+      "one_turn_segments": 34,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 12,
+      "segments": 189,
+      "one_turn_segments": 29,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 13,
+      "segments": 189,
+      "one_turn_segments": 29,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 14,
+      "segments": 189,
+      "one_turn_segments": 32,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 15,
+      "segments": 189,
+      "one_turn_segments": 32,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 16,
+      "segments": 189,
+      "one_turn_segments": 37,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 17,
+      "segments": 189,
+      "one_turn_segments": 33,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 18,
+      "segments": 189,
+      "one_turn_segments": 30,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "seed": 19,
+      "segments": 189,
+      "one_turn_segments": 24,
+      "words_total": 15950,
+      "mean_words": 84.39153439153439
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 0,
+      "segments": 197,
+      "one_turn_segments": 34,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 1,
+      "segments": 197,
+      "one_turn_segments": 33,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 2,
+      "segments": 197,
+      "one_turn_segments": 36,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 3,
+      "segments": 197,
+      "one_turn_segments": 32,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 4,
+      "segments": 197,
+      "one_turn_segments": 31,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 5,
+      "segments": 197,
+      "one_turn_segments": 37,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 6,
+      "segments": 197,
+      "one_turn_segments": 32,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 7,
+      "segments": 197,
+      "one_turn_segments": 37,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 8,
+      "segments": 197,
+      "one_turn_segments": 36,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 9,
+      "segments": 197,
+      "one_turn_segments": 38,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 10,
+      "segments": 197,
+      "one_turn_segments": 33,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 11,
+      "segments": 197,
+      "one_turn_segments": 36,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 12,
+      "segments": 197,
+      "one_turn_segments": 34,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 13,
+      "segments": 197,
+      "one_turn_segments": 37,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 14,
+      "segments": 197,
+      "one_turn_segments": 40,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 15,
+      "segments": 197,
+      "one_turn_segments": 37,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 16,
+      "segments": 197,
+      "one_turn_segments": 30,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 17,
+      "segments": 197,
+      "one_turn_segments": 27,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 18,
+      "segments": 197,
+      "one_turn_segments": 35,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "seed": 19,
+      "segments": 197,
+      "one_turn_segments": 34,
+      "words_total": 15509,
+      "mean_words": 78.7258883248731
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 0,
+      "segments": 184,
+      "one_turn_segments": 32,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 1,
+      "segments": 184,
+      "one_turn_segments": 31,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 2,
+      "segments": 184,
+      "one_turn_segments": 31,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 3,
+      "segments": 184,
+      "one_turn_segments": 34,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 4,
+      "segments": 184,
+      "one_turn_segments": 32,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 5,
+      "segments": 184,
+      "one_turn_segments": 30,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 6,
+      "segments": 184,
+      "one_turn_segments": 33,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 7,
+      "segments": 184,
+      "one_turn_segments": 28,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 8,
+      "segments": 184,
+      "one_turn_segments": 21,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 9,
+      "segments": 184,
+      "one_turn_segments": 33,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 10,
+      "segments": 184,
+      "one_turn_segments": 38,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 11,
+      "segments": 184,
+      "one_turn_segments": 37,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 12,
+      "segments": 184,
+      "one_turn_segments": 28,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 13,
+      "segments": 184,
+      "one_turn_segments": 32,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 14,
+      "segments": 184,
+      "one_turn_segments": 35,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 15,
+      "segments": 184,
+      "one_turn_segments": 34,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 16,
+      "segments": 184,
+      "one_turn_segments": 27,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 17,
+      "segments": 184,
+      "one_turn_segments": 34,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 18,
+      "segments": 184,
+      "one_turn_segments": 33,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "seed": 19,
+      "segments": 184,
+      "one_turn_segments": 30,
+      "words_total": 14101,
+      "mean_words": 76.63586956521739
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 0,
+      "segments": 149,
+      "one_turn_segments": 25,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 1,
+      "segments": 149,
+      "one_turn_segments": 25,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 2,
+      "segments": 149,
+      "one_turn_segments": 27,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 3,
+      "segments": 149,
+      "one_turn_segments": 27,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 4,
+      "segments": 149,
+      "one_turn_segments": 27,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 5,
+      "segments": 149,
+      "one_turn_segments": 24,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 6,
+      "segments": 149,
+      "one_turn_segments": 21,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 7,
+      "segments": 149,
+      "one_turn_segments": 31,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 8,
+      "segments": 149,
+      "one_turn_segments": 23,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 9,
+      "segments": 149,
+      "one_turn_segments": 29,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 10,
+      "segments": 149,
+      "one_turn_segments": 28,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 11,
+      "segments": 149,
+      "one_turn_segments": 24,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 12,
+      "segments": 149,
+      "one_turn_segments": 30,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 13,
+      "segments": 149,
+      "one_turn_segments": 36,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 14,
+      "segments": 149,
+      "one_turn_segments": 25,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 15,
+      "segments": 149,
+      "one_turn_segments": 31,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 16,
+      "segments": 149,
+      "one_turn_segments": 25,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 17,
+      "segments": 149,
+      "one_turn_segments": 27,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 18,
+      "segments": 149,
+      "one_turn_segments": 28,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "seed": 19,
+      "segments": 149,
+      "one_turn_segments": 26,
+      "words_total": 12041,
+      "mean_words": 80.81208053691275
+    }
+  ],
+  "full_result_sha256": "90a93bfb9f4e6f3a60717478e9bc7f77a984f04177f7cc946a75d75b10e1771e",
+  "compressed_result_sha256": "72cdb5edc1c990eed60fa5357e0149c94f1c04fab00a9e4672b9b553259ff355",
+  "question_seed_budget_rows": 52380
+}
