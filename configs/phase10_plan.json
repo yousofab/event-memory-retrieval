@@ -1,0 +1,26 @@
+{
+  "plan_version": "phase10-independent-topic-onsets-2026-10-13",
+  "status": "prospective computation plan on the pinned QMSum test split; no Phase 10 boundary-alignment or query-retrieval outcomes inspected before commit",
+  "source_manifest": "configs/phase10_source_manifest.json",
+  "source_revision": "83d7768c1f2b4dfeb091385d3dc7e239b8e5bb7e",
+  "source_split": "data/ALL/test",
+  "meetings": 35,
+  "source_audit_before_scoring": {
+    "turns": 20718,
+    "topic_spans": 179,
+    "unique_nonzero_topic_span_starts": 161,
+    "specific_queries": 244,
+    "specific_query_spans": 286,
+    "out_of_range_spans": 0
+  },
+  "primary_question": "Does the unchanged Phase 8 causal writer place boundaries near independently human-annotated QMSum topic-span onsets more often than uniform valid count-matched random partitions?",
+  "writer": "reuse Phase 8 OnlineWriter unchanged: Unicode word tokenizer, 3-turn Jaccard novelty, minimum 64, threshold 0.85, maximum 160, immutable closures; each meeting is one session; transcript content only, no speaker or annotation features",
+  "gold_onsets": "For each topic_list relevant_text_span [start,end] (inclusive integer turn indices), take start > 0; deduplicate within meeting. Each start represents a human-annotated topic-span onset, including a resumed topic; it is not a human event-perception judgment.",
+  "predicted_boundaries": "first turn index of every segment except the first, in original meeting order",
+  "primary_metric": "For each meeting, fraction of unique gold onsets with at least one predicted boundary at absolute turn-index distance <=2; macro-average the 35 meeting fractions. Descriptive effect is online macro minus median of 20 count-matched random macro scores computed with shared seed IDs across meetings.",
+  "random_control": "For each meeting, exactly the online writer segment count, contiguous full turns, multi-turn segment <=160 words, overlong single turn whole; uniformly sample all valid partitions using exact integer DP completion counts; seeds 0..19; use only turn word lengths, meeting ID and online count for boundary placement; retrospective by design",
+  "secondary_boundary_metrics": ["exact and +/-1 and +/-5 turn tolerance, each macro by meeting", "domain-wise macro for academic/product/committee", "online closure reason (size versus novelty) as descriptive diagnostics"],
+  "secondary_query_metric": "For each of 244 specific queries, expand inclusive relevant_text_span to union of annotated turn indices; under unchanged Phase 2 BM25 and whole-segment greedy retrieval at 512/1024/2048 words, compute retrieved relevant-turn fraction, then macro-average queries within each meeting and meetings equally; online versus 20 controls and fixed 128-word turn-aligned chunks. No general queries or generated-answer scoring.",
+  "error_audit": "report per-meeting and per-domain differences, boundary density and size-forced versus novelty cuts; structurally oversized query evidence and source-span anomalies separately",
+  "interpretation": "This is a first external topic-annotation diagnostic, not a neural event-boundary experiment, philosophical semantics assay, or official QMSum summarization score. Topic annotations can be discontinuous or incomplete; these are onsets of annotated spans, not exhaustive negative labels. The 20 seeds are descriptive, not independent meetings or a p-value. Phase 8 settings were influenced by earlier LoCoMo work; no QMSum outcome-based tuning is permitted in this stage."
+}
