@@ -1,0 +1,842 @@
+{
+  "phase": 8,
+  "status": "exploratory; previously examined datasets",
+  "phase8_plan_sha256": "c2c3de66a4bcfca10cc23e19d1de3cb0fff7c55fdeb5471318cc9251e5f9af66",
+  "locomo_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "external_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "phase7_comparator_sha256": "de4af7a2c8fe924fb6e6f608f17125214cf851902e53a377358fd85900ec44e4",
+  "timing_seconds_observed_machine": {
+    "locomo": 15.029393605999985,
+    "external": 23.107718352000006
+  },
+  "locomo_summary": [
+    {
+      "split": "development",
+      "budget_words": 512,
+      "method": "event",
+      "questions": 274,
+      "successes": 197,
+      "rate": 0.718978102189781,
+      "structural_budget": 1
+    },
+    {
+      "split": "development",
+      "budget_words": 512,
+      "method": "fixed",
+      "questions": 274,
+      "successes": 201,
+      "rate": 0.7335766423357665,
+      "structural_budget": 1
+    },
+    {
+      "split": "development",
+      "budget_words": 512,
+      "method": "online",
+      "questions": 274,
+      "successes": 201,
+      "rate": 0.7335766423357665,
+      "structural_budget": 1
+    },
+    {
+      "split": "development",
+      "budget_words": 512,
+      "method": "session",
+      "questions": 274,
+      "successes": 77,
+      "rate": 0.28102189781021897,
+      "structural_budget": 172
+    },
+    {
+      "split": "development",
+      "budget_words": 1024,
+      "method": "event",
+      "questions": 274,
+      "successes": 218,
+      "rate": 0.7956204379562044,
+      "structural_budget": 0
+    },
+    {
+      "split": "development",
+      "budget_words": 1024,
+      "method": "fixed",
+      "questions": 274,
+      "successes": 220,
+      "rate": 0.8029197080291971,
+      "structural_budget": 0
+    },
+    {
+      "split": "development",
+      "budget_words": 1024,
+      "method": "online",
+      "questions": 274,
+      "successes": 219,
+      "rate": 0.7992700729927007,
+      "structural_budget": 0
+    },
+    {
+      "split": "development",
+      "budget_words": 1024,
+      "method": "session",
+      "questions": 274,
+      "successes": 183,
+      "rate": 0.6678832116788321,
+      "structural_budget": 21
+    },
+    {
+      "split": "development",
+      "budget_words": 2048,
+      "method": "event",
+      "questions": 274,
+      "successes": 227,
+      "rate": 0.8284671532846716,
+      "structural_budget": 0
+    },
+    {
+      "split": "development",
+      "budget_words": 2048,
+      "method": "fixed",
+      "questions": 274,
+      "successes": 231,
+      "rate": 0.843065693430657,
+      "structural_budget": 0
+    },
+    {
+      "split": "development",
+      "budget_words": 2048,
+      "method": "online",
+      "questions": 274,
+      "successes": 235,
+      "rate": 0.8576642335766423,
+      "structural_budget": 0
+    },
+    {
+      "split": "development",
+      "budget_words": 2048,
+      "method": "session",
+      "questions": 274,
+      "successes": 215,
+      "rate": 0.7846715328467153,
+      "structural_budget": 1
+    },
+    {
+      "split": "held_out",
+      "budget_words": 512,
+      "method": "event",
+      "questions": 599,
+      "successes": 421,
+      "rate": 0.7028380634390651,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 512,
+      "method": "fixed",
+      "questions": 599,
+      "successes": 427,
+      "rate": 0.7128547579298832,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 512,
+      "method": "online",
+      "questions": 599,
+      "successes": 420,
+      "rate": 0.7011686143572621,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 512,
+      "method": "session",
+      "questions": 599,
+      "successes": 259,
+      "rate": 0.4323873121869783,
+      "structural_budget": 264
+    },
+    {
+      "split": "held_out",
+      "budget_words": 1024,
+      "method": "event",
+      "questions": 599,
+      "successes": 467,
+      "rate": 0.7796327212020033,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 1024,
+      "method": "fixed",
+      "questions": 599,
+      "successes": 460,
+      "rate": 0.7679465776293823,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 1024,
+      "method": "online",
+      "questions": 599,
+      "successes": 463,
+      "rate": 0.7729549248747913,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 1024,
+      "method": "session",
+      "questions": 599,
+      "successes": 399,
+      "rate": 0.666110183639399,
+      "structural_budget": 40
+    },
+    {
+      "split": "held_out",
+      "budget_words": 2048,
+      "method": "event",
+      "questions": 599,
+      "successes": 501,
+      "rate": 0.8363939899833055,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 2048,
+      "method": "fixed",
+      "questions": 599,
+      "successes": 498,
+      "rate": 0.8313856427378965,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 2048,
+      "method": "online",
+      "questions": 599,
+      "successes": 491,
+      "rate": 0.8196994991652755,
+      "structural_budget": 0
+    },
+    {
+      "split": "held_out",
+      "budget_words": 2048,
+      "method": "session",
+      "questions": 599,
+      "successes": 483,
+      "rate": 0.8063439065108514,
+      "structural_budget": 1
+    }
+  ],
+  "locomo_segment_stats": [
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "method": "online",
+      "segments": 130,
+      "turns": 419,
+      "one_turn_segments": 4,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 10875,
+      "close_reasons": {
+        "maximum": 11,
+        "novelty": 100,
+        "session_end": 19
+      }
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "method": "event",
+      "segments": 97,
+      "turns": 419,
+      "one_turn_segments": 3,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 10875,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "method": "fixed",
+      "segments": 106,
+      "turns": 419,
+      "one_turn_segments": 4,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 10875,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-26",
+      "method": "session",
+      "segments": 19,
+      "turns": 419,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 10875,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "method": "online",
+      "segments": 204,
+      "turns": 680,
+      "one_turn_segments": 9,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16449,
+      "close_reasons": {
+        "maximum": 15,
+        "novelty": 160,
+        "session_end": 29
+      }
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "method": "event",
+      "segments": 150,
+      "turns": 680,
+      "one_turn_segments": 3,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16449,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "method": "fixed",
+      "segments": 156,
+      "turns": 680,
+      "one_turn_segments": 2,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16449,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-43",
+      "method": "session",
+      "segments": 29,
+      "turns": 680,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16449,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "method": "online",
+      "segments": 176,
+      "turns": 568,
+      "one_turn_segments": 6,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15464,
+      "close_reasons": {
+        "maximum": 21,
+        "novelty": 125,
+        "session_end": 30
+      }
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "method": "event",
+      "segments": 143,
+      "turns": 568,
+      "one_turn_segments": 1,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15464,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "method": "fixed",
+      "segments": 150,
+      "turns": 568,
+      "one_turn_segments": 5,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15464,
+      "close_reasons": null
+    },
+    {
+      "split": "development",
+      "sample_id": "conv-50",
+      "method": "session",
+      "segments": 30,
+      "turns": 568,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15464,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "method": "online",
+      "segments": 105,
+      "turns": 369,
+      "one_turn_segments": 6,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 8448,
+      "close_reasons": {
+        "maximum": 9,
+        "novelty": 77,
+        "session_end": 19
+      }
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "method": "event",
+      "segments": 78,
+      "turns": 369,
+      "one_turn_segments": 2,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 8448,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "method": "fixed",
+      "segments": 83,
+      "turns": 369,
+      "one_turn_segments": 2,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 8448,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-30",
+      "method": "session",
+      "segments": 19,
+      "turns": 369,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 8448,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "method": "online",
+      "segments": 202,
+      "turns": 663,
+      "one_turn_segments": 6,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16878,
+      "close_reasons": {
+        "maximum": 13,
+        "novelty": 157,
+        "session_end": 32
+      }
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "method": "event",
+      "segments": 148,
+      "turns": 663,
+      "one_turn_segments": 2,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16878,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "method": "fixed",
+      "segments": 161,
+      "turns": 663,
+      "one_turn_segments": 5,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16878,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-41",
+      "method": "session",
+      "segments": 32,
+      "turns": 663,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 16878,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "method": "online",
+      "segments": 183,
+      "turns": 629,
+      "one_turn_segments": 5,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 13879,
+      "close_reasons": {
+        "maximum": 8,
+        "novelty": 146,
+        "session_end": 29
+      }
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "method": "event",
+      "segments": 125,
+      "turns": 629,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 13879,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "method": "fixed",
+      "segments": 134,
+      "turns": 629,
+      "one_turn_segments": 2,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 13879,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-42",
+      "method": "session",
+      "segments": 29,
+      "turns": 629,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 13879,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "method": "online",
+      "segments": 189,
+      "turns": 675,
+      "one_turn_segments": 4,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15950,
+      "close_reasons": {
+        "maximum": 17,
+        "novelty": 144,
+        "session_end": 28
+      }
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "method": "event",
+      "segments": 144,
+      "turns": 675,
+      "one_turn_segments": 2,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15950,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "method": "fixed",
+      "segments": 150,
+      "turns": 675,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15950,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-44",
+      "method": "session",
+      "segments": 28,
+      "turns": 675,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15950,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "method": "online",
+      "segments": 197,
+      "turns": 689,
+      "one_turn_segments": 6,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15509,
+      "close_reasons": {
+        "maximum": 9,
+        "novelty": 157,
+        "session_end": 31
+      }
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "method": "event",
+      "segments": 141,
+      "turns": 689,
+      "one_turn_segments": 2,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15509,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "method": "fixed",
+      "segments": 150,
+      "turns": 689,
+      "one_turn_segments": 5,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15509,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-47",
+      "method": "session",
+      "segments": 31,
+      "turns": 689,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 15509,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "method": "online",
+      "segments": 184,
+      "turns": 681,
+      "one_turn_segments": 5,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 14101,
+      "close_reasons": {
+        "maximum": 5,
+        "novelty": 149,
+        "session_end": 30
+      }
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "method": "event",
+      "segments": 120,
+      "turns": 681,
+      "one_turn_segments": 1,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 14101,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "method": "fixed",
+      "segments": 131,
+      "turns": 681,
+      "one_turn_segments": 1,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 14101,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-48",
+      "method": "session",
+      "segments": 30,
+      "turns": 681,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 14101,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "method": "online",
+      "segments": 149,
+      "turns": 509,
+      "one_turn_segments": 5,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 12041,
+      "close_reasons": {
+        "maximum": 10,
+        "novelty": 114,
+        "session_end": 25
+      }
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "method": "event",
+      "segments": 111,
+      "turns": 509,
+      "one_turn_segments": 3,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 12041,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "method": "fixed",
+      "segments": 118,
+      "turns": 509,
+      "one_turn_segments": 5,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 12041,
+      "close_reasons": null
+    },
+    {
+      "split": "held_out",
+      "sample_id": "conv-49",
+      "method": "session",
+      "segments": 25,
+      "turns": 509,
+      "one_turn_segments": 0,
+      "over_160_single_turn_segments": 0,
+      "total_segment_words": 12041,
+      "close_reasons": null
+    }
+  ],
+  "locomo_discordance_held_event": {
+    "both": 436,
+    "comparator_only": 31,
+    "neither": 105,
+    "online_only": 27
+  },
+  "locomo_discordance_held_fixed": {
+    "both": 430,
+    "comparator_only": 30,
+    "neither": 106,
+    "online_only": 33
+  },
+  "external_summary": [
+    {
+      "budget_words": 512,
+      "method": "event",
+      "questions": 470,
+      "successes": 284,
+      "rate": 0.6042553191489362,
+      "structural_budget": 4
+    },
+    {
+      "budget_words": 512,
+      "method": "fixed",
+      "questions": 470,
+      "successes": 284,
+      "rate": 0.6042553191489362,
+      "structural_budget": 4
+    },
+    {
+      "budget_words": 512,
+      "method": "online",
+      "questions": 470,
+      "successes": 285,
+      "rate": 0.6063829787234043,
+      "structural_budget": 4
+    },
+    {
+      "budget_words": 512,
+      "method": "session",
+      "questions": 470,
+      "successes": 13,
+      "rate": 0.027659574468085105,
+      "structural_budget": 457
+    },
+    {
+      "budget_words": 1024,
+      "method": "event",
+      "questions": 470,
+      "successes": 320,
+      "rate": 0.6808510638297872,
+      "structural_budget": 0
+    },
+    {
+      "budget_words": 1024,
+      "method": "fixed",
+      "questions": 470,
+      "successes": 323,
+      "rate": 0.6872340425531915,
+      "structural_budget": 0
+    },
+    {
+      "budget_words": 1024,
+      "method": "online",
+      "questions": 470,
+      "successes": 320,
+      "rate": 0.6808510638297872,
+      "structural_budget": 0
+    },
+    {
+      "budget_words": 1024,
+      "method": "session",
+      "questions": 470,
+      "successes": 39,
+      "rate": 0.08297872340425531,
+      "structural_budget": 431
+    },
+    {
+      "budget_words": 2048,
+      "method": "event",
+      "questions": 470,
+      "successes": 353,
+      "rate": 0.7510638297872341,
+      "structural_budget": 0
+    },
+    {
+      "budget_words": 2048,
+      "method": "fixed",
+      "questions": 470,
+      "successes": 354,
+      "rate": 0.7531914893617021,
+      "structural_budget": 0
+    },
+    {
+      "budget_words": 2048,
+      "method": "online",
+      "questions": 470,
+      "successes": 353,
+      "rate": 0.7510638297872341,
+      "structural_budget": 0
+    },
+    {
+      "budget_words": 2048,
+      "method": "session",
+      "questions": 470,
+      "successes": 79,
+      "rate": 0.16808510638297872,
+      "structural_budget": 389
+    }
+  ],
+  "external_stats": {
+    "abstention_excluded": 30,
+    "answerable": 470,
+    "close_maximum": 179908,
+    "close_novelty": 8379,
+    "close_session_end": 22419,
+    "one_turn_segments": 194539,
+    "oversized_single_turn_segments": 92595,
+    "segments": 210706
+  },
+  "external_discordance_event": {
+    "both": 318,
+    "comparator_only": 2,
+    "neither": 148,
+    "online_only": 2
+  },
+  "full_result_sha256": "fefbf4c32f99ab8eacff0eb49865f956784d1d1eaa9a65cfcaa278394100dc77",
+  "compressed_result_sha256": "9e937217d5f9c07399c9218324ec563bf403553614f0fcef646bc647c1a85f9e",
+  "locomo_result_rows": 10476,
+  "external_result_rows": 5640
+}
