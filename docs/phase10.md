@@ -81,6 +81,6 @@ QMSum موضوع‌ها را با بازه‌هایی ثبت می‌کند که 
 
 [۲] Zou et al. (2026), ES-Mem: Event Segmentation-Based Memory for Long-Term Dialogue Agents, preprint arXiv:2601.07582v2. https://arxiv.org/abs/2601.07582
 
-[۳] Nguyen et al. (2026), Multiple event segmentation mechanisms in the human brain, eLife 15:RP107955. https://elifesciences.org/articles/107955
+[۳] Nguyen et al. (2026), Multiple event segmentation mechanisms in the human brain, eLife 14:RP107955. https://elifesciences.org/articles/107955
 
 [۴] Yale-LILY, QMSum official repository, pinned revision and source license. https://github.com/Yale-LILY/QMSum
