@@ -1,6 +1,6 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 10 independent topic-onset transfer complete. On 35 QMSum test meetings, the frozen causal writer covered 84.37% of human-labeled topic-span starts within two turns, compared with a 65.91% median across 20 matched-count random controls. At the exact start, the writer covered 22.92% versus 23.80% for the control median. At a 1,024-word budget, relevant-turn retrieval was 34.69% for the writer versus 36.77% for the random-control median and 38.59% for fixed chunks. These descriptive measures do not establish human event perception or better downstream retrieval. The final thesis remains a later deliverable.**
+**Status: Phase 11 controlled segment-to-turn retrieval audit complete. On the previously inspected 35 QMSum test meetings, two-stage retrieval at 1,024 output words covered 16.78% of annotated relevant turns with frozen online boundaries versus 16.91% for the median of 20 exact-count random partitions. The earlier whole-segment path covered 34.69% for the online writer. A post-result any-evidence diagnostic improved from 87.81% to 92.14% for that writer. These answer different questions, and neither establishes generated-answer quality or human event perception. The final thesis remains a later deliverable.**
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
@@ -31,6 +31,7 @@ The small 12-question locally authored T4 demonstration is **not** a result for 
 8. Causal turn-arrival memory writer with immutable segments and exploratory transfer (complete).
 9. Random valid boundaries with exactly matched per-session segment counts, 20 seeds and fixed retrieval budgets (complete; exploratory).
 10. Frozen causal writer transferred to human-labeled QMSum meeting topic spans, with 20 matched-count controls and specific-query evidence retrieval (complete; independent topic labels, not perceptual event boundaries).
+11. Controlled segment-to-turn routing and evaluation-granularity audit on the previously inspected QMSum meetings (complete; exploratory reuse of data).
 
 ## Repository map
 
@@ -161,6 +162,30 @@ python scripts/run_phase10_topic_transfer.py --output /tmp/phase10-recheck.json
 
 At a two-turn tolerance, the writer covers 84.37% of topic starts versus the 65.91% random median, and zero of 20 controls match or exceed the writer. Exact-start coverage and relevant-turn retrieval give different results (see above); these must not be merged into an overall claim of semantic or cognitive superiority. The committee subset is saturated at 100% for both methods. These labels describe meeting topics, not human perceptual event boundaries; the result is descriptive and the 20 seeds do not supply an inferential p-value.
 
+## Phase 11 controlled retrieval routing
+
+The Phase 11 contract was [committed before Phase 11 scoring](docs/phase11_plan.md), but Phase 10 results on the same QMSum test meetings had already been inspected. This is an exploratory, not independent confirmatory, audit. The frozen online writer, 20 exact-count random controls and fixed chunks feed the same BM25 and budgets. The new two-stage path ranks segments, collects complete candidate segments under a 4× processing-scope cap, then ranks full turns inside those candidates under the original 512/1024/2048-word **output** cap. Direct ranking of all turns is a diagnostic with a larger search scope.
+
+- [`docs/phase11.md`](docs/phase11.md): full Persian RTL report, frontier literature map, preregistered outcomes, post-result diagnostic, limitations and mentor acknowledgement.
+- [`docs/phase11_plan.md`](docs/phase11_plan.md), `configs/phase11_plan.json`: the registered contract; its Git history predates scoring.
+- `scripts/run_phase11_hierarchical.py`, `scripts/package_phase11.py`, `scripts/validate_phase11.py`, `tests/test_phase11_hierarchical.py`: reproducible CPU implementation, packaging, exact Phase 10 baseline parity and controls.
+- `scripts/phase11_diagnostics.py`, `results/phase11_posthoc_diagnostics.json`: explicitly **post-result** any-evidence and annotated-density diagnostics.
+- `results/phase11_summary.json`, `results/phase11_retrieval.json.gz`: 16,836 numeric rows without transcript or answer text.
+- `deliverables/گزارش-پژوهشی-مرحله-۱۱-مسیر-حافظه-تا-شاهد.docx` and `.pdf`: Persian RTL reports, with user-provided B Nazanin embedded in the PDF and the supplied FARDIAT mark. The font binaries are not redistributed.
+
+Reproduce after fetching the pinned QMSum test data:
+
+```bash
+python scripts/fetch_phase10_data.py --download
+python -m unittest discover -s tests -v
+python scripts/run_phase11_hierarchical.py --output results/phase11_retrieval.json
+python scripts/package_phase11.py
+python scripts/validate_phase11.py
+python scripts/phase11_diagnostics.py
+```
+
+At 1,024 words, mean relevant-turn coverage across meetings was 16.78% for the online two-stage path, 16.91% for the random median, 17.06% for fixed chunks with the same path, and 16.96% for global-turn BM25. The candidate stage exposed 68.94% of relevant turns for the online writer before the final output cap. The registered primary result is negative. The later any-evidence diagnostic increases under two-stage routing, but it does not replace the primary metric. All 16,104 original flat rows were matched exactly to Phase 10.
+
 ## Educational acknowledgement
 
-The researcher thanks **FARDIAT**, a specialized brain and cognition institute, and **Dr Arash Fekri**, its founder and their teacher, for the Cognitive Neuroscience education that inspired the event-segmentation question. Dr Fekri reviewed and approved the project's proposal. The researcher also thanks **Professor Noori Volandeh**, their university instructor for this project, for supporting new ideas and the research process. The supplied FARDIAT mark appears in the printable Phase 9 and 10 reports. Each future phase report includes this acknowledgement.
+The researcher thanks **FARDIAT**, a specialized brain and cognition institute, and **Dr Arash Fekri**, its founder and their teacher, for the Cognitive Neuroscience education that inspired the event-segmentation question. Dr Fekri reviewed and approved the project's proposal. The researcher also thanks **Professor Noori Volandeh**, their university instructor for this project, for supporting new ideas and the research process. The supplied FARDIAT mark appears in the printable Phase 9, 10 and 11 reports. Each future phase report includes this acknowledgement.
