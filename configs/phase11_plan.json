@@ -1,0 +1,28 @@
+{
+  "version": "phase11-controlled-hierarchical-retrieval-2026-10-14",
+  "status": "prospective Phase 11 computation plan; Phase 10 QMSum labels and aggregate outcomes have already been seen; exploratory reuse of the same 35 meetings, no independent held-out inference",
+  "source_manifest": "configs/phase10_source_manifest.json",
+  "source_revision": "83d7768c1f2b4dfeb091385d3dc7e239b8e5bb7e",
+  "phase10_result": "results/phase10_transfer.json.gz",
+  "research_question": "Does two-stage segment-to-turn retrieval recover relevant QMSum evidence under an unchanged output-word budget, and does the frozen online writer's boundary placement help after the retrieval granularity is controlled?",
+  "prior_art_boundary": "ES-Mem, SeCom, TiMem, HiGMem, HingeMem, and CompassMem already study segmented or hierarchical agent memory; this phase contributes a narrow, controlled, label-isolated attribution audit, not a novel general memory architecture.",
+  "corpus": "All 35 official QMSum test meetings and 244 specific queries with inclusive relevant_text_span; preserve Phase 10 meeting-as-cluster and gold-turn union; topic_list is never an input to retrieval.",
+  "partitions": "Frozen Phase 8 OnlineWriter, Phase 10 exact-uniform count-matched partitions with seeds 0..19, and fixed 128-word turn-aligned chunks. Reproduce Phase 10 per-meeting segment count and baseline flat recall exactly. No retuning.",
+  "ranker": "Identical existing Unicode word tokenizer and BM25 k1=1.2 b=0.75, deduplicated query terms, score descending with chronological tie break; whole units selected greedily with skip-if-over-budget.",
+  "routing": {
+    "flat": "Phase 10 segment BM25 ranking and whole-segment greedy output selection at budget B.",
+    "hierarchical_4x": "Rank segments by BM25, greedily choose whole candidate segments within a fixed 4B candidate-word cap using skip-if-over-budget, then rank their individual full turns by the same BM25 on the candidate-turn corpus, and greedily choose full turns within final output budget B. Chronological order defines turn-level ties. Candidate cap is processing scope, not returned text; no query or gold information is used to set it.",
+    "global_turn": "Rank all individual turns directly with the same BM25 and output full turns within B, independent of any segmentation; diagnostic flat-granularity control rather than a deployable cost-matched competitor."
+  },
+  "budgets_words": [512, 1024, 2048],
+  "primary_budget_words": 1024,
+  "primary_metric": "At B=1024, relevant-turn recall is averaged over specific queries within each meeting and then over 35 meetings; primary descriptive contrast is hierarchical_4x online minus the median across 20 shared-seed count-matched random hierarchical_4x macro scores. Report all seed values and number at least online. Both positive and negative differences will be reported.",
+  "secondary_metrics": [
+    "Difference in improvements: (hierarchical_4x minus flat) online minus median across 20 seed-wise (hierarchical_4x minus flat) random improvements at B=1024, as a descriptive interaction, not a causal estimate.",
+    "Hierarchical_4x versus flat within each partition, and versus fixed_128 and global_turn, at 512/1024/2048 words.",
+    "Candidate-pool relevant-turn coverage, candidate words, final retrieved words, per-meeting/domain heterogeneity, share of queries with no relevant turn in candidate pool, overlong-turn exclusion, and split by whether the Phase 10 ±2 topic-onset coverage for the writer exceeded the meeting's random-control median. The split is post-Phase-10 exploratory.",
+    "Unweighted meeting-level paired percentile bootstrap interval (2000 draws with replacement, deterministic seed 11) on online-minus-median-random per-meeting contrast, with 20 seed labels preserved across sampled meetings; descriptive uncertainty only because the dataset has been inspected."
+  ],
+  "integrity": "Every output record includes IDs/counts/recall without raw transcript, label, or answer text. Recompute Phase 10 flat baseline exactly from the pinned source and compare all per-query outcome rows; ensure no missing or repeated turns, candidate word cap, output word cap, exact per-meeting random segment counts, deterministic seeds, hash of plan and source manifest.",
+  "interpretation_limits": "Evidence-turn recall, not generated answer accuracy, true human episodic perception, philosophical meaning or neural mechanism. The global turn index examines the whole transcript and has higher retrieval computation; candidate cap is not total computational cost. QMSum human topic labels are not exhaustive event boundaries. This study is exploratory because QMSum and its prior results were inspected. No p-value or SOTA claim from 20 random seeds."
+}
