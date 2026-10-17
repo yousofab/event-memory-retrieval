@@ -1,6 +1,24 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 12 temporal evidence audit complete. On 72 answerable LongMemEval-S knowledge-update questions, direct BM25 retrieved marked evidence from the later answer session in 66/72 cases at 1,024 words, while sorting its top 20 candidates newest-first reached 51/72 and the median of 20 shuffled orders reached 35.5/72. The negative comparison with BM25 is published. This measures retrieval, not answer correctness or human event perception. The final thesis remains a later deliverable.**
+**Status: Phase 13 session-diverse evidence audit complete. Among 70 LongMemEval-S knowledge-update questions with marked evidence in both answer sessions, direct BM25 retrieved both at 512 words in 54/70 cases; promoting the best candidate from another session to second place reached 55/70, while promoting the newest other-session candidate reached 48/70. The one-question primary gain and a one-question loss in later-evidence retrieval are reported together. This measures retrieval, not contradiction resolution, answer correctness or human event perception. The final thesis remains a later deliverable.**
+
+## Phase 13: two-session provenance audit
+
+The [Phase 13 protocol](docs/phase13_plan.md) was [committed before scoring](https://github.com/yousofab/event-memory-retrieval/commit/a9796fd4781128c820531243e5b8c32cbbb1acd2). Phases 7 and 12 had already inspected this source; Phase 13 is an exploratory, not independent confirmatory, experiment. A single top-20 BM25 candidate from a different session is promoted to second place; the newest other-session candidate and 20 randomized other-session choices provide controls under the same whole-turn word budget. Answer text and evidence labels do not enter ranking.
+
+- [Persian Phase 13 report](docs/phase13.md) and [machine-readable plan](configs/phase13_plan.json): question, literature, effect size, guardrail and limitations.
+- `scripts/run_phase13_provenance.py`, `scripts/package_phase13.py`, `scripts/validate_phase13.py`, `tests/test_phase13_provenance.py`: CPU-only reproducible experiment and controls.
+- `results/phase13_summary.json`, `results/phase13_provenance.json.gz`: 4,968 numeric rows, exact parity with 144 Phase 12 BM25 question-budget rows, no source transcript.
+- `deliverables/گزارش-پژوهشی-مرحله-۱۳-بازیابی-شاهد-از-دو-جلسه.docx` and `.pdf`: RTL B Nazanin progress report, FARDIAT logo and mentor acknowledgements. Supplied textbooks and the licensed font are not redistributed.
+
+Reproduce after fetching the pinned LongMemEval-S source:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/run_phase13_provenance.py --source data/raw/longmemeval_s_cleaned.json
+python scripts/package_phase13.py
+python scripts/validate_phase13.py
+```
 
 ## Phase 12: evidence after a knowledge update
 

@@ -1,0 +1,20 @@
+{
+  "phase": 13,
+  "registered_utc": "2026-10-17",
+  "source_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "source": "LongMemEval-S cleaned pinned in Phase 7",
+  "subset": "knowledge-update, exclude _abs; paired-evidence endpoint requires markers in both official answer sessions",
+  "expected_answerable": 72,
+  "expected_paired_eligible": 70,
+  "primary_budget_words": 512,
+  "secondary_budgets_words": [256, 1024],
+  "bm25_candidate_turns": 20,
+  "random_other_session_seeds": 20,
+  "methods": ["bm25_turn", "best_other_session_second", "newest_other_session_second", "random_other_session_second"],
+  "primary_endpoint": "both older and later marked evidence turns reached, fraction of 70 paired-eligible questions at 512 words",
+  "primary_contrast": "best_other_session_second minus bm25_turn",
+  "guardrails": ["later marked evidence reached among all 72", "older-only among paired-eligible 70", "retrieved word cost"],
+  "secondary_endpoints": ["same comparisons at 256 and 1024 words", "best versus median of 20 random-other-session controls", "newest-other-session contrast", "number of actually changed ranked lists"],
+  "bootstrap": "paired descriptive percentile interval, 2000 draws, seed 13, eligible question as unit",
+  "status": "pre-score; Phase 12 and Phase 7 outcomes on this same source already inspected"
+}
