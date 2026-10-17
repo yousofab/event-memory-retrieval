@@ -1,0 +1,18 @@
+{
+  "phase": 12,
+  "registered_utc": "2026-10-17",
+  "source": "LongMemEval-S cleaned, official pinned Phase 7 source",
+  "source_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "subset": "knowledge-update, excluding question IDs ending _abs",
+  "expected_questions": 72,
+  "primary_budget_words": 1024,
+  "secondary_budgets_words": [512, 2048],
+  "lexical_candidate_turns": 20,
+  "random_order_seeds": 20,
+  "primary_endpoint": "fraction of questions with at least one marked turn from the later official answer session retrieved",
+  "secondary_endpoints": ["older-only marked turn retrieval", "both older and later marked turns", "all later marked turns", "retrieved word count"],
+  "methods": ["bm25_turn", "recent_within_top20", "shuffled_within_top20"],
+  "order_definition": "Chronological position in provided haystack arrays, not gold answer IDs or answer text",
+  "question_unit": "question; paired descriptive percentile bootstrap 2000 draws seed 12",
+  "status": "pre-score plan; prior phases and dataset schema inspected"
+}

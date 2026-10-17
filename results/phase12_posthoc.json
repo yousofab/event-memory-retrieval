@@ -1,0 +1,9 @@
+{
+  "status": "post-result explanatory audit, not registered endpoint",
+  "questions": 72,
+  "new_evidence_in_top20_count": 69,
+  "new_evidence_top1_count": 25,
+  "median_new_evidence_best_bm25_rank": 2.0,
+  "later_distractor_sessions_count": 65,
+  "median_later_distractor_sessions": 7.0
+}
