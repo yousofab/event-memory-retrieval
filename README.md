@@ -1,6 +1,26 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 11 controlled segment-to-turn retrieval audit complete. On the previously inspected 35 QMSum test meetings, two-stage retrieval at 1,024 output words covered 16.78% of annotated relevant turns with frozen online boundaries versus 16.91% for the median of 20 exact-count random partitions. The earlier whole-segment path covered 34.69% for the online writer. A post-result any-evidence diagnostic improved from 87.81% to 92.14% for that writer. These answer different questions, and neither establishes generated-answer quality or human event perception. The final thesis remains a later deliverable.**
+**Status: Phase 12 temporal evidence audit complete. On 72 answerable LongMemEval-S knowledge-update questions, direct BM25 retrieved marked evidence from the later answer session in 66/72 cases at 1,024 words, while sorting its top 20 candidates newest-first reached 51/72 and the median of 20 shuffled orders reached 35.5/72. The negative comparison with BM25 is published. This measures retrieval, not answer correctness or human event perception. The final thesis remains a later deliverable.**
+
+## Phase 12: evidence after a knowledge update
+
+The [Phase 12 protocol](docs/phase12_plan.md) was [committed before scoring](https://github.com/yousofab/event-memory-retrieval/commit/fe74edcf9beef264bbf5f0186f6290b751e81a58). The source dataset schema and earlier Phase 7 results were already known, so this is an exploratory registered analysis rather than an independent confirmatory test. It compares a shared BM25 turn index with a chronological reorder of its top 20 candidates and 20 randomized reorders under identical word budgets. Gold answers and evidence IDs are excluded from the ranking functions.
+
+- [Persian report](docs/phase12.md) and [frozen protocol](configs/phase12_plan.json); journal literature, current LongMemEval-V2 context, limitations, and acknowledgements.
+- `scripts/run_phase12_temporal.py`, `scripts/package_phase12.py`, `scripts/validate_phase12.py`, `tests/test_phase12_temporal.py`: CPU-only reproducible scoring and validation.
+- `results/phase12_summary.json` and `results/phase12_temporal.json.gz`: summary and 4,752 numeric per-query rows without conversation or answer text.
+- `scripts/phase12_posthoc.py` and `results/phase12_posthoc.json`: explicitly post-result explanatory diagnostics.
+- `deliverables/گزارش-پژوهشی-مرحله-۱۲-حافظه-و-اصلاح-اطلاعات.docx` and `.pdf`: RTL B Nazanin report with FARDIAT acknowledgement and supplied logo; font and upstream corpus are not redistributed.
+
+Reproduce after the pinned Phase 7 dataset is downloaded:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/run_phase12_temporal.py --source data/raw/longmemeval_s_cleaned.json
+python scripts/package_phase12.py
+python scripts/validate_phase12.py
+python scripts/phase12_posthoc.py --source data/raw/longmemeval_s_cleaned.json
+```
 
 Research question: Under the same retrieval ranker and retrieved-text budget, does lightweight event-oriented segmentation improve retrieval of annotated evidence turns from long conversations over fixed-size chunks and session chunks? The project evaluates retrieval only. It does not claim to build or evaluate a complete dialogue agent, answer generator, or neural memory mechanism.
 
