@@ -1,6 +1,22 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 13 session-diverse evidence audit complete. Among 70 LongMemEval-S knowledge-update questions with marked evidence in both answer sessions, direct BM25 retrieved both at 512 words in 54/70 cases; promoting the best candidate from another session to second place reached 55/70, while promoting the newest other-session candidate reached 48/70. The one-question primary gain and a one-question loss in later-evidence retrieval are reported together. This measures retrieval, not contradiction resolution, answer correctness or human event perception. The final thesis remains a later deliverable.**
+**Status: Phase 14 Memora direct-model input-fidelity audit complete. On the pinned release, the formatter's untruncated full-session branch recognizes `user` but released user turns are `user_agent`: 210,110 such turns across 27,614 sessions are skipped in that branch, including 24,856 with `share_memory=true`. Its partial-session branch behaves differently. No model was rerun and no published score change is inferred. Phase 13 results remain below; the final thesis remains a later deliverable.**
+
+## Phase 14: Memora direct-model prompt-fidelity audit
+
+The [Phase 14 plan](docs/phase14_plan.md) was [registered after discovery but before the supplementary measurements](https://github.com/yousofab/event-memory-retrieval/commit/119f46a9fb47fed486873c019fb484e8d7545f06). This is a reproducibility audit, not a blind or independent model evaluation. The official Memora source is pinned to `a6493188efc836d6511ed5e4163fe3ba87da30ff` with a SHA-256 check on the evaluator; source data are not committed here.
+
+- [Persian Phase 14 report](docs/phase14.md), [registered plan](configs/phase14_plan.json), and [aggregate results](results/phase14_summary.json).
+- `scripts/audit_phase14_memora.py` AST-extracts the official formatter for isolated no-API execution, checks synthetic and real samples, and counts all 30 persona-period histories. `scripts/validate_phase14.py` and `tests/test_phase14_memora.py` check invariants.
+- `deliverables/گزارش-پژوهشی-مرحله-۱۴-ممیزی-ورودی-Memora.docx` and `.pdf`: Persian RTL B Nazanin progress report with mentor acknowledgements and the supplied FARDIAT logo; the font and raw conversations are not redistributed.
+
+```bash
+git clone https://github.com/geniesinc/Memora.git ../memora-upstream
+git -C ../memora-upstream checkout a6493188efc836d6511ed5e4163fe3ba87da30ff
+python scripts/audit_phase14_memora.py --upstream ../memora-upstream
+python scripts/validate_phase14.py
+python -m unittest tests/test_phase14_memora.py -v
+```
 
 ## Phase 13: two-session provenance audit
 
