@@ -1,0 +1,20 @@
+{
+  "phase": 14,
+  "registered_utc": "2026-10-18",
+  "study_type": "post-discovery source-contract and no-API prompt-fidelity audit",
+  "upstream_repo": "https://github.com/geniesinc/Memora",
+  "upstream_commit": "a6493188efc836d6511ed5e4163fe3ba87da30ff",
+  "evaluator_path": "evals/model_eval/model_based_evaluator.py",
+  "evaluator_sha256": "b4e37dd39c2c72b91743c42180f6b07b460e519358f33c6fc1511f575dbb1bfc",
+  "scope": "direct-model track, PromptBuilder.build_conversation_context, complete-session branch with max_tokens=None and model_name=None; all 30 released persona-period histories",
+  "observed_before_registration": "role mismatch user_agent versus user and bulk speaker count; discovery is not blind",
+  "primary_checks": [
+    "AST/source check of exact role predicates in complete-session branch",
+    "isolated execution of upstream method on synthetic and released sample with no truncation",
+    "all-corpus number of user_agent turns and share_memory true user_agent turns omitted from complete-session formatting"
+  ],
+  "controlled_alias": "in-memory replacement of speaker=user_agent with speaker=user for comparison; no source message text changes",
+  "secondary_checks": ["counts by period and persona", "evidence session linkage from released question metadata", "partial-session branch analyzed separately"],
+  "no_claims": ["reproduced paper scores", "model accuracy difference", "all agent evaluation tracks affected", "absence of facts from assistant replies"],
+  "output": "aggregated counts and hashes only, no raw transcript or copyrighted books"
+}
