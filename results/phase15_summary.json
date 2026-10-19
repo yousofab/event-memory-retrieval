@@ -1,0 +1,729 @@
+{
+  "phase": 15,
+  "source_commit": "a6493188efc836d6511ed5e4163fe3ba87da30ff",
+  "protocol_sha256": "0c8d17331c4f725a6ab60a697cc4441dd2d7f87c673f5f64606675d159996d33",
+  "method": "session BM25, top-k; no answer model",
+  "group_stats": [
+    {
+      "period": "monthly",
+      "persona": "academic_researcher",
+      "sessions": 619,
+      "questions": 15,
+      "assistant_only_words": 104676,
+      "role_corrected_words": 173591,
+      "user_only_words": 68915
+    },
+    {
+      "period": "monthly",
+      "persona": "business_executive",
+      "sessions": 601,
+      "questions": 15,
+      "assistant_only_words": 104434,
+      "role_corrected_words": 172912,
+      "user_only_words": 68478
+    },
+    {
+      "period": "monthly",
+      "persona": "content_writer",
+      "sessions": 628,
+      "questions": 15,
+      "assistant_only_words": 107733,
+      "role_corrected_words": 177522,
+      "user_only_words": 69789
+    },
+    {
+      "period": "monthly",
+      "persona": "creative_designer",
+      "sessions": 614,
+      "questions": 15,
+      "assistant_only_words": 107490,
+      "role_corrected_words": 178100,
+      "user_only_words": 70610
+    },
+    {
+      "period": "monthly",
+      "persona": "financial_analyst",
+      "sessions": 611,
+      "questions": 15,
+      "assistant_only_words": 103417,
+      "role_corrected_words": 171056,
+      "user_only_words": 67639
+    },
+    {
+      "period": "monthly",
+      "persona": "management_consultant",
+      "sessions": 604,
+      "questions": 15,
+      "assistant_only_words": 106475,
+      "role_corrected_words": 175287,
+      "user_only_words": 68812
+    },
+    {
+      "period": "monthly",
+      "persona": "marketing_manager",
+      "sessions": 604,
+      "questions": 15,
+      "assistant_only_words": 104559,
+      "role_corrected_words": 171852,
+      "user_only_words": 67293
+    },
+    {
+      "period": "monthly",
+      "persona": "sales_manager",
+      "sessions": 635,
+      "questions": 15,
+      "assistant_only_words": 110070,
+      "role_corrected_words": 181828,
+      "user_only_words": 71758
+    },
+    {
+      "period": "monthly",
+      "persona": "software_engineer",
+      "sessions": 628,
+      "questions": 15,
+      "assistant_only_words": 108766,
+      "role_corrected_words": 180105,
+      "user_only_words": 71339
+    },
+    {
+      "period": "monthly",
+      "persona": "startup_founder",
+      "sessions": 606,
+      "questions": 15,
+      "assistant_only_words": 103528,
+      "role_corrected_words": 172449,
+      "user_only_words": 68921
+    },
+    {
+      "period": "quarterly",
+      "persona": "academic_researcher",
+      "sessions": 2005,
+      "questions": 30,
+      "assistant_only_words": 354003,
+      "role_corrected_words": 583593,
+      "user_only_words": 229590
+    },
+    {
+      "period": "quarterly",
+      "persona": "business_executive",
+      "sessions": 2000,
+      "questions": 30,
+      "assistant_only_words": 353727,
+      "role_corrected_words": 582893,
+      "user_only_words": 229166
+    },
+    {
+      "period": "quarterly",
+      "persona": "content_writer",
+      "sessions": 1997,
+      "questions": 30,
+      "assistant_only_words": 350712,
+      "role_corrected_words": 577340,
+      "user_only_words": 226628
+    },
+    {
+      "period": "quarterly",
+      "persona": "creative_designer",
+      "sessions": 1991,
+      "questions": 30,
+      "assistant_only_words": 355726,
+      "role_corrected_words": 586606,
+      "user_only_words": 230880
+    },
+    {
+      "period": "quarterly",
+      "persona": "financial_analyst",
+      "sessions": 2001,
+      "questions": 30,
+      "assistant_only_words": 347328,
+      "role_corrected_words": 572561,
+      "user_only_words": 225233
+    },
+    {
+      "period": "quarterly",
+      "persona": "management_consultant",
+      "sessions": 1982,
+      "questions": 30,
+      "assistant_only_words": 349011,
+      "role_corrected_words": 577076,
+      "user_only_words": 228065
+    },
+    {
+      "period": "quarterly",
+      "persona": "marketing_manager",
+      "sessions": 2011,
+      "questions": 30,
+      "assistant_only_words": 353248,
+      "role_corrected_words": 580582,
+      "user_only_words": 227334
+    },
+    {
+      "period": "quarterly",
+      "persona": "sales_manager",
+      "sessions": 1989,
+      "questions": 30,
+      "assistant_only_words": 351660,
+      "role_corrected_words": 578463,
+      "user_only_words": 226803
+    },
+    {
+      "period": "quarterly",
+      "persona": "software_engineer",
+      "sessions": 1974,
+      "questions": 30,
+      "assistant_only_words": 349075,
+      "role_corrected_words": 574767,
+      "user_only_words": 225692
+    },
+    {
+      "period": "quarterly",
+      "persona": "startup_founder",
+      "sessions": 1963,
+      "questions": 30,
+      "assistant_only_words": 345921,
+      "role_corrected_words": 569768,
+      "user_only_words": 223847
+    },
+    {
+      "period": "weekly",
+      "persona": "academic_researcher",
+      "sessions": 158,
+      "questions": 15,
+      "assistant_only_words": 28481,
+      "role_corrected_words": 46936,
+      "user_only_words": 18455
+    },
+    {
+      "period": "weekly",
+      "persona": "business_executive",
+      "sessions": 145,
+      "questions": 15,
+      "assistant_only_words": 26896,
+      "role_corrected_words": 43876,
+      "user_only_words": 16980
+    },
+    {
+      "period": "weekly",
+      "persona": "content_writer",
+      "sessions": 151,
+      "questions": 15,
+      "assistant_only_words": 26792,
+      "role_corrected_words": 44138,
+      "user_only_words": 17346
+    },
+    {
+      "period": "weekly",
+      "persona": "creative_designer",
+      "sessions": 147,
+      "questions": 15,
+      "assistant_only_words": 24813,
+      "role_corrected_words": 41476,
+      "user_only_words": 16663
+    },
+    {
+      "period": "weekly",
+      "persona": "financial_analyst",
+      "sessions": 156,
+      "questions": 15,
+      "assistant_only_words": 26279,
+      "role_corrected_words": 43489,
+      "user_only_words": 17210
+    },
+    {
+      "period": "weekly",
+      "persona": "management_consultant",
+      "sessions": 157,
+      "questions": 15,
+      "assistant_only_words": 28766,
+      "role_corrected_words": 47554,
+      "user_only_words": 18788
+    },
+    {
+      "period": "weekly",
+      "persona": "marketing_manager",
+      "sessions": 156,
+      "questions": 15,
+      "assistant_only_words": 26149,
+      "role_corrected_words": 43397,
+      "user_only_words": 17248
+    },
+    {
+      "period": "weekly",
+      "persona": "sales_manager",
+      "sessions": 163,
+      "questions": 15,
+      "assistant_only_words": 27991,
+      "role_corrected_words": 46541,
+      "user_only_words": 18550
+    },
+    {
+      "period": "weekly",
+      "persona": "software_engineer",
+      "sessions": 163,
+      "questions": 15,
+      "assistant_only_words": 29656,
+      "role_corrected_words": 48960,
+      "user_only_words": 19304
+    },
+    {
+      "period": "weekly",
+      "persona": "startup_founder",
+      "sessions": 155,
+      "questions": 15,
+      "assistant_only_words": 27840,
+      "role_corrected_words": 46026,
+      "user_only_words": 18186
+    }
+  ],
+  "summary": {
+    "total_questions": 600,
+    "methods": {
+      "assistant_only": {
+        "1": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.183417,
+            "sum": 73
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.002513,
+            "sum": 1
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.021294,
+            "sum": 8.475095
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.146465,
+            "sum": 58
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.025253,
+            "sum": 10
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.09434,
+            "sum": 10
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 169.475,
+            "sum": 101685
+          }
+        },
+        "5": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.502513,
+            "sum": 200
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.005025,
+            "sum": 2
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.080937,
+            "sum": 32.213111
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.449495,
+            "sum": 178
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.108586,
+            "sum": 43
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.207547,
+            "sum": 22
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 837.28,
+            "sum": 502368
+          }
+        },
+        "10": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.613065,
+            "sum": 244
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.015075,
+            "sum": 6
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.120242,
+            "sum": 47.856326
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.611111,
+            "sum": 242
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.151515,
+            "sum": 60
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.235849,
+            "sum": 25
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 1682.163333,
+            "sum": 1009298
+          }
+        }
+      },
+      "role_corrected": {
+        "1": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.258794,
+            "sum": 103
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.002513,
+            "sum": 1
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.032501,
+            "sum": 12.935285
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.131313,
+            "sum": 52
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.020202,
+            "sum": 8
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.066038,
+            "sum": 7
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 290.203333,
+            "sum": 174122
+          }
+        },
+        "5": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.537688,
+            "sum": 214
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.012563,
+            "sum": 5
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.113166,
+            "sum": 45.040132
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.618687,
+            "sum": 245
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.280303,
+            "sum": 111
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.226415,
+            "sum": 24
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 1457.225,
+            "sum": 874335
+          }
+        },
+        "10": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.675879,
+            "sum": 269
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.040201,
+            "sum": 16
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.191417,
+            "sum": 76.184133
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.742424,
+            "sum": 294
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.411616,
+            "sum": 163
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.235849,
+            "sum": 25
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 2923.256667,
+            "sum": 1753954
+          }
+        }
+      },
+      "user_only": {
+        "1": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.223618,
+            "sum": 89
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.005025,
+            "sum": 2
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.028198,
+            "sum": 11.222717
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.295455,
+            "sum": 117
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.050505,
+            "sum": 20
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.084906,
+            "sum": 9
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 122.573333,
+            "sum": 73544
+          }
+        },
+        "5": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.502513,
+            "sum": 200
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.020101,
+            "sum": 8
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.099265,
+            "sum": 39.507278
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.613636,
+            "sum": 243
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.361111,
+            "sum": 143
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.320755,
+            "sum": 34
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 630.71,
+            "sum": 378426
+          }
+        },
+        "10": {
+          "active_any": {
+            "eligible": 398,
+            "mean": 0.640704,
+            "sum": 255
+          },
+          "active_all": {
+            "eligible": 398,
+            "mean": 0.030151,
+            "sum": 12
+          },
+          "active_fraction": {
+            "eligible": 398,
+            "mean": 0.160745,
+            "sum": 63.976582
+          },
+          "obsolete_any": {
+            "eligible": 396,
+            "mean": 0.699495,
+            "sum": 277
+          },
+          "obsolete_all": {
+            "eligible": 396,
+            "mean": 0.406566,
+            "sum": 161
+          },
+          "obsolete_only_disjoint": {
+            "eligible": 106,
+            "mean": 0.339623,
+            "sum": 36
+          },
+          "word_cost": {
+            "eligible": 600,
+            "mean": 1288.136667,
+            "sum": 772882
+          }
+        }
+      }
+    },
+    "by_period": {
+      "monthly": {
+        "eligible": 106,
+        "corrected_only": 15,
+        "assistant_only": 10,
+        "difference_mean": 0.04717
+      },
+      "quarterly": {
+        "eligible": 180,
+        "corrected_only": 19,
+        "assistant_only": 19,
+        "difference_mean": 0
+      },
+      "weekly": {
+        "eligible": 112,
+        "corrected_only": 17,
+        "assistant_only": 8,
+        "difference_mean": 0.080357
+      }
+    },
+    "by_task": {
+      "reasoning": {
+        "eligible": 154,
+        "corrected_only": 19,
+        "assistant_only": 15,
+        "difference_mean": 0.025974
+      },
+      "recommending": {
+        "eligible": 200,
+        "corrected_only": 32,
+        "assistant_only": 19,
+        "difference_mean": 0.065
+      },
+      "remembering": {
+        "eligible": 44,
+        "corrected_only": 0,
+        "assistant_only": 3,
+        "difference_mean": -0.068182
+      }
+    },
+    "by_active_count": {
+      "1": {
+        "eligible": 42,
+        "corrected_only": 3,
+        "assistant_only": 2,
+        "difference_mean": 0.02381
+      },
+      "2-3": {
+        "eligible": 82,
+        "corrected_only": 9,
+        "assistant_only": 6,
+        "difference_mean": 0.036585
+      },
+      "4+": {
+        "eligible": 274,
+        "corrected_only": 39,
+        "assistant_only": 29,
+        "difference_mean": 0.036496
+      }
+    },
+    "by_age": {
+      "(0.10,0.50]": {
+        "eligible": 64,
+        "corrected_only": 7,
+        "assistant_only": 4,
+        "difference_mean": 0.046875
+      },
+      "<=0.10": {
+        "eligible": 321,
+        "corrected_only": 42,
+        "assistant_only": 33,
+        "difference_mean": 0.028037
+      },
+      ">0.50": {
+        "eligible": 13,
+        "corrected_only": 2,
+        "assistant_only": 0,
+        "difference_mean": 0.153846
+      }
+    },
+    "by_overlap": {
+      "no": {
+        "eligible": 260,
+        "corrected_only": 27,
+        "assistant_only": 26,
+        "difference_mean": 0.003846
+      },
+      "yes": {
+        "eligible": 138,
+        "corrected_only": 24,
+        "assistant_only": 11,
+        "difference_mean": 0.094203
+      }
+    },
+    "primary": {
+      "eligible": 398,
+      "difference_sum": 14,
+      "difference_mean": 0.035176,
+      "corrected_only": 51,
+      "assistant_only": 37,
+      "paired_equal": 310,
+      "descriptive_cluster_bootstrap_95": [
+        -0.012626,
+        0.080103
+      ],
+      "groups": 30
+    }
+  }
+}

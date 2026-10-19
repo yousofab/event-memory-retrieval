@@ -1,6 +1,24 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 14 Memora direct-model input-fidelity audit complete. On the pinned release, the formatter's untruncated full-session branch recognizes `user` but released user turns are `user_agent`: 210,110 such turns across 27,614 sessions are skipped in that branch, including 24,856 with `share_memory=true`. Its partial-session branch behaves differently. No model was rerun and no published score change is inferred. Phase 13 results remain below; the final thesis remains a later deliverable.**
+**Status: Phase 15 paired Memora session-retrieval study complete. In the 398 questions with explicit active-evidence session IDs, the corrected user-plus-assistant view retrieved at least one active session at top 5 for 214 questions, versus 200 with assistant-only; this used 1,457 versus 837 words on average. In a separately registered post-result 1,024-word sensitivity, the order reversed (188 versus 206). This is retrieval opportunity, not answer accuracy, FAMA or an episodic-segmentation result. The final thesis remains a later deliverable.**
+
+## Phase 15: role fidelity, horizon, evidence state and word cost
+
+The [primary protocol](docs/phase15_plan.md) was registered in [commit f13a583](https://github.com/yousofab/event-memory-retrieval/commit/f13a58370024bde842e3211e652d92b8c1787a33) before ranking. The [word-budget sensitivity](docs/phase15_post_result_amendment.md) and [separate content-history sensitivity](docs/phase15_history_sensitivity.md) were each registered **after** their motivating observations and **before** their own calculations. The study uses all 30 persona-period histories and all 600 question strings from pinned official Memora. Explicit `session_id` active evidence exists for 398 questions; 156 content-history questions with a different label schema are reported separately. No API or answer model was run.
+
+- [Persian Phase 15 report](docs/phase15.md), `configs/phase15_plan.json`, `scripts/run_phase15_role_retrieval.py`, `scripts/run_phase15_budget.py`, `scripts/run_phase15_history.py`, `scripts/validate_phase15.py` and `tests/test_phase15_role_retrieval.py`.
+- `results/phase15_summary.json`, `results/phase15_rows.json.gz`, `results/phase15_budget.json.gz`, `results/phase15_history.json.gz`: numeric aggregates and question-keyed rows, no raw dialogue or answer text.
+- `deliverables/گزارش-پژوهشی-مرحله-۱۵-نقش-و-هزینه-Memora.docx` and `.pdf`: Persian RTL B Nazanin progress report, FARDIAT logo and acknowledgements. Supplied font and source textbooks are not redistributed.
+
+```bash
+git clone https://github.com/geniesinc/Memora.git ../memora-upstream
+git -C ../memora-upstream checkout a6493188efc836d6511ed5e4163fe3ba87da30ff
+python scripts/run_phase15_role_retrieval.py --upstream ../memora-upstream
+python scripts/run_phase15_budget.py --upstream ../memora-upstream
+python scripts/run_phase15_history.py --upstream ../memora-upstream
+python scripts/validate_phase15.py
+python -m unittest tests/test_phase15_role_retrieval.py -v
+```
 
 ## Phase 14: Memora direct-model prompt-fidelity audit
 
