@@ -1,0 +1,26 @@
+{
+  "phase": 15,
+  "registered_date_utc": "2026-10-19",
+  "study_type": "post-discovery exploratory paired retrieval intervention",
+  "source_repo": "https://github.com/geniesinc/Memora",
+  "source_commit": "a6493188efc836d6511ed5e4163fe3ba87da30ff",
+  "source_groups": "all 30 period-persona histories and their 600 released questions",
+  "known_before_registration": "Phase 14 identified role mismatch; schema audit showed 600 questions, 202 with no memory_evidence session ID, 204 with no forgetting_evidence session ID, 138 with overlapping evidence session IDs; question dates had no future sessions or future evidence IDs.",
+  "research_question": "At equal retrieved session count, how does retaining released user-agent turns change lexical retrieval of annotated active and obsolete evidence sessions, conditional on horizon and question type?",
+  "methods": [
+    "assistant_only: concatenate ai_agent messages per session, reproducing the complete-session branch's recognized role text",
+    "role_corrected: concatenate ai_agent and user_agent messages in original order",
+    "user_only: concatenate user_agent messages as a source ablation"
+  ],
+  "unit": "session; no within-session event segmentation or answer model",
+  "index": "each persona-period separately; source session_id chronological; Unicode lowercase word regex identical to scripts/run_baselines.py; no role prefix; BM25 k1=1.2 b=0.75 with per-method document frequency, length and average length; zero-score ties and equal scores break toward newest session_id",
+  "query": "released question string only; never evaluation subquestions, answers, evidence values, metadata operations or share_memory flags",
+  "primary_comparison": "paired role_corrected minus assistant_only on macro-question any-active-evidence-session recall at top 5, restricted to questions with at least one memory_evidence session ID",
+  "secondary_comparisons": ["all-active-session coverage at top 5", "mean active-session fraction at top 5", "any and all obsolete-evidence-session recall at top 5 separately, not a safety or FAMA score", "user_only ablation", "top 1 and top 10 sensitivity", "mean retrieved word cost"],
+  "strata": ["period: weekly/monthly/quarterly", "task: remembering/reasoning/recommending", "active evidence count: 1/2-3/4+", "age of newest active evidence as fraction of all sessions: <=0.10/(0.10,0.50]/>0.50", "active/obsolete evidence session overlap yes/no"],
+  "paired_uncertainty": "descriptive 2000 group bootstrap replicates resampling 30 persona-period groups with replacement using seed 15; report percentile 2.5 and 97.5 for the primary question-weighted mean difference; no significance claim",
+  "eligibility": "all published questions for ranking; metrics only when corresponding evidence ID set is nonempty; same session in both sets is scored for both, and stale-only analysis excludes overlapping evidence sets",
+  "guardrails": ["verify exact source commit", "all questions have unique period-persona-question keys", "no future sessions relative to question date", "no missing evidence session IDs", "no answer text or raw dialogue in committed outputs", "reuse same ranker and top-k across conditions", "code tests on synthetic data before result interpretation"],
+  "limits": ["role intervention changes text length and lexical statistics; fixed k is not equal word cost", "evidence session hit is opportunity for retrieval, not exact evidence turn hit or answer correctness", "forgetting evidence retrieval can be useful for conflict resolution; not itself an error", "assistant echoes can carry user facts", "no event segmentation hypothesis tested in this phase", "pre-registration is post-discovery and data-generation schema was inspected"],
+  "outputs": ["numeric question-level rows without text", "aggregates and paired descriptive uncertainty", "Persian RTL report and reproducible code"]
+}
