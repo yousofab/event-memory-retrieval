@@ -1,0 +1,729 @@
+{
+  "phase": 16,
+  "source_commit": "a6493188efc836d6511ed5e4163fe3ba87da30ff",
+  "plan_sha256": "c04730635b9c8c172b031bfb7df457b30c6d8771bb4ab46dc1b4c1b4527d45de",
+  "phase8_writer_plan_sha256": "c2c3de66a4bcfca10cc23e19d1de3cb0fff7c55fdeb5471318cc9251e5f9af66",
+  "status": "exploratory; source labels previously inspected",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "budgets_words": [
+    512,
+    1024,
+    2048
+  ],
+  "methods": {
+    "random_0/512": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 252,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 256,
+      "mean_documents": 8.05,
+      "mean_sessions": 7.686667,
+      "mean_words": 511.043333
+    },
+    "random_0/1024": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 281,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 306,
+      "mean_documents": 14.108333,
+      "mean_sessions": 13.058333,
+      "mean_words": 1023.088333
+    },
+    "random_0/2048": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 304,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 329,
+      "mean_documents": 26.028333,
+      "mean_sessions": 23.506667,
+      "mean_words": 2047.091667
+    },
+    "random_1/512": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 253,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 253,
+      "mean_documents": 8.168333,
+      "mean_sessions": 7.755,
+      "mean_words": 511.211667
+    },
+    "random_1/1024": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 285,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 296,
+      "mean_documents": 14.13,
+      "mean_sessions": 13.051667,
+      "mean_words": 1023.143333
+    },
+    "random_1/2048": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 308,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 326,
+      "mean_documents": 26.108333,
+      "mean_sessions": 23.453333,
+      "mean_words": 2047.165
+    },
+    "random_2/512": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 247,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 255,
+      "mean_documents": 7.991667,
+      "mean_sessions": 7.603333,
+      "mean_words": 511.173333
+    },
+    "random_2/1024": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 281,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 298,
+      "mean_documents": 14.006667,
+      "mean_sessions": 12.973333,
+      "mean_words": 1023.215
+    },
+    "random_2/2048": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 310,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 331,
+      "mean_documents": 25.831667,
+      "mean_sessions": 23.263333,
+      "mean_words": 2047.151667
+    },
+    "random_3/512": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 247,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 270,
+      "mean_documents": 7.986667,
+      "mean_sessions": 7.57,
+      "mean_words": 511.141667
+    },
+    "random_3/1024": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 272,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 309,
+      "mean_documents": 13.961667,
+      "mean_sessions": 12.936667,
+      "mean_words": 1023.208333
+    },
+    "random_3/2048": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 311,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 330,
+      "mean_documents": 25.705,
+      "mean_sessions": 23.135,
+      "mean_words": 2047.16
+    },
+    "random_4/512": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 239,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 260,
+      "mean_documents": 8.043333,
+      "mean_sessions": 7.653333,
+      "mean_words": 511.131667
+    },
+    "random_4/1024": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 275,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 309,
+      "mean_documents": 14.133333,
+      "mean_sessions": 13.125,
+      "mean_words": 1023.156667
+    },
+    "random_4/2048": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 304,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 340,
+      "mean_documents": 26.02,
+      "mean_sessions": 23.488333,
+      "mean_words": 2047.138333
+    },
+    "session/512": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 134,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 118,
+      "mean_documents": 2.015,
+      "mean_sessions": 2.015,
+      "mean_words": 476.798333
+    },
+    "session/1024": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 188,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 206,
+      "mean_documents": 3.805,
+      "mean_sessions": 3.805,
+      "mean_words": 990.833333
+    },
+    "session/2048": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 234,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 272,
+      "mean_documents": 7.353333,
+      "mean_sessions": 7.353333,
+      "mean_words": 2014.318333
+    },
+    "writer/512": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 252,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 268,
+      "mean_documents": 8.341667,
+      "mean_sessions": 7.98,
+      "mean_words": 511.173333
+    },
+    "writer/1024": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 291,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 308,
+      "mean_documents": 15.28,
+      "mean_sessions": 14.16,
+      "mean_words": 1023.216667
+    },
+    "writer/2048": {
+      "questions": 600,
+      "active_eligible": 398,
+      "active_hits": 311,
+      "obsolete_eligible": 396,
+      "obsolete_hits": 331,
+      "mean_documents": 29.081667,
+      "mean_sessions": 26.255,
+      "mean_words": 2047.238333
+    }
+  },
+  "primary": {
+    "eligible": 398,
+    "writer_hits": 291,
+    "random_hits_by_seed": [
+      281,
+      285,
+      281,
+      272,
+      275
+    ],
+    "writer_minus_random_mean": 0.030653,
+    "descriptive_cluster_bootstrap_95": [
+      0.012222,
+      0.049105
+    ],
+    "disjoint_active_obsolete_eligible": 260,
+    "disjoint_difference_mean": 0.009231
+  },
+  "group_stats": [
+    {
+      "period": "monthly",
+      "persona": "academic_researcher",
+      "sessions": 619,
+      "questions": 15,
+      "writer_segments": 2471,
+      "full_view_words": 173591,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1841,
+        "session_end": 619,
+        "maximum": 11
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "business_executive",
+      "sessions": 601,
+      "questions": 15,
+      "writer_segments": 2452,
+      "full_view_words": 172912,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1840,
+        "session_end": 601,
+        "maximum": 11
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "content_writer",
+      "sessions": 628,
+      "questions": 15,
+      "writer_segments": 2537,
+      "full_view_words": 177522,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1894,
+        "session_end": 628,
+        "maximum": 15
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "creative_designer",
+      "sessions": 614,
+      "questions": 15,
+      "writer_segments": 2555,
+      "full_view_words": 178100,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1926,
+        "session_end": 614,
+        "maximum": 15
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "financial_analyst",
+      "sessions": 611,
+      "questions": 15,
+      "writer_segments": 2459,
+      "full_view_words": 171056,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1837,
+        "session_end": 611,
+        "maximum": 11
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "management_consultant",
+      "sessions": 604,
+      "questions": 15,
+      "writer_segments": 2510,
+      "full_view_words": 175287,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1893,
+        "session_end": 604,
+        "maximum": 13
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "marketing_manager",
+      "sessions": 604,
+      "questions": 15,
+      "writer_segments": 2452,
+      "full_view_words": 171852,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1837,
+        "session_end": 604,
+        "maximum": 11
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "sales_manager",
+      "sessions": 635,
+      "questions": 15,
+      "writer_segments": 2593,
+      "full_view_words": 181828,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1940,
+        "session_end": 635,
+        "maximum": 18
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "software_engineer",
+      "sessions": 628,
+      "questions": 15,
+      "writer_segments": 2587,
+      "full_view_words": 180105,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1951,
+        "session_end": 628,
+        "maximum": 8
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "monthly",
+      "persona": "startup_founder",
+      "sessions": 606,
+      "questions": 15,
+      "writer_segments": 2471,
+      "full_view_words": 172449,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 1849,
+        "session_end": 606,
+        "maximum": 16
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "academic_researcher",
+      "sessions": 2005,
+      "questions": 30,
+      "writer_segments": 8329,
+      "full_view_words": 583593,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6295,
+        "session_end": 2005,
+        "maximum": 29
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "business_executive",
+      "sessions": 2000,
+      "questions": 30,
+      "writer_segments": 8322,
+      "full_view_words": 582893,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6290,
+        "session_end": 2000,
+        "maximum": 32
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "content_writer",
+      "sessions": 1997,
+      "questions": 30,
+      "writer_segments": 8211,
+      "full_view_words": 577340,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6172,
+        "session_end": 1997,
+        "maximum": 42
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "creative_designer",
+      "sessions": 1991,
+      "questions": 30,
+      "writer_segments": 8307,
+      "full_view_words": 586606,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6259,
+        "session_end": 1991,
+        "maximum": 57
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "financial_analyst",
+      "sessions": 2001,
+      "questions": 30,
+      "writer_segments": 8214,
+      "full_view_words": 572561,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6185,
+        "session_end": 2001,
+        "maximum": 28
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "management_consultant",
+      "sessions": 1982,
+      "questions": 30,
+      "writer_segments": 8231,
+      "full_view_words": 577076,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6208,
+        "session_end": 1982,
+        "maximum": 41
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "marketing_manager",
+      "sessions": 2011,
+      "questions": 30,
+      "writer_segments": 8286,
+      "full_view_words": 580582,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6229,
+        "session_end": 2011,
+        "maximum": 46
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "sales_manager",
+      "sessions": 1989,
+      "questions": 30,
+      "writer_segments": 8243,
+      "full_view_words": 578463,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6217,
+        "session_end": 1989,
+        "maximum": 37
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "software_engineer",
+      "sessions": 1974,
+      "questions": 30,
+      "writer_segments": 8195,
+      "full_view_words": 574767,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6184,
+        "session_end": 1974,
+        "maximum": 37
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "quarterly",
+      "persona": "startup_founder",
+      "sessions": 1963,
+      "questions": 30,
+      "writer_segments": 8137,
+      "full_view_words": 569768,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 6140,
+        "session_end": 1963,
+        "maximum": 34
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "academic_researcher",
+      "sessions": 158,
+      "questions": 15,
+      "writer_segments": 671,
+      "full_view_words": 46936,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 512,
+        "session_end": 158,
+        "maximum": 1
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "business_executive",
+      "sessions": 145,
+      "questions": 15,
+      "writer_segments": 621,
+      "full_view_words": 43876,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 474,
+        "session_end": 145,
+        "maximum": 2
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "content_writer",
+      "sessions": 151,
+      "questions": 15,
+      "writer_segments": 622,
+      "full_view_words": 44138,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 468,
+        "session_end": 151,
+        "maximum": 3
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "creative_designer",
+      "sessions": 147,
+      "questions": 15,
+      "writer_segments": 594,
+      "full_view_words": 41476,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 446,
+        "session_end": 147,
+        "maximum": 1
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "financial_analyst",
+      "sessions": 156,
+      "questions": 15,
+      "writer_segments": 623,
+      "full_view_words": 43489,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 467,
+        "session_end": 156
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "management_consultant",
+      "sessions": 157,
+      "questions": 15,
+      "writer_segments": 675,
+      "full_view_words": 47554,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 517,
+        "session_end": 157,
+        "maximum": 1
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "marketing_manager",
+      "sessions": 156,
+      "questions": 15,
+      "writer_segments": 626,
+      "full_view_words": 43397,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 468,
+        "session_end": 156,
+        "maximum": 2
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "sales_manager",
+      "sessions": 163,
+      "questions": 15,
+      "writer_segments": 675,
+      "full_view_words": 46541,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 512,
+        "session_end": 163
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "software_engineer",
+      "sessions": 163,
+      "questions": 15,
+      "writer_segments": 696,
+      "full_view_words": 48960,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 528,
+        "session_end": 163,
+        "maximum": 5
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    },
+    {
+      "period": "weekly",
+      "persona": "startup_founder",
+      "sessions": 155,
+      "questions": 15,
+      "writer_segments": 655,
+      "full_view_words": 46026,
+      "writer_overlong": 0,
+      "writer_reasons": {
+        "novelty": 494,
+        "session_end": 155,
+        "maximum": 6
+      },
+      "random_counts_equal": true,
+      "random_words_equal": true
+    }
+  ]
+}
