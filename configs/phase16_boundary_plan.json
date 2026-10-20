@@ -1,0 +1,20 @@
+{
+  "phase": 16,
+  "registered_date_utc": "2026-10-20",
+  "status": "exploratory design fixed before Phase 16 scoring; Memora labels and Phase 15 role results were already examined",
+  "question": "Under the identical full role view and a fixed retrieved word ceiling, does the placement of a streaming lexical boundary improve retrieval of an annotated active evidence SESSION versus count matched random contiguous boundaries?",
+  "source_repo": "https://github.com/geniesinc/Memora",
+  "source_commit": "a6493188efc836d6511ed5e4163fe3ba87da30ff",
+  "unit": "all 30 persona-period groups, 600 released questions; 398 with direct memory_evidence.session_id for active outcome, 396 with direct forgetting_evidence.session_id for separate obsolete outcome",
+  "view": "both ai_agent and user_agent messages in released conversation order, Unicode lowercase regex words; no speaker prefix, operation, share_memory, answer or labels in indexing",
+  "writer": "Phase 8 OnlineWriter unchanged: minimum 64 words, threshold 0.85 Jaccard novelty versus preceding three turns, maximum 160 words, session reset, close before current turn; oversized single turns remain intact",
+  "null": "five seeds 0-4; independent uniform sample of all valid contiguous turn partitions with exactly the writer's segment count in each session, maximum 160 except unsplittable individual turn; random control observes all session turn lengths and target segment count, so it is retrospective, not a causal writer",
+  "additional_comparator": "one full session per document using same full role view, same BM25 formula and word budgets; different retrieval granularity, not a matched boundary control",
+  "ranker": "Phase 15 BM25 k1=1.2, b=0.75 per group/method index; score ties break by newest session ID then earlier segment within that session; zero-score documents may enter as fillers; skip zero-word segments",
+  "budget_selection": "rank all documents, scan highest first, add complete nonempty document if it fits, otherwise skip and continue; 1024 words primary; 512 and 2048 secondary; no top-k cap",
+  "primary": "question-weighted difference in any-active-evidence-session recall at 1024 words: writer outcome minus the average of five count-matched randomized partitions, restricted to 398 questions with direct active session IDs",
+  "uncertainty": "2000 descriptive bootstrap draws of the 30 persona-period groups using seed 16; 2.5 and 97.5 percentiles of pooled question-weighted per-question paired difference; not a confirmatory test",
+  "secondary": ["per-seed random range and median of active recall", "full-session comparator", "512/2048 budgets", "any obsolete session recall, reported separately, not a forgetting error", "mean distinct selected sessions, documents, words", "segment sizes, single overlong turns, close reasons", "sensitivity excluding questions with overlapping active and obsolete session IDs"],
+  "guardrails": ["pinned upstream commit", "all sessions at or before question date", "partitions preserve every source turn exactly once and match writer count and max constraint", "same full role view and source text across writer/random/session", "session IDs and question keys only in outputs, no raw dialogue, questions or answers", "no tuning after outcomes"],
+  "limits": ["session-level labels cannot verify whether selected segments contain the actual evidence turn", "selected document count and actual words may differ across methods within an equal cap", "random control's count is derived from the writer and its boundaries use full session lengths", "same Memora data was previously inspected; no independent heldout or answer generation", "lexical novelty is not a human event perception or Searle-style meaning measure"]
+}
