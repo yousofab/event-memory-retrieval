@@ -1,6 +1,23 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 15 paired Memora session-retrieval study complete. In the 398 questions with explicit active-evidence session IDs, the corrected user-plus-assistant view retrieved at least one active session at top 5 for 214 questions, versus 200 with assistant-only; this used 1,457 versus 837 words on average. In a separately registered post-result 1,024-word sensitivity, the order reversed (188 versus 206). This is retrieval opportunity, not answer accuracy, FAMA or an episodic-segmentation result. The final thesis remains a later deliverable.**
+**Status: Phase 16 paired matched-boundary Memora retrieval study complete. With both roles visible and 1,024 words, the immutable online writer reached an active-evidence session for 291/398 eligible questions versus 272–285/398 across five random partitions with the same number of segments per session. A post-result sensitivity matching the number of selected documents reduced the average difference from 3.07 to 1.56 percentage points. The source annotations identify sessions, not the evidence turns inside them; this is not answer accuracy, human event perception, or FAMA. The final thesis remains a later deliverable.**
+
+## Phase 16: paired online boundaries and count-matched random partitions
+
+The [primary plan](docs/phase16_plan.md) was registered [before Phase 16 scoring](https://github.com/yousofab/event-memory-retrieval/commit/d609e32fc4d90743eceac9a777d7f9ebe4eb1b85). The [equal-selected-document sensitivity](docs/phase16_post_result_amendment.md) was separately registered [after inspecting the primary result, before its own computation](https://github.com/yousofab/event-memory-retrieval/commit/75e65685cc5ca92bb7c919de2c237f3226edf60e). Both use pinned Memora revision `a6493188efc836d6511ed5e4163fe3ba87da30ff`. All 30 groups and 600 questions are ranked; the primary metric includes the 398 with direct active-evidence session IDs. Source roles, original tokens and total retrieved word cap are common to all methods. Random controls are matched by **built segments per session**, but selected segment count and lengths can still differ.
+
+- [Persian Phase 16 report](docs/phase16.md), [machine-readable plan](configs/phase16_boundary_plan.json), `scripts/run_phase16_boundaries.py`, `scripts/run_phase16_equal_selected.py`, `scripts/validate_phase16.py` and `tests/test_phase16_boundaries.py`.
+- `results/phase16_summary.json`, `results/phase16_rows.json.gz`, `results/phase16_equal_selected.json.gz`: aggregates and numeric question-keyed rows, no raw conversation, question or answer text.
+- `deliverables/گزارش-پژوهشی-مرحله-۱۶-مرزهای-همتعداد.docx` and `.pdf`: Persian RTL B Nazanin progress report with FARDIAT and advisor acknowledgements.
+
+```bash
+git clone https://github.com/geniesinc/Memora.git ../memora-upstream
+git -C ../memora-upstream checkout a6493188efc836d6511ed5e4163fe3ba87da30ff
+python scripts/run_phase16_boundaries.py --upstream ../memora-upstream --summary /tmp/phase16_summary.json --rows /tmp/phase16_rows.json.gz
+python scripts/run_phase16_equal_selected.py --upstream ../memora-upstream --output /tmp/phase16_equal_selected.json.gz
+python scripts/validate_phase16.py
+python -m unittest tests/test_phase16_boundaries.py -v
+```
 
 ## Phase 15: role fidelity, horizon, evidence state and word cost
 
