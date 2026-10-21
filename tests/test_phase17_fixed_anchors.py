@@ -47,6 +47,14 @@ class FixedAnchorTests(unittest.TestCase):
         full=score_windows(ix,['a'],[('session_1',0,2),('session_1',2,5)])
         self.assertEqual(full['all_evidence'],1)
 
+    def test_absent_gold_session_does_not_get_inserted_by_scoring(self):
+        sample=self.sample()
+        sample['conversation']['session_2']=[{'dia_id':'d','text':'different session witness'}]
+        ix=TurnIndex(sample)
+        result=score_windows(ix,['d'],[('session_1',0,5)])
+        self.assertEqual(result['all_gold_sessions'],0)
+        self.assertEqual(result['all_evidence'],0)
+
     def test_label_changes_do_not_enter_index_or_selector(self):
         sample=self.sample(); first=TurnIndex(sample)
         sample['qa']=[{'question':'secret','answer':'secret','evidence':['c']}]

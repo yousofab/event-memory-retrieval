@@ -169,7 +169,7 @@ def score_windows(index, gold_ids, windows):
     lengths, complete = [], 0
     for t in gold:
         covered = sum(max(0, min(end, t['end']) - max(start, t['start']))
-                      for start, end in by_session[t['session']])
+                      for start, end in by_session.get(t['session'], []))
         assert covered <= t['length']
         lengths.append(covered)
         complete += covered == t['length']
