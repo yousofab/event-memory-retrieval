@@ -21,4 +21,6 @@ At 1,024 words, LoCoMo writer 443/599 versus centered 442/599. Writer-minus-rand
 
 ## Publication status
 
-Prepared locally for review. No public branch, PR, merge or release has been created for this cycle. Publication awaits the researcher's approval under the Phase 17 directive.
+The researcher approved publication and GitHub closeout on 21 October 2026. The reviewed scientific package is commit `0e2483a972e05fcbf02430037e69e87226ef37cb`; subsequent closeout changes add publication documentation, a Phase 18 planning handoff, and CI without changing the protocol, experiment, results, figures, or approved PDF/DOCX. The report remains the pre-publication review snapshot; the publication record supersedes its historical hold wording.
+
+GitHub Actions runs the full existing test suite and the committed-result validator with read-only repository permissions. It does not download source conversations or run a new experiment. Merge with a merge commit to preserve the local protocol/implementation/correction chronology. Tag the merged checkpoint `phase17-fixed-anchor-evidence`; Phase 18 has not started and requires a separate protocol before scoring.

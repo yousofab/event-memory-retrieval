@@ -1,6 +1,8 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 17 fixed-anchor, exactly matched-opportunity evidence study complete locally. At 1,024 words, LoCoMo full-evidence coverage was 443/599 for the frozen writer versus 442/599 for centered context; the conversation-macro difference versus 20 random controls was +0.84 percentage points, below the predeclared 2-point practical threshold. QMSum did not show a stable transfer benefit. This is a controlled exploratory retrieval study on reused data, not answer accuracy or a claim of human-like understanding. Public publication of this branch is awaiting the researcher's final approval.**
+**Status: Phase 17 fixed-anchor, exactly matched-opportunity evidence study completed and approved for publication. At 1,024 words, LoCoMo full-evidence coverage was 443/599 for the frozen writer versus 442/599 for centered context; the conversation-macro difference versus 20 random controls was +0.84 percentage points, below the predeclared 2-point practical threshold. QMSum did not show a stable transfer benefit. This is a controlled exploratory retrieval study on reused data, not answer accuracy or a claim of human-like understanding.**
+
+[Phase 17 publication record](docs/phase17_publication.md) · [Phase 18 handoff — planning only](docs/phase18_handoff.md) · [PDF report](deliverables/phase17_research_report_fa.pdf) · [Word report](deliverables/phase17_research_report_fa.docx)
 
 ## Phase 17: boundary guidance with fixed evidence opportunities
 
@@ -11,6 +13,7 @@ The turn BM25 index, eight anchors, all feasible context windows, per-window wid
 - `scripts/run_phase17_fixed_anchors.py`, `scripts/validate_phase17.py`, `scripts/analyze_phase17.py`, `tests/test_phase17_fixed_anchors.py`.
 - `results/phase17_rows.json.gz`: 55,638 numeric rows, 843 questions, 3 budgets, 22 conditions; these are repeated conditions, not 55,638 independent samples. Corrected numerical output was reproduced byte-for-byte. `phase17_summary.json`, `phase17_diagnostics.json`, `phase17_validation.json` and `phase17_historical_persona_audit.json` contain aggregates and audit evidence.
 - `deliverables/phase17_research_report_fa.docx` and `.pdf`: A4 Persian RTL B Nazanin report with verified references, figures and advisor/FARDIAT acknowledgements. Fonts and upstream transcripts are excluded.
+- GitHub Actions runs the existing test suite and validates the committed numeric results on pull requests and pushes to `main`. This check uses no raw datasets or paid API; it is not a fresh end-to-end experiment. The approved report files remain the original review snapshot; their historical publication-hold wording is superseded by the publication record above.
 
 At 512 words, the writer trails centered windows by 14 LoCoMo complete-evidence cases; at 2,048 all methods reach 472/599. QMSum uses broad relevant-turn spans, not minimal answer evidence. Confidence intervals are descriptive cluster bootstraps over 7 LoCoMo conversations or 10 QMSum source families. A post-hoc historical Phase 16 reanalysis clusters by 10 personas; its equal-selected sensitivity interval includes zero. Historical results remain unchanged.
 
