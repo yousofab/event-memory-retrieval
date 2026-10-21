@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "base_commit": "f1b75707c3e63c4c518d2b3e0d6fd5e9cf33ac61",
+  "publication_date": "2026-10-21",
+  "explanation": "The terminal had no GitHub push credential. The authenticated connector published equivalent trees with new commit metadata and mapped parents. These original commit objects preserve exact local hashes and can be restored with git hash-object -t commit -w --stdin after fetching the public history. Local timestamps are not independently verified public preregistration.",
+  "commits": [
+    {
+      "local": "29322988556bb161e91bcb566f88d84b8e86d531",
+      "published": "7a785d1405e22f94d2353e22231f62ee91b9049d",
+      "tree": "9caaa9a116d1bbdab85a32cacfe63d96d6c36e11",
+      "raw_commit_base64": "dHJlZSA5Y2FhYTlhMTE2ZDFiYmRhYjg1YTMyY2FjZmU2M2Q5NmQ2YzM2ZTExCnBhcmVudCBmMWI3NTcwN2MzZTYzYzRjNTE4ZDJiM2UwZDZmZDVlOWNmMzNhYzYxCmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjU3Njk0MiArMDEwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI1NzY5NDIgKzAxMDAKClJlZ2lzdGVyIGxvY2FsIFBoYXNlIDE3IGZpeGVkLWFuY2hvciBldmlkZW5jZSBwcm90b2NvbCBiZWZvcmUgc2NvcmluZwo="
+    },
+    {
+      "local": "efde7cfec26f7967d6abb82e00f6588efd980a10",
+      "published": "a8f4d014e3e436a0d862c3bda2d56f576289f034",
+      "tree": "43d4f6398ca251930a996418a32cb7e0551f44b9",
+      "raw_commit_base64": "dHJlZSA0M2Q0ZjYzOThjYTI1MTkzMGE5OTY0MThhMzJjYjdlMDU1MWY0NGI5CnBhcmVudCAyOTMyMjk4ODU1NmJiMTYxZTkxYmNiNTY2Zjg4ZDg0YjhlODZkNTMxCmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjU3NzE1OSArMDEwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI1NzcxNTkgKzAxMDAKCkltcGxlbWVudCBmaXhlZC1hbmNob3IgcGFpcmVkIHNlbGVjdG9yIGFuZCBjb3JyZWN0bmVzcyBjb250cm9scyBiZWZvcmUgc2NvcmluZwo="
+    },
+    {
+      "local": "4435e35a21b187107aa7a3ee86f7d8dfacd05af5",
+      "published": "d590914c7856bd9641c80efebf87d68f8bd14e9a",
+      "tree": "d357f1fc32fd5feff26e09f457cbfdde088c6190",
+      "raw_commit_base64": "dHJlZSBkMzU3ZjFmYzMyZmQ1ZmVmZjI2ZTA5ZjQ1N2NiZmRkZTA4OGM2MTkwCnBhcmVudCBlZmRlN2NmZWMyNmY3OTY3ZDZhYmI4MmUwMGY2NTg4ZWZkOTgwYTEwCmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjU3NzUxOCArMDEwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI1Nzc1MTggKzAxMDAKCkZpeCBhYnNlbnQtc2Vzc2lvbiBkaWFnbm9zdGljIGFuZCB2YWxpZGF0ZSBwYWlyZWQgY2FwYWNpdHkgY29udHJhY3Q7IHByZXNlcnZlIHByaW1hcnkgcHJvdG9jb2wK"
+    },
+    {
+      "local": "0e2483a972e05fcbf02430037e69e87226ef37cb",
+      "published": "a36ba4cfc80e26d5d0c1652e35b1925d04cec1be",
+      "tree": "99dc47c6b545470131d0b7e43858d332bb8e7020",
+      "raw_commit_base64": "dHJlZSA5OWRjNDdjNmI1NDU0NzAxMzFkMGI3ZTQzODU4ZDMzMmJiOGU3MDIwCnBhcmVudCA0NDM1ZTM1YTIxYjE4NzEwN2FhN2EzZWU4NmY3ZDhkZmFjZDA1YWY1CmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjU3OTQwNSArMDEwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI1Nzk0MDUgKzAxMDAKCkNvbXBsZXRlIFBoYXNlIDE3IGNvbnRyb2xsZWQgZXZpZGVuY2Ugc3R1ZHksIDM3LXNvdXJjZSBhdWRpdCwgcmVwcm9kdWNpYmxlIHJlc3VsdHMgYW5kIFBlcnNpYW4gcmVwb3J0Cg=="
+    },
+    {
+      "local": "e45585cac69f3cfd4f9a0192b9879446ad5e7763",
+      "published": "cf7265bec1a847f8afd2a6ce83cf98070d63f868",
+      "tree": "06a3913a0267daacf21000376a71535f5564e9ce",
+      "raw_commit_base64": "dHJlZSAwNmEzOTEzYTAyNjdkYWFjZjIxMDAwMzc2YTcxNTM1ZjU1NjRlOWNlCnBhcmVudCAwZTI0ODNhOTcyZTA1ZmNiZjAyNDMwMDM3ZTY5ZTg3MjI2ZWYzN2NiCmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjU4MDE2MCArMDEwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI1ODAxNjAgKzAxMDAKClByZXBhcmUgYXBwcm92ZWQgUGhhc2UgMTcgcHVibGljYXRpb24sIHZhbGlkYXRpb24gd29ya2Zsb3cgYW5kIFBoYXNlIDE4IGhhbmRvZmYK"
+    }
+  ]
+}

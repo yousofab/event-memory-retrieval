@@ -1,0 +1,132 @@
+{
+  "locomo": {
+    "discordance_centered_writer": {
+      "0_0": 155,
+      "0_1": 2,
+      "1_0": 1,
+      "1_1": 441
+    },
+    "strata_descriptive": [
+      {
+        "stratum": "single_turn",
+        "method": "centered",
+        "questions": 509,
+        "all_evidence_count": 414,
+        "mean_turn_recall": 0.8133595284872298
+      },
+      {
+        "stratum": "single_turn",
+        "method": "writer",
+        "questions": 509,
+        "all_evidence_count": 414,
+        "mean_turn_recall": 0.8133595284872298
+      },
+      {
+        "stratum": "multiple_turns",
+        "method": "centered",
+        "questions": 90,
+        "all_evidence_count": 28,
+        "mean_turn_recall": 0.49
+      },
+      {
+        "stratum": "multiple_turns",
+        "method": "writer",
+        "questions": 90,
+        "all_evidence_count": 29,
+        "mean_turn_recall": 0.4937037037037037
+      },
+      {
+        "stratum": "single_session",
+        "method": "centered",
+        "questions": 534,
+        "all_evidence_count": 432,
+        "mean_turn_recall": 0.8099250936329588
+      },
+      {
+        "stratum": "single_session",
+        "method": "writer",
+        "questions": 534,
+        "all_evidence_count": 432,
+        "mean_turn_recall": 0.8099250936329588
+      },
+      {
+        "stratum": "multiple_sessions",
+        "method": "centered",
+        "questions": 65,
+        "all_evidence_count": 10,
+        "mean_turn_recall": 0.39384615384615385
+      },
+      {
+        "stratum": "multiple_sessions",
+        "method": "writer",
+        "questions": 65,
+        "all_evidence_count": 11,
+        "mean_turn_recall": 0.39897435897435896
+      }
+    ],
+    "all_gold_sessions_count": 493,
+    "capacity_shortfalls": {
+      "512": 0,
+      "1024": 0,
+      "2048": 24
+    }
+  },
+  "qmsum": {
+    "discordance_centered_writer": {
+      "0_0": 220,
+      "1_0": 1,
+      "1_1": 23
+    },
+    "strata_descriptive": [
+      {
+        "stratum": "single_turn",
+        "method": "centered",
+        "questions": 5,
+        "all_evidence_count": 0,
+        "mean_turn_recall": 0.0
+      },
+      {
+        "stratum": "single_turn",
+        "method": "writer",
+        "questions": 5,
+        "all_evidence_count": 0,
+        "mean_turn_recall": 0.0
+      },
+      {
+        "stratum": "multiple_turns",
+        "method": "centered",
+        "questions": 239,
+        "all_evidence_count": 24,
+        "mean_turn_recall": 0.3245250927895152
+      },
+      {
+        "stratum": "multiple_turns",
+        "method": "writer",
+        "questions": 239,
+        "all_evidence_count": 23,
+        "mean_turn_recall": 0.32791481669315253
+      },
+      {
+        "stratum": "single_session",
+        "method": "centered",
+        "questions": 244,
+        "all_evidence_count": 24,
+        "mean_turn_recall": 0.3178749884290743
+      },
+      {
+        "stratum": "single_session",
+        "method": "writer",
+        "questions": 244,
+        "all_evidence_count": 23,
+        "mean_turn_recall": 0.3211952507773092
+      }
+    ],
+    "all_gold_sessions_count": 244,
+    "capacity_shortfalls": {
+      "512": 0,
+      "1024": 0,
+      "2048": 6
+    }
+  },
+  "status": "Post-result descriptive diagnostics; subgroups were listed in the local plan. No tuning."
+}

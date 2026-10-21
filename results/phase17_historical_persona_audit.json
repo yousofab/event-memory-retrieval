@@ -1,0 +1,54 @@
+{
+  "phase16_original_persona_reanalysis": {
+    "questions": 398,
+    "personas": 10,
+    "writer_count": 291,
+    "random_mean_count": 278.8,
+    "question_weighted_difference": 0.03065326633165829,
+    "descriptive_persona_bootstrap95": [
+      0.01292680175946464,
+      0.04924623115577889
+    ],
+    "per_persona_question_count": {
+      "academic_researcher": 41,
+      "business_executive": 40,
+      "content_writer": 41,
+      "creative_designer": 39,
+      "financial_analyst": 39,
+      "management_consultant": 39,
+      "marketing_manager": 40,
+      "sales_manager": 39,
+      "software_engineer": 40,
+      "startup_founder": 40
+    },
+    "interpretation": "Post-hoc diagnostic, 10 persona clusters retaining all periods; not a new experiment or confirmatory interval."
+  },
+  "phase16_equal_selected_persona_reanalysis": {
+    "questions": 398,
+    "personas": 10,
+    "writer_count": 281,
+    "random_mean_count": 274.8,
+    "question_weighted_difference": 0.01557788944723618,
+    "descriptive_persona_bootstrap95": [
+      -0.0015038538557448921,
+      0.03242066154410926
+    ],
+    "per_persona_question_count": {
+      "academic_researcher": 41,
+      "business_executive": 40,
+      "content_writer": 41,
+      "creative_designer": 39,
+      "financial_analyst": 39,
+      "management_consultant": 39,
+      "marketing_manager": 40,
+      "sales_manager": 39,
+      "software_engineer": 40,
+      "startup_founder": 40
+    },
+    "interpretation": "Post-hoc diagnostic, 10 persona clusters retaining all periods; not a new experiment or confirmatory interval."
+  },
+  "source_sha256": {
+    "phase16_rows.json.gz": "c869155535eba190def45834873bb10acf51355bc5da3212023fe945e8ad4456",
+    "phase16_equal_selected.json.gz": "bff2939920dc185b49385a93df4ea347182fe88885ae5425374760fff242b3a2"
+  }
+}
