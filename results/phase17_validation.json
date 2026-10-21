@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "numeric_rows": 55638,
+  "paired_query_budget_groups": 2529,
+  "compressed_rows_byte_identical": true,
+  "numeric_rows_sha256": "5a8d67e308ef80b29d18e9fd08b039367930b1c7ef681d86a3494c770b4fa1e2",
+  "compressed_rows_sha256": "37927cb054d245b5de1e8712d0dd003db29a2ef5e83ba6a0e056d6bf76500394",
+  "corrected_run_wall_seconds": 22.701549754000098,
+  "reproduction_wall_seconds": 22.522783361000165,
+  "corrected_peak_rss_mib_linux": 375.6171875,
+  "tests_total": 52,
+  "tests_passed": 51,
+  "tests_skipped": 1,
+  "skip_reason": "Phase14 pinned Memora upstream source not present locally; no Phase17 test skipped",
+  "old_results_policy": "No files predating Phase17 changed; historical persona audit saved separately",
+  "local_protocol_commit": "29322988556bb161e91bcb566f88d84b8e86d531",
+  "baseline_commit": "f1b75707c3e63c4c518d2b3e0d6fd5e9cf33ac61",
+  "old_result_files_unchanged": 33,
+  "independent_primary_mean_check": true,
+  "document_visual_qa": {
+    "pages": 15,
+    "all_pages_inspected": true,
+    "paper": "A4",
+    "persian_direction": "RTL; logical start aligned right",
+    "persian_font_embedded": "B Nazanin / B Nazanin Bold",
+    "figures": 2,
+    "numbered_tables": 4
+  },
+  "zero_word_partition_audit": "8 LoCoMo and 3 QMSum history-seed pairs have one fewer effective nonempty interval; output opportunities remain identical; no retuning."
+}

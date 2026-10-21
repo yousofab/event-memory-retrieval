@@ -1,6 +1,27 @@
 # Event Memory Retrieval — BSc software project
 
-**Status: Phase 16 paired matched-boundary Memora retrieval study complete. With both roles visible and 1,024 words, the immutable online writer reached an active-evidence session for 291/398 eligible questions versus 272–285/398 across five random partitions with the same number of segments per session. A post-result sensitivity matching the number of selected documents reduced the average difference from 3.07 to 1.56 percentage points. The source annotations identify sessions, not the evidence turns inside them; this is not answer accuracy, human event perception, or FAMA. The final thesis remains a later deliverable.**
+**Status: Phase 17 fixed-anchor, exactly matched-opportunity evidence study complete locally. At 1,024 words, LoCoMo full-evidence coverage was 443/599 for the frozen writer versus 442/599 for centered context; the conversation-macro difference versus 20 random controls was +0.84 percentage points, below the predeclared 2-point practical threshold. QMSum did not show a stable transfer benefit. This is a controlled exploratory retrieval study on reused data, not answer accuracy or a claim of human-like understanding. Public publication of this branch is awaiting the researcher's final approval.**
+
+## Phase 17: boundary guidance with fixed evidence opportunities
+
+The turn BM25 index, eight anchors, all feasible context windows, per-window widths, selected window count, accessible sessions and **actual unique-word cost** are identical across centered, frozen-writer and 20 count-matched random conditions. Only boundary-guided window selection changes. Underlying episode lengths are not matched. Turn-partition counts are matched; a post-result audit found eight LoCoMo and three QMSum history-seed pairs with a zero-word part, leaving one fewer effective nonempty interval. Output opportunities remain exact. The local protocol commit `2932298` predates scoring; it is not externally timestamped public preregistration.
+
+- [Persian research report](docs/phase17.md), [Phase 1–16 state ledger](docs/phase17_state_ledger.md), [37-source literature atlas](docs/phase17_literature_atlas.md), [frontier and novelty audit](docs/phase17_frontier_synthesis.md), [10 candidates and critical shortlist](docs/phase17_candidates.md).
+- [Protocol](docs/phase17_plan.md), [machine-readable plan](configs/phase17_plan.json), [reproduction guide](docs/phase17_reproduce.md), [implementation corrections](docs/phase17_implementation_corrections.md), [PR draft](docs/phase17_pr_draft.md).
+- `scripts/run_phase17_fixed_anchors.py`, `scripts/validate_phase17.py`, `scripts/analyze_phase17.py`, `tests/test_phase17_fixed_anchors.py`.
+- `results/phase17_rows.json.gz`: 55,638 numeric rows, 843 questions, 3 budgets, 22 conditions; these are repeated conditions, not 55,638 independent samples. Corrected numerical output was reproduced byte-for-byte. `phase17_summary.json`, `phase17_diagnostics.json`, `phase17_validation.json` and `phase17_historical_persona_audit.json` contain aggregates and audit evidence.
+- `deliverables/phase17_research_report_fa.docx` and `.pdf`: A4 Persian RTL B Nazanin report with verified references, figures and advisor/FARDIAT acknowledgements. Fonts and upstream transcripts are excluded.
+
+At 512 words, the writer trails centered windows by 14 LoCoMo complete-evidence cases; at 2,048 all methods reach 472/599. QMSum uses broad relevant-turn spans, not minimal answer evidence. Confidence intervals are descriptive cluster bootstraps over 7 LoCoMo conversations or 10 QMSum source families. A post-hoc historical Phase 16 reanalysis clusters by 10 personas; its equal-selected sensitivity interval includes zero. Historical results remain unchanged.
+
+```bash
+python scripts/fetch_data.py
+python scripts/fetch_phase10_data.py --download
+python -m unittest discover -s tests -v
+python scripts/run_phase17_fixed_anchors.py --output-dir /tmp/phase17-review-run
+python scripts/validate_phase17.py --directory /tmp/phase17-review-run
+```
+
 
 ## Phase 16: paired online boundaries and count-matched random partitions
 

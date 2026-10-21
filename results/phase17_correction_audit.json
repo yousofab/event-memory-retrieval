@@ -1,0 +1,35 @@
+{
+  "changed_fields": {
+    "all_gold_sessions": 6996
+  },
+  "all_primary_metrics_windows_costs_identical": true,
+  "qmsum_queries_with_empty_gold_turns": 5,
+  "qmsum_query_empty_turn_occurrences": 9,
+  "qmsum_details": [
+    {
+      "sample": "Bmr014",
+      "query": 0,
+      "empty": 1
+    },
+    {
+      "sample": "Bro004",
+      "query": 3,
+      "empty": 1
+    },
+    {
+      "sample": "Bro027",
+      "query": 3,
+      "empty": 3
+    },
+    {
+      "sample": "Bro027",
+      "query": 4,
+      "empty": 2
+    },
+    {
+      "sample": "Bro027",
+      "query": 5,
+      "empty": 2
+    }
+  ]
+}

@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "R01",
+    "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+    "authors": [
+      "Adyasha Maharana",
+      "Dong-Ho Lee",
+      "Sergey Tulyakov",
+      "Mohit Bansal",
+      "Francesco Barbieri",
+      "Yuwei Fang"
+    ],
+    "initial_or_publisher_date": "2024/8",
+    "venue_and_status": "ACL 2024؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2024.acl-long.747/",
+    "publication_url": "https://aclanthology.org/2024.acl-long.747/",
+    "doi": "10.18653/v1/2024.acl-long.747",
+    "code_or_data_urls": [
+      "https://github.com/snap-research/locomo"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "معیار",
+    "method_and_finding_fa": "گفت‌وگوهای طولانی با پرسش و شاهد نوبتی؛ حافظه‌ی بلندمدت دشوار باقی می‌ماند",
+    "data_and_evaluation_fa": "LoCoMo؛ پرسش‌پاسخ و بازیابی",
+    "limitation_and_gap_fa": "ساخت نیمه‌مصنوعی و شاهد احتمالا ناکامل؛ مرز رویداد انسانی نیست",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "14b031488a7e83efcc59e61f884f6b95b3d22eb2960b0959d35e0e15df320325",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R02",
+    "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "authors": [
+      "Wu, Di",
+      "Wang, Hongwei",
+      "Yu, Wenhao",
+      "Zhang, Yuwei",
+      "Chang, Kai-Wei",
+      "Yu, Dong"
+    ],
+    "initial_or_publisher_date": "2025-05-01",
+    "venue_and_status": "ICLR 2025؛ داوری‌شده",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+    "doi": null,
+    "code_or_data_urls": [
+      "https://github.com/xiaowu0162/LongMemEval"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "معیار",
+    "method_and_finding_fa": "پنج توانایی حافظه؛ جداسازی نمایه‌سازی، بازیابی و خواندن",
+    "data_and_evaluation_fa": "LongMemEval؛ ۵۰۰ پرسش، پاسخ و شاهد",
+    "limitation_and_gap_fa": "ساخت تاریخچه و سطح برچسب با LoCoMo متفاوت؛ تجمیع بی‌تفکیک ناموجه",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "469d828d21c692b718d8e4052e1aeca5b3072bdba4b13f47165db0000ab8614b",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R03",
+    "title": "QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization",
+    "authors": [
+      "Ming Zhong",
+      "Da Yin",
+      "Tao Yu",
+      "Ahmad Zaidi",
+      "Mutethia Mutuma",
+      "Rahul Jha",
+      "Ahmed Hassan",
+      "Asli Celikyilmaz",
+      "Yang Liu",
+      "Xipeng Qiu (邱锡鹏)",
+      "Dragomir Radev"
+    ],
+    "initial_or_publisher_date": "2021/6",
+    "venue_and_status": "NAACL 2021؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2021.naacl-main.472/",
+    "publication_url": "https://aclanthology.org/2021.naacl-main.472/",
+    "doi": "10.18653/v1/2021.naacl-main.472",
+    "code_or_data_urls": [
+      "https://github.com/Yale-LILY/QMSum"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "معیار",
+    "method_and_finding_fa": "خلاصه‌سازی جلسه بر اساس پرسش و بازه‌ی مرتبط",
+    "data_and_evaluation_fa": "QMSum؛ جلسه‌های چندحوزه‌ای، خلاصه و بازه",
+    "limitation_and_gap_fa": "بازه‌ی مرتبط لزوما شاهد کمینه‌ی پاسخ نیست؛ معیار انتقال ما محدود است",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "7e3d21c48e75c18521a20db08d3d049467899ae54e8cca6bbc97c4e0524455ab",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R04",
+    "title": "From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents",
+    "authors": [
+      "Md Nayem Uddin",
+      "Kumar Shubham",
+      "Eduardo Blanco",
+      "Chitta Baral",
+      "Gengyu Wang"
+    ],
+    "initial_or_publisher_date": "2026/7",
+    "venue_and_status": "Findings ACL 2026؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2026.findings-acl.1337/",
+    "publication_url": "https://aclanthology.org/2026.findings-acl.1337/",
+    "doi": "10.18653/v1/2026.findings-acl.1337",
+    "code_or_data_urls": [
+      "https://github.com/geniesinc/Memora"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "معیار",
+    "method_and_finding_fa": "حافظه‌ی شخصی همراه با حفظ، اصلاح و فراموشی",
+    "data_and_evaluation_fa": "Memora؛ حالت حافظه و بازیابی جلسه",
+    "limitation_and_gap_fa": "شناسه‌ی جلسه محل دقیق شاهد را تعیین نمی‌کند؛ مسیر بارگذاری نقش‌ها باید ممیزی شود",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "19ad0433d3881403efdf4379b453ef57d6328df2bf6f072fcd83939288bb862a",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R05",
+    "title": "Memory Matters More: Event-Centric Memory as a Logic Map for Agent Searching and Reasoning",
+    "authors": [
+      "Yuyang Hu",
+      "Jiongnan Liu",
+      "Jiejun Tan",
+      "Yutao Zhu (朱余韬)",
+      "Zhicheng Dou (窦志成)"
+    ],
+    "initial_or_publisher_date": "2026/7",
+    "venue_and_status": "Findings ACL 2026؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2026.findings-acl.1123/",
+    "publication_url": "https://aclanthology.org/2026.findings-acl.1123/",
+    "doi": "10.18653/v1/2026.findings-acl.1123",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "ساختار",
+    "method_and_finding_fa": "CompassMem؛ گراف رخداد و رابطه‌ی منطقی برای جست‌وجو",
+    "data_and_evaluation_fa": "LoCoMo و NarrativeQA؛ پاسخ و اجزای بازیابی",
+    "limitation_and_gap_fa": "گراف، قطعه و ناوبری هم‌زمان تغییر می‌کنند؛ کنترل اندازه‌ی تقریبی، تساوی فرصت نیست",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "17d4767203a94d825caa6b413be22127db70b1d17e862a32d8890c9798769132",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R06",
+    "title": "Structured Episodic Event Memory",
+    "authors": [
+      "Zhengxuan Lu",
+      "Dongfang Li",
+      "Yukun Shi",
+      "Beilun Wang",
+      "Longyue Wang",
+      "Baotian Hu"
+    ],
+    "initial_or_publisher_date": "2026/7",
+    "venue_and_status": "ACL 2026؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2026.acl-long.277/",
+    "publication_url": "https://aclanthology.org/2026.acl-long.277/",
+    "doi": "10.18653/v1/2026.acl-long.277",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "ساختار",
+    "method_and_finding_fa": "SEEM؛ قاب رویداد و زنجیره‌ی منشأ، گسترش معکوس شاهد",
+    "data_and_evaluation_fa": "LoCoMo و LongMemEval؛ بازیابی/پاسخ و حذف مولفه",
+    "limitation_and_gap_fa": "اجرای اصلی دسته‌ای و مکمل چهار بلوک؛ برخط بودن در سطح هر نوبت نتیجه نمی‌شود",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "d587e587ccd76e4571e258881b56086bac02a5624004cbacb845e567b1e8ffb3",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R07",
+    "title": "APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI",
+    "authors": [
+      "Pratyay Banerjee",
+      "Masud Moshtaghi",
+      "Shivashankar Subramanian",
+      "Amita Misra",
+      "Ankit Chadha"
+    ],
+    "initial_or_publisher_date": "2026/7",
+    "venue_and_status": "ACL 2026؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2026.acl-long.749/",
+    "publication_url": "https://aclanthology.org/2026.acl-long.749/",
+    "doi": "10.18653/v1/2026.acl-long.749",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "زمان",
+    "method_and_finding_fa": "APEX-MEM؛ گراف افزایشی موجودیت، رویداد و ویژگی با ابزار زمانی",
+    "data_and_evaluation_fa": "LoCoMo و SealQA-Hard؛ پاسخ نهایی",
+    "limitation_and_gap_fa": "ساخت برخط وابسته به پرسش جاری است؛ هم‌ارز نویسنده‌ی مستقل از پرسش نیست",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "93bcd4dbb08f5f4f39466cd95df70d99b8817b95d35e321d0ed2e0e6f7c274fd",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R08",
+    "title": "Locomo-Plus: Beyond-Factual Cognitive Memory Evaluation Framework for LLM Agents",
+    "authors": [
+      "Yifei Li",
+      "Weidong Guo",
+      "Lingling Zhang",
+      "Rongman Xu",
+      "Muye Huang",
+      "Hui Liu",
+      "Lijiao Xu",
+      "Yu Xu",
+      "Jun Liu"
+    ],
+    "initial_or_publisher_date": "2026/7",
+    "venue_and_status": "ACL 2026؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2026.acl-long.1150/",
+    "publication_url": "https://aclanthology.org/2026.acl-long.1150/",
+    "doi": "10.18653/v1/2026.acl-long.1150",
+    "code_or_data_urls": [
+      "https://github.com/xjtuleeyf/Locomo-Plus"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "معیار",
+    "method_and_finding_fa": "قیود نهفته و فاصله‌ی معنایی میان نشانه و حافظه",
+    "data_and_evaluation_fa": "LoCoMo-Plus؛ پاسخ با داوری مدل",
+    "limitation_and_gap_fa": "به‌یادآوری واقعیت کافی نیست؛ داوری مولد و ساخت نمونه‌ها محدودیت دارند",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "830919bce614dd3456671dba80f988897ed6d092ba0456196f1d68aefc1b9be0",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R09",
+    "title": "SeCom: On Memory Construction and Retrieval for Personalized Conversational Agents",
+    "authors": [
+      "Pan, Zhuoshi",
+      "Wu, Qianhui",
+      "Jiang, Huiqiang",
+      "Luo, Xufang",
+      "Cheng, Hao",
+      "Li, Dongsheng",
+      "Yang, Yuqing",
+      "Lin, Chin-Yew",
+      "Zhao, H. Vicky",
+      "Qiu, Lili",
+      "Gao, Jianfeng"
+    ],
+    "initial_or_publisher_date": "2025-05-01",
+    "venue_and_status": "ICLR 2025؛ داوری‌شده",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "مرزبندی",
+    "method_and_finding_fa": "SeCom؛ قطعه‌ی موضوعی همراه با فشرده‌سازی و حذف نویز",
+    "data_and_evaluation_fa": "LoCoMo و Long-MT-Bench+؛ بازیابی/پاسخ، معیارهای قطعه‌بندی",
+    "limitation_and_gap_fa": "قطعه‌بندی معنایی از قبل انجام شده؛ تغییر محتوا و هزینه جدا باید کنترل شوند",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "efc19fbfe33b2a11561921b05279e695e6b1fefafbc08a4c7908e479bfead279",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R10",
+    "title": "ES-Mem: Event Segmentation-Based Memory for Long-Term Dialogue Agents",
+    "authors": [
+      "Zou, Huhai",
+      "Sun, Tianhao",
+      "He, Chuanjiang",
+      "Tian, Yu",
+      "Li, Zhenyang",
+      "Jin, Li",
+      "Liu, Nayu",
+      "Zhong, Jiang",
+      "Wei, Kaiwen"
+    ],
+    "initial_or_publisher_date": "2026/01/12",
+    "venue_and_status": "arXiv 2026؛ پیش‌چاپ، محل داوری تایید نشد",
+    "source_url": "https://arxiv.org/abs/2601.07582",
+    "publication_url": "https://arxiv.org/abs/2601.07582",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "مرزبندی",
+    "method_and_finding_fa": "ES-Mem؛ قطعه‌بندی رویدادی پویا و حافظه‌ی سلسله‌مراتبی",
+    "data_and_evaluation_fa": "ارزیابی حافظه‌ی مکالمه و قطعه‌بندی",
+    "limitation_and_gap_fa": "نام‌گذاری رویدادمحور نوآوری ما نیست؛ قرارداد دسترسی به آینده نیازمند تطبیق پیاده‌سازی است",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "40ee8dc88515b71dd82d8a34a676fbf4ecb9f19e703af846499464e9c2a9ca48",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R11",
+    "title": "HingeMem: Boundary Guided Long-Term Memory with Query Adaptive Retrieval for Scalable Dialogues",
+    "authors": [
+      "Zhong, Yijie",
+      "Gao, Yunfan",
+      "Wang, Haofen"
+    ],
+    "initial_or_publisher_date": "2026/04/08",
+    "venue_and_status": "The Web Conference 2026؛ داوری‌شده",
+    "source_url": "https://arxiv.org/abs/2604.06845",
+    "publication_url": "https://doi.org/10.1145/3774904.3792089",
+    "doi": "10.1145/3774904.3792089",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "مرزبندی",
+    "method_and_finding_fa": "HingeMem؛ تغییر شخص، زمان، مکان و موضوع همراه با خواندن تطبیقی",
+    "data_and_evaluation_fa": "LoCoMo؛ حافظه و پاسخ",
+    "limitation_and_gap_fa": "مستقیما به ایده‌ی مرز چندمولفه‌ای نزدیک؛ اثر مرز از سیاست خواندن جدا نیست",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "dd37d80943fc7d6062b7998f1e9a8c9dc0866e908f676e63ac8c50086eaf9612",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R12",
+    "title": "TiMem: Temporal-Hierarchical Memory Consolidation for Long-Horizon Conversational Agents",
+    "authors": [
+      "Kai Li",
+      "Xuanqing Yu",
+      "Ziyi Ni",
+      "Yi Zeng",
+      "Yao Xu",
+      "Zheqing Zhang",
+      "Xin Li",
+      "Jitao Sang (桑基韬)",
+      "Xiaogang Duan",
+      "Xuelei Wang",
+      "Chengbao Liu",
+      "Jie Tan"
+    ],
+    "initial_or_publisher_date": "2026/7",
+    "venue_and_status": "Findings ACL 2026؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2026.findings-acl.1091/",
+    "publication_url": "https://aclanthology.org/2026.findings-acl.1091/",
+    "doi": "10.18653/v1/2026.findings-acl.1091",
+    "code_or_data_urls": [
+      "https://github.com/TiMEM-AI/timem"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "سلسله‌مراتب",
+    "method_and_finding_fa": "TiMem؛ تثبیت حافظه در سلسله‌مراتب زمانی",
+    "data_and_evaluation_fa": "حافظه‌ی مکالمه‌ی بلندمدت؛ ارزیابی پاسخ",
+    "limitation_and_gap_fa": "سلسله‌مراتب به‌تنهایی ایده‌ی جدید نیست؛ هزینه و حذف اطلاعات باید کنترل شوند",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "34c6bf27e96bb3bcf5e0a34d7d52052817e65faf3c5245a240c14c2e3054414b",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R13",
+    "title": "HiGMem: A Hierarchical and LLM-Guided Memory System for Long-Term Conversational Agents",
+    "authors": [
+      "Shuqi Cao",
+      "Jingyi He",
+      "Fei Tan"
+    ],
+    "initial_or_publisher_date": "2026/7",
+    "venue_and_status": "Findings ACL 2026؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2026.findings-acl.1690/",
+    "publication_url": "https://aclanthology.org/2026.findings-acl.1690/",
+    "doi": "10.18653/v1/2026.findings-acl.1690",
+    "code_or_data_urls": [
+      "https://github.com/ZeroLoss-Lab/HiGMem"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "سلسله‌مراتب",
+    "method_and_finding_fa": "HiGMem؛ هدایت مدل برای حافظه‌ی چندسطحی",
+    "data_and_evaluation_fa": "مکالمه‌ی بلندمدت؛ پاسخ و مولفه‌ها",
+    "limitation_and_gap_fa": "مدل هدایت‌کننده متغیر اضافی دارد؛ ادعای مزیت صرفِ مقیاس ناموجه است",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "0fefa9e50ac405fde11ba2076b5f63085088b947234480e3612ec40a2494ec3e",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R14",
+    "title": "From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents",
+    "authors": [
+      "Xu, Derong",
+      "Wen, Yi",
+      "Jia, Pengyue",
+      "Zhang, Yingyi",
+      "zhang, wenlin",
+      "Wang, Yichao",
+      "Guo, Huifeng",
+      "Tang, Ruiming",
+      "Zhao, Xiangyu",
+      "Chen, Enhong",
+      "Xu, Tong"
+    ],
+    "initial_or_publisher_date": "2025/05/26",
+    "venue_and_status": "arXiv 2025؛ پیش‌چاپ، محل داوری تایید نشد",
+    "source_url": "https://arxiv.org/abs/2505.19549",
+    "publication_url": "https://arxiv.org/abs/2505.19549",
+    "doi": null,
+    "code_or_data_urls": [
+      "https://github.com/quqxui/MemGAS"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "سلسله‌مراتب",
+    "method_and_finding_fa": "MemGAS؛ پیوند چنددانه‌بندی، مسیریابی و پالایش",
+    "data_and_evaluation_fa": "چند معیار حافظه؛ ارزیابی سامانه",
+    "limitation_and_gap_fa": "یادگیری انتخاب دانه‌بندی پیشینه دارد؛ هزینه‌ی پالایش و انتخاب مخدوش‌کننده‌اند",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "d2b7d41baf19f91db65d76e4372075348882520358a2608116ebb1f1dced3cb4",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R15",
+    "title": "Fidelity Before Structure: Verbatim Chunks Beat Lossy Artifact Extraction in Long-Conversation LLM Memory",
+    "authors": [
+      "An, Tao"
+    ],
+    "initial_or_publisher_date": "2025/12/23",
+    "venue_and_status": "arXiv؛ نخست ۲۰۲۵، نسخه‌ی ۴ در ژوئیه‌ی ۲۰۲۶؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2601.00821",
+    "publication_url": "https://arxiv.org/abs/2601.00821",
+    "doi": null,
+    "code_or_data_urls": [
+      "https://github.com/tao-hpu/cog-canvas"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "کنترل",
+    "method_and_finding_fa": "مقایسه‌ی متن دست‌نخورده با استخراج اتلافی و کنترل‌های مخدوش‌کننده",
+    "data_and_evaluation_fa": "LoCoMo و LongMemEval-S؛ پاسخ، کنترل هزینه‌ی شاهد",
+    "limitation_and_gap_fa": "بودجه‌ی artifact همسان است، اما واحد و فرصت نامزدها لزوما یکسان نیست؛ نزدیک‌ترین هشدار به ادعای ساختار بهتر",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "45394b2c3277b32c2e8bcdc216b298e03eca03d6250bf0fbf0c8b9a4633ba4a4",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R16",
+    "title": "When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory",
+    "authors": [
+      "Li, Ruizhe",
+      "Zhang, Licheng",
+      "Xu, Benfeng",
+      "Du, Mingxuan",
+      "Fu, Zheren",
+      "Chen, Weidong"
+    ],
+    "initial_or_publisher_date": "2026/08/13",
+    "venue_and_status": "arXiv 2026؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2608.12888",
+    "publication_url": "https://arxiv.org/abs/2608.12888",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "بازیابی",
+    "method_and_finding_fa": "ReFind؛ جست‌وجوی عاملی روی نوبت خام، ادغام جلسه و گسترش زمینه",
+    "data_and_evaluation_fa": "MemoryAgentBench و LongMemEval-S/M؛ پاسخ و هزینه",
+    "limitation_and_gap_fa": "گسترش زمینه و نوبت خام از قبل وجود دارند؛ خواننده‌ی عاملی هزینه و عوامل اضافی دارد",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "2577ea2366cb6d42f20c3d652a1a786347063cb1cdf837d68fa7ae43524390ca",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R17",
+    "title": "LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation",
+    "authors": [
+      "Li, Dongfang",
+      "Liu, Zixuan",
+      "Wang, Junmai",
+      "Huang, Jiahe",
+      "Li, Fuhao",
+      "Zhang, Lin",
+      "Jia, Bonian",
+      "Hu, Baotian",
+      "Zhang, Min"
+    ],
+    "initial_or_publisher_date": "2026/08/13",
+    "venue_and_status": "arXiv؛ نسخه‌ی ۲ در ۱۴ اکتبر ۲۰۲۶؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2608.12990",
+    "publication_url": "https://arxiv.org/abs/2608.12990",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "هزینه",
+    "method_and_finding_fa": "LycheeMemory V2؛ تجمیع قطعه‌ی معنایی پیش از تثبیت حافظه",
+    "data_and_evaluation_fa": "LoCoMo و LongMemEval-S؛ پاسخ و هزینه",
+    "limitation_and_gap_fa": "کاهش فراوانی تثبیت با برتری مرز یکی نیست؛ استخراج مدل به منابع نیاز دارد",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "d903dfc3ae2148024bab63046cad353652560b02f9932e14eac3a506c4197cb0",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R18",
+    "title": "UTILMEM: Benchmarking Evidence Utilization in Long-Term Conversational Memory",
+    "authors": [
+      "Qing, Peijun",
+      "Shi, Fobo",
+      "Vosoughi, Soroush"
+    ],
+    "initial_or_publisher_date": "2026/08/31",
+    "venue_and_status": "arXiv 2026؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2608.30508",
+    "publication_url": "https://arxiv.org/abs/2608.30508",
+    "doi": null,
+    "code_or_data_urls": [
+      "https://github.com/peijunallin/UtilMem"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "معیار",
+    "method_and_finding_fa": "UTILMEM؛ سنجش استفاده از شاهد، ربط ضمنی و حواس‌پرتی",
+    "data_and_evaluation_fa": "۱۷۱۷ نمونه در پنج حوزه؛ حذف مقابله‌ای شاهد و پاسخ",
+    "limitation_and_gap_fa": "ساخت و داوری با مدل؛ دسترسی به شاهد، استفاده‌ی صحیح را تضمین نمی‌کند",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "4a019e2fac3a524606ad867be156c5c5387da28e9c23d113d689c14a63dc6adf",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R19",
+    "title": "Beyond Chunk-Then-Embed: A Comprehensive Taxonomy and Evaluation of Document Chunking Strategies for Information Retrieval",
+    "authors": [
+      "Zhou, Yongjie",
+      "Wang, Shuai",
+      "Koopman, Bevan",
+      "Zuccon, Guido"
+    ],
+    "initial_or_publisher_date": "2026/02/19",
+    "venue_and_status": "arXiv 2026؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2602.16974",
+    "publication_url": "https://arxiv.org/abs/2602.16974",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "کنترل",
+    "method_and_finding_fa": "تقسیم‌بندی راهبردها به انتخاب قطعه و زمان embedding؛ بازسنجی روش‌ها",
+    "data_and_evaluation_fa": "بازیابی درون سند و مجموعه؛ مقایسه‌ی قطعه‌بندی",
+    "limitation_and_gap_fa": "نتیجه به محیط بازیابی وابسته است؛ برنده‌ی واحد از این مطالعه نتیجه نمی‌شود",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "0c9504a97c864e5412a9a24b7e4f963e1c02be54af2e7a16861c8dd943496d4d",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R20",
+    "title": "Late Chunking: Contextual Chunk Embeddings Using Long-Context Embedding Models",
+    "authors": [
+      "Günther, Michael",
+      "Mohr, Isabelle",
+      "Williams, Daniel James",
+      "Wang, Bo",
+      "Xiao, Han"
+    ],
+    "initial_or_publisher_date": "2024/09/07",
+    "venue_and_status": "arXiv؛ نخست ۲۰۲۴، نسخه‌ی ۳ در ۲۰۲۵؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2409.04701",
+    "publication_url": "https://arxiv.org/abs/2409.04701",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "بازیابی",
+    "method_and_finding_fa": "Late Chunking؛ embedding با زمینه‌ی بلند سپس تجمیع قطعه",
+    "data_and_evaluation_fa": "بازیابی متنی؛ کیفیت بردار قطعه",
+    "limitation_and_gap_fa": "به زمینه‌ی وسیع پیش از قطعه‌بندی دسترسی دارد؛ هم‌ارز نویسنده‌ی علّی نیست",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "5c765da8bd0e34364b38abf1db0ad2468dec72b1edc0c9aaa8033ba40871314b",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R21",
+    "title": "LumberChunker: Long-Form Narrative Document Segmentation",
+    "authors": [
+      "Andre Vicente Duarte",
+      "João DS Marques",
+      "Miguel Graça",
+      "Miguel Freire",
+      "Lei Li",
+      "Arlindo L. Oliveira"
+    ],
+    "initial_or_publisher_date": "2024/11",
+    "venue_and_status": "Findings EMNLP 2024؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2024.findings-emnlp.377/",
+    "publication_url": "https://aclanthology.org/2024.findings-emnlp.377/",
+    "doi": "10.18653/v1/2024.findings-emnlp.377",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "مرزبندی",
+    "method_and_finding_fa": "LumberChunker؛ مرزبندی روایی با مدل زبانی",
+    "data_and_evaluation_fa": "اسناد روایی بلند؛ ارزیابی بازیابی",
+    "limitation_and_gap_fa": "خواندن بلوکی و هزینه‌ی مدل؛ انتقال مستقیم به مکالمه‌ی برخط اثبات نشده",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "8e86c7d0091bb67fd3f9819937d78338efd2567b927c8c2f49db885bfcca436a",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R22",
+    "title": "Dense X Retrieval: What Retrieval Granularity Should We Use?",
+    "authors": [
+      "Tong Chen",
+      "Hongwei Wang",
+      "Sihao Chen",
+      "Wenhao Yu",
+      "Kaixin Ma",
+      "Xinran Zhao",
+      "Hongming Zhang",
+      "Dong Yu"
+    ],
+    "initial_or_publisher_date": "2024/11",
+    "venue_and_status": "EMNLP 2024؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/2024.emnlp-main.845/",
+    "publication_url": "https://aclanthology.org/2024.emnlp-main.845/",
+    "doi": "10.18653/v1/2024.emnlp-main.845",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "بازیابی",
+    "method_and_finding_fa": "Dense X Retrieval؛ گزاره‌ی اتمی به‌عنوان واحد بازیابی",
+    "data_and_evaluation_fa": "بازیابی و پاسخ در دانه‌بندی‌های متفاوت",
+    "limitation_and_gap_fa": "استخراج گزاره محتوا را عوض می‌کند؛ اثر محل مرز را به‌تنهایی نشان نمی‌دهد",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "054604aca37475c042800684864344164501a6da6bc3642e9a1cfba6a436524c",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R23",
+    "title": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+    "authors": [
+      "Sarthi, Parth",
+      "Abdullah, Salman",
+      "Tuli, Aditi",
+      "Khanna, Shubh",
+      "Goldie, Anna",
+      "Manning, Christopher D."
+    ],
+    "initial_or_publisher_date": "2024/01/31",
+    "venue_and_status": "ICLR 2024؛ داوری‌شده",
+    "source_url": "https://arxiv.org/abs/2401.18059",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/8a2acd174940dbca361a6398a4f9df91-Abstract-Conference.html",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "سلسله‌مراتب",
+    "method_and_finding_fa": "RAPTOR؛ خوشه‌بندی بازگشتی، خلاصه و درخت بازیابی",
+    "data_and_evaluation_fa": "پرسش‌پاسخ سند بلند از جمله QuALITY",
+    "limitation_and_gap_fa": "خلاصه‌سازی و ساخت درخت با مرزبندی متفاوت‌اند؛ حفظ شاهد لفظی نیازمند کنترل است",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "9c772c1a35d7a8069ad996cf1c7dbbbc67e181f5fb87ee89cac83a7a92c8b318",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R24",
+    "title": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+    "authors": [
+      "Gutiérrez, Bernal Jiménez",
+      "Shu, Yiheng",
+      "Gu, Yu",
+      "Yasunaga, Michihiro",
+      "Su, Yu"
+    ],
+    "initial_or_publisher_date": "2024/05/23",
+    "venue_and_status": "NeurIPS 2024؛ داوری‌شده",
+    "source_url": "https://arxiv.org/abs/2405.14831",
+    "publication_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ddc001d07ca4f319af96a3024f6dbd1-Abstract-Conference.html",
+    "doi": "10.52202/079017-1902",
+    "code_or_data_urls": [
+      "https://github.com/OSU-NLP-Group/HippoRAG"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "ساختار",
+    "method_and_finding_fa": "HippoRAG؛ گراف دانش و Personalized PageRank",
+    "data_and_evaluation_fa": "پرسش‌پاسخ چندگامی",
+    "limitation_and_gap_fa": "الهام شناختی، شاهد شباهت عصبی نیست؛ استخراج و پیوندها هزینه دارند",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "c09a7c41d520b102b9f3a1714ae97936d6c1f0b47aabcb5162214db1f53d346c",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R25",
+    "title": "A-MEM: Agentic Memory for LLM Agents",
+    "authors": [
+      "Xu, Wujiang",
+      "Liang, Zujie",
+      "Mei, Kai",
+      "Gao, Hang",
+      "Tan, Juntao",
+      "Zhang, Yongfeng"
+    ],
+    "initial_or_publisher_date": "2025/02/17",
+    "venue_and_status": "NeurIPS 2025؛ داوری‌شده",
+    "source_url": "https://arxiv.org/abs/2502.12110",
+    "publication_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/19909c36f51abc4856b4560aff3d36d6-Abstract-Conference.html",
+    "doi": "10.52202/085713-0593",
+    "code_or_data_urls": [
+      "https://github.com/WujiangXu/A-mem"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "ساختار",
+    "method_and_finding_fa": "A-Mem؛ یادداشت، پیوند و تحول حافظه با الهام از Zettelkasten",
+    "data_and_evaluation_fa": "حافظه‌ی عامل؛ چند مدل پایه",
+    "limitation_and_gap_fa": "کنترل اثر مرز محور اصلی نیست؛ تغییر چند مولفه مانع انتساب ساده است",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "8b9d53a6187119d6b2347b8756de186665271721068eaf24b2ddc7ade7db62f7",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R26",
+    "title": "Multiple event segmentation mechanisms in the human brain",
+    "authors": [
+      "Tan T. Nguyen",
+      "Joset A. Etzel",
+      "Matthew A. Bezdek",
+      "Jeffrey M. Zacks"
+    ],
+    "initial_or_publisher_date": "2026-07-07",
+    "venue_and_status": "eLife 14:RP107955؛ نسخه‌ی نهایی ۷ ژوئیه‌ی ۲۰۲۶",
+    "source_url": "https://elifesciences.org/articles/107955",
+    "publication_url": "https://elifesciences.org/articles/107955",
+    "doi": "10.7554/eLife.107955.3",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "شناخت",
+    "method_and_finding_fa": "سازوکارهای متعدد قطعه‌بندی با نشانه‌های خطا و عدم قطعیت",
+    "data_and_evaluation_fa": "انسان؛ تصویربرداری و مدل‌سازی رویداد",
+    "limitation_and_gap_fa": "انتقال به عامل زبانی فرضیه است؛ novelty واژگانی جانشین معتبر همه‌ی سازوکارها نیست",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "0a966052443d31b82db89d3831537b603be637c3a30c3df0a75fa6acbf633e43",
+    "quartile": {
+      "status": "تایید کامل سال/دسته از JCR یا SJR در این مرور ممکن نشد؛ رتبه‌ای ادعا نمی‌شود"
+    }
+  },
+  {
+    "id": "R27",
+    "title": "Hierarchical event segmentation of episodic memory in virtual reality",
+    "authors": [
+      "Li, Yue",
+      "Johansson, Mikael",
+      "Nikolaev, Andrey R."
+    ],
+    "initial_or_publisher_date": "2025-05-11",
+    "venue_and_status": "npj Science of Learning 10:25؛ 2025؛ داوری‌شده",
+    "source_url": "https://www.nature.com/articles/s41539-025-00321-6",
+    "publication_url": "https://www.nature.com/articles/s41539-025-00321-6",
+    "doi": "10.1038/s41539-025-00321-6",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "شناخت",
+    "method_and_finding_fa": "مرزهای مکانی و هدف/ماموریت در ساختار اپیزودیک سلسله‌مراتبی",
+    "data_and_evaluation_fa": "واقعیت مجازی؛ حافظه و ترتیب",
+    "limitation_and_gap_fa": "آزمون انسانی با متن‌کاوی متفاوت است؛ هدف و واژه را نباید یک متغیر دانست",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "e8f213c9688f4fe557889e8351f6b2e0b72fce0d64e49fad8815d2b8570bdbb7",
+    "quartile": {
+      "status": "تایید کامل سال/دسته از JCR یا SJR در این مرور ممکن نشد؛ رتبه‌ای ادعا نمی‌شود"
+    }
+  },
+  {
+    "id": "R28",
+    "title": "Event segmentation applications in large language model enabled automated recall assessments",
+    "authors": [
+      "Panela, Ryan A.",
+      "Barnett, Alexander J.",
+      "Barense, Morgan D.",
+      "Herrmann, Björn"
+    ],
+    "initial_or_publisher_date": "2025-12-15",
+    "venue_and_status": "Communications Psychology 3:184؛ 2025؛ داوری‌شده",
+    "source_url": "https://www.nature.com/articles/s44271-025-00359-7",
+    "publication_url": "https://www.nature.com/articles/s44271-025-00359-7",
+    "doi": "10.1038/s44271-025-00359-7",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "شناخت",
+    "method_and_finding_fa": "قطعه‌بندی با مدل زبانی برای سنجش خودکار یادآوری روایت",
+    "data_and_evaluation_fa": "مرزگذاری و بازگویی روایت انسانی",
+    "limitation_and_gap_fa": "کاربرد مدل در اندازه‌گیری شناخت، اثبات ادراک یا فهم مدل نیست",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "30c388be84d9f706ed79a93db81ac56b3ef8bf28f11c056bb8bd6bf66920a075",
+    "quartile": {
+      "status": "تایید کامل سال/دسته از JCR یا SJR در این مرور ممکن نشد؛ رتبه‌ای ادعا نمی‌شود"
+    }
+  },
+  {
+    "id": "R29",
+    "title": "How the brain segments experience: ERP evidence of event boundaries enhancing memory formation in narratives",
+    "authors": [
+      "Zogaj, Doruntinë",
+      "Bader, Regine",
+      "Mecklinger, Axel"
+    ],
+    "initial_or_publisher_date": "2026/06",
+    "venue_and_status": "Cognitive, Affective, & Behavioral Neuroscience؛ 2026؛ داوری‌شده",
+    "source_url": "https://link.springer.com/article/10.3758/s13415-026-01399-0",
+    "publication_url": "https://link.springer.com/article/10.3758/s13415-026-01399-0",
+    "doi": "10.3758/s13415-026-01399-0",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "شناخت",
+    "method_and_finding_fa": "شواهد ERP درباره‌ی مرز روایت و تشکیل حافظه",
+    "data_and_evaluation_fa": "انسان؛ روایت، ERP و حافظه",
+    "limitation_and_gap_fa": "پیوند عصبی باید در همان تکلیف تفسیر شود؛ نتیجه‌ی LLM از آن استنتاج نمی‌شود",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "7009c41a5f42df80d4bdd08ae273d850a01705ed1e572c9aa23877960f90444b",
+    "quartile": {
+      "status": "SJR category-ranking indexed official evidence; direct page returned403",
+      "quartile": "Q1",
+      "year": 2025,
+      "category": "Behavioral Neuroscience",
+      "source": "https://www.scimagojr.com/journalrank.php?category=2802",
+      "verification": "عنوان جدول رسمی دسته، سال۲۰۲۵ و ردیف مجله با Q1 در نتیجه‌ی جست‌وجوی منبع رسمی بازیابی شد؛ صفحه مستقیم مسدود بود."
+    }
+  },
+  {
+    "id": "R30",
+    "title": "Bayesian Online Changepoint Detection",
+    "authors": [
+      "Adams, Ryan Prescott",
+      "MacKay, David J. C."
+    ],
+    "initial_or_publisher_date": "2007/10/19",
+    "venue_and_status": "arXiv 2007؛ پیش‌چاپ بنیانی",
+    "source_url": "https://arxiv.org/abs/0710.3742",
+    "publication_url": "https://arxiv.org/abs/0710.3742",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "برخط",
+    "method_and_finding_fa": "BOCPD؛ استنباط پسین طول رژیم به‌صورت برخط",
+    "data_and_evaluation_fa": "مدل‌سازی دنباله و تشخیص نقطه‌ی تغییر",
+    "limitation_and_gap_fa": "نیازمند مدل احتمال و hazard؛ تغییر آماری لزوما تغییر معنایی نیست",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "6c9fd95981618d743bafde0b35a24c532df27760e2c775df532e19c65c3a8460",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R31",
+    "title": "Text Tiling: Segmenting Text into Multi-paragraph Subtopic Passages",
+    "authors": [
+      "Marti A. Hearst"
+    ],
+    "initial_or_publisher_date": "1997",
+    "venue_and_status": "Computational Linguistics 23(1)؛ 1997؛ داوری‌شده",
+    "source_url": "https://aclanthology.org/J97-1003/",
+    "publication_url": "https://aclanthology.org/J97-1003/",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "مرزبندی",
+    "method_and_finding_fa": "TextTiling؛ انسجام واژگانی برای زیرموضوع‌ها",
+    "data_and_evaluation_fa": "متن چندپاراگرافی؛ قطعه‌بندی",
+    "limitation_and_gap_fa": "تغییر واژه با مرز تجربه یکی نیست؛ novelty واژگانی سابقه‌ی طولانی دارد",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "f74cfcdfa342b72af8381d7e2d38342b2ebb990c521123fd80ec2e1d47e8110a",
+    "quartile": {
+      "status": "تایید کامل سال/دسته از JCR یا SJR در این مرور ممکن نشد؛ رتبه‌ای ادعا نمی‌شود"
+    }
+  },
+  {
+    "id": "R32",
+    "title": "Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions",
+    "authors": [
+      "Hu, Yuanzhe",
+      "Wang, Yu",
+      "McAuley, Julian"
+    ],
+    "initial_or_publisher_date": "2025/07/07",
+    "venue_and_status": "ICLR 2026؛ داوری‌شده؛ نسخه‌ی اولیه ۲۰۲۵",
+    "source_url": "https://arxiv.org/abs/2507.05257",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/fd1eff9dd295df50a41f2521942fa31d-Abstract-Conference.html",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "معیار",
+    "method_and_finding_fa": "MemoryAgentBench؛ حافظه در تعامل افزایشی و چند توانایی",
+    "data_and_evaluation_fa": "تعامل چندنوبتی؛ بازیابی، یادگیری و فراموشی",
+    "limitation_and_gap_fa": "QA ایستا کل حافظه‌ی عامل را نمی‌سنجد؛ مهاجرت پروتکل نیازمند قرارداد وظیفه است",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "d2b14b766dda3ca9a95c97c87edd56c99040ee55b54fbcc8a0681142b81b0e91",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R33",
+    "title": "Event perception: A mind-brain perspective",
+    "authors": [
+      "Jeffrey M. Zacks",
+      "Nicole K. Speer",
+      "Khena M. Swallow",
+      "Todd S. Braver",
+      "Jeremy R. Reynolds"
+    ],
+    "initial_or_publisher_date": "2007/03",
+    "venue_and_status": "Psychological Bulletin 133(2)؛ 2007؛ مقاله‌ی مروری داوری‌شده",
+    "source_url": "https://profiles.wustl.edu/en/publications/event-perception-a-mind-brain-perspective/",
+    "publication_url": "https://profiles.wustl.edu/en/publications/event-perception-a-mind-brain-perspective/",
+    "doi": "10.1037/0033-2909.133.2.273",
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "شناخت",
+    "method_and_finding_fa": "نظریه‌ی قطعه‌بندی رویداد؛ به‌روزرسانی مدل رخداد و پیش‌بینی",
+    "data_and_evaluation_fa": "مرور شواهد رفتاری و عصبی",
+    "limitation_and_gap_fa": "منبع نظری، نه الگوریتم آماده؛ مفهوم خطای پیش‌بینی را نباید به هم‌پوشانی واژه فروکاست",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "5bfe77f35103354da47a882b4628aeb8a68ce8a53e46c7a855595b41d0ebdf8f",
+    "quartile": {
+      "status": "تایید کامل سال/دسته از JCR یا SJR در این مرور ممکن نشد؛ رتبه‌ای ادعا نمی‌شود"
+    }
+  },
+  {
+    "id": "R34",
+    "title": "Propose, Verify, Commit: Evidence-Grounded Memory for Long-Horizon Multi-Actor Conversations",
+    "authors": [
+      "Lu, Zihao",
+      "Yuan, Zhihang",
+      "Ou, Litu",
+      "Shi, Lei"
+    ],
+    "initial_or_publisher_date": "2026/09/20",
+    "venue_and_status": "arXiv؛ نسخه‌ی ۲ در ۱۳ اکتبر ۲۰۲۶؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2609.23465",
+    "publication_url": "https://arxiv.org/abs/2609.23465",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "زمان",
+    "method_and_finding_fa": "EGMemory؛ زنجیره‌ی شاهد، وضعیت فعال و تاریخچه‌ی اصلاح با propose–verify–commit",
+    "data_and_evaluation_fa": "GroupMemBench، EverMemBench و LoCoMo؛ پاسخ",
+    "limitation_and_gap_fa": "منشأ و نسخه‌بندی قبلا پیاده شده؛ سیاست نوشتن/خواندن عاملی هزینه و عوامل متعدد دارد",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "061ea844a7046d4ccc1b5878fd384f18584baedf3ed49a0a3961c599563c9aeb",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R35",
+    "title": "TEM: Temporal State Tracking Memory for Large Language Model Agents",
+    "authors": [
+      "Song, Pengfeng",
+      "Zhuang, Yunkai",
+      "Shi, Liye"
+    ],
+    "initial_or_publisher_date": "2026/10/15",
+    "venue_and_status": "arXiv؛ ۱۵ اکتبر ۲۰۲۶؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2610.21900",
+    "publication_url": "https://arxiv.org/abs/2610.21900",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "زمان",
+    "method_and_finding_fa": "TEM؛ نسخه‌های واقعیت با ترتیب منبع و برچسب تاریخی",
+    "data_and_evaluation_fa": "۶۰ شخصیت، ۶۰۰ جلسه، ۴۲۰ پرسش و LoCoMo؛ پاسخ",
+    "limitation_and_gap_fa": "معیار اصابت موجودیت با صحت کامل پاسخ یکی نیست؛ تعمیم مستقل لازم است",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "d88ff5985919afa90b8e5928bfa3e4d88e731723c17fa584b203219709a195e3",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R36",
+    "title": "MemTrace: Tracing and Attributing Errors in Large Language Model Memory Systems",
+    "authors": [
+      "Deng, Xinle",
+      "Zhong, Ruobin",
+      "Peng, Hujin",
+      "Lu, Xiaoben",
+      "Wu, Yanzhe",
+      "Li, Guang",
+      "Xu, Buqiang",
+      "Yao, Yunzhi",
+      "Fang, Jizhan",
+      "Cao, Haoliang",
+      "Guo, Junjie",
+      "Yuan, Yuan",
+      "Ma, Ziqing",
+      "Yu, Yuanqiang",
+      "Hu, Rui",
+      "Dong, Baohua",
+      "Zhu, Hangcheng",
+      "Zhang, Ningyu"
+    ],
+    "initial_or_publisher_date": "2026/05/27",
+    "venue_and_status": "arXiv؛ نسخه‌ی ۴ در ۸ اکتبر ۲۰۲۶؛ پیش‌چاپ",
+    "source_url": "https://arxiv.org/abs/2605.28732",
+    "publication_url": "https://arxiv.org/abs/2605.28732",
+    "doi": null,
+    "code_or_data_urls": [
+      "https://github.com/zjunlp/MemTrace"
+    ],
+    "code_status": "پیوند رسمی/مقاله تایید شد؛ بازتولید مستقل اجرا نشده",
+    "cluster": "کنترل",
+    "method_and_finding_fa": "MemTrace؛ گراف اجرای حافظه و انتساب خطا به عملیات",
+    "data_and_evaluation_fa": "MemTraceBench؛ ۱۶۰ شکست برچسب‌خورده، تشخیص نوع/عملیات",
+    "limitation_and_gap_fa": "تشخیص پسینی با پاسخ مرجع؛ بازپخش مداخله‌ای واقعی انجام نمی‌دهد؛ برچسب انسانی لازم دارد",
+    "reading_scope": "چکیده، روش یا بخش‌های مرتبط متن اصلی",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "dd89e99f2462d49e25e31d503cb23bfe99ea44ad8cdb6fd8f6855276e2616d38",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  },
+  {
+    "id": "R37",
+    "title": "LightMem: Lightweight and Efficient Memory-Augmented Generation",
+    "authors": [
+      "Fang, Jizhan",
+      "Deng, Xinle",
+      "Xu, Haoming",
+      "Jiang, Ziyan",
+      "Tang, Yuqi",
+      "Xu, Ziwen",
+      "Deng, Shumin",
+      "Yao, Yunzhi",
+      "Wang, Mengru",
+      "Qiao, Shuofei",
+      "Chen, Huajun",
+      "Zhang, Ningyu"
+    ],
+    "initial_or_publisher_date": "2026-04-20",
+    "venue_and_status": "ICLR 2026؛ داوری‌شده",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/a05b72653ec5b473732129829ae04195-Abstract-Conference.html",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/a05b72653ec5b473732129829ae04195-Abstract-Conference.html",
+    "doi": null,
+    "code_or_data_urls": [],
+    "code_status": "پیوند اختصاصی کد در دامنه‌ی این مرور تایید نشد؛ به معنی نبود کد نیست",
+    "cluster": "هزینه",
+    "method_and_finding_fa": "LightMem؛ فیلتر و گروه‌بندی موضوعی، تثبیت کوتاه‌مدت و به‌روزرسانی آفلاین",
+    "data_and_evaluation_fa": "LongMemEval با چند مدل؛ پاسخ و هزینه",
+    "limitation_and_gap_fa": "تثبیت آفلاین با نویسنده‌ی هرنوبتی یکسان نیست؛ اثر موضوع از فشرده‌سازی جدا نمی‌شود",
+    "reading_scope": "فراداده و چکیده؛ داوری کامل روش انجام نشده",
+    "retrieved_utc": "2026-10-21",
+    "page_sha256": "ae5428a8ee31e3f54fd72f66e0a4a35e1ebe41a3810f6a671769f1a59385bcdb",
+    "quartile": {
+      "status": "کاربرد ندارد؛ کنفرانس یا پیش‌چاپ"
+    }
+  }
+]

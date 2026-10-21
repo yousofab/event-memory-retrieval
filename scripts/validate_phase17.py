@@ -39,7 +39,12 @@ def validate(directory):
         assert r['any_evidence']==int(r['evidence_found']>0)
         assert r['turn_recall']==r['evidence_found']/r['evidence_total']
         assert 0<=r['gold_word_recall']<=1
-        assert r['empty_gold_turns']==0
+        assert r['empty_gold_turns']>=0
+        if r['dataset']=='locomo':
+            assert r['empty_gold_turns']==0
+        # The registered QMSum policy excludes empty turns from the
+        # denominator and reports their count; it does not drop queries.
+        assert r['evidence_total']>0
     for group in grouped.values():
         assert sorted(r['method'] for r in group)==sorted(METHODS)
         for field in ['opportunity_fingerprint','retrieved_words','selected_windows','selected_sessions','candidate_windows','cell_widths']:
