@@ -1,0 +1,51 @@
+{
+  "phase": 18,
+  "date": "2026-10-24",
+  "baseline_commit": "3da0b91b9b56cb25e563a102b8b2c84093abcc94",
+  "registered_plan_commit": "daea6ca049478555650e6bcb3fb82449f5066d8c",
+  "implementation_commit": "c8bde1d0cfa2dd4d32d17236a1d705b3b31c8b56",
+  "outputs": [
+    {
+      "path": "results/phase18_queries.json.gz",
+      "compressed_sha256": "6b54bc01645300b60df211571f7367d0ea0011aa78fbcf0560176581115bab01",
+      "uncompressed_sha256": "9f4836ba3382c42906e33ce6791c05a73853ed92eeda6cc676c5602ece7911d8",
+      "reproduction_byte_identical": true
+    },
+    {
+      "path": "results/phase18_rows.json.gz",
+      "compressed_sha256": "0cd3d7989dc6046543cf1956c08d789f52239d09b379f8849e85ea86c15694b8",
+      "uncompressed_sha256": "6dcf5959ee8e23287dfe4d09588f97546153c61f42478a15c6cfbb2c903bfd2c",
+      "reproduction_byte_identical": true
+    }
+  ],
+  "primary_wall_seconds": 7.213511222000079,
+  "reproduction_wall_seconds": 7.272597231999953,
+  "primary_peak_rss_mib_linux": 335.71875,
+  "unit_tests": {
+    "run": 59,
+    "passed": 58,
+    "skipped": 1,
+    "failed": 0,
+    "phase18_tests_passed": 7,
+    "skip_reason": "Historical Phase 14 test requires its pinned local Memora upstream copy"
+  },
+  "historical_result_files_unchanged": 40,
+  "new_publication_performed": false,
+  "independently_recomputed_primary_macro": 0.04188462625879698,
+  "primary_macro_check_passed": true,
+  "document_qa": {
+    "pages": 13,
+    "all_pages_visually_inspected": true,
+    "a4": true,
+    "persian_paragraphs_with_rtl": 173,
+    "tables": 6,
+    "b_nazanin_regular_and_bold_embedded_in_pdf": true
+  },
+  "approved_artifacts_sha256": {
+    "deliverables/phase18_research_report_fa.pdf": "3dcfe38a87e00c4a8363e4bd0192f2c47d98eea953dc356cb26c73eaa06afa53",
+    "deliverables/phase18_research_report_fa.docx": "54028cd9ad64ae1571957dccf168c061f6af8ce42efc74166e6b066c600d5b93",
+    "results/phase18_queries.json.gz": "6b54bc01645300b60df211571f7367d0ea0011aa78fbcf0560176581115bab01",
+    "results/phase18_rows.json.gz": "0cd3d7989dc6046543cf1956c08d789f52239d09b379f8849e85ea86c15694b8",
+    "configs/phase18_plan.json": "f40fa64d440b519fa4a88462f834f3c73109259a246a3b491537b61cb9d9d61b"
+  }
+}

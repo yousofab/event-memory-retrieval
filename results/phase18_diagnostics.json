@@ -1,0 +1,199 @@
+{
+  "locomo": {
+    "writer_1024_criterion_counts": {
+      "session_presence": 493,
+      "all_turn_touch": 457,
+      "all_complete": 443
+    },
+    "writer_1024_failure_counts": {
+      "complete_success": 443,
+      "feasible_selection_miss": 25,
+      "missing_gold_session": 106,
+      "window_geometry_infeasible": 25
+    },
+    "structurally_unrecoverable_under_frozen_space": 131,
+    "structural_share_of_recorded_failures": 0.8397435897435898,
+    "annotation_proxy_gaps_in_queries": {
+      "session_minus_complete": 50,
+      "touch_minus_complete": 14
+    },
+    "feasible_writer_misses": [
+      {
+        "sample_id": "conv-30",
+        "question_index": 4,
+        "minimum_total_budget": 853
+      },
+      {
+        "sample_id": "conv-30",
+        "question_index": 18,
+        "minimum_total_budget": 745
+      },
+      {
+        "sample_id": "conv-30",
+        "question_index": 68,
+        "minimum_total_budget": 787
+      },
+      {
+        "sample_id": "conv-41",
+        "question_index": 51,
+        "minimum_total_budget": 644
+      },
+      {
+        "sample_id": "conv-41",
+        "question_index": 75,
+        "minimum_total_budget": 570
+      },
+      {
+        "sample_id": "conv-41",
+        "question_index": 98,
+        "minimum_total_budget": 723
+      },
+      {
+        "sample_id": "conv-41",
+        "question_index": 122,
+        "minimum_total_budget": 681
+      },
+      {
+        "sample_id": "conv-41",
+        "question_index": 132,
+        "minimum_total_budget": 644
+      },
+      {
+        "sample_id": "conv-42",
+        "question_index": 120,
+        "minimum_total_budget": 883
+      },
+      {
+        "sample_id": "conv-44",
+        "question_index": 88,
+        "minimum_total_budget": 610
+      },
+      {
+        "sample_id": "conv-44",
+        "question_index": 122,
+        "minimum_total_budget": 541
+      },
+      {
+        "sample_id": "conv-47",
+        "question_index": 77,
+        "minimum_total_budget": 825
+      },
+      {
+        "sample_id": "conv-47",
+        "question_index": 81,
+        "minimum_total_budget": 630
+      },
+      {
+        "sample_id": "conv-47",
+        "question_index": 95,
+        "minimum_total_budget": 662
+      },
+      {
+        "sample_id": "conv-47",
+        "question_index": 99,
+        "minimum_total_budget": 322
+      },
+      {
+        "sample_id": "conv-47",
+        "question_index": 106,
+        "minimum_total_budget": 790
+      },
+      {
+        "sample_id": "conv-47",
+        "question_index": 128,
+        "minimum_total_budget": 751
+      },
+      {
+        "sample_id": "conv-48",
+        "question_index": 50,
+        "minimum_total_budget": 853
+      },
+      {
+        "sample_id": "conv-48",
+        "question_index": 54,
+        "minimum_total_budget": 651
+      },
+      {
+        "sample_id": "conv-48",
+        "question_index": 55,
+        "minimum_total_budget": 651
+      },
+      {
+        "sample_id": "conv-48",
+        "question_index": 71,
+        "minimum_total_budget": 729
+      },
+      {
+        "sample_id": "conv-48",
+        "question_index": 80,
+        "minimum_total_budget": 599
+      },
+      {
+        "sample_id": "conv-49",
+        "question_index": 96,
+        "minimum_total_budget": 723
+      },
+      {
+        "sample_id": "conv-49",
+        "question_index": 103,
+        "minimum_total_budget": 601
+      },
+      {
+        "sample_id": "conv-49",
+        "question_index": 114,
+        "minimum_total_budget": 673
+      }
+    ]
+  },
+  "qmsum": {
+    "writer_1024_criterion_counts": {
+      "session_presence": 244,
+      "all_turn_touch": 38,
+      "all_complete": 23
+    },
+    "writer_1024_failure_counts": {
+      "complete_success": 23,
+      "feasible_selection_miss": 6,
+      "window_geometry_infeasible": 215
+    },
+    "structurally_unrecoverable_under_frozen_space": 215,
+    "structural_share_of_recorded_failures": 0.9728506787330317,
+    "annotation_proxy_gaps_in_queries": {
+      "session_minus_complete": 221,
+      "touch_minus_complete": 15
+    },
+    "feasible_writer_misses": [
+      {
+        "sample_id": "ES2011a",
+        "question_index": 4,
+        "minimum_total_budget": 739
+      },
+      {
+        "sample_id": "ES2011c",
+        "question_index": 4,
+        "minimum_total_budget": 648
+      },
+      {
+        "sample_id": "ES2011d",
+        "question_index": 4,
+        "minimum_total_budget": 1003
+      },
+      {
+        "sample_id": "IS1003b",
+        "question_index": 7,
+        "minimum_total_budget": 984
+      },
+      {
+        "sample_id": "IS1003c",
+        "question_index": 4,
+        "minimum_total_budget": 927
+      },
+      {
+        "sample_id": "covid_4",
+        "question_index": 8,
+        "minimum_total_budget": 790
+      }
+    ]
+  },
+  "scope": "Descriptive breakdown of registered outcomes; this is not evidence of answer accuracy or annotation validity."
+}
