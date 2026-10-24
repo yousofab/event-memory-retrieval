@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   validate:
-    name: Tests and Phase 17 recorded-result checks
+    name: Tests and recorded-result checks
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -34,6 +34,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Validate committed Phase 17 results and paired opportunities
         run: python scripts/validate_phase17.py --directory results
+      - name: Validate committed Phase 18 feasibility certificates
+        run: python scripts/validate_phase18.py --directory results
 
   publish-phase17:
     name: Publish approved Phase 17 checkpoint
@@ -78,3 +80,48 @@ jobs:
             --clobber
           gh release edit "$phase17_tag" --draft=false --latest
           gh release view "$phase17_tag" --json url,tagName,isDraft,targetCommitish,assets
+
+  publish-phase18:
+    name: Publish approved Phase 18 checkpoint
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[publish-phase18]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the approved merge
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified in Phase 17
+        with:
+          persist-credentials: false
+      - name: Verify approved Phase 18 artifacts
+        run: sha256sum --check configs/phase18_release_sha256.txt
+      - name: Publish the approved checkpoint and artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          phase18_tag=phase18-exact-evidence-feasibility
+          if phase18_target=$(gh release view "$phase18_tag" --json targetCommitish --jq .targetCommitish 2>/dev/null); then
+            if [ "$phase18_target" != "$GITHUB_SHA" ]; then
+              echo 'An existing Phase 18 release points to a different commit; refusing to change it.' >&2
+              exit 1
+            fi
+          else
+            gh release create "$phase18_tag" \
+              --target "$GITHUB_SHA" \
+              --title 'Phase 18: exact evidence feasibility and minimum budget' \
+              --notes-file docs/phase18_release_notes.md \
+              --draft
+          fi
+          gh release upload "$phase18_tag" \
+            deliverables/phase18_research_report_fa.pdf \
+            deliverables/phase18_research_report_fa.docx \
+            results/phase18_queries.json.gz \
+            results/phase18_rows.json.gz \
+            configs/phase18_release_sha256.txt \
+            --clobber
+          gh release edit "$phase18_tag" --draft=false --latest
+          gh release view "$phase18_tag" --json url,tagName,isDraft,targetCommitish,assets

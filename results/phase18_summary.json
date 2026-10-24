@@ -1,0 +1,2357 @@
+{
+  "locomo": {
+    "estimates": [
+      {
+        "budget_words": 512,
+        "method": "centered",
+        "questions": 599,
+        "counts": {
+          "complete_success": 373,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 47
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.734882112334567,
+        "macro_all_complete": 0.6279358314298606,
+        "macro_headroom": 0.07461448375203351
+      },
+      {
+        "budget_words": 512,
+        "method": "writer",
+        "questions": 599,
+        "counts": {
+          "complete_success": 359,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 61
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.712419430292053,
+        "macro_all_complete": 0.6042236479918921,
+        "macro_headroom": 0.09832666719000199
+      },
+      {
+        "budget_words": 512,
+        "method": "random_00",
+        "questions": 599,
+        "counts": {
+          "complete_success": 361,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 59
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7107603424144777,
+        "macro_all_complete": 0.6059624487753634,
+        "macro_headroom": 0.09658786640653072
+      },
+      {
+        "budget_words": 512,
+        "method": "random_01",
+        "questions": 599,
+        "counts": {
+          "complete_success": 359,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 61
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7236311877222978,
+        "macro_all_complete": 0.604279785279343,
+        "macro_headroom": 0.09827052990255113
+      },
+      {
+        "budget_words": 512,
+        "method": "random_02",
+        "questions": 599,
+        "counts": {
+          "complete_success": 358,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 62
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7074673888694234,
+        "macro_all_complete": 0.601890510590201,
+        "macro_headroom": 0.10065980459169313
+      },
+      {
+        "budget_words": 512,
+        "method": "random_03",
+        "questions": 599,
+        "counts": {
+          "complete_success": 365,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 55
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7129512793953307,
+        "macro_all_complete": 0.610237843143637,
+        "macro_headroom": 0.09231247203825708
+      },
+      {
+        "budget_words": 512,
+        "method": "random_04",
+        "questions": 599,
+        "counts": {
+          "complete_success": 349,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 71
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7203219022856351,
+        "macro_all_complete": 0.5886061282567253,
+        "macro_headroom": 0.11394418692516879
+      },
+      {
+        "budget_words": 512,
+        "method": "random_05",
+        "questions": 599,
+        "counts": {
+          "complete_success": 370,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 50
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7128705581116019,
+        "macro_all_complete": 0.6231452644853794,
+        "macro_headroom": 0.07940505069651466
+      },
+      {
+        "budget_words": 512,
+        "method": "random_06",
+        "questions": 599,
+        "counts": {
+          "complete_success": 358,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 62
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7131797727065308,
+        "macro_all_complete": 0.6061632053140236,
+        "macro_headroom": 0.0963871098678706
+      },
+      {
+        "budget_words": 512,
+        "method": "random_07",
+        "questions": 599,
+        "counts": {
+          "complete_success": 363,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 57
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7305411032036419,
+        "macro_all_complete": 0.6059201224349389,
+        "macro_headroom": 0.09663019274695524
+      },
+      {
+        "budget_words": 512,
+        "method": "random_08",
+        "questions": 599,
+        "counts": {
+          "complete_success": 367,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 53
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.723712796123234,
+        "macro_all_complete": 0.6127487550043941,
+        "macro_headroom": 0.08980156017750003
+      },
+      {
+        "budget_words": 512,
+        "method": "random_09",
+        "questions": 599,
+        "counts": {
+          "complete_success": 361,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 59
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7242039399491854,
+        "macro_all_complete": 0.6061736401099515,
+        "macro_headroom": 0.09637667507194266
+      },
+      {
+        "budget_words": 512,
+        "method": "random_10",
+        "questions": 599,
+        "counts": {
+          "complete_success": 366,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 54
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7151500983168387,
+        "macro_all_complete": 0.614131885609108,
+        "macro_headroom": 0.08841842957278605
+      },
+      {
+        "budget_words": 512,
+        "method": "random_11",
+        "questions": 599,
+        "counts": {
+          "complete_success": 360,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 60
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7161153711883478,
+        "macro_all_complete": 0.603222194779028,
+        "macro_headroom": 0.0993281204028661
+      },
+      {
+        "budget_words": 512,
+        "method": "random_12",
+        "questions": 599,
+        "counts": {
+          "complete_success": 358,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 62
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7210994254160994,
+        "macro_all_complete": 0.5997756104036511,
+        "macro_headroom": 0.10277470477824303
+      },
+      {
+        "budget_words": 512,
+        "method": "random_13",
+        "questions": 599,
+        "counts": {
+          "complete_success": 364,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 56
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7229096870007972,
+        "macro_all_complete": 0.6124175092684602,
+        "macro_headroom": 0.09013280591343395
+      },
+      {
+        "budget_words": 512,
+        "method": "random_14",
+        "questions": 599,
+        "counts": {
+          "complete_success": 361,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 59
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7282407061708256,
+        "macro_all_complete": 0.6081189413564468,
+        "macro_headroom": 0.09443137382544725
+      },
+      {
+        "budget_words": 512,
+        "method": "random_15",
+        "questions": 599,
+        "counts": {
+          "complete_success": 354,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 66
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7148252793940543,
+        "macro_all_complete": 0.5934638735877126,
+        "macro_headroom": 0.10908644159418153
+      },
+      {
+        "budget_words": 512,
+        "method": "random_16",
+        "questions": 599,
+        "counts": {
+          "complete_success": 358,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 62
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7173025956794201,
+        "macro_all_complete": 0.6045499922457022,
+        "macro_headroom": 0.09800032293619203
+      },
+      {
+        "budget_words": 512,
+        "method": "random_17",
+        "questions": 599,
+        "counts": {
+          "complete_success": 360,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 60
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7127712456593482,
+        "macro_all_complete": 0.6066799351319475,
+        "macro_headroom": 0.09587038004994661
+      },
+      {
+        "budget_words": 512,
+        "method": "random_18",
+        "questions": 599,
+        "counts": {
+          "complete_success": 352,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 68
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7008268315300602,
+        "macro_all_complete": 0.5919554296997905,
+        "macro_headroom": 0.11059488548210353
+      },
+      {
+        "budget_words": 512,
+        "method": "random_19",
+        "questions": 599,
+        "counts": {
+          "complete_success": 355,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 73,
+          "feasible_selection_miss": 65
+        },
+        "oracle_all_complete_count": 420,
+        "macro_oracle_all_complete": 0.7025503151818941,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7144701899898716,
+        "macro_all_complete": 0.5937772493367363,
+        "macro_headroom": 0.10877306584515783
+      },
+      {
+        "budget_words": 1024,
+        "method": "centered",
+        "questions": 599,
+        "counts": {
+          "complete_success": 442,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 26
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7669105154023332,
+        "macro_all_complete": 0.7384087351048872,
+        "macro_headroom": 0.04542167744290699
+      },
+      {
+        "budget_words": 1024,
+        "method": "writer",
+        "questions": 599,
+        "counts": {
+          "complete_success": 443,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 25
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7655099551782436,
+        "macro_all_complete": 0.7419457862889973,
+        "macro_headroom": 0.04188462625879698
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_00",
+        "questions": 599,
+        "counts": {
+          "complete_success": 439,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 29
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.766967386635675,
+        "macro_all_complete": 0.7320481366390257,
+        "macro_headroom": 0.05178227590876861
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_01",
+        "questions": 599,
+        "counts": {
+          "complete_success": 436,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 32
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.768992560341521,
+        "macro_all_complete": 0.7285295106878477,
+        "macro_headroom": 0.05530090185994653
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_02",
+        "questions": 599,
+        "counts": {
+          "complete_success": 431,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 37
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7625320750309693,
+        "macro_all_complete": 0.7212403302628867,
+        "macro_headroom": 0.06259008228490759
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_03",
+        "questions": 599,
+        "counts": {
+          "complete_success": 443,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 25
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7597812394495278,
+        "macro_all_complete": 0.7404179024081722,
+        "macro_headroom": 0.04341251013962204
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_04",
+        "questions": 599,
+        "counts": {
+          "complete_success": 440,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 28
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7599947411181378,
+        "macro_all_complete": 0.7367119351727932,
+        "macro_headroom": 0.047118477375001036
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_05",
+        "questions": 599,
+        "counts": {
+          "complete_success": 441,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 27
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7648709116820572,
+        "macro_all_complete": 0.7376473779304386,
+        "macro_headroom": 0.04618303461735571
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_06",
+        "questions": 599,
+        "counts": {
+          "complete_success": 435,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 33
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7634583466560468,
+        "macro_all_complete": 0.726355428933934,
+        "macro_headroom": 0.05747498361386022
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_07",
+        "questions": 599,
+        "counts": {
+          "complete_success": 442,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 26
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7681111551478645,
+        "macro_all_complete": 0.7387749804866125,
+        "macro_headroom": 0.045055432061181726
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_08",
+        "questions": 599,
+        "counts": {
+          "complete_success": 443,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 25
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7647740244423128,
+        "macro_all_complete": 0.7407451465434659,
+        "macro_headroom": 0.04308526600432837
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_09",
+        "questions": 599,
+        "counts": {
+          "complete_success": 441,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 27
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.764518081554791,
+        "macro_all_complete": 0.7392236830936522,
+        "macro_headroom": 0.044606729454142104
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_10",
+        "questions": 599,
+        "counts": {
+          "complete_success": 433,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 35
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.756477129926931,
+        "macro_all_complete": 0.7255949205838635,
+        "macro_headroom": 0.058235491963930706
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_11",
+        "questions": 599,
+        "counts": {
+          "complete_success": 442,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 26
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7687077574251391,
+        "macro_all_complete": 0.7420272287543407,
+        "macro_headroom": 0.04180318379345359
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_12",
+        "questions": 599,
+        "counts": {
+          "complete_success": 441,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 27
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7598652730629732,
+        "macro_all_complete": 0.7377016643978166,
+        "macro_headroom": 0.046128748149977694
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_13",
+        "questions": 599,
+        "counts": {
+          "complete_success": 440,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 28
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7588584077969306,
+        "macro_all_complete": 0.7345158669528418,
+        "macro_headroom": 0.0493145455949525
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_14",
+        "questions": 599,
+        "counts": {
+          "complete_success": 439,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 29
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7629087552086226,
+        "macro_all_complete": 0.7370201796827184,
+        "macro_headroom": 0.04681023286507586
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_15",
+        "questions": 599,
+        "counts": {
+          "complete_success": 440,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 28
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7620817960357987,
+        "macro_all_complete": 0.735400418540622,
+        "macro_headroom": 0.048429994007172246
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_16",
+        "questions": 599,
+        "counts": {
+          "complete_success": 437,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 31
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7577152009129011,
+        "macro_all_complete": 0.7317305869716307,
+        "macro_headroom": 0.05209982557616348
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_17",
+        "questions": 599,
+        "counts": {
+          "complete_success": 439,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 29
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7644892215259309,
+        "macro_all_complete": 0.7339188115437563,
+        "macro_headroom": 0.04991160100403798
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_18",
+        "questions": 599,
+        "counts": {
+          "complete_success": 433,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 35
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7600796235559615,
+        "macro_all_complete": 0.7248139638630572,
+        "macro_headroom": 0.05901644868473705
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_19",
+        "questions": 599,
+        "counts": {
+          "complete_success": 434,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 25,
+          "feasible_selection_miss": 34
+        },
+        "oracle_all_complete_count": 468,
+        "macro_oracle_all_complete": 0.7838304125477943,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7587871065491587,
+        "macro_all_complete": 0.726720263863121,
+        "macro_headroom": 0.057110148684673234
+      },
+      {
+        "budget_words": 2048,
+        "method": "centered",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "writer",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_00",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_01",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_02",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_03",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_04",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_05",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_06",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_07",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_08",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_09",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_10",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_11",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_12",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_13",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_14",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_15",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_16",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_17",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_18",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_19",
+        "questions": 599,
+        "counts": {
+          "complete_success": 472,
+          "missing_gold_session": 106,
+          "window_geometry_infeasible": 6,
+          "feasible_selection_miss": 15
+        },
+        "oracle_all_complete_count": 487,
+        "macro_oracle_all_complete": 0.8114500664699692,
+        "macro_session_presence": 0.8225395102219516,
+        "macro_all_turn_touch": 0.7965507734194156,
+        "macro_all_complete": 0.7895031058675464,
+        "macro_headroom": 0.021946960602422787
+      }
+    ],
+    "writer_headroom_1024": {
+      "macro_difference": 0.04188462625879698,
+      "descriptive_cluster_bootstrap95": [
+        0.02956961508686409,
+        0.051343379616599426
+      ],
+      "per_history": {
+        "conv-30": 0.045454545454545456,
+        "conv-41": 0.049019607843137254,
+        "conv-42": 0.009523809523809525,
+        "conv-44": 0.0392156862745098,
+        "conv-47": 0.06,
+        "conv-48": 0.050505050505050504,
+        "conv-49": 0.039473684210526314
+      },
+      "clusters": 7
+    },
+    "minimum_budget": {
+      "finite_queries": 493,
+      "missing_session_queries": 106,
+      "minimum": 25,
+      "median": 281.0,
+      "p90": 641.2000000000002,
+      "maximum": 3262
+    }
+  },
+  "qmsum": {
+    "estimates": [
+      {
+        "budget_words": 512,
+        "method": "centered",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.055714285714285716,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "writer",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.047619047619047616,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_00",
+        "questions": 244,
+        "counts": {
+          "complete_success": 1,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 3
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.04285714285714286,
+        "macro_all_complete": 0.0047619047619047615,
+        "macro_headroom": 0.014285714285714285
+      },
+      {
+        "budget_words": 512,
+        "method": "random_01",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05333333333333333,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_02",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.04857142857142857,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_03",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05333333333333333,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_04",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05333333333333333,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_05",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.047619047619047616,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_06",
+        "questions": 244,
+        "counts": {
+          "complete_success": 1,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 3
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05095238095238095,
+        "macro_all_complete": 0.0047619047619047615,
+        "macro_headroom": 0.014285714285714285
+      },
+      {
+        "budget_words": 512,
+        "method": "random_07",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05333333333333333,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_08",
+        "questions": 244,
+        "counts": {
+          "complete_success": 3,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 1
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05476190476190476,
+        "macro_all_complete": 0.014285714285714285,
+        "macro_headroom": 0.0047619047619047615
+      },
+      {
+        "budget_words": 512,
+        "method": "random_09",
+        "questions": 244,
+        "counts": {
+          "complete_success": 1,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 3
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.04857142857142857,
+        "macro_all_complete": 0.0047619047619047615,
+        "macro_headroom": 0.014285714285714285
+      },
+      {
+        "budget_words": 512,
+        "method": "random_10",
+        "questions": 244,
+        "counts": {
+          "complete_success": 1,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 3
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.055714285714285716,
+        "macro_all_complete": 0.0047619047619047615,
+        "macro_headroom": 0.014285714285714285
+      },
+      {
+        "budget_words": 512,
+        "method": "random_11",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.043809523809523805,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_12",
+        "questions": 244,
+        "counts": {
+          "complete_success": 1,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 3
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.03809523809523809,
+        "macro_all_complete": 0.0047619047619047615,
+        "macro_headroom": 0.014285714285714285
+      },
+      {
+        "budget_words": 512,
+        "method": "random_13",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05095238095238095,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_14",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.04285714285714286,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_15",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.04523809523809524,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_16",
+        "questions": 244,
+        "counts": {
+          "complete_success": 0,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 4
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.04523809523809524,
+        "macro_all_complete": 0,
+        "macro_headroom": 0.019047619047619046
+      },
+      {
+        "budget_words": 512,
+        "method": "random_17",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.05333333333333333,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_18",
+        "questions": 244,
+        "counts": {
+          "complete_success": 2,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 2
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.043809523809523805,
+        "macro_all_complete": 0.009523809523809523,
+        "macro_headroom": 0.009523809523809523
+      },
+      {
+        "budget_words": 512,
+        "method": "random_19",
+        "questions": 244,
+        "counts": {
+          "complete_success": 1,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 240,
+          "feasible_selection_miss": 3
+        },
+        "oracle_all_complete_count": 4,
+        "macro_oracle_all_complete": 0.019047619047619046,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.04047619047619048,
+        "macro_all_complete": 0.0047619047619047615,
+        "macro_headroom": 0.014285714285714285
+      },
+      {
+        "budget_words": 1024,
+        "method": "centered",
+        "questions": 244,
+        "counts": {
+          "complete_success": 24,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 5
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.143015873015873,
+        "macro_all_complete": 0.10253968253968254,
+        "macro_headroom": 0.020634920634920634
+      },
+      {
+        "budget_words": 1024,
+        "method": "writer",
+        "questions": 244,
+        "counts": {
+          "complete_success": 23,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 6
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.143015873015873,
+        "macro_all_complete": 0.10015873015873016,
+        "macro_headroom": 0.023015873015873014
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_00",
+        "questions": 244,
+        "counts": {
+          "complete_success": 21,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 8
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1295238095238095,
+        "macro_all_complete": 0.08904761904761904,
+        "macro_headroom": 0.034126984126984124
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_01",
+        "questions": 244,
+        "counts": {
+          "complete_success": 22,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 7
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1319047619047619,
+        "macro_all_complete": 0.09301587301587301,
+        "macro_headroom": 0.030158730158730156
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_02",
+        "questions": 244,
+        "counts": {
+          "complete_success": 22,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 7
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1311111111111111,
+        "macro_all_complete": 0.09301587301587301,
+        "macro_headroom": 0.030158730158730156
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_03",
+        "questions": 244,
+        "counts": {
+          "complete_success": 25,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 4
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1319047619047619,
+        "macro_all_complete": 0.1057142857142857,
+        "macro_headroom": 0.01746031746031746
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_04",
+        "questions": 244,
+        "counts": {
+          "complete_success": 23,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 6
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1334920634920635,
+        "macro_all_complete": 0.09777777777777777,
+        "macro_headroom": 0.025396825396825397
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_05",
+        "questions": 244,
+        "counts": {
+          "complete_success": 21,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 8
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.13587301587301587,
+        "macro_all_complete": 0.09063492063492064,
+        "macro_headroom": 0.032539682539682535
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_06",
+        "questions": 244,
+        "counts": {
+          "complete_success": 22,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 7
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1334920634920635,
+        "macro_all_complete": 0.09301587301587301,
+        "macro_headroom": 0.030158730158730156
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_07",
+        "questions": 244,
+        "counts": {
+          "complete_success": 22,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 7
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1311111111111111,
+        "macro_all_complete": 0.09301587301587301,
+        "macro_headroom": 0.030158730158730156
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_08",
+        "questions": 244,
+        "counts": {
+          "complete_success": 23,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 6
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.13825396825396824,
+        "macro_all_complete": 0.09777777777777777,
+        "macro_headroom": 0.025396825396825397
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_09",
+        "questions": 244,
+        "counts": {
+          "complete_success": 21,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 8
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.12714285714285714,
+        "macro_all_complete": 0.08666666666666667,
+        "macro_headroom": 0.0365079365079365
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_10",
+        "questions": 244,
+        "counts": {
+          "complete_success": 20,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 9
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.1311111111111111,
+        "macro_all_complete": 0.08587301587301586,
+        "macro_headroom": 0.0373015873015873
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_11",
+        "questions": 244,
+        "counts": {
+          "complete_success": 21,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 8
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.12873015873015872,
+        "macro_all_complete": 0.09063492063492064,
+        "macro_headroom": 0.032539682539682535
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_12",
+        "questions": 244,
+        "counts": {
+          "complete_success": 23,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 6
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.143015873015873,
+        "macro_all_complete": 0.09777777777777777,
+        "macro_headroom": 0.025396825396825397
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_13",
+        "questions": 244,
+        "counts": {
+          "complete_success": 21,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 8
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.12634920634920635,
+        "macro_all_complete": 0.09063492063492064,
+        "macro_headroom": 0.032539682539682535
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_14",
+        "questions": 244,
+        "counts": {
+          "complete_success": 21,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 8
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.12656565656565655,
+        "macro_all_complete": 0.09063492063492064,
+        "macro_headroom": 0.032539682539682535
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_15",
+        "questions": 244,
+        "counts": {
+          "complete_success": 19,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 10
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.13111111111111112,
+        "macro_all_complete": 0.0811111111111111,
+        "macro_headroom": 0.04206349206349206
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_16",
+        "questions": 244,
+        "counts": {
+          "complete_success": 24,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 5
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.13825396825396824,
+        "macro_all_complete": 0.10253968253968254,
+        "macro_headroom": 0.020634920634920634
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_17",
+        "questions": 244,
+        "counts": {
+          "complete_success": 23,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 6
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.13587301587301587,
+        "macro_all_complete": 0.09777777777777777,
+        "macro_headroom": 0.025396825396825397
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_18",
+        "questions": 244,
+        "counts": {
+          "complete_success": 24,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 5
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.14063492063492064,
+        "macro_all_complete": 0.10253968253968254,
+        "macro_headroom": 0.020634920634920634
+      },
+      {
+        "budget_words": 1024,
+        "method": "random_19",
+        "questions": 244,
+        "counts": {
+          "complete_success": 19,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 215,
+          "feasible_selection_miss": 10
+        },
+        "oracle_all_complete_count": 29,
+        "macro_oracle_all_complete": 0.12317460317460317,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.12396825396825396,
+        "macro_all_complete": 0.0811111111111111,
+        "macro_headroom": 0.04206349206349206
+      },
+      {
+        "budget_words": 2048,
+        "method": "centered",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "writer",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_00",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_01",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_02",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_03",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_04",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_05",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_06",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_07",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_08",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_09",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_10",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3112842712842713,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_11",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_12",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3091197691197691,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_13",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_14",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_15",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_16",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3091197691197691,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_17",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_18",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3112842712842713,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      },
+      {
+        "budget_words": 2048,
+        "method": "random_19",
+        "questions": 244,
+        "counts": {
+          "complete_success": 69,
+          "missing_gold_session": 0,
+          "window_geometry_infeasible": 155,
+          "feasible_selection_miss": 20
+        },
+        "oracle_all_complete_count": 89,
+        "macro_oracle_all_complete": 0.3438239538239538,
+        "macro_session_presence": 1,
+        "macro_all_turn_touch": 0.3138816738816739,
+        "macro_all_complete": 0.26344877344877343,
+        "macro_headroom": 0.08037518037518038
+      }
+    ],
+    "writer_headroom_1024": {
+      "macro_difference": 0.023015873015873014,
+      "descriptive_cluster_bootstrap95": [
+        0.0,
+        0.053969356261022915
+      ],
+      "per_history": {
+        "Bed003": 0,
+        "Bed008": 0,
+        "Bed016": 0,
+        "Bmr006": 0,
+        "Bmr014": 0,
+        "Bmr023": 0,
+        "Bro004": 0,
+        "Bro019": 0,
+        "Bro027": 0,
+        "ES2004a": 0,
+        "ES2004b": 0,
+        "ES2004c": 0,
+        "ES2004d": 0,
+        "ES2011a": 0.16666666666666666,
+        "ES2011b": 0,
+        "ES2011c": 0.16666666666666666,
+        "ES2011d": 0.16666666666666666,
+        "IS1003a": 0,
+        "IS1003b": 0.1111111111111111,
+        "IS1003c": 0.1111111111111111,
+        "IS1003d": 0,
+        "TS3004a": 0,
+        "TS3004b": 0,
+        "TS3004c": 0,
+        "TS3004d": 0,
+        "TS3011a": 0,
+        "TS3011b": 0,
+        "TS3011c": 0,
+        "TS3011d": 0,
+        "covid_4": 0.08333333333333333,
+        "covid_9": 0,
+        "education_13": 0,
+        "education_17": 0,
+        "education_4": 0,
+        "education_9": 0
+      },
+      "clusters": 10
+    },
+    "minimum_budget": {
+      "finite_queries": 244,
+      "missing_session_queries": 0,
+      "minimum": 361,
+      "median": 2889.5,
+      "p90": 7282.200000000002,
+      "maximum": 15178
+    }
+  },
+  "decision": {
+    "headroom_below_two_points": false,
+    "action": "There is mathematical headroom to investigate; no deployable improvement or generalization is implied"
+  },
+  "phase": 18,
+  "plan_sha256": "f40fa64d440b519fa4a88462f834f3c73109259a246a3b491537b61cb9d9d61b",
+  "registration_commit": "daea6ca049478555650e6bcb3fb82449f5066d8c",
+  "run_commit": "c8bde1d0cfa2dd4d32d17236a1d705b3b31c8b56",
+  "parent_rows_compressed_sha256": "37927cb054d245b5de1e8712d0dd003db29a2ef5e83ba6a0e056d6bf76500394",
+  "locomo_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "qmsum_manifest_sha256": "6a5f2925290254a1a86da4805846f27e33e955e0e592ae97d1a0470959c50c50",
+  "queries": 843,
+  "query_budget_groups": 2529,
+  "historical_conditions_rescored": 55638,
+  "numeric_uncompressed_sha256": {
+    "phase18_queries.json.gz": "9f4836ba3382c42906e33ce6791c05a73853ed92eeda6cc676c5602ece7911d8",
+    "phase18_rows.json.gz": "6dcf5959ee8e23287dfe4d09588f97546153c61f42478a15c6cfbb2c903bfd2c"
+  },
+  "total_wall_seconds": 7.213511222000079,
+  "peak_rss_mib_linux": 335.71875,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "interpretation": "Exact only inside the frozen legal window space and relative to supplied annotations; exploratory reused-data diagnostic, no answer-accuracy evaluation."
+}

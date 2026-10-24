@@ -1,0 +1,699 @@
+[
+  {
+    "id": "S01",
+    "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
+    "authors": [
+      "Bao, Zhengye",
+      "Zhang, Shengtao",
+      "Zhang, Haokai",
+      "Lou, Shiqi",
+      "Wen, Muning",
+      "Luo, Minnan"
+    ],
+    "doi": null,
+    "date": "2026/10/22",
+    "arxiv_id": "2610.30755",
+    "arxiv_version": "v1",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2610.30755",
+    "reference_url": "https://arxiv.org/abs/2610.30755",
+    "topic_fa": "متن خام و کنترل بودجه",
+    "finding_fa": "بازیابی متراکم و بازرتبه‌بندی روی متن خام را با حافظه‌های پیچیده مقایسه می‌کند و حفظ شاهد را مهم می‌یابد.",
+    "limitation_fa": "اوراکل مکان پاسخ، جلسه‌های شاهد را بدون سقف می‌دهد؛ کنترل complete-store قواعد انتخاب، بودجه و دستور خواننده‌ی متفاوت دارد. کنترل‌های جداگانه‌ی ۵۰۰۰توکنی نیز گزارش شده‌اند.",
+    "relation_fa": "مبنای خام قوی لازم است؛ سقف دقیق ما فقط فضای پنجره‌ی یکسان را می‌سنجد و با دقت پاسخ آن مقاله قابل مقایسه نیست.",
+    "reading_scope": "چکیده، ضمیمه‌های C.4 و C.5 و توضیح کنترل‌های اوراکل؛ کل مقاله‌ی ۶۲صفحه‌ای خط‌به‌خط بررسی نشده است.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2610.30755",
+        "final_url": "https://arxiv.org/abs/2610.30755",
+        "status": 200,
+        "html_sha256": "327adf4320b9ac0d8534fa47d660d551ec06c6a6fd85b7d482c057896416a58f",
+        "text_sha256": "ef7801d2ef1810b5044c6a627f80968791f5ede56f378aea48f06338741707ae"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.30755",
+        "final_url": "https://arxiv.org/html/2610.30755",
+        "status": 200,
+        "html_sha256": "a2f01677802a1d0c4fd16c9c9539be3fa201249161370999339bd34e1d035a86",
+        "text_sha256": "1c073467eeae292a3e0afc08b40aea6c8a5b5f36f279f0c438297a137ec95129"
+      }
+    ]
+  },
+  {
+    "id": "S02",
+    "title": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+    "authors": [
+      "Li, Yufeng",
+      "Li, Shuxin",
+      "Xu, Zhenhua",
+      "Li, Junxian",
+      "Zeng, Peng",
+      "Yao, Sheng",
+      "Lin, Changting",
+      "Li, Gaolei",
+      "Bi, Ran",
+      "Han, Meng"
+    ],
+    "doi": null,
+    "date": "2026/10/07",
+    "arxiv_id": "2610.09348",
+    "arxiv_version": "v1",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2610.09348",
+    "reference_url": "https://arxiv.org/abs/2610.09348",
+    "topic_fa": "کفایت مجموعه و دسترسی مکمل",
+    "finding_fa": "BFR ترکیب شواهد مکمل و جست‌وجوی رکوردهای تازه را روی یک حافظه‌ی ثابت تفکیک می‌کند.",
+    "limitation_fa": "کفایت با داور زبانی و شاخص‌های جانشین سنجیده می‌شود؛ بودجه‌ی اصلی تعداد دور، فراخوانی و رکورد است و معادل عرض واژه‌ای پنجره‌ی ما نیست.",
+    "relation_fa": "تفکیک انتخاب و دسترسی ایده‌ی تازه‌ی ما نیست. سهم محدود این مرحله، محاسبه‌ی دقیق امکان و بودجه در قرارداد ثابت است.",
+    "reading_scope": "چکیده و بخش‌های ۳ و ۴ شامل توقف بودجه‌ای و تفکیک composition/completion.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2610.09348",
+        "final_url": "https://arxiv.org/abs/2610.09348",
+        "status": 200,
+        "html_sha256": "202b596738182c1ba8856004c9267c0cd6472280b9544849df1825a3f2e8d6fd",
+        "text_sha256": "454fb8cdd65a56e94bd1efffff684d6de5be73ab8282791e33206ae049f3ac11"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.09348",
+        "final_url": "https://arxiv.org/html/2610.09348",
+        "status": 200,
+        "html_sha256": "31c75aa37ef1899b93c1d3fdf0888f4a73d29fe2d55cc7d51f256a4b8ea7a9f7",
+        "text_sha256": "cd9a40094bb9b4dbc29e841aafe95b4b61c86a5f97a18eceaab315582060a96a"
+      }
+    ]
+  },
+  {
+    "id": "S03",
+    "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+    "authors": [
+      "Long, Xianxuan",
+      "Chen, Zhikai",
+      "Zeng, Shenglai",
+      "Wang, Shouren",
+      "Guo, Kai",
+      "Tang, Jiliang"
+    ],
+    "doi": null,
+    "date": "2026/06/15",
+    "arxiv_id": "2606.17328",
+    "arxiv_version": "v1",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2606.17328",
+    "reference_url": "https://arxiv.org/abs/2606.17328",
+    "topic_fa": "دانش‌نقطه و تشخیص دسترسی",
+    "finding_fa": "MemTrace متعلق به Long و همکاران، ۸۳۵ دانش‌نقطه از ۲۰ کاربر را از HaluMem-Medium به پرسش‌های شرایط مختلف تبدیل می‌کند.",
+    "limitation_fa": "تشخیص reach/use به یک بازیاب جانشین در سطح جلسه و اوراکل پاسخ‌گویی روی زیرنمونه‌ها وابسته است؛ نسبت شکست‌های گزارش‌شده به همان طراحی محدود است.",
+    "relation_fa": "واحد ارزیابی و تعریف دسترسی باید صریح باشد. این اثر با MemTrace عملیاتیِ Deng و همکاران دو پژوهش متفاوت است.",
+    "reading_scope": "چکیده، بخش‌های ۳.۱ و ۳.۴ و بند محدودیت‌های توزیع منبع و بازیاب.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2606.17328",
+        "final_url": "https://arxiv.org/abs/2606.17328",
+        "status": 200,
+        "html_sha256": "ead950b35a388cb6d7ce0f5e6545cd8d706750944eea4ccdd14da8c2e38c56e8",
+        "text_sha256": "007499d5d604d0fea50615cd2a7b94b5b29dc6539b02bd59b93e7fcbdbb41e62"
+      },
+      {
+        "url": "https://arxiv.org/html/2606.17328",
+        "final_url": "https://arxiv.org/html/2606.17328",
+        "status": 200,
+        "html_sha256": "9568a5a8dc391c6084c28816e7e5c55a68178b325cebae3702fd1d147faebbac",
+        "text_sha256": "55d19e70cc5f7396ae0efa99e6c0b389e447e49c39238a7f4a334a35c14184dd"
+      }
+    ]
+  },
+  {
+    "id": "S04",
+    "title": "MemTrace: Tracing and Attributing Errors in Large Language Model Memory Systems",
+    "authors": [
+      "Deng, Xinle",
+      "Zhong, Ruobin",
+      "Peng, Hujin",
+      "Lu, Xiaoben",
+      "Wu, Yanzhe",
+      "Li, Guang",
+      "Xu, Buqiang",
+      "Yao, Yunzhi",
+      "Fang, Jizhan",
+      "Cao, Haoliang",
+      "Guo, Junjie",
+      "Yuan, Yuan",
+      "Ma, Ziqing",
+      "Yu, Yuanqiang",
+      "Hu, Rui",
+      "Dong, Baohua",
+      "Zhu, Hangcheng",
+      "Zhang, Ningyu"
+    ],
+    "doi": null,
+    "date": "2026/10/08",
+    "arxiv_id": "2605.28732",
+    "arxiv_version": "v4",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2605.28732",
+    "reference_url": "https://arxiv.org/abs/2605.28732",
+    "topic_fa": "انتساب خطا در عملیات حافظه",
+    "finding_fa": "MemTrace متعلق به Deng و همکاران، گراف عملیات حافظه و بنچمارک ۱۶۰ شکست برچسب‌خورده را برای تشخیص خطا ارائه می‌کند.",
+    "limitation_fa": "تشخیص عملیات و بازیابی پسینی با کمک پاسخ مرجع، همان اثبات امکان هندسی در مجموعه‌ی پنجره‌های ثابت نیست.",
+    "relation_fa": "انتساب خطا پیشینه‌ی مستقیم دارد؛ ممیز ما گواه عددی محدود می‌دهد و تشخیص معنایی یا علّیِ همه‌ی عملیات را انجام نمی‌دهد.",
+    "reading_scope": "چکیده و بخش ۲؛ مرور تکمیلی روش بر پایه‌ی اطلس بررسی‌شده‌ی مرحله‌ی ۱۷.",
+    "prior_phase17_id": "R36",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2605.28732",
+        "final_url": "https://arxiv.org/abs/2605.28732",
+        "status": 200,
+        "html_sha256": "dd89e99f2462d49e25e31d503cb23bfe99ea44ad8cdb6fd8f6855276e2616d38",
+        "text_sha256": "4f2594a091f205b07dd2ca98f86c363011b2e00fbd774d1aaa2b448bb40df646"
+      },
+      {
+        "url": "https://arxiv.org/html/2605.28732",
+        "final_url": "https://arxiv.org/html/2605.28732",
+        "status": 200,
+        "html_sha256": "04a80d85a02c9a355e11d15b7a4a7db2a91580deba214f811a4e4eaa95a3546f",
+        "text_sha256": "aca9766d7315bf44face2ce6f988479bb4f6e6bbd10bb2516baea1798810225d"
+      }
+    ]
+  },
+  {
+    "id": "S05",
+    "title": "Decomposing Retrieval Failures in RAG for Long-Document Financial Question Answering",
+    "authors": [
+      "Kobeissi, Amine",
+      "Langlais, Philippe"
+    ],
+    "doi": null,
+    "date": "2026/02/20",
+    "arxiv_id": "2602.17981",
+    "arxiv_version": "v1",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2602.17981",
+    "reference_url": "https://arxiv.org/abs/2602.17981",
+    "topic_fa": "تفکیک سند و جای شاهد",
+    "finding_fa": "روی FinanceBench، تفاوت رسیدن به سند، صفحه و قطعه را با اوراکل‌های محدودکننده‌ی نامزد بررسی می‌کند.",
+    "limitation_fa": "اوراکل‌های مقاله کران تجربیِ پیکربندی‌های بازیابی‌اند؛ معیار مشابهت قطعه و پاسخ با پوشش کامل واژه‌های نوبت متفاوت است.",
+    "relation_fa": "رسیدن به جلسه به‌تنهایی شاهد داخل آن را تضمین نمی‌کند. کران ما در فضای کوچک و صریح خود دقیق است.",
+    "reading_scope": "چکیده و بخش‌های ۳.۳ و ۳.۴ درباره‌ی اوراکل و معیارها.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2602.17981",
+        "final_url": "https://arxiv.org/abs/2602.17981",
+        "status": 200,
+        "html_sha256": "888c273c39f7a5937a26015b6d1d42d79bcd121e37ec039ed8ccaf95bbec78d0",
+        "text_sha256": "c3f447357bc4be98ceac8f1e5433138831e74c88e6daafe082921f4b3aa3a745"
+      },
+      {
+        "url": "https://arxiv.org/html/2602.17981",
+        "final_url": "https://arxiv.org/html/2602.17981",
+        "status": 200,
+        "html_sha256": "56ccd75a8baaf12085c499a70ee2b70f7b388b6802c6e874b5f9f967d2319c91",
+        "text_sha256": "ae119f76195c65a48d92c1290e59b81c88725dbe23ca6efeeb3f52e5fffad369"
+      }
+    ]
+  },
+  {
+    "id": "S06",
+    "title": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+    "authors": [
+      "Joren, Hailey",
+      "Zhang, Jianyi",
+      "Ferng, Chun-Sung",
+      "Juan, Da-Cheng",
+      "Taly, Ankur",
+      "Rashtchian, Cyrus"
+    ],
+    "doi": null,
+    "date": "2025/04/23",
+    "arxiv_id": "2411.06037",
+    "arxiv_version": "v3",
+    "venue_and_status": "ICLR 2025؛ مقاله‌ی مجموعه‌مقالات رسمی",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/33dffa2e3d2ab74a783d1a8c292f66d9-Abstract-Conference.html",
+    "reference_url": "https://arxiv.org/abs/2411.06037",
+    "topic_fa": "کفایت زمینه",
+    "finding_fa": "میان زمینه‌ی کافی و توان مدل در استفاده از آن تفکیک می‌کند و کفایت را با ارزیاب زبانی می‌سنجد.",
+    "limitation_fa": "کفایت معنایی یک مجموعه با حضور کامل نوبت‌های برچسب‌خورده یکسان نیست؛ نتیجه‌ی پاسخ‌گویی آن مقاله در این پروژه بازتولید نشده است.",
+    "relation_fa": "خروجی ممیز باید پوشش برچسب نامیده شود و جانشین قطعیِ کفایت پاسخ نشود.",
+    "reading_scope": "چکیده‌ی منبع رسمی مجموعه‌مقالات ICLR و چکیده‌ی نسخه‌ی arXiv.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2411.06037",
+        "final_url": "https://arxiv.org/abs/2411.06037",
+        "status": 200,
+        "html_sha256": "071058181d8fa7b3c5992ab629afb75c13bb9077f96b5fc9ac696e2b8708a501",
+        "text_sha256": "b74dd60bef1318394d50c8c85b47cdfbc03f77c3a3ed3b6a4ddd83ad964e35c5"
+      },
+      {
+        "url": "https://arxiv.org/html/2411.06037",
+        "final_url": "https://arxiv.org/html/2411.06037",
+        "status": 200,
+        "html_sha256": "b993d22183a4ae4711abad3ea59e67b0890ed333350a3d319fdb6e53e0face6c",
+        "text_sha256": "be2b48fa4d9ae540b77d4036e4685a033297f1536bcac0932e336bbd7cbbda10"
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/33dffa2e3d2ab74a783d1a8c292f66d9-Abstract-Conference.html",
+        "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/33dffa2e3d2ab74a783d1a8c292f66d9-Abstract-Conference.html",
+        "status": 200,
+        "html_sha256": "06af5ca7bdb6ec126269e7c2c990a95039aa4dac6ab3746bdf1be179be2fa96e",
+        "text_sha256": "0d2b53a69d1f3c59a0a12aca87e3b5540db7e52326fdecb5899f824d56d13b30"
+      }
+    ]
+  },
+  {
+    "id": "S07",
+    "title": "Evaluating Long-Horizon Memory for Multi-Party Collaborative Dialogues",
+    "authors": [
+      "Hu, Chuanrui",
+      "Li, Tong",
+      "Gao, Xingze",
+      "Chen, Hongda",
+      "Bai, Yi",
+      "Xu, Dannong",
+      "Lin, Tianwei",
+      "Li, Xiaohong",
+      "Han, Yunyun",
+      "Pei, Jian",
+      "Deng, Yafeng"
+    ],
+    "doi": null,
+    "date": "2026/03/11",
+    "arxiv_id": "2602.01313",
+    "arxiv_version": "v3",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2602.01313",
+    "reference_url": "https://arxiv.org/abs/2602.01313",
+    "topic_fa": "حافظه‌ی چندطرفه و نسخه‌ی اطلاعات",
+    "finding_fa": "EverMemBench برای گفت‌وگوی چندطرفه و چندگروهی، نقش، تحول تصمیم و آگاهی از حافظه را ارزیابی می‌کند.",
+    "limitation_fa": "نسخه‌ی سوم عنوان تازه دارد؛ خطای استدلال حتی با شاهد اوراکل از خطای دسترسی متفاوت است. داده‌ی بسیار بلند، هزینه و قرارداد تازه می‌خواهد.",
+    "relation_fa": "گزینه‌ی بررسی داده‌ی مستقل در آینده است؛ در مرحله‌ی ۱۸ داده یا نتیجه‌ی آن اجرا نشده است.",
+    "reading_scope": "چکیده و فراداده‌ی نسخه‌ی سوم؛ اشاره‌ی انتشار کد بررسی شد، مجوز تک‌تک فایل‌های داده ممیزی نشده است.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2602.01313",
+        "final_url": "https://arxiv.org/abs/2602.01313",
+        "status": 200,
+        "html_sha256": "7d7afbc192bf7d7cdaa9216c02b54c3bb20c2469952daf9636931d88571f9921",
+        "text_sha256": "8211317b522739c2f13db7aa98152ecd62b019d11b52e646838fd895fcb1f4e0"
+      },
+      {
+        "url": "https://arxiv.org/html/2602.01313",
+        "final_url": "https://arxiv.org/html/2602.01313",
+        "status": 200,
+        "html_sha256": "824de51f4cfdd4ecbaf2af5125ba847264995537c2eff437633ac5eb7b024567",
+        "text_sha256": "30677a8135d1d234541707e31ed374f0f84a3d43032f3154420ab632223f46c9"
+      }
+    ]
+  },
+  {
+    "id": "S08",
+    "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+    "authors": [
+      "Adyasha Maharana",
+      "Dong-Ho Lee",
+      "Sergey Tulyakov",
+      "Mohit Bansal",
+      "Francesco Barbieri",
+      "Yuwei Fang"
+    ],
+    "doi": "10.18653/v1/2024.acl-long.747",
+    "date": "2024/8",
+    "arxiv_id": null,
+    "arxiv_version": null,
+    "venue_and_status": "ACL 2024؛ مقاله‌ی مجموعه‌مقالات رسمی",
+    "publication_url": "https://aclanthology.org/2024.acl-long.747/",
+    "reference_url": "https://doi.org/10.18653/v1/2024.acl-long.747",
+    "topic_fa": "داده‌ی گفت‌وگوی بلند",
+    "finding_fa": "LoCoMo منبع داده‌ی اصلی پروژه و برچسب‌های نوبت شاهد است.",
+    "limitation_fa": "این پژوهش همان هفت گفت‌وگوی قبلی را دوباره تحلیل می‌کند؛ نام تاریخی held_out استقلال تازه ایجاد نمی‌کند.",
+    "relation_fa": "هش داده و فهرست ثابت ۵۹۹ پرسش حفظ می‌شود؛ پوشش تمام نوبت مرجع سنجه‌ی عملیاتی است.",
+    "reading_scope": "فراداده و چکیده‌ی ACL؛ داده و برچسب‌ها در کد پروژه با هش ثابت بازبینی شدند.",
+    "prior_phase17_id": "R01",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://aclanthology.org/2024.acl-long.747/",
+        "final_url": "https://aclanthology.org/2024.acl-long.747/",
+        "status": 200,
+        "html_sha256": "8bd1bbdfb8109683650d96a59fc3579a82c9e0fcc7884b779c9db6d0ebdd0ed3",
+        "text_sha256": "002701e4493a87026f8cb8aeb4b57f947f2b434f8c6dd99bf95a9fa5307b8a92"
+      }
+    ]
+  },
+  {
+    "id": "S09",
+    "title": "QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization",
+    "authors": [
+      "Ming Zhong",
+      "Da Yin",
+      "Tao Yu",
+      "Ahmad Zaidi",
+      "Mutethia Mutuma",
+      "Rahul Jha",
+      "Ahmed Hassan",
+      "Asli Celikyilmaz",
+      "Yang Liu",
+      "Xipeng Qiu (邱锡鹏)",
+      "Dragomir Radev"
+    ],
+    "doi": "10.18653/v1/2021.naacl-main.472",
+    "date": "2021/6",
+    "arxiv_id": null,
+    "arxiv_version": null,
+    "venue_and_status": "NAACL 2021؛ مقاله‌ی مجموعه‌مقالات رسمی",
+    "publication_url": "https://aclanthology.org/2021.naacl-main.472/",
+    "reference_url": "https://doi.org/10.18653/v1/2021.naacl-main.472",
+    "topic_fa": "بازه‌ی مرتبط با خلاصه‌سازی",
+    "finding_fa": "QMSum پرسش و بازه‌های مرتبطِ جلسه را برای خلاصه‌سازی مبتنی بر پرسش ارائه می‌کند.",
+    "limitation_fa": "بازه‌ی مرتبط می‌تواند بسیار بزرگ‌تر از شاهد کمینه‌ی یک پاسخ باشد؛ الزام پوشش کامل آن، هدف متفاوتی می‌سازد.",
+    "relation_fa": "سقف و بودجه‌ی QMSum فقط برای همان بازه‌های مرتبط تفسیر می‌شوند و تحلیل فرعی‌اند.",
+    "reading_scope": "فراداده و چکیده‌ی NAACL؛ اسکیما و ۳۵ فایل منبعِ ثابت در اجرای پروژه کنترل شدند.",
+    "prior_phase17_id": "R03",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://aclanthology.org/2021.naacl-main.472/",
+        "final_url": "https://aclanthology.org/2021.naacl-main.472/",
+        "status": 200,
+        "html_sha256": "564632d4d0fbce450ff1fd1510352b2990e730fe29125880fd514eb0e168bc58",
+        "text_sha256": "b23bb9bf7dd36023e278dae2e304b19c87a261ea4b0551e97bbdffc48749e456"
+      }
+    ]
+  },
+  {
+    "id": "S10",
+    "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "authors": [
+      "Wu, Di",
+      "Wang, Hongwei",
+      "Yu, Wenhao",
+      "Zhang, Yuwei",
+      "Chang, Kai-Wei",
+      "Yu, Dong"
+    ],
+    "doi": null,
+    "date": "2025-05-01",
+    "arxiv_id": null,
+    "arxiv_version": null,
+    "venue_and_status": "ICLR 2025؛ مقاله‌ی مجموعه‌مقالات رسمی",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+    "reference_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+    "topic_fa": "حافظه‌ی تعاملی بلندمدت",
+    "finding_fa": "LongMemEval ارزیابی حافظه در تاریخچه‌های طولانی و پرسش‌های چندقابلیتی را صورت‌بندی می‌کند.",
+    "limitation_fa": "این پروژه قبلا بخشی از آن را بررسی کرده است؛ انتقال به همان داده بدون قید، آزمون مستقل تازه نیست.",
+    "relation_fa": "در ممیزی فعلی اجرا نمی‌شود؛ برای طراحی ادعا و استقلال ارزیابی مرجع است.",
+    "reading_scope": "چکیده و شناسنامه‌ی رسمی ICLR؛ قرارداد استفاده‌ی تاریخی در اطلس مرحله‌ی ۱۷.",
+    "prior_phase17_id": "R02",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+        "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+        "status": 200,
+        "html_sha256": "469d828d21c692b718d8e4052e1aeca5b3072bdba4b13f47165db0000ab8614b",
+        "text_sha256": "be77fe1a8e0b50239810154e3457bc2b844adde1379986a6c7a5fd18660b66c2"
+      }
+    ]
+  },
+  {
+    "id": "S11",
+    "title": "Fidelity Before Structure: Verbatim Chunks Beat Lossy Artifact Extraction in Long-Conversation LLM Memory",
+    "authors": [
+      "An, Tao"
+    ],
+    "doi": null,
+    "date": "2026/07/22",
+    "arxiv_id": "2601.00821",
+    "arxiv_version": "v4",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2601.00821",
+    "reference_url": "https://arxiv.org/abs/2601.00821",
+    "topic_fa": "حفظ متن و مقایسه‌ی کنترل‌شده",
+    "finding_fa": "مقایسه‌ی کنترل‌شده‌ی متن بدون اتلاف با مصنوعات استخراج‌شده، خطر حذف اطلاعات در ساخت حافظه را بررسی می‌کند.",
+    "limitation_fa": "یافته به طرح‌های استخراج بررسی‌شده محدود است؛ حفظ خواننده و رتبه‌بند به‌تنهایی تساوی تمام فرصت‌های بازیابی را تضمین نمی‌کند.",
+    "relation_fa": "متن و خروجی تاریخی دست‌نخورده می‌ماند؛ ارزش سهم جدید باید در قرارداد دقیق سنجیده شود.",
+    "reading_scope": "چکیده و فراداده‌ی نسخه‌ی چهارم؛ ارتباط روش با ممیزی پیشین پروژه.",
+    "prior_phase17_id": "R15",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2601.00821",
+        "final_url": "https://arxiv.org/abs/2601.00821",
+        "status": 200,
+        "html_sha256": "45394b2c3277b32c2e8bcdc216b298e03eca03d6250bf0fbf0c8b9a4633ba4a4",
+        "text_sha256": "6db79ecf0e5ee0e436a6044f76c69415dc303bc2e58b1fbe429094719f6dcf6a"
+      },
+      {
+        "url": "https://arxiv.org/html/2601.00821",
+        "final_url": "https://arxiv.org/html/2601.00821",
+        "status": 200,
+        "html_sha256": "fc784df41299825410e34cfb67c3c0b237894f57e688ea3eac0c5e98f64726cc",
+        "text_sha256": "4b12ef64b106831abee6e523c97064e585aa2b3de3a4a11a93f258d02a2c390b"
+      }
+    ]
+  },
+  {
+    "id": "S12",
+    "title": "When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory",
+    "authors": [
+      "Li, Ruizhe",
+      "Zhang, Licheng",
+      "Xu, Benfeng",
+      "Du, Mingxuan",
+      "Fu, Zheren",
+      "Chen, Weidong"
+    ],
+    "doi": null,
+    "date": "2026/08/16",
+    "arxiv_id": "2608.12888",
+    "arxiv_version": "v2",
+    "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+    "publication_url": "https://arxiv.org/abs/2608.12888",
+    "reference_url": "https://arxiv.org/abs/2608.12888",
+    "topic_fa": "جست‌وجوی کنترل‌پذیر در متن خام",
+    "finding_fa": "ReFind نمایه‌ی واژگانی نوبتی را با جست‌وجوی عامل، گسترش زمینه و کنترل‌های مرتبط با گفت‌وگو ترکیب می‌کند.",
+    "limitation_fa": "نتیجه‌ی یک سامانه‌ی دارای جست‌وجوی تکراری و تولید پاسخ، با ممیز بدون مدل و لنگرهای ثابت قابل هم‌ارزسازی نیست.",
+    "relation_fa": "گسترش پیرامون نوبت و حفظ متن پیشینه دارند؛ فرمول گواه امکان در محدوده‌ی کوچک خود تعریف می‌شود.",
+    "reading_scope": "چکیده و فراداده‌ی نسخه‌ی دوم؛ جزئیات تکمیلی در مرور مرحله‌ی ۱۷.",
+    "prior_phase17_id": "R16",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2608.12888",
+        "final_url": "https://arxiv.org/abs/2608.12888",
+        "status": 200,
+        "html_sha256": "2577ea2366cb6d42f20c3d652a1a786347063cb1cdf837d68fa7ae43524390ca",
+        "text_sha256": "80878400432f9be401ae421aba5fccc7277bfc794edcc520d80ed13c71580837"
+      },
+      {
+        "url": "https://arxiv.org/html/2608.12888",
+        "final_url": "https://arxiv.org/html/2608.12888",
+        "status": 200,
+        "html_sha256": "5d0cf8a82a5d24da9f417f54bbde1c759bea52d43a25b39ae20bd1074218e9fd",
+        "text_sha256": "83b31dcd624b1421d61f2f91e332feaf316e8938211deb8f589a9f3443667740"
+      }
+    ]
+  },
+  {
+    "id": "S13",
+    "title": "HingeMem: Boundary Guided Long-Term Memory with Query Adaptive Retrieval for Scalable Dialogues",
+    "authors": [
+      "Zhong, Yijie",
+      "Gao, Yunfan",
+      "Wang, Haofen"
+    ],
+    "doi": "10.1145/3774904.3792089",
+    "date": "2026/04/08",
+    "arxiv_id": "2604.06845",
+    "arxiv_version": "v1",
+    "venue_and_status": "The ACM Web Conference 2026؛ تایید DOI در Crossref",
+    "publication_url": "https://arxiv.org/abs/2604.06845",
+    "reference_url": "https://doi.org/10.1145/3774904.3792089",
+    "topic_fa": "مرز رویداد و بازیابی تطبیقی",
+    "finding_fa": "HingeMem مرزهای شخص، زمان، مکان و موضوع را با مسیر و عمق بازیابی وابسته به پرسش پیوند می‌دهد.",
+    "limitation_fa": "اثر آن، کل پیکربندی مرز و نمایه و بازیابی را در بر می‌گیرد؛ آزمایش ما یک فضای خروجی ثابت را ممیزی می‌کند.",
+    "relation_fa": "مرزبندی الهام‌گرفته از رویداد ادعای تقدم این پروژه نیست؛ اثر شناختی باید از قرارداد نرم‌افزار تفکیک شود.",
+    "reading_scope": "چکیده‌ی arXiv، DOI و فراداده‌ی رسمی Crossref برای مجموعه‌مقالات ACM Web Conference 2026.",
+    "prior_phase17_id": "R11",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2604.06845",
+        "final_url": "https://arxiv.org/abs/2604.06845",
+        "status": 200,
+        "html_sha256": "dd37d80943fc7d6062b7998f1e9a8c9dc0866e908f676e63ac8c50086eaf9612",
+        "text_sha256": "742f356c45ad2f2f21a6f907511acf436960acc313e9f4df9a4400abc01e28c2"
+      },
+      {
+        "url": "https://arxiv.org/html/2604.06845",
+        "final_url": "https://arxiv.org/html/2604.06845",
+        "status": 200,
+        "html_sha256": "570b5400262ba64261c8b29cee0e306b37604a066e2e98c7b7ad66dd6e8b3b2f",
+        "text_sha256": "4286576a98b6223137ed400a7b0852811f83f0ae435a9488adb783bb44632623"
+      }
+    ]
+  },
+  {
+    "id": "S14",
+    "title": "Multiple event segmentation mechanisms in the human brain",
+    "authors": [
+      "Tan T. Nguyen",
+      "Joset A. Etzel",
+      "Matthew A. Bezdek",
+      "Jeffrey M. Zacks"
+    ],
+    "doi": "10.7554/eLife.107955.3",
+    "date": "2026",
+    "arxiv_id": null,
+    "arxiv_version": null,
+    "venue_and_status": "eLife 14:RP107955؛ Version of Record، ۷ ژوئیه‌ی ۲۰۲۶",
+    "publication_url": "https://elifesciences.org/articles/107955",
+    "reference_url": "https://doi.org/10.7554/eLife.107955.3",
+    "topic_fa": "سازوکارهای قطعه‌بندی رویداد انسانی",
+    "finding_fa": "مطالعه‌ی شناختی و fMRI، نقش خطای پیش‌بینی و عدم قطعیت را در مرزهای رویداد و الگوهای عصبی بررسی می‌کند.",
+    "limitation_fa": "شاهد انسانی و مدل رویداد را نمی‌توان مستقیما معادل هم‌پوشانی واژه‌ای یا هندسه‌ی پنجره‌ی متن دانست.",
+    "relation_fa": "الهام نظری را حفظ می‌کنیم؛ هیچ ادعای فهم ذاتی، شباهت عصبی یا اعتبارسنجی ادراک اپیزودیک از ممیز واژه‌ای به دست نمی‌آید.",
+    "reading_scope": "نسخه‌ی ثبت‌شده‌ی نهایی eLife، شناسنامه، بحث و بخش تولید مرزهای مدل.",
+    "prior_phase17_id": "R26",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://elifesciences.org/articles/107955",
+        "final_url": "https://elifesciences.org/articles/107955",
+        "status": 200,
+        "html_sha256": "d00cc371a6904ee165c566f213b12c6cbbc10e2d6e8f8a71a5cc54cbf46b971d",
+        "text_sha256": "cdf1f7151a71cfa689a710040893f5c3499b04a2a636c29b5faab934ff6fce05"
+      }
+    ]
+  },
+  {
+    "id": "S15",
+    "title": "Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell",
+    "authors": [
+      "Son, Hochan",
+      "Han, Kyungdoe",
+      "Koh, Jaehan",
+      "Dai, Xiaowu",
+      "Xu, Wenlu",
+      "Cheng, Guang"
+    ],
+    "doi": null,
+    "date": "2026/10/06",
+    "arxiv_id": "2610.07782",
+    "arxiv_version": "v1",
+    "venue_and_status": "پیش‌چاپ؛ نویسندگان پذیرش پوستر کارگاه ML for Systems در NeurIPS 2026 را اعلام کرده‌اند؛ برنامه‌ی رسمی مستقلا تطبیق نشده است",
+    "publication_url": "https://arxiv.org/abs/2610.07782",
+    "reference_url": "https://arxiv.org/abs/2610.07782",
+    "topic_fa": "هزینه و قابلیت شناسایی اثر حافظه",
+    "finding_fa": "مقایسه‌ی حافظه‌ی پایدار در یک معماری چندعامل، هزینه‌ی کارکردی و محدودیت طراحی آزمون اثر را بررسی می‌کند.",
+    "limitation_fa": "تعریف وظیفه و بازنشانی حافظه می‌تواند فرصت استفاده از حافظه را از بین ببرد؛ نتیجه به پیکربندی مقاله محدود است.",
+    "relation_fa": "پیش از افزودن معماری، باید معلوم باشد طراحی فعلی اصلا ظرفیت نشان دادن بهبود را دارد یا نه.",
+    "reading_scope": "چکیده و توضیح وضعیت انتشار در صفحه‌ی arXiv؛ برنامه‌ی رسمی کارگاه مستقلا بررسی نشده است.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://arxiv.org/abs/2610.07782",
+        "final_url": "https://arxiv.org/abs/2610.07782",
+        "status": 200,
+        "html_sha256": "0f5c350e78e45d35ded73c0e3222697a10bb55bae4d1d18ebdd7d4be5db0191b",
+        "text_sha256": "d7ec32d63bae36c9869e4b44fb00eab55162afa31154af3e7b0efe65c1a04e7a"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.07782",
+        "final_url": "https://arxiv.org/html/2610.07782",
+        "status": 200,
+        "html_sha256": "e299be8bbd71a3a662bd86d1631f468d0cc8858085288f02e6fb0d041d6690f9",
+        "text_sha256": "76cb13f533383dc97c85f98725d5809292e01cdd29860f91906030f3cb29b3ce"
+      }
+    ]
+  },
+  {
+    "id": "S16",
+    "title": "Lost in the Middle: How Language Models Use Long Contexts",
+    "authors": [
+      "Nelson F. Liu",
+      "Kevin Lin",
+      "John Hewitt",
+      "Ashwin Paranjape",
+      "Michele Bevilacqua",
+      "Fabio Petroni",
+      "Percy Liang"
+    ],
+    "doi": "10.1162/tacl_a_00638",
+    "date": "2024",
+    "arxiv_id": null,
+    "arxiv_version": null,
+    "venue_and_status": "TACL 12، صفحات 157–173، 2024؛ مقاله‌ی ژورنال",
+    "publication_url": "https://aclanthology.org/2024.tacl-1.9/",
+    "reference_url": "https://doi.org/10.1162/tacl_a_00638",
+    "topic_fa": "موقعیت شاهد در زمینه",
+    "finding_fa": "حساسیت استفاده‌ی مدل زبانی از متن بلند به جایگاه اطلاعات را بررسی می‌کند.",
+    "limitation_fa": "وجود واژه‌های شاهد در زمینه لزوما به استفاده‌ی درست خواننده منجر نمی‌شود؛ پژوهش فعلی هیچ خواننده‌ای اجرا نمی‌کند.",
+    "relation_fa": "افزایش سقف واژه در ممیز، بهبود دقت پاسخ یا کاهش هزینه‌ی کل سامانه را تضمین نمی‌کند.",
+    "reading_scope": "چکیده و شناسنامه‌ی رسمی TACL؛ نتایج مدل‌های مقاله بازاجرا نشده‌اند.",
+    "prior_phase17_id": null,
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://aclanthology.org/2024.tacl-1.9/",
+        "final_url": "https://aclanthology.org/2024.tacl-1.9/",
+        "status": 200,
+        "html_sha256": "5f84030eb60116adc9dec475aca1ab64e5b4fe93e192f36aede43c321ca85996",
+        "text_sha256": "01f217a6fdafd3f96589da8bd7ec890d9fec88ab2828489c82a3947fa91e1cad"
+      }
+    ]
+  },
+  {
+    "id": "S17",
+    "title": "SeCom: On Memory Construction and Retrieval for Personalized Conversational Agents",
+    "authors": [
+      "Pan, Zhuoshi",
+      "Wu, Qianhui",
+      "Jiang, Huiqiang",
+      "Luo, Xufang",
+      "Cheng, Hao",
+      "Li, Dongsheng",
+      "Yang, Yuqing",
+      "Lin, Chin-Yew",
+      "Zhao, H. Vicky",
+      "Qiu, Lili",
+      "Gao, Jianfeng"
+    ],
+    "doi": null,
+    "date": "2025-05-01",
+    "arxiv_id": null,
+    "arxiv_version": null,
+    "venue_and_status": "ICLR 2025؛ مقاله‌ی مجموعه‌مقالات رسمی",
+    "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+    "reference_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+    "topic_fa": "ساخت حافظه با بخش‌بندی موضوعی",
+    "finding_fa": "SeCom از ساخت و بازیابی حافظه در بخش‌های گفت‌وگو برای شخصی‌سازی استفاده می‌کند.",
+    "limitation_fa": "بخش‌بندی و فشرده‌سازی و بازیابی یک پیکربندی مشترک‌اند؛ نتیجه به‌تنهایی اثر خالص جای مرز را نشان نمی‌دهد.",
+    "relation_fa": "پیشینه‌ی مستقیم برای بخش‌بندی حافظه است و دامنه‌ی ادعای تازگی ما را محدود می‌کند.",
+    "reading_scope": "چکیده و شناسنامه‌ی رسمی ICLR؛ ارتباط با جزئیات مرور مرحله‌ی ۱۷.",
+    "prior_phase17_id": "R09",
+    "access_date": "2026-10-24",
+    "provenance": [
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+        "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+        "status": 200,
+        "html_sha256": "efc19fbfe33b2a11561921b05279e695e6b1fefafbc08a4c7908e479bfead279",
+        "text_sha256": "6b450361073304147e09645d05d55105296f45cc2352d7bd856ee7ca43dfdcc3"
+      }
+    ]
+  }
+]

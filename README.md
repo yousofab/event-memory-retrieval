@@ -1,5 +1,26 @@
 # Event Memory Retrieval — BSc software project
 
+## Phase 18 local review package
+
+**Phase 18 is implemented and evaluated locally; this cycle awaits final publication approval.** The new annotation-assisted auditor proves exact complete-evidence feasibility inside the frozen Phase 17 window space and computes the minimum total budget under its original round-robin allocation. It is an offline diagnostic with access to reference labels, not a new deployable retriever.
+
+At 1,024 words, the writer's 156 LoCoMo failures decompose into **106 missing-session cases, 25 geometry-infeasible cases and 25 feasible selection misses**. Exact feasible coverage is **468/599**, versus recorded writer coverage of 443/599. The equal-conversation headroom is **4.19 percentage points** (descriptive cluster interval 2.96–5.13). For QMSum, complete coverage of all annotated relevant spans is possible for 29/244 queries; this is a secondary outcome distinct from the Phase 17 primary partial-turn-recall metric.
+
+- [Persian research report](docs/phase18.md), [locally registered plan](docs/phase18_plan.md), [formal definitions and proofs](docs/phase18_formal_contract.md), [17-source literature atlas](docs/phase18_literature_atlas.md), [novelty critique](docs/phase18_novelty_audit.md), [reproduction guide](docs/phase18_reproduce.md).
+- [PDF](deliverables/phase18_research_report_fa.pdf) and [Word](deliverables/phase18_research_report_fa.docx): Persian RTL B Nazanin report with figures, numeric examples, references and advisor/FARDIAT acknowledgements.
+- `scripts/run_phase18_feasibility.py`, `scripts/validate_phase18.py`, `scripts/analyze_phase18.py`; seven new correctness tests including independent enumeration of every candidate-window combination on 240 seeded toy geometries across their budgets.
+- 843 reused questions, 2,529 query–budget groups and 55,638 historical conditions checked; two numeric files reproduced byte-for-byte. The full suite ran 59 tests: 58 passed and one historical Phase 14 test skipped for absent local upstream data. The toy examples are correctness tests, not a new conversation benchmark.
+
+```bash
+python scripts/fetch_data.py
+python scripts/fetch_phase10_data.py --download
+python -m unittest discover -s tests -p 'test_phase18*' -v
+python scripts/run_phase18_feasibility.py --output-dir /tmp/phase18-reproduction
+python scripts/validate_phase18.py --directory /tmp/phase18-reproduction
+```
+
+The bound is exact only for the fixed legal windows and supplied annotations. It does not bound answer accuracy, semantic sufficiency or a different retrieval architecture. A 17-source focused review includes the 22 October 2026 Raw-RAG preprint and distinguishes two different MemTrace papers; no claim of worldwide priority is made. Historical results and the Phase 17 release remain unchanged.
+
 **Status: Phase 17 fixed-anchor, exactly matched-opportunity evidence study completed and approved for publication. At 1,024 words, LoCoMo full-evidence coverage was 443/599 for the frozen writer versus 442/599 for centered context; the conversation-macro difference versus 20 random controls was +0.84 percentage points, below the predeclared 2-point practical threshold. QMSum did not show a stable transfer benefit. This is a controlled exploratory retrieval study on reused data, not answer accuracy or a claim of human-like understanding.**
 
 [Phase 17 publication record](docs/phase17_publication.md) · [Phase 18 handoff — planning only](docs/phase18_handoff.md) · [PDF report](deliverables/phase17_research_report_fa.pdf) · [Word report](deliverables/phase17_research_report_fa.docx)
