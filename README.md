@@ -1,8 +1,10 @@
 # Event Memory Retrieval — BSc software project
 
-## Phase 18 local review package
+## Phase 18 completed research checkpoint
 
-**Phase 18 is implemented and evaluated locally; this cycle awaits final publication approval.** The new annotation-assisted auditor proves exact complete-evidence feasibility inside the frozen Phase 17 window space and computes the minimum total budget under its original round-robin allocation. It is an offline diagnostic with access to reference labels, not a new deployable retriever.
+**Phase 18 is complete; the researcher approved full publication and main-repository closeout on 24 October 2026.** The new annotation-assisted auditor proves exact complete-evidence feasibility inside the frozen Phase 17 window space and computes the minimum total budget under its original round-robin allocation. It is an offline diagnostic with access to reference labels, not a new deployable retriever.
+
+[Phase 18 publication record](docs/phase18_publication.md) · [Phase 19 planning handoff](docs/phase19_handoff.md)
 
 At 1,024 words, the writer's 156 LoCoMo failures decompose into **106 missing-session cases, 25 geometry-infeasible cases and 25 feasible selection misses**. Exact feasible coverage is **468/599**, versus recorded writer coverage of 443/599. The equal-conversation headroom is **4.19 percentage points** (descriptive cluster interval 2.96–5.13). For QMSum, complete coverage of all annotated relevant spans is possible for 29/244 queries; this is a secondary outcome distinct from the Phase 17 primary partial-turn-recall metric.
 
@@ -23,7 +25,7 @@ The bound is exact only for the fixed legal windows and supplied annotations. It
 
 **Status: Phase 17 fixed-anchor, exactly matched-opportunity evidence study completed and approved for publication. At 1,024 words, LoCoMo full-evidence coverage was 443/599 for the frozen writer versus 442/599 for centered context; the conversation-macro difference versus 20 random controls was +0.84 percentage points, below the predeclared 2-point practical threshold. QMSum did not show a stable transfer benefit. This is a controlled exploratory retrieval study on reused data, not answer accuracy or a claim of human-like understanding.**
 
-[Phase 17 publication record](docs/phase17_publication.md) · [Phase 18 handoff — planning only](docs/phase18_handoff.md) · [PDF report](deliverables/phase17_research_report_fa.pdf) · [Word report](deliverables/phase17_research_report_fa.docx)
+[Phase 17 publication record](docs/phase17_publication.md) · [Original Phase 18 planning handoff](docs/phase18_handoff.md) · [PDF report](deliverables/phase17_research_report_fa.pdf) · [Word report](deliverables/phase17_research_report_fa.docx)
 
 ## Phase 17: boundary guidance with fixed evidence opportunities
 

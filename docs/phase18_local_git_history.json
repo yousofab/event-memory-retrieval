@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "base_commit": "3da0b91b9b56cb25e563a102b8b2c84093abcc94",
+  "approved_review_commit": "3ca4e3cfd355048719465b93f9e1da5c57f844c4",
+  "publication_approval_date": "2026-10-24",
+  "explanation": "The authenticated GitHub connector publishes byte-identical trees in the original order with new public commit metadata. The exact original local commit objects are retained below; local timestamps are not independent public preregistration.",
+  "commits": [
+    {
+      "local": "daea6ca049478555650e6bcb3fb82449f5066d8c",
+      "published": "986de9798114df381e150a5117e4f41dcb08f798",
+      "tree": "a9d405c6b84f01cba59424037c0655073c7f2efe",
+      "raw_commit_base64": "dHJlZSBhOWQ0MDVjNmI4NGYwMWNiYTU5NDI0MDM3YzA2NTUwNzNjN2YyZWZlCnBhcmVudCAzZGEwYjkxYjliNTZjYjI1ZTU2M2ExMDJiOGIyYzg0MDkzYWJjYzk0CmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjgzMTg4MCArMDQwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI4MzE4ODAgKzA0MDAKClJlZ2lzdGVyIFBoYXNlIDE4IGV4YWN0IGZlYXNpYmlsaXR5IGFuZCBtaW5pbXVtLWJ1ZGdldCBhdWRpdCBiZWZvcmUgbmV3IHNjb3JpbmcK"
+    },
+    {
+      "local": "c8bde1d0cfa2dd4d32d17236a1d705b3b31c8b56",
+      "published": "9515ae964b363b4119dd021d9f4d11f37526e3ac",
+      "tree": "5a8eb5333a4dbde8b99e307ff0d6d3f26e884298",
+      "raw_commit_base64": "dHJlZSA1YThlYjUzMzNhNGRiZGU4Yjk5ZTMwN2ZmMGQ2ZDNmMjZlODg0Mjk4CnBhcmVudCBkYWVhNmNhMDQ5NDc4NTU1NjUwZTZiY2IzZmI4MjQ0OWY1MDY2ZDhjCmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjgzMjExMiArMDQwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI4MzIxMTIgKzA0MDAKCkltcGxlbWVudCBleGFjdCBmZWFzaWJpbGl0eSBjZXJ0aWZpY2F0ZXMgYW5kIGJ1ZGdldCB0aGVvcmVtIHdpdGggaW5kZXBlbmRlbnQgZXhoYXVzdGl2ZSBjaGVja3MK"
+    },
+    {
+      "local": "3ca4e3cfd355048719465b93f9e1da5c57f844c4",
+      "published": "a51deefd32f5bf194b1362e38e307847f6d25cac",
+      "tree": "01c2f019deb77a008be89b9166a8c5041499850e",
+      "raw_commit_base64": "dHJlZSAwMWMyZjAxOWRlYjc3YTAwOGJlODliOTE2NmE4YzUwNDE0OTk4NTBlCnBhcmVudCBjOGJkZTFkMGNmYTJkZDRkMzJkMTcyMzZhMWQ3MDViM2IzMWM4YjU2CmF1dGhvciBDb2RleCA8Y29kZXhAb3BlbmFpLmNvbT4gMTc5MjgzNTM1NyArMDQwMApjb21taXR0ZXIgQ29kZXggPGNvZGV4QG9wZW5haS5jb20+IDE3OTI4MzUzNTcgKzA0MDAKCkNvbXBsZXRlIFBoYXNlIDE4IGV4YWN0IGZlYXNpYmlsaXR5IGF1ZGl0LCAxNy1zb3VyY2Ugc3ludGhlc2lzLCByZXByb2R1Y2libGUgcmVzdWx0cyBhbmQgUGVyc2lhbiByZXBvcnQK"
+    }
+  ]
+}

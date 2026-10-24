@@ -27,6 +27,10 @@ The review has direct prior art for oracle diagnostics, sufficiency and event me
 
 ## Publication
 
-Prepared locally for the researcher's final approval under the standing directive. No new public Phase 18 branch, pull request or release has been created. Preserve the protocol and implementation chronology with a merge commit when publication is approved.
+The researcher approved complete publication and main-repository closeout on 24 October 2026. Reviewed scientific package: local commit `3ca4e3cfd355048719465b93f9e1da5c57f844c4`, publicly published with identical tree at `a51deefd32f5bf194b1362e38e307847f6d25cac`. Subsequent changes record approval and the Phase 19 planning handoff without changing the experiment, tests, numeric outputs, figures or approved report bytes. Preserve chronology with a merge commit.
 
-The proposed workflow validates both recorded Phase 17 and Phase 18 outputs. A separate Phase 18 release job requires successful validation, a push to main and the explicit `[publish-phase18]` merge marker. It verifies the approved artifact hashes before creating `phase18-exact-evidence-feasibility` and attaching reports, numeric outputs and checksums. Publication has not been triggered and remote Phase 18 CI has not run during local preparation.
+The workflow validates both recorded Phase 17 and Phase 18 outputs. A separate Phase 18 release job requires successful validation, a push to main and the explicit `[publish-phase18]` merge marker. It verifies the approved artifact hashes before creating `phase18-exact-evidence-feasibility` and attaching reports, numeric outputs and checksums. Pull-request validation remains read-only. Source-backed reproduction is separately documented and is not rerun by CI.
+
+The authenticated connector publishes the original three local trees in order with new public commit metadata. Every tree SHA matches exactly. `docs/phase18_local_git_history.json` maps identifiers and retains original commit objects; public publication dates do not constitute independent preregistration. Earlier publication-hold fields in the frozen plan and numeric audit are historical snapshots superseded by the approval record.
+
+Closes #15 for the selected Phase 18 feasibility audit. Independent-data admission, next-method selection and final-thesis work remain explicit Phase 19 planning tasks; they are not claimed complete by this closeout.
