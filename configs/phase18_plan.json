@@ -1,0 +1,50 @@
+{
+  "phase": 18,
+  "title": "Exact annotated-evidence feasibility and minimum budget under frozen anchors",
+  "date": "2026-10-24",
+  "timezone": "Asia/Tehran",
+  "baseline_commit": "3da0b91b9b56cb25e563a102b8b2c84093abcc94",
+  "registration": "Local commit before new Phase 18 scoring; reused data and known Phase 17 outcomes; not independent public preregistration",
+  "parent_rows_path": "results/phase17_rows.json.gz",
+  "parent_rows_compressed_sha256": "37927cb054d245b5de1e8712d0dd003db29a2ef5e83ba6a0e056d6bf76500394",
+  "parent_plan_path": "configs/phase17_plan.json",
+  "parent_plan_sha256": "0f46531b7254d3b1da9a22afa58b6ad915b12999fc31eb1440bf3d6a4e6a1942",
+  "data": {
+    "locomo": {
+      "path": "data/raw/locomo10.json",
+      "sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+      "question_manifest": "results/phase1_audit.json",
+      "split": "held_out",
+      "questions": 599,
+      "conversations": 7,
+      "annotation": "all words of every annotated nonempty evidence turn"
+    },
+    "qmsum": {
+      "path": "data/raw/qmsum_test",
+      "manifest": "configs/phase10_source_manifest.json",
+      "source_revision": "83d7768c1f2b4dfeb091385d3dc7e239b8e5bb7e",
+      "questions": 244,
+      "meetings": 35,
+      "bootstrap_families": 10,
+      "annotation": "union of inclusive relevant-turn spans; not minimal answer evidence"
+    }
+  },
+  "budget_words": [512, 1024, 2048],
+  "primary_budget_words": 1024,
+  "anchor_count": 8,
+  "methods": ["centered", "writer", "random_00", "random_01", "random_02", "random_03", "random_04", "random_05", "random_06", "random_07", "random_08", "random_09", "random_10", "random_11", "random_12", "random_13", "random_14", "random_15", "random_16", "random_17", "random_18", "random_19"],
+  "primary_estimand": "LoCoMo equal-conversation macro of exact feasible_all_evidence minus recorded writer all_evidence at 1024 words",
+  "primary_question": "How much annotated complete-evidence coverage can any legal window selector recover beyond the frozen writer under exactly the same anchors, cells, widths and actual word cost?",
+  "categories_order": ["complete_success", "missing_gold_session", "window_geometry_infeasible", "feasible_selection_miss"],
+  "granularity_ladder": ["all_annotated_sessions_present", "every_nonempty_gold_turn_touched", "every_nonempty_gold_turn_complete"],
+  "empty_gold_policy": "Exclude zero-word gold turns from coverage denominator; retain queries; reject a query with no nonempty gold turn; match Phase 17",
+  "oracle_contract": "Labels are used only by an offline diagnostic. Oracle windows must obey the original candidate bounds and exact widths. No answer strings or LLM judge are used. Feasibility is relative to supplied annotations, not semantic answer sufficiency.",
+  "minimum_budget": "Exact first total round-robin budget meeting every cell's required width; null when an annotated session has no anchor; never relax anchor count or cell geometry",
+  "uncertainty": {"draws": 2000, "seed": 18, "locomo_unit": "conversation", "qmsum_unit": "source family retaining all meetings", "interpretation": "descriptive sensitivity, not confirmatory significance"},
+  "decision_rule": {"practical_headroom_percentage_points": 2.0, "if_below": "Deprioritize boundary-only selector work under these frozen opportunities; inspect anchor access or annotation/data design", "if_at_or_above": "There is mathematical headroom to investigate; no deployable improvement or generalization is implied"},
+  "secondary": ["four-way failure decomposition by method and budget", "coarse versus complete label-coverage gaps", "finite minimum-budget distribution and exact threshold witnesses", "QMSum joint complete relevant-span feasibility as a secondary audit, not the Phase 17 primary turn-recall metric", "constructive feasible windows and infeasibility certificates"],
+  "verification": ["independent exhaustive enumeration on small synthetic geometries", "formula versus slow round-robin allocation", "feasible witness rescored by unchanged Phase 17 scorer", "all 55638 recorded method rows rescored and checked against the common bound", "recorded cells/width fingerprints reproduced", "numeric outputs reproduced byte-for-byte in a fresh directory", "all historical result files unchanged"],
+  "synthetic_scope": "Generated toy geometries are correctness tests, not a conversation benchmark or evidence of real-world performance",
+  "compute": {"cpu_only": true, "commercial_api_calls": 0, "target_minutes": 10, "target_peak_rss_gib": 2},
+  "publication": "Prepare locally; a new public push, PR, merge or release requires the researcher's final approval for this cycle"
+}
