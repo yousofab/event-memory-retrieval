@@ -1,0 +1,18 @@
+{
+  "baseline_conditions_reproduced": 3594,
+  "commercial_api_calls": 0,
+  "elapsed_seconds": 63.65077801799998,
+  "feasible_witnesses_rescored": 11057,
+  "finite_thresholds_checked": 4360,
+  "git_clean_at_start_of_scoring": true,
+  "gpu_calls": 0,
+  "implementation_commit": "f84a2ce00b28edd76d9b03e994b4f12b02f93c9f",
+  "peak_rss_mib": 480.53125,
+  "phase": 19,
+  "plan_sha256": "f4cd0bbbb03db737aef0451b5bdc8804a59d6b070db581b8c090d567bce6fdbe",
+  "preserved_previous_result_files": 47,
+  "python": "3.12.14",
+  "queries": 1208,
+  "rows": 57984,
+  "source_backed_reproduction": "requires pinned raw data; portable certificates checked separately"
+}
