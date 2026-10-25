@@ -36,25 +36,31 @@ def direct_score(gold, windows):
         'gold_session_recall':len(gs&by.keys())/len(gs)}
 
 
-def validate(directory):
-    plan = json.loads((ROOT/'configs/phase19_plan.json').read_text())
-    payload = json.loads(gzip.decompress((directory/'phase19_queries.json.gz').read_bytes()))
-    rows = json.loads(gzip.decompress((directory/'phase19_rows.json.gz').read_bytes()))
-    runtime = json.loads((directory/'phase19_runtime.json').read_text())
-    assert runtime['plan_sha256']==hashlib.sha256((ROOT/'configs/phase19_plan.json').read_bytes()).hexdigest()
+def validate(directory,prefix='phase19',base_dir=None):
+    if prefix not in ['phase19','phase19b']:raise ValueError('Unknown phase')
+    plan_path=ROOT/f'configs/{prefix}_plan.json'
+    plan = json.loads(plan_path.read_text())
+    payload = json.loads(gzip.decompress((directory/f'{prefix}_queries.json.gz').read_bytes()))
+    rows = json.loads(gzip.decompress((directory/f'{prefix}_rows.json.gz').read_bytes()))
+    runtime = json.loads((directory/f'{prefix}_runtime.json').read_text())
+    assert runtime['plan_sha256']==hashlib.sha256(plan_path.read_bytes()).hexdigest()
+    if prefix=='phase19b':
+        from run_phase19_edit_controls import matched_edit_anchors,access_null,summarize_b
+        choose=matched_edit_anchors
+    else:choose=select_anchors
     histories = {h['sample_id']:h for h in payload['histories']}
     records = {(q['dataset'],q['sample_id'],q['question_id']):q for q in payload['queries']}
     assert len(records)==len(payload['queries'])
     checked_thresholds = 0
     for q in records.values():
         pool = q['pool']
-        assert len(pool)==plan['candidate_pool_turns']
+        assert len(pool)==64
         assert len({p['turn_index'] for p in pool})==len(pool)
         assert all(p['end']>p['start'] and p['anchor']==(p['start']+p['end']-1)//2 for p in pool)
         gold = [g for g in q['gold_spans'] if g['end']>g['start']]
         assert q['pool_all_gold_sessions']==int({g['session'] for g in gold}<={p['session'] for p in pool})
         for policy, data in q['policies'].items():
-            anchors = select_anchors(pool,policy,f'{q["sample_id"]}|{q["question_id"]}')
+            anchors = choose(pool,policy,f'{q["sample_id"]}|{q["question_id"]}')
             assert anchors == data['anchor_indices']
             entries = {p['turn_index']:p for p in pool}
             cells = data['cells']
@@ -109,8 +115,19 @@ def validate(directory):
         assert len(rs)==2 and {r['selector'] for r in rs}==set(plan['selectors'])
         assert rs[0]['widths']==rs[1]['widths'] and rs[0]['retrieved_words']==rs[1]['retrieved_words']
     assert len(rows)==len(records)*len(plan['policies'])*len(plan['selectors'])*len(plan['budget_words'])
-    expected_summary=summarize(rows,plan)
-    recorded_summary=json.loads((directory/'phase19_summary.json').read_text())
+    if prefix=='phase19b':
+        base_dir=base_dir or directory
+        base_rows=json.loads(gzip.decompress((base_dir/'phase19_rows.json.gz').read_bytes()))
+        for q in records.values():
+            top8={p['turn_index'] for p in q['pool'][:8]}
+            target=select_anchors(q['pool'],'reserve8',f'{q["sample_id"]}|{q["question_id"]}')
+            assert q['edits']==len(set(target)-top8)
+            for p in q['policies'].values():assert len(set(p['anchor_indices'])-top8)==q['edits']
+            gs={g['session'] for g in q['gold_spans'] if g['end']>g['start']}
+            assert access_null(q['pool'],gs,q['edits'])==q['edit_null']
+        expected_summary=summarize_b(rows,list(records.values()),base_rows,plan)
+    else:expected_summary=summarize(rows,plan)
+    recorded_summary=json.loads((directory/f'{prefix}_summary.json').read_text())
     assert expected_summary==recorded_summary
     assert checked_thresholds==runtime['finite_thresholds_checked']
     assert witnesses==runtime['feasible_witnesses_rescored']
@@ -123,5 +140,7 @@ def validate(directory):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--directory',type=Path,default=ROOT/'results')
+    p.add_argument('--prefix',choices=['phase19','phase19b'],default='phase19')
+    p.add_argument('--base-dir',type=Path)
     args=p.parse_args()
-    print(json.dumps(validate(args.directory),indent=2,sort_keys=True))
+    print(json.dumps(validate(args.directory,args.prefix,args.base_dir),indent=2,sort_keys=True))
