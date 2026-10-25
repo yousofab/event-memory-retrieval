@@ -85,5 +85,14 @@ Neither condition count nor seed count is an independent sample size. Other
 papers' reported answer scores are not directly compared with these coverage
 outcomes. See `phase19.md`, the two frozen plans and `phase19_execution_notes.md`.
 
-Publication of this new cycle follows the project's final-approval workflow.
-Local preparation and successful validation are not a claim of public release.
+The researcher approved complete publication on 25 October 2026. The supplied
+Islamic Azad University logo and BSc project-course identity were added to the
+cover; pages2–13 match the reviewed report pixel-for-pixel. Numeric files,
+experimental plans and historical outputs are unchanged.
+`docs/phase19_local_git_history.json` retains the six original local commit objects
+and their exact-tree public mappings; publication timestamps are not independent
+preregistration. Historical hold fields in frozen plans/runtime records describe
+the pre-approval state and are preserved. See `phase19_publication.md`, PR and
+tagged release for current publication status. New report builders must include
+the university logo and course identity using `configs/report_identity.json` and
+`scripts/report_identity.py`.

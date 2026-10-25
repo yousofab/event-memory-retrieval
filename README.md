@@ -1,10 +1,22 @@
 # Event Memory Retrieval — BSc software project
 
-## Phase 19 completed locally and ready for publication review
+<div dir="rtl">
+
+<img src="assets/iau-logo.png" width="60" alt="دانشگاه آزاد اسلامی واحد کرج">
+
+دانشگاه آزاد اسلامی واحد کرج · درس پروژه‌ی کارشناسی مهندسی کامپیوتر · یوسف ابوالفتحی روزبهانی
+
+</div>
+
+## Phase 19 approved research checkpoint
 
 The session-access study and its separately registered exploratory matched-edit
-amendment are complete. Public publication of this new cycle awaits final approval.
-The published Phase18 checkpoint remains the public baseline until that closeout.
+amendment are complete. The researcher approved complete publication and main-
+repository closeout on 25 October 2026. The report cover includes the supplied
+university logo and the BSc project-course identity, alongside educational thanks
+to Dr Arash Fekri and FARDIAT. This identity is required from Phase19 onward.
+
+[Publication record](docs/phase19_publication.md) · [Release](https://github.com/yousofab/event-memory-retrieval/releases/tag/phase19-session-access-audit) · [Report identity](docs/report_identity.md)
 
 - [Persian report](docs/phase19.md), [English research note](docs/phase19_research_note_en.md), [12-source primary literature review](docs/phase19_literature_atlas.md), [novelty audit](docs/phase19_novelty_audit.md).
 - [Original plan](docs/phase19_plan.md), [formal contract](docs/phase19_formal_contract.md), [exploratory amendment](docs/phase19b_amendment.md), [execution ledger](docs/phase19_execution_notes.md), [reproduction guide](docs/phase19_reproduce.md), [Phase20 planning](docs/phase20_handoff.md).

@@ -34,13 +34,27 @@ conditions reproduce exactly. Portable independent scoring checks130,464 conditi
 and both summaries replay byte-for-byte;47 old result files remain unchanged.
 Primary comparisons all spend exactly1,024 words; secondary saturation is logged.
 
-## Publication checklist
+## Publication approval and academic identity
 
-This draft is prepared locally. Record the researcher's approval and reviewed
-package commit before opening or merging this PR. Preserve ordered protocol,
-implementation, results and post-result amendment commits. If the connector
-recreates commits, retain exact-tree mapping and original commit objects.
-The release job must follow successful main validation and approved SHA-256 checks.
+The researcher approved full publication and main-repository closeout on 25 October
+2026, including the supplied Islamic Azad University logo and BSc Computer
+Engineering project-course identity. The revised report remains13 pages; pages2–13
+are pixel-identical to the reviewed package. Numeric outputs and frozen plans are
+unchanged. FARDIAT/Dr Arash Fekri educational thanks and Amir Noori Volandeh's
+university supervision remain present.
+
+Reviewed scientific local commit74763b3b3a6ab57cef8f468b51587e34bb5dc764 maps to
+public commit e8440f69c50cd46c03dc2e3af64d26f465489e77 with the same tree.
+The six ordered scientific commits have new public metadata; exact-tree mappings
+and original raw commit objects are in `docs/phase19_local_git_history.json`.
+Local registration is not independent public preregistration. The final publication
+commit adds academic identity and approval records without changing scientific
+outputs. Merge without squashing.
+
+The release job requires successful main validation, the `[publish-phase19]` merge
+marker and approved SHA-256 checks. It attaches revised PDF/Word reports, four
+numeric files and checksums under `phase19-session-access-audit`. Historical hold
+fields are pre-approval snapshots.
 
 Closes #17 only for the selected Phase19 study after approved merge. Phase20
 planning and final-thesis completion remain open tasks and are not claimed done.

@@ -4,6 +4,11 @@ Completed Phase19 checkpoint, with an explicit negative primary finding and a
 separately registered exploratory amendment. This is a research progress package,
 not the final BSc thesis or a new answer-generating memory service.
 
+Academic identity: Islamic Azad University, Karaj Branch; BSc Computer Engineering
+project course. The researcher-supplied university logo is included on the Persian
+report cover, alongside university supervision and FARDIAT educational thanks.
+Report identity requirements are recorded for all future phases.
+
 ## Findings
 
 At1,024 source words, reserving4 sessions is nearly a no-op and does not meet the

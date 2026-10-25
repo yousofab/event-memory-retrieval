@@ -1,0 +1,39 @@
+{
+  "phase": 19,
+  "publication_approval_date": "2026-10-25",
+  "reviewed_scientific_local_commit": "74763b3b3a6ab57cef8f468b51587e34bb5dc764",
+  "approved_change": "University logo and BSc project-course cover identity; publication records and persistent report identity",
+  "pdf_pages": 13,
+  "visually_reviewed_changed_page": 1,
+  "unchanged_body_pages_pixel_identical": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "all_original_scientific_files_checked_unchanged": 91,
+  "university_logo_original_sha256": "b88a048307fb8bd597af89c21693e4e80b0aa9c278ec7c145a1bfcc022508a5a",
+  "original_png_embedded_in_docx": true,
+  "prior_document_and_numeric_reproducibility": "Preserved phase19_reproducibility.json describes pre-publication state",
+  "artifact_sha256": {
+    "deliverables/phase19_research_report_fa.pdf": "0af767fe174e02face18929123f8305228ebe625da43eac2ed3913b4056667f6",
+    "deliverables/phase19_research_report_fa.docx": "21b2d092ad784fb3160b51c6de1c70c4c97f764d14eed7d9b34b81e4c044590c",
+    "results/phase19_queries.json.gz": "91a4d4530bdcfbc7c3be23e2018487bc74609d518de49bb8e19f33015f593968",
+    "results/phase19_rows.json.gz": "7821f5940d6faba93fcfe505e379001d7e125731d67b2e914f7c89c9ba1ff49a",
+    "results/phase19b_queries.json.gz": "26b4cde6ee34b40ee79b38eafbb86bd8e7683e85f501b622c6fd10ce690f9818",
+    "results/phase19b_rows.json.gz": "f8adf9f0ecdd1ba9ad611475754767c6c3c2948661fa0947e56d2814b9b615eb",
+    "configs/phase19_plan.json": "f4cd0bbbb03db737aef0451b5bdc8804a59d6b070db581b8c090d567bce6fdbe",
+    "configs/phase19b_plan.json": "4799d873450135dc98466b0060ffbbfe1a8481b2e65d32d5ea9e8d6eb4886f15",
+    "configs/report_identity.json": "2aea7332725a6ee67882f0bcabab5ff5f644379a27d39d8ef759003cd27203db",
+    "assets/iau-logo.png": "b88a048307fb8bd597af89c21693e4e80b0aa9c278ec7c145a1bfcc022508a5a"
+  },
+  "github_ci": "Pipeline runs after this local record; actual result in Actions and release metadata"
+}

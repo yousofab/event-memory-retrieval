@@ -12,6 +12,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 import package_phase17 as helpers
 from package_phase17 import element,rtl,runfont
+from report_identity import university_mark
 
 ROOT=Path(__file__).resolve().parents[1]
 FONT='B Nazanin'
@@ -95,18 +96,19 @@ def build():
     runs(footer,'پژوهش حافظه‌ی رویدادی  |  مرحله‌ی ۱۹  |  ',10)
     field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');footer._p.append(field)
 
-    para(doc,'دانشگاه آزاد اسلامی واحد کرج',18,True,10)
-    para(doc,'کارشناسی مهندسی کامپیوتر  |  پروژه‌ی نرم‌افزار',15,after=22)
+    identity=university_mark(doc)
+    para(doc,identity['university_fa'],18,True,8)
+    para(doc,identity['course_fa'],15,after=14)
     para(doc,'گزارش پژوهشی مرحله‌ی ۱۹',25,True,14,'Title')
     para(doc,'دسترسی به جلسه و پوشش شاهد',24,True,4,'Subtitle')
     para(doc,'در حافظه‌ی گفت‌وگویی',22,True,18,'Subtitle')
-    para(doc,'ممیزی کنترل‌شده با انتظار ترکیبی دقیق و ارزیابی روی منبع تازه',16,after=25)
+    para(doc,'ممیزی کنترل‌شده با انتظار ترکیبی دقیق و ارزیابی روی منبع تازه',16,after=18)
     para(doc,'پژوهشگر  یوسف ابوالفتحی روزبهانی',16,True,10)
     para(doc,'استاد راهنمای دانشگاهی  استاد امیر نوری ولنده',15,after=8)
     para(doc,'راهنمای آموزشی علوم اعصاب شناختی  دکتر آرش فکری',15,after=8)
     para(doc,'فردیت  FARDIAT  مجتمع فوق تخصصی مغز و شناخت',15,after=12)
     if (ROOT/'assets/fardiat-logo.jpg').exists():
-        p=para(doc,after=12);p.add_run().add_picture(str(ROOT/'assets/fardiat-logo.jpg'),width=Inches(1.05))
+        p=para(doc,after=8);p.add_run().add_picture(str(ROOT/'assets/fardiat-logo.jpg'),width=Inches(.80))
     para(doc,'۲۵ اکتبر ۲۰۲۶',14,after=12)
     para(doc,'نتیجه‌ی این مرحله  افزایش دسترسی به جلسه، پوشش کافی شاهد را تضمین نکرد. داده، حدود ادعا و تحلیل تکمیلی اکتشافی در گزارش تفکیک شده‌اند.',13.5,after=12)
     para(doc,'github.com/yousofab/event-memory-retrieval',10.5,after=0)
