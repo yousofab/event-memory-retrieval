@@ -1,0 +1,262 @@
+{
+  "search_date": "2026-10-25",
+  "scope": "Focused primary-source review; not systematic-review completeness or journal-quartile certification",
+  "sources": [
+    {
+      "id": "R01",
+      "title": "The use of MMR, diversity-based reranking for reordering documents and producing summaries",
+      "authors": [
+        "Jaime Carbonell",
+        "Jade Goldstein"
+      ],
+      "date": "1998-08-01",
+      "doi": "10.1145/290941.291025",
+      "reference_url": "https://doi.org/10.1145/290941.291025",
+      "venue_and_status": "SIGIR1998; official ACM proceedings; related1997 CMU report also checked",
+      "finding_fa": "ترکیب ارتباط و کاهش افزونگی پیشینه‌ی مستقیم دارد.",
+      "limitation_fa": "تنوع نتیجه به معنای پوشش شاهد کامل نیست و این مرحله اختراع تنوع‌بخشی را ادعا نمی‌کند.",
+      "reading_scope": "فراداده‌ی ACM و چکیده‌ی گزارش CMU؛ روش این مقاله بازاجرا نشد."
+    },
+    {
+      "title": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+      "authors": [
+        "Li, Yufeng",
+        "Li, Shuxin",
+        "Xu, Zhenhua",
+        "Li, Junxian",
+        "Zeng, Peng",
+        "Yao, Sheng",
+        "Lin, Changting",
+        "Li, Gaolei",
+        "Bi, Ran",
+        "Han, Meng"
+      ],
+      "doi": null,
+      "date": "2026/10/07",
+      "arxiv_id": "2610.09348",
+      "arxiv_version": "v1",
+      "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+      "reference_url": "https://arxiv.org/abs/2610.09348",
+      "finding_fa": "BFR ترکیب شواهد مکمل و جست‌وجوی رکوردهای تازه را روی یک حافظه‌ی ثابت تفکیک می‌کند.",
+      "limitation_fa": "کفایت با داور زبانی و شاخص‌های جانشین سنجیده می‌شود؛ بودجه‌ی اصلی تعداد دور، فراخوانی و رکورد است و معادل عرض واژه‌ای پنجره‌ی ما نیست.",
+      "id": "R02",
+      "prior_record": "phase18/S02",
+      "reading_scope": "شناسنامه و چکیده‌ی منبع اصلی دوباره بررسی شد؛ یادداشت تفصیلی مرحله‌ی ۱۸ با ارجاع حفظ شده است. بازاجرای روش مقاله انجام نشده است."
+    },
+    {
+      "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
+      "authors": [
+        "Bao, Zhengye",
+        "Zhang, Shengtao",
+        "Zhang, Haokai",
+        "Lou, Shiqi",
+        "Wen, Muning",
+        "Luo, Minnan"
+      ],
+      "doi": null,
+      "date": "2026/10/22",
+      "arxiv_id": "2610.30755",
+      "arxiv_version": "v1",
+      "venue_and_status": "پیش‌چاپ arXiv؛ محل انتشار داوری‌شده در این مرور احراز نشد",
+      "reference_url": "https://arxiv.org/abs/2610.30755",
+      "finding_fa": "بازیابی متراکم و بازرتبه‌بندی روی متن خام را با حافظه‌های پیچیده مقایسه می‌کند و حفظ شاهد را مهم می‌یابد.",
+      "limitation_fa": "اوراکل مکان پاسخ، جلسه‌های شاهد را بدون سقف می‌دهد؛ کنترل complete-store قواعد انتخاب، بودجه و دستور خواننده‌ی متفاوت دارد. کنترل‌های جداگانه‌ی ۵۰۰۰توکنی نیز گزارش شده‌اند.",
+      "id": "R03",
+      "prior_record": "phase18/S01",
+      "reading_scope": "شناسنامه و چکیده‌ی منبع اصلی دوباره بررسی شد؛ یادداشت تفصیلی مرحله‌ی ۱۸ با ارجاع حفظ شده است. بازاجرای روش مقاله انجام نشده است."
+    },
+    {
+      "title": "SeCom: On Memory Construction and Retrieval for Personalized Conversational Agents",
+      "authors": [
+        "Pan, Zhuoshi",
+        "Wu, Qianhui",
+        "Jiang, Huiqiang",
+        "Luo, Xufang",
+        "Cheng, Hao",
+        "Li, Dongsheng",
+        "Yang, Yuqing",
+        "Lin, Chin-Yew",
+        "Zhao, H. Vicky",
+        "Qiu, Lili",
+        "Gao, Jianfeng"
+      ],
+      "doi": null,
+      "date": "2025-05-01",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "venue_and_status": "ICLR 2025؛ مقاله‌ی مجموعه‌مقالات رسمی",
+      "reference_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+      "finding_fa": "SeCom از ساخت و بازیابی حافظه در بخش‌های گفت‌وگو برای شخصی‌سازی استفاده می‌کند.",
+      "limitation_fa": "بخش‌بندی و فشرده‌سازی و بازیابی یک پیکربندی مشترک‌اند؛ نتیجه به‌تنهایی اثر خالص جای مرز را نشان نمی‌دهد.",
+      "id": "R04",
+      "prior_record": "phase18/S17",
+      "reading_scope": "شناسنامه و چکیده‌ی منبع اصلی دوباره بررسی شد؛ یادداشت تفصیلی مرحله‌ی ۱۸ با ارجاع حفظ شده است. بازاجرای روش مقاله انجام نشده است."
+    },
+    {
+      "id": "R05",
+      "title": "MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data",
+      "authors": [
+        "Sen Gao",
+        "Yongan Li",
+        "Han Chen",
+        "Bingsheng He",
+        "Ming Wu",
+        "Jason Zeng",
+        "Michael Heinrich",
+        "Shixuan Sun"
+      ],
+      "date": "2026-10-18",
+      "arxiv_id": "2610.25373",
+      "arxiv_version": "v1",
+      "reference_url": "https://arxiv.org/html/2610.25373v1",
+      "venue_and_status": "arXiv preprint; reviewed venue not established",
+      "finding_fa": "حالت مشتق‌شده و گراف استنتاج مرجع را برای تشخیص شکست می‌سنجد.",
+      "limitation_fa": "تشخیص شکست و شاهد اجرایی پیشینه دارد؛ اینجا فقط بازیابی متن و هندسه‌ی پنجره بررسی می‌شود. منبع داده‌ی ناشناس در این محیط قابل دریافت نبود.",
+      "reading_scope": "چکیده، مقدمه، صورت‌بندی و توضیح بازتولید؛ مقایسه‌ی آزمایشی این مقاله بازاجرا نشد."
+    },
+    {
+      "id": "R06",
+      "title": "DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users",
+      "authors": [
+        "Yifei Tao",
+        "Xinyu Zhong",
+        "Henry Hengyuan Zhao",
+        "Fanyi Wang",
+        "Tengda Guo",
+        "Wentao Qiu",
+        "Ying Wang",
+        "Liujian Tang"
+      ],
+      "date": "2026-10-02",
+      "arxiv_id": "2610.03020",
+      "arxiv_version": "v1",
+      "reference_url": "https://arxiv.org/abs/2610.03020",
+      "venue_and_status": "arXiv preprint; reviewed venue not established",
+      "finding_fa": "تمایز حافظه‌ی کاربر و حافظه‌ی رابطه‌ی عامل با کاربر و مراحل capture/update/recall را مطرح می‌کند.",
+      "limitation_fa": "مخزن رسمی داده در نسخه‌ی مشاهده‌شده فقط README و gitattributes داشت؛ در آزمایش حاضر استفاده نشد.",
+      "reading_scope": "چکیده و فراداده، فایل‌های مخزن رسمی و فراداده‌ی Hugging Face؛ مقاله‌ی بلند خط‌به‌خط خوانده نشده است."
+    },
+    {
+      "id": "R07",
+      "title": "Entity-Memory Graph Retrieval Improves Evidence Coverage in Long-Conversation Question Answering",
+      "authors": [
+        "Shumao Sun"
+      ],
+      "date": "2026-08-28",
+      "arxiv_id": "2608.27925",
+      "arxiv_version": "v1",
+      "reference_url": "https://arxiv.org/abs/2608.27925",
+      "venue_and_status": "arXiv preprint; reviewed venue not established",
+      "finding_fa": "پوشش شاهد و کیفیت پاسخ نهایی را جدا گزارش می‌کند و اتصال گرافی و همسایگی را می‌سنجد.",
+      "limitation_fa": "اعداد آن با سنجه و بودجه‌ی این مرحله قابل رتبه‌بندی مستقیم نیستند؛ روش گرافی بازاجرا نشد.",
+      "reading_scope": "چکیده و شناسنامه‌ی arXiv."
+    },
+    {
+      "id": "R08",
+      "title": "Do Personalized LLMs Need the Whole Conversation? Matching the Full History with Only 5% of Its Text via Relevance-Filtered Context",
+      "authors": [
+        "Erika Hayashi",
+        "Andrew Shin"
+      ],
+      "date": "2026-10-10",
+      "arxiv_id": "2610.14952",
+      "arxiv_version": "v1",
+      "reference_url": "https://arxiv.org/abs/2610.14952",
+      "venue_and_status": "arXiv preprint; reviewed venue not established",
+      "finding_fa": "بازیابی مرتبط در بودجه‌ی کوچک و فاصله‌ی پوشش مرجع با کیفیت پاسخ را بررسی می‌کند.",
+      "limitation_fa": "PersonaMem-v2 و داوری پاسخ با سنجه‌ی پوشش پیام این مرحله متفاوت است؛ بازاجرا نشد.",
+      "reading_scope": "چکیده و شناسنامه‌ی arXiv."
+    },
+    {
+      "id": "R09",
+      "title": "Evaluating Long-Horizon Memory for Multi-Party Collaborative Dialogues",
+      "authors": [
+        "Chuanrui Hu",
+        "Tong Li",
+        "Xingze Gao",
+        "Hongda Chen",
+        "Yi Bai",
+        "Dannong Xu",
+        "Tianwei Lin",
+        "Xiaohong Li",
+        "Yunyun Han",
+        "Jian Pei",
+        "Yafeng Deng"
+      ],
+      "date": "2026-03-11",
+      "arxiv_id": "2602.01313",
+      "arxiv_version": "v3",
+      "reference_url": "https://arxiv.org/html/2602.01313v3",
+      "dataset_card_url": "https://huggingface.co/datasets/EverMind-AI/EverMemBench-Dynamic/blob/a6b210a32248e841967b7b64a64281d2ff3f669d/README.md",
+      "venue_and_status": "arXivv3 read; pinned dataset card declares KDD2026 oral, not independently verified against program here",
+      "finding_fa": "زمینه‌ی چندنفره و چندگروهی، انتساب و بازسازی وضعیت را به چالش می‌کشد.",
+      "limitation_fa": "R یک قطعه‌ی زمینه‌ای است و شاهد کمینه نیست. چهار پروژه‌ی این اجرا محدود به fine-grained recall هستند؛ امتیاز رسمی پاسخ مقاله بازتولید نشده است.",
+      "reading_scope": "چکیده، صورت‌بندی، ساخت داده و کارت رسمی با نسخه‌ی ثابت؛ قالب ارجاع با کد و تمام پرسش‌های واردشده بررسی شد."
+    },
+    {
+      "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+      "authors": [
+        "Adyasha Maharana",
+        "Dong-Ho Lee",
+        "Sergey Tulyakov",
+        "Mohit Bansal",
+        "Francesco Barbieri",
+        "Yuwei Fang"
+      ],
+      "doi": "10.18653/v1/2024.acl-long.747",
+      "date": "2024/8",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "venue_and_status": "ACL 2024؛ مقاله‌ی مجموعه‌مقالات رسمی",
+      "reference_url": "https://doi.org/10.18653/v1/2024.acl-long.747",
+      "finding_fa": "LoCoMo منبع داده‌ی اصلی پروژه و برچسب‌های نوبت شاهد است.",
+      "limitation_fa": "این پژوهش همان هفت گفت‌وگوی قبلی را دوباره تحلیل می‌کند؛ نام تاریخی held_out استقلال تازه ایجاد نمی‌کند.",
+      "id": "R10",
+      "prior_record": "phase18/S08",
+      "reading_scope": "شناسنامه و چکیده‌ی منبع اصلی دوباره بررسی شد؛ یادداشت تفصیلی مرحله‌ی ۱۸ با ارجاع حفظ شده است. بازاجرای روش مقاله انجام نشده است."
+    },
+    {
+      "title": "Multiple event segmentation mechanisms in the human brain",
+      "authors": [
+        "Tan T. Nguyen",
+        "Joset A. Etzel",
+        "Matthew A. Bezdek",
+        "Jeffrey M. Zacks"
+      ],
+      "doi": "10.7554/eLife.107955.3",
+      "date": "2026",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "venue_and_status": "eLife 14:RP107955؛ Version of Record، ۷ ژوئیه‌ی ۲۰۲۶",
+      "reference_url": "https://doi.org/10.7554/eLife.107955.3",
+      "finding_fa": "مطالعه‌ی شناختی و fMRI، نقش خطای پیش‌بینی و عدم قطعیت را در مرزهای رویداد و الگوهای عصبی بررسی می‌کند.",
+      "limitation_fa": "شاهد انسانی و مدل رویداد را نمی‌توان مستقیما معادل هم‌پوشانی واژه‌ای یا هندسه‌ی پنجره‌ی متن دانست.",
+      "id": "R11",
+      "prior_record": "phase18/S14",
+      "reading_scope": "شناسنامه و چکیده‌ی منبع اصلی دوباره بررسی شد؛ یادداشت تفصیلی مرحله‌ی ۱۸ با ارجاع حفظ شده است. بازاجرای روش مقاله انجام نشده است."
+    },
+    {
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "authors": [
+        "Nelson F. Liu",
+        "Kevin Lin",
+        "John Hewitt",
+        "Ashwin Paranjape",
+        "Michele Bevilacqua",
+        "Fabio Petroni",
+        "Percy Liang"
+      ],
+      "doi": "10.1162/tacl_a_00638",
+      "date": "2024",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "venue_and_status": "TACL 12، صفحات 157–173، 2024؛ مقاله‌ی ژورنال",
+      "reference_url": "https://doi.org/10.1162/tacl_a_00638",
+      "finding_fa": "حساسیت استفاده‌ی مدل زبانی از متن بلند به جایگاه اطلاعات را بررسی می‌کند.",
+      "limitation_fa": "وجود واژه‌های شاهد در زمینه لزوما به استفاده‌ی درست خواننده منجر نمی‌شود؛ پژوهش فعلی هیچ خواننده‌ای اجرا نمی‌کند.",
+      "id": "R12",
+      "prior_record": "phase18/S16",
+      "reading_scope": "شناسنامه و چکیده‌ی منبع اصلی دوباره بررسی شد؛ یادداشت تفصیلی مرحله‌ی ۱۸ با ارجاع حفظ شده است. بازاجرای روش مقاله انجام نشده است."
+    }
+  ]
+}

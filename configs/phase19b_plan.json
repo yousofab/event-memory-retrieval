@@ -1,0 +1,19 @@
+{
+  "phase":"19B",
+  "date":"2026-10-25",
+  "status":"Exploratory amendment registered locally after viewing Phase19A outcomes and before any19B scores. Original19A plan and outcomes remain immutable; not confirmatory or independent public preregistration.",
+  "motivation_observed":"Reserve4 changed8/599 LoCoMo and1/609 EverMem queries. Five label-shuffled controls changed at most1 LoCoMo query per seed and0 EverMem queries. Reserve8 changed529/599 and344/609. Those sham controls do not match intervention strength.",
+  "question":"After matching the number of anchor replacements per query, how does native-session reserve8 compare with a label-blind random replacement control, and how does observed all-session access compare with its exact combinatorial expectation?",
+  "input_plan":"configs/phase19_plan.json",
+  "base_results_directory":"results",
+  "policies":["edit_100","edit_101","edit_102","edit_103","edit_104","edit_105","edit_106","edit_107","edit_108","edit_109"],
+  "rule":"Let d be reserve8's number of replacements relative to original top8 in the same top64 pool. Retain rank1. Uniformly sample7-d turns without replacement from the other7 original anchors, and d turns without replacement from ranks9..64. Restore original BM25 ordering. Use SHA256('phase19-edit|seed|history|question_id') as deterministic RNG seed. Gold labels and answers are absent from selection.",
+  "selectors":["centered","writer"],
+  "budget_words":[512,1024,2048],
+  "primary_budget_words":1024,
+  "estimand":"Reserve8 writer minus the within-query mean of10 edit-matched controls, aggregated as equal-history means, using original source-specific outcomes. Original reserve8-minus-bm25 harm remains visible; a win over random edits is not a gain over the original retriever.",
+  "exact_null":"For any subset T of annotated sessions, if rank1's session is in T, P(no selected session in T)=0. Otherwise it equals C(7-n_base(T),7-d)/C(7,7-d) times C(56-n_out(T),d)/C(56,d). Inclusion-exclusion over required sessions gives exact all-session access probability; if more than8 required sessions, probability is0. Expected fractional session recall is mean of1-P(miss each). Annotations enter this analytical audit only. These are expectations over anchor subsets, not probabilities of correct answers.",
+  "checks":["exactly d replacements and rank1 retained for every query and seed","same actual cost and number of anchors, with saturation deviations recorded","source pool agrees with frozen19A payload","independent enumeration of the combinatorial expectation on small pools","independent direct scoring and policy-specific feasibility certificates","numeric replay byte equality; old19A bytes preserved"],
+  "limits":"Only10 Monte Carlo controls for realized message coverage, with seeds averaged within query; not independent sample size. Exact session-access null has no Monte Carlo error. Random replacements are not matched on BM25 score or semantic quality and do not establish a human semantic mechanism. All evaluation outcomes were already exposed in19A; no fresh independent claim.",
+  "decision":"Use for diagnosis only. Do not alter19A's failed advance rule or choose a new diversity parameter from these scores. Next phase needs a separately registered relevance/capacity-aware intervention and new evaluation material."
+}

@@ -1,0 +1,17 @@
+{
+  "repo":"EverMind-AI/EverMemBench-Dynamic",
+  "revision":"a6b210a32248e841967b7b64a64281d2ff3f669d",
+  "license":"apache-2.0 as declared in pinned dataset card; no raw source redistribution in this project",
+  "files":[
+    {"path":"02/dialogue.json","size":4269292,"git_blob_sha1":"dc424277927e1b666930576b568c80ec700a83f3"},
+    {"path":"02/qa_02.json","size":1199366,"git_blob_sha1":"4b8871aa49aaa62524d116b9383bf42e8b9cde12"},
+    {"path":"03/dialogue.json","size":4370338,"git_blob_sha1":"7126f1edc9b4d0091638e7af44752c7ca063ab00"},
+    {"path":"03/qa_03.json","size":1180153,"git_blob_sha1":"881975941829b84b269db77d2618116db18ddd07"},
+    {"path":"04/dialogue.json","size":4216786,"git_blob_sha1":"48f1b2dd86d03d91e194537efa5f6987d6ddb4b7"},
+    {"path":"04/qa_04.json","size":1232351,"git_blob_sha1":"519a28875becb6c5e75ef667ae8044876c488e90"},
+    {"path":"05/dialogue.json","size":4247034,"git_blob_sha1":"abdf3d9db7cd9349f7ddfc437f1b6dcec193fc7c"},
+    {"path":"05/qa_05.json","size":1266310,"git_blob_sha1":"d9d96ee4a96550b7c704fae2dd0bd425d130c56c"}
+  ],
+  "schema_inspection":{"canonical_topic01_excluded":true,"legacy_topic004_excluded":true,"canonical01_dialogue_sha256":"16e4fc66c47eb742cc75097ab5ea6d95e1fae8963841391e58a8e4ec35ace2dc","canonical01_qa_sha256":"358e22d138e24c5e655fc2c09e7f63e22e25603a065d65c946ab30ed57884d3c","card_sha256":"a36a88f848bf126a8c5a8e41e0b67505c69d9fae681b178d5826e92b55c073af"},
+  "other_candidates":{"DyadMem":{"status":"not admitted","observed_revision":"4db6f391a14ea40d5281dfb0395fa75da64b95b6","reason":"Official Hugging Face repository exposed only .gitattributes and a21-byte README at inspection, no dataset payload; GitHub repository was a project page."},"MemDerive":{"status":"not admitted","reason":"Paper links anonymous repositories; source access returned403 in this environment. It remains prior art, not an evaluated dataset."}}
+}

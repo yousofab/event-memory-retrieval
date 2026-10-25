@@ -1,5 +1,30 @@
 # Event Memory Retrieval — BSc software project
 
+<div dir="rtl">
+
+<img src="assets/iau-logo.png" width="60" alt="دانشگاه آزاد اسلامی واحد کرج">
+
+دانشگاه آزاد اسلامی واحد کرج · درس پروژه‌ی کارشناسی مهندسی کامپیوتر · یوسف ابوالفتحی روزبهانی
+
+</div>
+
+## Phase 19 approved research checkpoint
+
+The session-access study and its separately registered exploratory matched-edit
+amendment are complete. The researcher approved complete publication and main-
+repository closeout on 25 October 2026. The report cover includes the supplied
+university logo and the BSc project-course identity, alongside educational thanks
+to Dr Arash Fekri and FARDIAT. This identity is required from Phase19 onward.
+
+[Publication record](docs/phase19_publication.md) · [Release](https://github.com/yousofab/event-memory-retrieval/releases/tag/phase19-session-access-audit) · [Report identity](docs/report_identity.md)
+
+- [Persian report](docs/phase19.md), [English research note](docs/phase19_research_note_en.md), [12-source primary literature review](docs/phase19_literature_atlas.md), [novelty audit](docs/phase19_novelty_audit.md).
+- [Original plan](docs/phase19_plan.md), [formal contract](docs/phase19_formal_contract.md), [exploratory amendment](docs/phase19b_amendment.md), [execution ledger](docs/phase19_execution_notes.md), [reproduction guide](docs/phase19_reproduce.md), [Phase20 planning](docs/phase20_handoff.md).
+- 599 reused LoCoMo questions and609 prospectively sealed fine-grained EverMemBench questions from4 generated projects. The latter are now seen for future studies. There are1,208 questions and130,464 conditions, not130,464 independent observations.
+- At1,024 words, reserve4 is nearly a no-op. Reserve8 improves complete-session access(493→507 LoCoMo,49→59 external), but lowers LoCoMo complete evidence443→401 and external equal-project complete-message recall19.53%→15.65%. The predefined advancement rule fails.
+- An exploratory exact edit-matched access null and10 random controls distinguish session access from local evidence assembly. Reserve8 also underperforms matched edits on coverage. Its diversification concept is established prior art; global novelty and answer-accuracy gains are not claimed.
+- All3,594 historical baseline conditions reproduce; both numeric stages replay byte-for-byte. All11 new tests pass. The full suite has69 successes and1 historical missing-data skip. Source text, supplied books and fonts are not redistributed.
+
 ## Phase 18 completed research checkpoint
 
 **Phase 18 is complete; the researcher approved full publication and main-repository closeout on 24 October 2026.** The new annotation-assisted auditor proves exact complete-evidence feasibility inside the frozen Phase 17 window space and computes the minimum total budget under its original round-robin allocation. It is an offline diagnostic with access to reference labels, not a new deployable retriever.

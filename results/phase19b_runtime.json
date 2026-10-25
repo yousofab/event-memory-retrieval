@@ -1,0 +1,26 @@
+{
+  "commercial_api_calls": 0,
+  "elapsed_seconds": 75.13387999399993,
+  "feasible_witnesses_rescored": 13208,
+  "finite_thresholds_checked": 5188,
+  "git_clean_at_start_of_scoring": true,
+  "gpu_calls": 0,
+  "implementation_commit": "212d4a608834bbf1a59a2fb18f9296df6c4162b2",
+  "peak_rss_mib": 773.08203125,
+  "plan_sha256": "4799d873450135dc98466b0060ffbbfe1a8481b2e65d32d5ea9e8d6eb4886f15",
+  "preserved19a_hashes": {
+    "phase19_data_audit.json": "72b75b43578df44e458c1644941ae275fc4c238ee02bdd6d8b49027cd4ddf7e6",
+    "phase19_queries.json.gz": "91a4d4530bdcfbc7c3be23e2018487bc74609d518de49bb8e19f33015f593968",
+    "phase19_rows.json.gz": "7821f5940d6faba93fcfe505e379001d7e125731d67b2e914f7c89c9ba1ff49a",
+    "phase19_runtime.json": "1e5a5c7804702f5ba7e41f6e3e9bc132ed58b4654e9b8cc72e36076ff6a79a66",
+    "phase19_summary.json": "d54aef34cf576e751fbf6c9231cbedce40fc5631c751c75e783154ed2b555f1f"
+  },
+  "python": "3.12.14",
+  "queries": 1208,
+  "rows": 72480,
+  "scope": "Exploratory after19A; see separate amendment chronology",
+  "unequal_actual_cost_vs_reserve8": {
+    "evermem": 2,
+    "locomo": 114
+  }
+}

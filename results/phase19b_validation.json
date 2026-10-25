@@ -1,0 +1,11 @@
+{
+  "feasible_witnesses": 13208,
+  "paired_selector_cost_groups": 36240,
+  "passed": true,
+  "queries": 1208,
+  "raw_data_required": false,
+  "rows": 72480,
+  "source_backed_ranking_reproduction": "separate documented command",
+  "summary_recomputed": true,
+  "thresholds": 5188
+}

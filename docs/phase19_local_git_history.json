@@ -1,0 +1,52 @@
+{
+  "phase": 19,
+  "baseline": "015e43ce270643fb03c626d29c4fd16f2ec88e4e",
+  "publication_approved_on": "2026-10-25",
+  "reviewed_scientific_local_commit": "74763b3b3a6ab57cef8f468b51587e34bb5dc764",
+  "reviewed_scientific_public_commit": "e8440f69c50cd46c03dc2e3af64d26f465489e77",
+  "publication_method": "Authenticated GitHub connector recreates commits in original order; exact tree identity verified. Original commit objects retained below. Public creation dates are publication dates, not independent preregistration.",
+  "commits": [
+    {
+      "local": "58418d8999ad4188d0ed5c47728397412f7a1953",
+      "published": "870c96ea02ff707131627603f6ccfa808480d298",
+      "tree": "a5a00c7be83625c73e402bc87616950e58a85e24",
+      "message": "Register Phase 19 session-access protocol before new scoring",
+      "original_commit_object_base64": "dHJlZSBhNWEwMGM3YmU4MzYyNWM3M2U0MDJiYzg3NjE2OTUwZTU4YTg1ZTI0CnBhcmVudCAwMTVlNDNjZTI3MDY0M2ZiMDNjNjI2ZDI5YzRmZDE2ZjJlYzg4ZTRlCmF1dGhvciBZb3VzZWYgQWJvbGZhdGhpIFJvb3piYWhhbmkgPDEwOTM1OTA3MCt5b3Vzb2ZhYkB1c2Vycy5ub3JlcGx5LmdpdGh1Yi5jb20+IDE3OTI5NDExMTcgLTA0MDAKY29tbWl0dGVyIFlvdXNlZiBBYm9sZmF0aGkgUm9vemJhaGFuaSA8MTA5MzU5MDcwK3lvdXNvZmFiQHVzZXJzLm5vcmVwbHkuZ2l0aHViLmNvbT4gMTc5Mjk0MTExNyAtMDQwMAoKUmVnaXN0ZXIgUGhhc2UgMTkgc2Vzc2lvbi1hY2Nlc3MgcHJvdG9jb2wgYmVmb3JlIG5ldyBzY29yaW5nCg=="
+    },
+    {
+      "local": "f84a2ce00b28edd76d9b03e994b4f12b02f93c9f",
+      "published": "5e5250d0c8a46d1d26e5c9fd96f8398c66b0e5fb",
+      "tree": "d32f3976d78122173b7823fe5dfa66c520a29bf6",
+      "message": "Implement label-blind session reservation and certificate checks before scoring",
+      "original_commit_object_base64": "dHJlZSBkMzJmMzk3NmQ3ODEyMjE3M2I3ODIzZmU1ZGZhNjZjNTIwYTI5YmY2CnBhcmVudCA1ODQxOGQ4OTk5YWQ0MTg4ZDBlZDVjNDc3MjgzOTc0MTJmN2ExOTUzCmF1dGhvciBZb3VzZWYgQWJvbGZhdGhpIFJvb3piYWhhbmkgPDEwOTM1OTA3MCt5b3Vzb2ZhYkB1c2Vycy5ub3JlcGx5LmdpdGh1Yi5jb20+IDE3OTI5NDE0ODIgLTA0MDAKY29tbWl0dGVyIFlvdXNlZiBBYm9sZmF0aGkgUm9vemJhaGFuaSA8MTA5MzU5MDcwK3lvdXNvZmFiQHVzZXJzLm5vcmVwbHkuZ2l0aHViLmNvbT4gMTc5Mjk0MTQ4MiAtMDQwMAoKSW1wbGVtZW50IGxhYmVsLWJsaW5kIHNlc3Npb24gcmVzZXJ2YXRpb24gYW5kIGNlcnRpZmljYXRlIGNoZWNrcyBiZWZvcmUgc2NvcmluZwo="
+    },
+    {
+      "local": "999ac22db6aadf67cfb802c5dc6b26d5cec30fb7",
+      "published": "59b020f0f3e40699db9d0d8570b55b2871ed324b",
+      "tree": "a4b39fc37fad27d536d2329c0518089080d20457",
+      "message": "Preserve Phase19A results and register exploratory matched-edit controls",
+      "original_commit_object_base64": "dHJlZSBhNGIzOWZjMzdmYWQyN2Q1MzZkMjMyOWMwNTE4MDg5MDgwZDIwNDU3CnBhcmVudCBmODRhMmNlMDBiMjhlZGQ3NmQ5YjAzZTk5NGI0ZjEyYjAyZjkzYzlmCmF1dGhvciBZb3VzZWYgQWJvbGZhdGhpIFJvb3piYWhhbmkgPDEwOTM1OTA3MCt5b3Vzb2ZhYkB1c2Vycy5ub3JlcGx5LmdpdGh1Yi5jb20+IDE3OTI5NDE3NTggLTA0MDAKY29tbWl0dGVyIFlvdXNlZiBBYm9sZmF0aGkgUm9vemJhaGFuaSA8MTA5MzU5MDcwK3lvdXNvZmFiQHVzZXJzLm5vcmVwbHkuZ2l0aHViLmNvbT4gMTc5Mjk0MTc1OCAtMDQwMAoKUHJlc2VydmUgUGhhc2UxOUEgcmVzdWx0cyBhbmQgcmVnaXN0ZXIgZXhwbG9yYXRvcnkgbWF0Y2hlZC1lZGl0IGNvbnRyb2xzCg=="
+    },
+    {
+      "local": "dc9b58e5f919d99a4c540e540245b445cde70be1",
+      "published": "77bf9d3eb88a4e43b9a27fe341051a5daf614be8",
+      "tree": "b9bf34cf4ef44dd3a56ccaf8c233a2ac06846cad",
+      "message": "Implement exploratory edit-matched controls and exact combinatorial access null",
+      "original_commit_object_base64": "dHJlZSBiOWJmMzRjZjRlZjQ0ZGQzYTU2Y2NhZjhjMjMzYTJhYzA2ODQ2Y2FkCnBhcmVudCA5OTlhYzIyZGI2YWFkZjY3Y2ZiODAyYzVkYzZiMjZkNWNlYzMwZmI3CmF1dGhvciBZb3VzZWYgQWJvbGZhdGhpIFJvb3piYWhhbmkgPDEwOTM1OTA3MCt5b3Vzb2ZhYkB1c2Vycy5ub3JlcGx5LmdpdGh1Yi5jb20+IDE3OTI5NDE4ODggLTA0MDAKY29tbWl0dGVyIFlvdXNlZiBBYm9sZmF0aGkgUm9vemJhaGFuaSA8MTA5MzU5MDcwK3lvdXNvZmFiQHVzZXJzLm5vcmVwbHkuZ2l0aHViLmNvbT4gMTc5Mjk0MTg4OCAtMDQwMAoKSW1wbGVtZW50IGV4cGxvcmF0b3J5IGVkaXQtbWF0Y2hlZCBjb250cm9scyBhbmQgZXhhY3QgY29tYmluYXRvcmlhbCBhY2Nlc3MgbnVsbAo="
+    },
+    {
+      "local": "212d4a608834bbf1a59a2fb18f9296df6c4162b2",
+      "published": "20675a00ab7426a2395cea47fbc20490aa786511",
+      "tree": "aaf118e2db8f8b07514df729c3fbdd850f62664b",
+      "message": "Document primary-source literature and bounded novelty for Phase19",
+      "original_commit_object_base64": "dHJlZSBhYWYxMThlMmRiOGY4YjA3NTE0ZGY3MjljM2ZiZGQ4NTBmNjI2NjRiCnBhcmVudCBkYzliNThlNWY5MTlkOTlhNGM1NDBlNTQwMjQ1YjQ0NWNkZTcwYmUxCmF1dGhvciBZb3VzZWYgQWJvbGZhdGhpIFJvb3piYWhhbmkgPDEwOTM1OTA3MCt5b3Vzb2ZhYkB1c2Vycy5ub3JlcGx5LmdpdGh1Yi5jb20+IDE3OTI5NDIyMTUgLTA0MDAKY29tbWl0dGVyIFlvdXNlZiBBYm9sZmF0aGkgUm9vemJhaGFuaSA8MTA5MzU5MDcwK3lvdXNvZmFiQHVzZXJzLm5vcmVwbHkuZ2l0aHViLmNvbT4gMTc5Mjk0MjIxNSAtMDQwMAoKRG9jdW1lbnQgcHJpbWFyeS1zb3VyY2UgbGl0ZXJhdHVyZSBhbmQgYm91bmRlZCBub3ZlbHR5IGZvciBQaGFzZTE5Cg=="
+    },
+    {
+      "local": "74763b3b3a6ab57cef8f468b51587e34bb5dc764",
+      "published": "e8440f69c50cd46c03dc2e3af64d26f465489e77",
+      "tree": "603a7ffe9c62eb537cbf6e5fdfdc1872d7a1945c",
+      "message": "Complete Phase19 audit, validated results and Persian review package",
+      "original_commit_object_base64": "dHJlZSA2MDNhN2ZmZTljNjJlYjUzN2NiZjZlNWZkZmRjMTg3MmQ3YTE5NDVjCnBhcmVudCAyMTJkNGE2MDg4MzRiYmYxYTU5YTJmYjE4ZjkyOTZkZjZjNDE2MmIyCmF1dGhvciBZb3VzZWYgQWJvbGZhdGhpIFJvb3piYWhhbmkgPDEwOTM1OTA3MCt5b3Vzb2ZhYkB1c2Vycy5ub3JlcGx5LmdpdGh1Yi5jb20+IDE3OTI5NDM2NDQgLTA0MDAKY29tbWl0dGVyIFlvdXNlZiBBYm9sZmF0aGkgUm9vemJhaGFuaSA8MTA5MzU5MDcwK3lvdXNvZmFiQHVzZXJzLm5vcmVwbHkuZ2l0aHViLmNvbT4gMTc5Mjk0MzY0NCAtMDQwMAoKQ29tcGxldGUgUGhhc2UxOSBhdWRpdCwgdmFsaWRhdGVkIHJlc3VsdHMgYW5kIFBlcnNpYW4gcmV2aWV3IHBhY2thZ2UK"
+    }
+  ]
+}

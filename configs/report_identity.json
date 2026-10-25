@@ -1,0 +1,21 @@
+{
+  "effective_from_phase":19,
+  "updated_on":"2026-10-25",
+  "university_fa":"دانشگاه آزاد اسلامی واحد کرج",
+  "university_en":"Islamic Azad University, Karaj Branch",
+  "university_logo":"assets/iau-logo.png",
+  "university_logo_source":"User-supplied original PNG,25October2026; preserve its aspect ratio and artwork",
+  "degree_fa":"کارشناسی مهندسی کامپیوتر",
+  "course_fa":"درس پروژه‌ی کارشناسی مهندسی کامپیوتر",
+  "author_fa":"یوسف ابوالفتحی روزبهانی",
+  "university_supervisor_fa":"استاد امیر نوری ولنده",
+  "cognitive_education_mentor_fa":"دکتر آرش فکری",
+  "educational_institute_fa":"فردیت FARDIAT مجتمع فوق تخصصی مغز و شناخت",
+  "educational_institute_logo":"assets/fardiat-logo.jpg",
+  "primary_identity":"University logo, university name, degree and course on report cover",
+  "acknowledgments":"University supervision and cognitive-neuroscience education acknowledged in their stated roles",
+  "persian_font":"B Nazanin",
+  "persian_direction":"rtl",
+  "ezafe_example":"مرحله‌ی",
+  "historical_scope":"Apply to current Phase19 and future reports; preserve prior releases"
+}

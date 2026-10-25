@@ -36,6 +36,10 @@ jobs:
         run: python scripts/validate_phase17.py --directory results
       - name: Validate committed Phase 18 feasibility certificates
         run: python scripts/validate_phase18.py --directory results
+      - name: Validate committed Phase 19 source-independent certificates
+        run: python scripts/validate_phase19.py --directory results
+      - name: Validate exploratory Phase 19 matched-edit certificates
+        run: python scripts/validate_phase19.py --directory results --prefix phase19b
 
   publish-phase17:
     name: Publish approved Phase 17 checkpoint
@@ -125,3 +129,50 @@ jobs:
             --clobber
           gh release edit "$phase18_tag" --draft=false --latest
           gh release view "$phase18_tag" --json url,tagName,isDraft,targetCommitish,assets
+
+  publish-phase19:
+    name: Publish approved Phase 19 checkpoint
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[publish-phase19]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the approved Phase 19 merge
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified in Phase17
+        with:
+          persist-credentials: false
+      - name: Verify reviewed Phase 19 artifacts
+        run: sha256sum --check configs/phase19_release_sha256.txt
+      - name: Publish the approved checkpoint and artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          phase19_tag=phase19-session-access-audit
+          if phase19_target=$(gh release view "$phase19_tag" --json targetCommitish --jq .targetCommitish 2>/dev/null); then
+            if [ "$phase19_target" != "$GITHUB_SHA" ]; then
+              echo 'An existing Phase 19 release points to a different commit; refusing to change it.' >&2
+              exit 1
+            fi
+          else
+            gh release create "$phase19_tag" \
+              --target "$GITHUB_SHA" \
+              --title 'Phase 19: session access and exact matched-edit audit' \
+              --notes-file docs/phase19_release_notes.md \
+              --draft
+          fi
+          gh release upload "$phase19_tag" \
+            deliverables/phase19_research_report_fa.pdf \
+            deliverables/phase19_research_report_fa.docx \
+            results/phase19_queries.json.gz \
+            results/phase19_rows.json.gz \
+            results/phase19b_queries.json.gz \
+            results/phase19b_rows.json.gz \
+            configs/phase19_release_sha256.txt \
+            --clobber
+          gh release edit "$phase19_tag" --draft=false --latest
+          gh release view "$phase19_tag" --json url,tagName,isDraft,targetCommitish,assets
