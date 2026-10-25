@@ -1,0 +1,478 @@
+{
+  "condition_counts": {
+    "independent_sample_warning": "Conditions, questions and seeds are not independent research replications.",
+    "phase19a": 57984,
+    "phase19b": 72480,
+    "total_query_policy_selector_budget_conditions": 130464,
+    "unique_queries": 1208
+  },
+  "evermem": {
+    "actual_cost_audit": [
+      {
+        "budget_words": 512,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve4",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 512,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve8",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 512,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "edit_controls",
+        "query_seed_conditions": 6090,
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 1024,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve4",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 1024,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve8",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 1024,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "edit_controls",
+        "query_seed_conditions": 6090,
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 2048,
+        "maximum_delta": 312,
+        "minimum_delta": 0,
+        "policy": "reserve4",
+        "unequal_pairs": 1
+      },
+      {
+        "budget_words": 2048,
+        "maximum_delta": 543,
+        "minimum_delta": 0,
+        "policy": "reserve8",
+        "unequal_pairs": 3
+      },
+      {
+        "budget_words": 2048,
+        "maximum_delta": 0,
+        "minimum_delta": -23,
+        "policy": "edit_controls",
+        "query_seed_conditions": 6090,
+        "unequal_pairs": 1
+      }
+    ],
+    "histories": 4,
+    "policies": {
+      "bm25": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 609
+        }
+      },
+      "reserve4": {
+        "changed_queries": 1,
+        "edit_histogram": {
+          "0": 608,
+          "1": 1
+        }
+      },
+      "reserve8": {
+        "changed_queries": 344,
+        "edit_histogram": {
+          "0": 265,
+          "1": 195,
+          "2": 101,
+          "3": 41,
+          "4": 6,
+          "5": 1
+        }
+      },
+      "sham_19": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 609
+        }
+      },
+      "sham_20": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 609
+        }
+      },
+      "sham_21": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 609
+        }
+      },
+      "sham_22": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 609
+        }
+      },
+      "sham_23": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 609
+        }
+      }
+    },
+    "pool_all_gold_session_count": 185,
+    "queries": 609,
+    "reference_granularity": {
+      "maximum_words": 3619,
+      "median_messages": 29.0,
+      "median_sessions": 7.0,
+      "median_words": 1435.0,
+      "more_than8_gold_sessions": 236,
+      "p90_messages": 53.0,
+      "p90_sessions": 12.0,
+      "p90_words": 2562.4,
+      "reference_word_lower_bound_exceeds1024": 431
+    },
+    "reserve8_transitions": {
+      "all_evidence": {
+        "0->0": 607,
+        "1->0": 2
+      },
+      "all_gold_sessions": {
+        "0->0": 550,
+        "0->1": 10,
+        "1->1": 49
+      },
+      "oracle_feasible": {
+        "0->0": 606,
+        "1->0": 3
+      }
+    }
+  },
+  "illustrative_cases": [
+    {
+      "baseline_complete": 0,
+      "baseline_minimum_budget": null,
+      "dataset": "locomo",
+      "kind": "gained_access_but_infeasible",
+      "question_id": "9",
+      "reserve8_complete": 0,
+      "reserve8_minimum_budget": 2502,
+      "sample_id": "conv-30",
+      "selection": "post-result illustrative case, not an inferential sample",
+      "violating_cells": [
+        {
+          "allocated_width": 128,
+          "anchor": 23,
+          "rank": 1,
+          "required_span": [
+            23,
+            189
+          ],
+          "required_width": 166,
+          "session": "session_2"
+        },
+        {
+          "allocated_width": 128,
+          "anchor": 312,
+          "rank": 5,
+          "required_span": [
+            0,
+            313
+          ],
+          "required_width": 313,
+          "session": "session_15"
+        }
+      ]
+    },
+    {
+      "baseline_complete": 1,
+      "baseline_minimum_budget": 285,
+      "dataset": "locomo",
+      "kind": "lost_feasibility_with_sessions_retained",
+      "question_id": "12",
+      "reserve8_complete": 0,
+      "reserve8_minimum_budget": 1073,
+      "sample_id": "conv-30",
+      "selection": "post-result illustrative case, not an inferential sample",
+      "violating_cells": [
+        {
+          "allocated_width": 128,
+          "anchor": 134,
+          "rank": 0,
+          "required_span": [
+            0,
+            135
+          ],
+          "required_width": 135,
+          "session": "session_6"
+        }
+      ]
+    },
+    {
+      "baseline_complete": 0,
+      "baseline_minimum_budget": null,
+      "dataset": "evermem",
+      "kind": "gained_access_but_infeasible",
+      "question_id": "F_TP_Top02_044",
+      "reserve8_complete": 0,
+      "reserve8_minimum_budget": 3502,
+      "sample_id": "evermem-02",
+      "selection": "post-result illustrative case, not an inferential sample",
+      "violating_cells": [
+        {
+          "allocated_width": 143,
+          "anchor": 414,
+          "rank": 1,
+          "required_span": [
+            72,
+            444
+          ],
+          "required_width": 372,
+          "session": "session_225"
+        },
+        {
+          "allocated_width": 143,
+          "anchor": 188,
+          "rank": 2,
+          "required_span": [
+            154,
+            344
+          ],
+          "required_width": 190,
+          "session": "session_231"
+        },
+        {
+          "allocated_width": 142,
+          "anchor": 575,
+          "rank": 4,
+          "required_span": [
+            0,
+            650
+          ],
+          "required_width": 650,
+          "session": "session_234"
+        },
+        {
+          "allocated_width": 142,
+          "anchor": 324,
+          "rank": 5,
+          "required_span": [
+            93,
+            352
+          ],
+          "required_width": 259,
+          "session": "session_228"
+        },
+        {
+          "allocated_width": 142,
+          "anchor": 240,
+          "rank": 6,
+          "required_span": [
+            117,
+            315
+          ],
+          "required_width": 198,
+          "session": "session_684"
+        }
+      ]
+    },
+    {
+      "baseline_complete": 1,
+      "baseline_minimum_budget": 875,
+      "dataset": "evermem",
+      "kind": "lost_feasibility_with_sessions_retained",
+      "question_id": "F_SH_Top05_025",
+      "reserve8_complete": 0,
+      "reserve8_minimum_budget": 2206,
+      "sample_id": "evermem-05",
+      "selection": "post-result illustrative case, not an inferential sample",
+      "violating_cells": [
+        {
+          "allocated_width": 128,
+          "anchor": 105,
+          "rank": 0,
+          "required_span": [
+            0,
+            280
+          ],
+          "required_width": 280,
+          "session": "session_703"
+        }
+      ]
+    }
+  ],
+  "locomo": {
+    "actual_cost_audit": [
+      {
+        "budget_words": 512,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve4",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 512,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve8",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 512,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "edit_controls",
+        "query_seed_conditions": 5990,
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 1024,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve4",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 1024,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "reserve8",
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 1024,
+        "maximum_delta": 0,
+        "minimum_delta": 0,
+        "policy": "edit_controls",
+        "query_seed_conditions": 5990,
+        "unequal_pairs": 0
+      },
+      {
+        "budget_words": 2048,
+        "maximum_delta": 628,
+        "minimum_delta": 0,
+        "policy": "reserve4",
+        "unequal_pairs": 8
+      },
+      {
+        "budget_words": 2048,
+        "maximum_delta": 921,
+        "minimum_delta": 0,
+        "policy": "reserve8",
+        "unequal_pairs": 24
+      },
+      {
+        "budget_words": 2048,
+        "maximum_delta": 0,
+        "minimum_delta": -843,
+        "policy": "edit_controls",
+        "query_seed_conditions": 5990,
+        "unequal_pairs": 57
+      }
+    ],
+    "histories": 7,
+    "policies": {
+      "bm25": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 599
+        }
+      },
+      "reserve4": {
+        "changed_queries": 8,
+        "edit_histogram": {
+          "0": 591,
+          "1": 8
+        }
+      },
+      "reserve8": {
+        "changed_queries": 529,
+        "edit_histogram": {
+          "0": 70,
+          "1": 210,
+          "2": 197,
+          "3": 85,
+          "4": 29,
+          "5": 8
+        }
+      },
+      "sham_19": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 599
+        }
+      },
+      "sham_20": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 599
+        }
+      },
+      "sham_21": {
+        "changed_queries": 1,
+        "edit_histogram": {
+          "0": 598,
+          "1": 1
+        }
+      },
+      "sham_22": {
+        "changed_queries": 1,
+        "edit_histogram": {
+          "0": 598,
+          "1": 1
+        }
+      },
+      "sham_23": {
+        "changed_queries": 0,
+        "edit_histogram": {
+          "0": 599
+        }
+      }
+    },
+    "pool_all_gold_session_count": 586,
+    "queries": 599,
+    "reference_granularity": {
+      "maximum_words": 237,
+      "median_messages": 1.0,
+      "median_sessions": 1.0,
+      "median_words": 34.0,
+      "more_than8_gold_sessions": 0,
+      "p90_messages": 2.0,
+      "p90_sessions": 2.0,
+      "p90_words": 65.20000000000005,
+      "reference_word_lower_bound_exceeds1024": 0
+    },
+    "reserve8_transitions": {
+      "all_evidence": {
+        "0->0": 147,
+        "0->1": 9,
+        "1->0": 51,
+        "1->1": 392
+      },
+      "all_gold_sessions": {
+        "0->0": 92,
+        "0->1": 14,
+        "1->1": 493
+      },
+      "oracle_feasible": {
+        "0->0": 120,
+        "0->1": 11,
+        "1->0": 18,
+        "1->1": 450
+      }
+    }
+  }
+}

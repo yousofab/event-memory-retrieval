@@ -1,0 +1,64 @@
+{
+  "baseline_commit": "015e43ce270643fb03c626d29c4fd16f2ec88e4e",
+  "chronology": {
+    "canonical_b_code_commit": "212d4a6",
+    "phase19a_implementation": "f84a2ce",
+    "phase19a_plan": "58418d8",
+    "phase19b_implementation": "dc9b58e",
+    "phase19b_post_result_plan": "999ac22"
+  },
+  "date": "2026-10-25",
+  "discarded_attempt": "An initial19B empty saved row artifact was rejected; subsequent full files and summaries agree byte-for-byte. Cause not established.",
+  "document_qa": {
+    "all_pages_visually_inspected": true,
+    "figures_including_equation": 4,
+    "font": "B Nazanin; DejaVu Sans for Latin and decimal glyphs",
+    "pdf_font_embedding_verified": true,
+    "pdf_pages": 13,
+    "persian_paragraphs_rtl_checked": 147,
+    "tables": 4
+  },
+  "numeric_replay": {
+    "phase19_queries.json.gz": {
+      "byte_identical": true,
+      "bytes": 1446282,
+      "compressed_sha256": "91a4d4530bdcfbc7c3be23e2018487bc74609d518de49bb8e19f33015f593968"
+    },
+    "phase19_rows.json.gz": {
+      "byte_identical": true,
+      "bytes": 838368,
+      "compressed_sha256": "7821f5940d6faba93fcfe505e379001d7e125731d67b2e914f7c89c9ba1ff49a"
+    },
+    "phase19_summary.json": {
+      "byte_identical": true,
+      "bytes": 84774,
+      "compressed_sha256": "d54aef34cf576e751fbf6c9231cbedce40fc5631c751c75e783154ed2b555f1f"
+    },
+    "phase19b_queries.json.gz": {
+      "byte_identical": true,
+      "bytes": 1856828,
+      "compressed_sha256": "26b4cde6ee34b40ee79b38eafbb86bd8e7683e85f501b622c6fd10ce690f9818"
+    },
+    "phase19b_rows.json.gz": {
+      "byte_identical": true,
+      "bytes": 1595335,
+      "compressed_sha256": "f8adf9f0ecdd1ba9ad611475754767c6c3c2948661fa0947e56d2814b9b615eb"
+    },
+    "phase19b_summary.json": {
+      "byte_identical": true,
+      "bytes": 7193,
+      "compressed_sha256": "b1bd0e596dd869aa662429011b0345be7630880d9387aa06e94510a863e0b97c"
+    }
+  },
+  "phase": 19,
+  "publication_status": "local review package; new public publication pending final approval",
+  "recorded_original_results_unchanged": 47,
+  "runtime_files_excluded_from_byte_identity": "Elapsed time, RSS, implementation/doc commit and tracked-state flag can differ; no score changed",
+  "tests": {
+    "new_phase19_tests_run_and_passed": 11,
+    "passed": 69,
+    "run": 70,
+    "skip_reason": "historical Phase14 pinned local Memora source absent",
+    "skipped": 1
+  }
+}

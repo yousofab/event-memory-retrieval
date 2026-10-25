@@ -128,7 +128,10 @@ def validate(directory,prefix='phase19',base_dir=None):
         expected_summary=summarize_b(rows,list(records.values()),base_rows,plan)
     else:expected_summary=summarize(rows,plan)
     recorded_summary=json.loads((directory/f'{prefix}_summary.json').read_text())
-    assert expected_summary==recorded_summary
+    # JSON object keys are strings after serialization (e.g. edit-count bins).
+    # Normalize the recomputed object through that same wire format, without
+    # rounding or tolerating numerical discrepancies.
+    assert json.loads(json.dumps(expected_summary))==recorded_summary
     assert checked_thresholds==runtime['finite_thresholds_checked']
     assert witnesses==runtime['feasible_witnesses_rescored']
     return {'passed':True,'queries':len(records),'rows':len(rows),'thresholds':checked_thresholds,
