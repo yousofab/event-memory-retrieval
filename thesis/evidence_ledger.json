@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "base_commit": "db76c5eb85c019c840ad76ace7e9aa5043fac283",
+  "date": "2026-10-27",
+  "activity": "synthesis of existing outputs; no new experiment",
+  "source_sha256": {
+    "results/phase10_summary.json": "ecb04f16cf6e5e3ac831f5cc6b52988e6accd26e6587d4a0ada13523e1985910",
+    "results/phase11_summary.json": "6972317fc246b2724dc5f3484b25f21bd40a552dd61dd1c4b637cd8bc245bf23",
+    "results/phase11_posthoc_diagnostics.json": "0a78377b3f69f763bbdb334bfcc74269e67911a1ba50fe56ed12331053ab5610",
+    "results/phase18_summary.json": "1a3e14aa87204eb2cb4adfda109b0fc75828afd5f64291fe51ed165356fab1a1",
+    "results/phase19_summary.json": "d54aef34cf576e751fbf6c9231cbedce40fc5631c751c75e783154ed2b555f1f",
+    "results/phase19b_summary.json": "b1bd0e596dd869aa662429011b0345be7630880d9387aa06e94510a863e0b97c"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "claim_fa": "هم‌راستایی تقریبی مرز با آغاز موضوع در QMSum",
+      "status": "registered primary metric; tolerance two turns; meeting macro",
+      "evidence": [
+        {
+          "path": "results/phase10_summary.json",
+          "json_pointer": "/summary/boundary/2/online_macro",
+          "value": 0.8437414965986394
+        },
+        {
+          "path": "results/phase10_summary.json",
+          "json_pointer": "/summary/boundary/2/random_median",
+          "value": 0.6590816326530613
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "claim_fa": "برتری مشاهده‌شده به تلورانس وابسته است",
+      "status": "registered zero-tolerance sensitivity",
+      "evidence": [
+        {
+          "path": "results/phase10_summary.json",
+          "json_pointer": "/summary/boundary/0/online_macro",
+          "value": 0.22921768707482992
+        },
+        {
+          "path": "results/phase10_summary.json",
+          "json_pointer": "/summary/boundary/0/random_median",
+          "value": 0.23799319727891155
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "claim_fa": "هم‌راستایی تقریبی به مزیت پوشش در مسیر تخت تبدیل نشد",
+      "status": "Phase10 secondary retrieval outcome; budget 1024 source words",
+      "evidence": [
+        {
+          "path": "results/phase10_summary.json",
+          "json_pointer": "/summary/retrieval/1024/online",
+          "value": 0.3469210710011554
+        },
+        {
+          "path": "results/phase10_summary.json",
+          "json_pointer": "/summary/retrieval/1024/random_median",
+          "value": 0.36770677563812704
+        },
+        {
+          "path": "results/phase10_summary.json",
+          "json_pointer": "/summary/retrieval/1024/fixed",
+          "value": 0.38591898467653346
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "claim_fa": "مسیر دومرحله‌ای مزیت مورد انتظار را نشان نداد",
+      "status": "Phase11 primary outcome on reused data",
+      "evidence": [
+        {
+          "path": "results/phase11_summary.json",
+          "json_pointer": "/summary/budgets/1024/online/hier_gold",
+          "value": 0.16777295860926045
+        },
+        {
+          "path": "results/phase11_summary.json",
+          "json_pointer": "/summary/budgets/1024/random_hier_median",
+          "value": 0.1691263607166399
+        },
+        {
+          "path": "results/phase11_summary.json",
+          "json_pointer": "/summary/budgets/1024/online_minus_random_hier_median",
+          "value": -0.0013534021073794422
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "claim_fa": "پوشش نامزد و خروجی نهایی فاصله دارند",
+      "status": "descriptive pipeline contrast; different source-word capacities",
+      "evidence": [
+        {
+          "path": "results/phase11_summary.json",
+          "json_pointer": "/summary/budgets/1024/online/candidate_gold",
+          "value": 0.6893898497921017
+        },
+        {
+          "path": "results/phase11_summary.json",
+          "json_pointer": "/summary/budgets/1024/online/hier_gold",
+          "value": 0.16777295860926045
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "claim_fa": "برخورد با حداقل یک شاهد و کسر پوشش می‌توانند جهت متفاوت داشته باشند",
+      "status": "explicitly post-result exploratory metric",
+      "evidence": [
+        {
+          "path": "results/phase11_posthoc_diagnostics.json",
+          "json_pointer": "/any_flat/online",
+          "value": 0.8781385281385281
+        },
+        {
+          "path": "results/phase11_posthoc_diagnostics.json",
+          "json_pointer": "/any_hier/online",
+          "value": 0.9214285714285715
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "claim_fa": "افراز تشخیصی شکست‌های LoCoMo در فضای ثابت",
+      "status": "exact annotation-relative audit; 599 questions; fixed geometry",
+      "evidence": [
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/locomo/estimates/23/counts",
+          "value": {
+            "complete_success": 443,
+            "missing_gold_session": 106,
+            "window_geometry_infeasible": 25,
+            "feasible_selection_miss": 25
+          }
+        },
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/locomo/estimates/23/questions",
+          "value": 599
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "claim_fa": "سقف دقیق و ظرفیت بهبود به قرارداد ثابت وابسته‌اند",
+      "status": "offline label-assisted oracle; not achieved retrieval performance",
+      "evidence": [
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/locomo/estimates/23/oracle_all_complete_count",
+          "value": 468
+        },
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/locomo/estimates/23/macro_oracle_all_complete",
+          "value": 0.7838304125477943
+        },
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/locomo/estimates/23/macro_all_complete",
+          "value": 0.7419457862889973
+        },
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/locomo/writer_headroom_1024",
+          "value": {
+            "macro_difference": 0.04188462625879698,
+            "descriptive_cluster_bootstrap95": [
+              0.02956961508686409,
+              0.051343379616599426
+            ],
+            "per_history": {
+              "conv-30": 0.045454545454545456,
+              "conv-41": 0.049019607843137254,
+              "conv-42": 0.009523809523809525,
+              "conv-44": 0.0392156862745098,
+              "conv-47": 0.06,
+              "conv-48": 0.050505050505050504,
+              "conv-49": 0.039473684210526314
+            },
+            "clusters": 7
+          }
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "claim_fa": "پوشش کامل تمام بازه‌های QMSum غالبا در فضای ثابت ناممکن است",
+      "status": "secondary complete-span metric; distinct from partial-turn recall",
+      "evidence": [
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/qmsum/estimates/23/counts",
+          "value": {
+            "complete_success": 23,
+            "missing_gold_session": 0,
+            "window_geometry_infeasible": 215,
+            "feasible_selection_miss": 6
+          }
+        },
+        {
+          "path": "results/phase18_summary.json",
+          "json_pointer": "/qmsum/estimates/23/oracle_all_complete_count",
+          "value": 29
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "claim_fa": "سیاست اصلی رزرو چهار جلسه قاعده‌ی ادامه را تامین نکرد",
+      "status": "locally registered primary comparison; weak manipulation",
+      "evidence": [
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/decision/advance_condition_met",
+          "value": false
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/contrasts/primary/macro_difference",
+          "value": 0
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/contrasts/primary/macro_difference",
+          "value": -0.00011037527593818991
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "claim_fa": "افزایش دسترسی همراه با افت پوشش در locomo",
+      "status": "reserve8 secondary dose; source-specific endpoint",
+      "evidence": [
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/4/all_sessions_count",
+          "value": 493
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/4/all_evidence_count",
+          "value": 443
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/4/exact_feasible_count",
+          "value": 468
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/4/macro_primary_metric",
+          "value": 0.7419457862889973
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/16/all_sessions_count",
+          "value": 507
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/16/all_evidence_count",
+          "value": 401
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/16/exact_feasible_count",
+          "value": 461
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/locomo/estimates/16/macro_primary_metric",
+          "value": 0.6612386134677156
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "claim_fa": "افزایش دسترسی همراه با افت پوشش در evermem",
+      "status": "reserve8 secondary dose; source-specific endpoint",
+      "evidence": [
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/4/all_sessions_count",
+          "value": 49
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/4/all_evidence_count",
+          "value": 2
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/4/exact_feasible_count",
+          "value": 3
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/4/macro_primary_metric",
+          "value": 0.1953058434510139
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/16/all_sessions_count",
+          "value": 59
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/16/all_evidence_count",
+          "value": 0
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/16/exact_feasible_count",
+          "value": 0
+        },
+        {
+          "path": "results/phase19_summary.json",
+          "json_pointer": "/evermem/estimates/16/macro_primary_metric",
+          "value": 0.15652742415511856
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "claim_fa": "رزرو هشت جلسه در پوشش از میانگین کنترل تعویض هم‌تعداد پایین‌تر بود",
+      "status": "Phase19B post-result exploratory amendment; seeds averaged within query",
+      "evidence": [
+        {
+          "path": "results/phase19b_summary.json",
+          "json_pointer": "/locomo/reserve8_minus_edit_control_mean/macro_difference",
+          "value": -0.04010491724600526
+        },
+        {
+          "path": "results/phase19b_summary.json",
+          "json_pointer": "/evermem/reserve8_minus_edit_control_mean/macro_difference",
+          "value": -0.014219349056932942
+        },
+        {
+          "path": "results/phase19b_summary.json",
+          "json_pointer": "/locomo/exact_expected_all_session_count",
+          "value": 480.8832191807394
+        },
+        {
+          "path": "results/phase19b_summary.json",
+          "json_pointer": "/evermem/exact_expected_all_session_count",
+          "value": 36.43540291245143
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-27",
+  "status": "selected chapters for supervisor review",
+  "experimental_scope_closed_at": 19,
+  "new_experiments": 0,
+  "claims_checked": 13,
+  "historical_files_preserved": 100,
+  "historical_validators_passed": [
+    "phase18",
+    "phase19",
+    "phase19b"
+  ],
+  "phase19_release_manifest_passed": true,
+  "document_pages": 15,
+  "all_pages_visually_reviewed": true,
+  "pdf_embedded_fonts": [
+    "B Nazanin",
+    "B Nazanin Bold",
+    "DejaVu Sans"
+  ],
+  "report_sha256": {
+    "thesis_batch1_fa.docx": "65e9a619429d34d3523aa9db991ab3c02c21e187696a062ff1c09b398cb624a2",
+    "thesis_batch1_fa.pdf": "a25b2d623912f9aa829b1d5576a3020665c88e5d0350abeaa2cc0f2eb00aa9a6"
+  }
+}
