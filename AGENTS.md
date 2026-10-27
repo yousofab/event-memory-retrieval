@@ -39,3 +39,7 @@ diagnostics only. Do not redistribute raw corpora, supplied textbooks or fonts.
   and historical artifacts intact. Do not mass-replace names in frozen history.
 - Track synthesis in thesis/ and issue 19. Stronger selection, adaptive reservation
   and boundary/coverage correlation are future research, not thesis completion gates.
+- The integrated draft now has eight chapters and a 16-source primary review.
+  Use evidence_ledger_integrated.json and references.bib for current drafting.
+  Keep the selected-chapter Batch1 reports and their original evidence ledger intact.
+  An integrated draft is not final university approval or a submitted paper.

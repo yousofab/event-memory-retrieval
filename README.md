@@ -8,25 +8,29 @@
 
 </div>
 
-## Thesis synthesis after supervisor feedback
+## Integrated thesis draft after supervisor feedback
 
 The BSc thesis experimental scope closes at Phase19. Current work synthesizes
 three contributions: controlled memory-architecture evaluation, exact Phase18
 failure diagnosis, and Phase19 session access versus local evidence assembly.
 The QMSum boundary/retrieval gap receives a separate analytical chapter.
 
-[Synthesis workspace](thesis/README.md) · [Claims and evidence](thesis/claims_fa.md) · [Chapter 6](thesis/chapters/06_diagnostics_fa.md) · [Chapter 7](thesis/chapters/07_discussion_fa.md) · [Writing plan](thesis/synthesis_plan_fa.md)
+[Integrated thesis workspace](thesis/README.md) · [16-source review](thesis/literature_synthesis_fa.md) · [Bibliography](thesis/references.bib) · [Chapter 6](thesis/chapters/06_diagnostics_fa.md) · [Chapter 7](thesis/chapters/07_discussion_fa.md)
 
-[Persian review PDF](deliverables/thesis_batch1_fa.pdf) · [Editable Word chapters](deliverables/thesis_batch1_fa.docx)
+[Integrated Persian PDF](deliverables/thesis_integrated_fa.pdf) · [Editable Word manuscript](deliverables/thesis_integrated_fa.docx) · [Archived selected-chapter draft](deliverables/thesis_batch1_fa.pdf)
 
-Batch1 is a review draft of chapters5–7, not the complete final thesis. Future
-selection policies and correlation studies are deferred research. No new
-experiment is reported. New reports use supervisor **Amir Noori / امیر نوری**,
+The current review draft includes all eight chapters, Persian and English abstracts,
+a clickable contents page, a primary-source bibliography and reproduction appendices.
+Sixteen claims link to nine numeric sources. This is an integrated draft pending
+supervisor review and faculty-format alignment. Future selection policies and
+correlation studies remain deferred. No new experiment is reported.
+New reports use supervisor **Amir Noori / امیر نوری**,
 as requested, and the current university identity configuration. Frozen releases
 and their hashed identity snapshot are preserved.
 
 ```bash
 python scripts/build_thesis_evidence.py --check
+python scripts/build_thesis_synthesis.py --check
 ```
 
 ## Phase 19 approved research checkpoint
