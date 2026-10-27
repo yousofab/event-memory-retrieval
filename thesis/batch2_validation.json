@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "date": "2026-10-27",
+  "artifact_status": "integrated_review_draft",
+  "base_commit": "3dff8ac1db62cb8759487b67df322d4b5b458e7d",
+  "experimental_scope": "through_phase19",
+  "new_experiments": 0,
+  "new_correlations": 0,
+  "model_inference_calls": 0,
+  "evidence_check": {
+    "command": "python scripts/build_thesis_synthesis.py --check",
+    "status": "passed",
+    "chapters": 8,
+    "claims": 16,
+    "primary_sources": 16,
+    "numeric_sources": 9,
+    "frozen_files": 100
+  },
+  "document_qa": {
+    "status": "passed",
+    "pages": 38,
+    "all_pages_visually_reviewed": true,
+    "review_method": "Full rendered page inspection across iterations; unchanged pages compared by pixels; changed content pages and final contents page reinspected.",
+    "persian_paragraphs_with_explicit_rtl": 393,
+    "tables": 10,
+    "rtl_tables": 10,
+    "internal_contents_links": 13,
+    "external_source_links": 16,
+    "contents_page_numbers_match_rendered_outline": true,
+    "bookmark_names_and_ids_unique": true,
+    "original_university_logo_bytes_embedded": true,
+    "pdf_fonts_embedded": [
+      "B Nazanin",
+      "B Nazanin Bold",
+      "DejaVu Sans",
+      "DejaVu Sans Bold"
+    ],
+    "hamza_ezafe_in_current_manuscript": false,
+    "supervisor_name": "Amir Noori"
+  },
+  "artifacts": {
+    "deliverables/thesis_integrated_fa.docx": {
+      "bytes": 582452,
+      "sha256": "a1f7646886dadc3c6d63e70f5750a14716968000d265ac1e11883dd9c4e7c2b2"
+    },
+    "deliverables/thesis_integrated_fa.pdf": {
+      "bytes": 693747,
+      "sha256": "65d5f9f568954b69ae05217a73aaed3e960aaa9a8a6055a9e992bf4627c48df3"
+    }
+  },
+  "pending": [
+    "supervisor_review_prioritizing_chapters_6_and_7",
+    "official_faculty_format_alignment",
+    "defense_preparation",
+    "optional_short_paper_draft_after_narrative_review"
+  ]
+}

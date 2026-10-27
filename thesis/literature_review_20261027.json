@@ -1,0 +1,471 @@
+{
+  "review_date": "2026-10-27",
+  "scope": "focused primary-source synthesis",
+  "systematic_review_claim": false,
+  "quartile_certification": false,
+  "selection": "Direct relevance to constructs, memory units, evidence metrics and diagnosis; prior project atlases plus current search and primary-page verification.",
+  "queries": [
+    {
+      "engine": "system1",
+      "query": "conversational agent memory event segmentation SeCom ES-Mem evidence retrieval diagnostic benchmark October 2026",
+      "recency_days": 35
+    },
+    {
+      "engine": "system1",
+      "query": "\"Relevance Is Not Sufficiency\" \"memory\"",
+      "recency_days": null
+    },
+    {
+      "engine": "system1",
+      "query": "\"Is Complex Agentic Memory Always Needed\"",
+      "recency_days": null
+    },
+    {
+      "engine": "system2",
+      "query": "\"Event perception: A mind-brain perspective\" Zacks 2007 pdf",
+      "recency_days": null
+    },
+    {
+      "engine": "system2",
+      "query": "\"Relevance Is Not Sufficiency\" evidence memory 2610.09348",
+      "recency_days": null
+    },
+    {
+      "engine": "system2",
+      "query": "\"Minds, brains, and programs\" Searle Cambridge 1980",
+      "recency_days": null
+    },
+    {
+      "engine": "system2",
+      "query": "\"LongMemEval\" ICLR 2025 official",
+      "recency_days": null
+    },
+    {
+      "engine": "system1",
+      "query": "site.cs.cmu.edu Carbonell Goldstein 1998 MMR diversity reranking",
+      "recency_days": null
+    },
+    {
+      "engine": "system1",
+      "query": "site.proceedings.neurips.cc \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\"",
+      "recency_days": null
+    },
+    {
+      "engine": "system1",
+      "query": "site.arxiv.org memory evidence diagnostic event segmentation \"Oct 2026\"",
+      "recency_days": 7
+    }
+  ],
+  "access_limits": [
+    "PMC browser check; used PubMed record for P02",
+    "Publisher full text unavailable for P04; only abstract and metadata used",
+    "NeurIPS page unavailable for P05; acceptance statement checked in author record",
+    "ACM MMR page returned 403 and is not a core entry in this review",
+    "Search returned secondary blogs; they were not used as technical evidence"
+  ],
+  "sources": [
+    {
+      "id": "P01",
+      "title": "Minds, brains, and programs",
+      "authors": [
+        "John R. Searle"
+      ],
+      "year": 1980,
+      "venue": "Behavioral and Brain Sciences 3(3), 417–424",
+      "status": "journal",
+      "url": "https://doi.org/10.1017/S0140525X00005756",
+      "doi": "10.1017/S0140525X00005756",
+      "version": null,
+      "reading_scope_fa": "چکیده و اطلاعات انتشار در Cambridge؛ سال اصلی ۱۹۸۰ از تاریخ انتشار آنلاین ۲۰۱۰ جدا شد.",
+      "finding_fa": "بحث اجرای برنامه و قصدیت، زمینه‌ی فلسفی پرسش است.",
+      "limit_fa": "هیچ آزمون فهم فلسفی از پوشش واژه نتیجه نمی‌شود.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P02",
+      "title": "Event perception: a mind-brain perspective",
+      "authors": [
+        "Jeffrey M. Zacks",
+        "Nicole K. Speer",
+        "Khena M. Swallow",
+        "Todd S. Braver",
+        "Jeremy R. Reynolds"
+      ],
+      "year": 2007,
+      "venue": "Psychological Bulletin 133(2), 273–293",
+      "status": "journal",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17338600/",
+      "doi": "10.1037/0033-2909.133.2.273",
+      "version": null,
+      "reading_scope_fa": "چکیده و شرح شکل‌ها در PubMed؛ متن PMC با دیوار بررسی مرورگر روبه‌رو شد.",
+      "finding_fa": "پیش‌بینی و به‌روزرسانی مدل رویداد، مبنای شناختی مرزبندی‌اند.",
+      "limit_fa": "این نظریه معادل آستانه‌ی نویی واژگانی پروژه نیست.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P03",
+      "title": "Multiple event segmentation mechanisms in the human brain",
+      "authors": [
+        "Tan T. Nguyen",
+        "Joset A. Etzel",
+        "Matthew A. Bezdek",
+        "Jeffrey M. Zacks"
+      ],
+      "year": 2026,
+      "venue": "eLife 107955.3, Version of Record, 7 July 2026",
+      "status": "journal",
+      "url": "https://elifesciences.org/articles/107955",
+      "doi": "10.7554/eLife.107955.3",
+      "version": "Version of Record",
+      "reading_scope_fa": "چکیده، بخش مقدمه، بحث و محدودیت و آغاز روش با مدل‌سازی و fMRI.",
+      "finding_fa": "خطا و عدم قطعیت پیش‌بینی با الگوهای هم‌پوشان و متمایز مرتبط‌اند.",
+      "limit_fa": "نویسنده‌ی متنی این دو سازه یا شبکه‌ی عصبی را اندازه نمی‌گیرد.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P04",
+      "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+      "authors": [
+        "Stephen Robertson",
+        "Hugo Zaragoza"
+      ],
+      "year": 2009,
+      "venue": "Foundations and Trends in Information Retrieval 4(1–2), 1–174",
+      "status": "journal",
+      "url": "https://doi.org/10.1561/1500000019",
+      "doi": "10.1561/1500000019",
+      "version": null,
+      "reading_scope_fa": "فراداده و چکیده‌ی ناشر؛ دسترسی متن کامل در این صفحه محدود بود.",
+      "finding_fa": "مبنای رتبه‌بندی واژگانی و نقش آمار سند و طول را مشخص می‌کند.",
+      "limit_fa": "مقادیر دقیق پیاده‌سازی از کد پروژه خوانده می‌شوند.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P05",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "authors": [
+        "Patrick Lewis",
+        "Ethan Perez",
+        "Aleksandra Piktus",
+        "Fabio Petroni",
+        "Vladimir Karpukhin",
+        "Naman Goyal",
+        "Heinrich Küttler",
+        "Mike Lewis",
+        "Wen-tau Yih",
+        "Tim Rocktäschel",
+        "Sebastian Riedel",
+        "Douwe Kiela"
+      ],
+      "year": 2020,
+      "venue": "NeurIPS 2020 acceptance stated on author arXiv record",
+      "status": "conference_author_record",
+      "url": "https://arxiv.org/abs/2005.11401v4",
+      "doi": null,
+      "version": "v4",
+      "reading_scope_fa": "چکیده و سابقه‌ی نسخه و عبارت پذیرش NeurIPS در رکورد نویسندگان؛ صفحه‌ی مجموعه‌مقالات در این محیط باز نشد.",
+      "finding_fa": "بازیابی حافظه‌ی غیرپارامتری و تولید زبانی در یک چارچوب پیوند می‌یابند.",
+      "limit_fa": "پروژه‌ی حاضر بخش تولید و آموزش آن را اجرا نمی‌کند.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P06",
+      "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+      "authors": [
+        "Adyasha Maharana",
+        "Dong-Ho Lee",
+        "Sergey Tulyakov",
+        "Mohit Bansal",
+        "Francesco Barbieri",
+        "Yuwei Fang"
+      ],
+      "year": 2024,
+      "venue": "ACL 2024, 13851–13870",
+      "status": "conference",
+      "url": "https://aclanthology.org/2024.acl-long.747/",
+      "doi": "10.18653/v1/2024.acl-long.747",
+      "version": null,
+      "reading_scope_fa": "چکیده، اطلاعات منبع و کتاب‌شناسی رسمی ACL؛ قرارداد داده‌ی اجرای ما از ممیزی مخزن خوانده شد.",
+      "finding_fa": "LoCoMo منبع ارزیابی تاریخچه‌های طولانی و چندجلسه‌ای است.",
+      "limit_fa": "امتیاز پوشش این پروژه، امتیاز پاسخ رسمی مقاله نیست.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P07",
+      "title": "QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization",
+      "authors": [
+        "Ming Zhong",
+        "Da Yin",
+        "Tao Yu",
+        "Ahmad Zaidi",
+        "Mutethia Mutuma",
+        "Rahul Jha",
+        "Ahmed Hassan Awadallah",
+        "Asli Celikyilmaz",
+        "Yang Liu",
+        "Xipeng Qiu",
+        "Dragomir Radev"
+      ],
+      "year": 2021,
+      "venue": "NAACL 2021, 5905–5921",
+      "status": "conference",
+      "url": "https://aclanthology.org/2021.naacl-main.472/",
+      "doi": "10.18653/v1/2021.naacl-main.472",
+      "version": null,
+      "reading_scope_fa": "چکیده و اطلاعات رسمی ACL؛ تفاوت بازه‌ی موضوع و بازه‌ی مرتبط با پرسش با قرارداد پروژه تطبیق شد.",
+      "finding_fa": "مرجع برای انتخاب و خلاصه‌سازی بازه‌های مرتبط با پرسش ساخته شده است.",
+      "limit_fa": "بازه‌ی مرتبط با شاهد کمینه‌ی پاسخ یا مرز ادراک انسانی یکسان نیست.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P08",
+      "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "authors": [
+        "Di Wu",
+        "Hongwei Wang",
+        "Wenhao Yu",
+        "Yuwei Zhang",
+        "Kai-Wei Chang",
+        "Dong Yu"
+      ],
+      "year": 2025,
+      "venue": "ICLR 2025 official proceedings",
+      "status": "conference",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+      "doi": null,
+      "version": null,
+      "reading_scope_fa": "چکیده و صفحه‌ی رسمی ICLR؛ تفکیک indexing و retrieval و reading.",
+      "finding_fa": "توانایی‌های حافظه و مراحل خط لوله را تفکیک می‌کند.",
+      "limit_fa": "تفکیک مراحل، پیشینه‌ی مستقیم دارد و نوآوری عمومی ما نیست.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P09",
+      "title": "SeCom: On Memory Construction and Retrieval for Personalized Conversational Agents",
+      "authors": [
+        "Zhuoshi Pan",
+        "Qianhui Wu",
+        "Huiqiang Jiang",
+        "Xufang Luo",
+        "Hao Cheng",
+        "Dongsheng Li",
+        "Yuqing Yang",
+        "Chin-Yew Lin",
+        "H. Vicky Zhao",
+        "Lili Qiu",
+        "Jianfeng Gao"
+      ],
+      "year": 2025,
+      "venue": "ICLR 2025 official proceedings",
+      "status": "conference",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e56f394bbd4f0ec81393d767caa5a31b-Abstract-Conference.html",
+      "doi": null,
+      "version": null,
+      "reading_scope_fa": "صفحه‌ی رسمی و بخش‌های معرفی ریزدانگی و فشرده‌سازی در متن نویسندگان arXiv:2502.05589v1.",
+      "finding_fa": "واحد منسجم گفت‌وگو و فشرده‌سازی برای بازیابی بررسی می‌شوند.",
+      "limit_fa": "قرارداد آن با فرصت و هزینه‌ی دقیقا مشترک این پروژه یکسان نیست.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P10",
+      "title": "ES-Mem: Event Segmentation-Based Memory for Long-Term Dialogue Agents",
+      "authors": [
+        "Huhai Zou",
+        "Tianhao Sun",
+        "Chuanjiang He",
+        "Yu Tian",
+        "Zhenyang Li",
+        "Li Jin",
+        "Nayu Liu",
+        "Jiang Zhong",
+        "Kaiwen Wei"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint; reviewed venue not verified here",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2601.07582v2",
+      "doi": null,
+      "version": "v2, 13 January 2026",
+      "reading_scope_fa": "چکیده و شناسنامه‌ی نسخه‌ی دوم؛ معماری مقاله بازاجرا نشد.",
+      "finding_fa": "بخش‌بندی رویداد و حافظه‌ی سلسله‌مراتبی برای عامل گفت‌وگو پیشنهاد می‌شود.",
+      "limit_fa": "اصل ایده‌ی حافظه‌ی رویدادی پیش از پژوهش حاضر وجود دارد.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P11",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "authors": [
+        "Nelson F. Liu",
+        "Kevin Lin",
+        "John Hewitt",
+        "Ashwin Paranjape",
+        "Michele Bevilacqua",
+        "Fabio Petroni",
+        "Percy Liang"
+      ],
+      "year": 2024,
+      "venue": "Transactions of the Association for Computational Linguistics 12, 157–173",
+      "status": "journal",
+      "url": "https://aclanthology.org/2024.tacl-1.9/",
+      "doi": "10.1162/tacl_a_00638",
+      "version": null,
+      "reading_scope_fa": "چکیده و شناسنامه‌ی رسمی TACL و ACL.",
+      "finding_fa": "استفاده از اطلاعات زمینه می‌تواند به جایگاه آن حساس باشد.",
+      "limit_fa": "پوشش متن با استفاده‌ی درست خواننده یکسان نیست.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P12",
+      "title": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+      "authors": [
+        "Yufeng Li",
+        "Shuxin Li",
+        "Zhenhua Xu",
+        "Junxian Li",
+        "Peng Zeng",
+        "Sheng Yao",
+        "Changting Lin",
+        "Gaolei Li",
+        "Ran Bi",
+        "Meng Han"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint, 7 October 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/html/2610.09348v1",
+      "doi": null,
+      "version": "v1",
+      "reading_scope_fa": "چکیده و بخش‌های ۳ و ۴ درباره‌ی کفایت، شاخص‌های جانشین، ترکیب و تکمیل و بودجه‌ی فراخوانی.",
+      "finding_fa": "ارتباط تک‌رکوردی از کفایت مجموعه و تکمیل شاهد جدا می‌شود.",
+      "limit_fa": "کفایت داوری‌شده و بودجه‌ی فراخوانی با کامل‌پوشانی واژه‌ای ما متفاوت‌اند.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P13",
+      "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
+      "authors": [
+        "Zhengye Bao",
+        "Shengtao Zhang",
+        "Haokai Zhang",
+        "Shiqi Lou",
+        "Muning Wen",
+        "Minnan Luo"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint, 22 October 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/html/2610.30755v1",
+      "doi": null,
+      "version": "v1",
+      "reading_scope_fa": "چکیده، بخش‌های خط پایه و پوشش و استفاده و محدودیت و قسمت‌های مقایسه‌ی complete-store و source-oracle؛ کل متن بلند خط‌به‌خط خوانده نشد.",
+      "finding_fa": "بازیابی متراکم و بازرتبه‌بندی متن خام مبنای رقابتی و تشخیصی می‌سازد.",
+      "limit_fa": "روش اجرا نشده و اعداد پاسخ آن با پوشش این پروژه رتبه‌بندی نمی‌شوند.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P14",
+      "title": "MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data",
+      "authors": [
+        "Sen Gao",
+        "Yongan Li",
+        "Han Chen",
+        "Bingsheng He",
+        "Ming Wu",
+        "Jason Zeng",
+        "Michael Heinrich",
+        "Shixuan Sun"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint, 18 October 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2610.25373v1",
+      "doi": null,
+      "version": "v1",
+      "reading_scope_fa": "چکیده و شناسنامه‌ی منبع اصلی؛ داده و روش مقاله در این پروژه اجرا نشده‌اند.",
+      "finding_fa": "حالت مشتق‌شده و گراف استنتاج مرجع برای تشخیص شکست تعریف می‌شوند.",
+      "limit_fa": "ممیز ما مسیر استنتاج یا تحول حالت را ارزیابی نمی‌کند.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P15",
+      "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+      "authors": [
+        "Xianxuan Long",
+        "Zhikai Chen",
+        "Shenglai Zeng",
+        "Shouren Wang",
+        "Kai Guo",
+        "Jiliang Tang"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint, 15 June 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2606.17328v1",
+      "doi": null,
+      "version": "v1",
+      "reading_scope_fa": "چکیده و واحد دانش‌نقطه و شرایط شاهد در منبع اصلی؛ تحلیل عمیق‌تر قبلی در اطلس مرحله‌ی ۱۸ موجود است.",
+      "finding_fa": "واحد ارزیابی و تغییر شرایط می‌توانند خطاهای پنهان در تجمیع را آشکار کنند.",
+      "limit_fa": "گلوگاه غالب به واحد شاهد و بازیاب و خواننده و طراحی وابسته است.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    },
+    {
+      "id": "P16",
+      "title": "Evaluating Long-Horizon Memory for Multi-Party Collaborative Dialogues",
+      "authors": [
+        "Chuanrui Hu",
+        "Tong Li",
+        "Xingze Gao",
+        "Hongda Chen",
+        "Yi Bai",
+        "Dannong Xu",
+        "Tianwei Lin",
+        "Xiaohong Li",
+        "Yunyun Han",
+        "Jian Pei",
+        "Yafeng Deng"
+      ],
+      "year": 2026,
+      "venue": "Author arXiv v3; dataset-card KDD statement not independently verified in this review",
+      "status": "author_version",
+      "url": "https://arxiv.org/abs/2602.01313v3",
+      "doi": null,
+      "version": "v3, 11 March 2026",
+      "reading_scope_fa": "چکیده و نسخه‌ی سوم؛ قرارداد داده‌ی اجرا از manifest و ممیزی مرحله‌ی ۱۹ خوانده شد.",
+      "finding_fa": "حافظه در زمینه‌ی چندنفره و چندگروهی و تحول زمانی بررسی می‌شود.",
+      "limit_fa": "اجرای ما فقط زیرمجموعه‌ی ریزدانه و سنجه‌ی پوشش پیام را استفاده می‌کند.",
+      "accessed_on": "2026-10-27",
+      "primary": true,
+      "implementation_rerun": false
+    }
+  ]
+}
