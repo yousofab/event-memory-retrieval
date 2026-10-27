@@ -7,8 +7,10 @@ from package_phase17 import rtl
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def university_mark(doc):
-    settings=json.loads((ROOT/'configs/report_identity.json').read_text())
+def university_mark(doc, identity_path='configs/report_identity.json'):
+    # The default preserves historical Phase19 reproduction. New thesis reports
+    # explicitly select the corrected current identity snapshot.
+    settings=json.loads((ROOT/identity_path).read_text())
     logo=ROOT/settings['university_logo']
     if not logo.is_file():
         raise FileNotFoundError('The university logo is required for this academic report')

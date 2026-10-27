@@ -8,6 +8,27 @@
 
 </div>
 
+## Thesis synthesis after supervisor feedback
+
+The BSc thesis experimental scope closes at Phase19. Current work synthesizes
+three contributions: controlled memory-architecture evaluation, exact Phase18
+failure diagnosis, and Phase19 session access versus local evidence assembly.
+The QMSum boundary/retrieval gap receives a separate analytical chapter.
+
+[Synthesis workspace](thesis/README.md) · [Claims and evidence](thesis/claims_fa.md) · [Chapter 6](thesis/chapters/06_diagnostics_fa.md) · [Chapter 7](thesis/chapters/07_discussion_fa.md) · [Writing plan](thesis/synthesis_plan_fa.md)
+
+[Persian review PDF](deliverables/thesis_batch1_fa.pdf) · [Editable Word chapters](deliverables/thesis_batch1_fa.docx)
+
+Batch1 is a review draft of chapters5–7, not the complete final thesis. Future
+selection policies and correlation studies are deferred research. No new
+experiment is reported. New reports use supervisor **Amir Noori / امیر نوری**,
+as requested, and the current university identity configuration. Frozen releases
+and their hashed identity snapshot are preserved.
+
+```bash
+python scripts/build_thesis_evidence.py --check
+```
+
 ## Phase 19 approved research checkpoint
 
 The session-access study and its separately registered exploratory matched-edit
