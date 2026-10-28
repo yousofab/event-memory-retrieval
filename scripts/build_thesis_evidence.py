@@ -9,6 +9,7 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
+from check_supervisor_name import frozen_file_matches
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'db76c5eb85c019c840ad76ace7e9aa5043fac283'
@@ -146,7 +147,7 @@ def main():
             raise ValueError('The claim ledger differs from committed source measurements')
         manifest = json.loads((folder / 'frozen_baseline_sha256.json').read_text())
         for path, checksum in manifest.items():
-            if digest((ROOT / path).read_bytes()) != checksum:
+            if not frozen_file_matches(path, checksum):
                 raise ValueError('Historical file changed: ' + path)
         print(json.dumps({'status': 'passed', 'claims': len(ledger['claims']),
                           'source_files': len(ledger['source_sha256']),

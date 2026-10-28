@@ -161,7 +161,7 @@ LoCoMo همان فهرست ثابت مرحله‌ی نخست است و پس از
 
 ## ۱۲ سپاسگزاری
 
-از استاد امیر نوری ولنده، راهنمای دانشگاهی پروژه، برای راهنمایی و حمایت از ایده‌های نو سپاسگزاریم. همچنین از دکتر آرش فکری، بنیان‌گذار فردیت FARDIAT، مجتمع فوق تخصصی مغز و شناخت، برای آموزش مغز و شناخت و علوم اعصاب شناختی و بررسی و تایید پروپوزال قدردانی می‌شود.
+از استاد امیر نوری، راهنمای دانشگاهی پروژه، برای راهنمایی و حمایت از ایده‌های نو سپاسگزاریم. همچنین از دکتر آرش فکری، بنیان‌گذار فردیت FARDIAT، مجتمع فوق تخصصی مغز و شناخت، برای آموزش مغز و شناخت و علوم اعصاب شناختی و بررسی و تایید پروپوزال قدردانی می‌شود.
 
 ## منابع
 
@@ -222,7 +222,7 @@ There are1,208 distinct questions and130,464 policy–selector–budget conditio
 
 ## Acknowledgments
 
-We thank Amir Noori Volandeh for university supervision and support of new ideas, and Dr Arash Fekri, founder of FARDIAT, for education in cognitive neuroscience and review and approval of the original proposal.
+We thank Amir Noori for university supervision and support of new ideas, and Dr Arash Fekri, founder of FARDIAT, for education in cognitive neuroscience and review and approval of the original proposal.
 
 ## Primary sources
 

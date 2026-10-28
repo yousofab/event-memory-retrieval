@@ -40,7 +40,7 @@ The researcher approved full publication and main-repository closeout on 25 Octo
 2026, including the supplied Islamic Azad University logo and BSc Computer
 Engineering project-course identity. The revised report remains13 pages; pages2–13
 are pixel-identical to the reviewed package. Numeric outputs and frozen plans are
-unchanged. FARDIAT/Dr Arash Fekri educational thanks and Amir Noori Volandeh's
+unchanged. FARDIAT/Dr Arash Fekri educational thanks and Amir Noori's
 university supervision remain present.
 
 Reviewed scientific local commit74763b3b3a6ab57cef8f468b51587e34bb5dc764 maps to

@@ -48,7 +48,7 @@ There are 1,208 distinct questions and 130,464 policy–selector–budget condit
 
 ## Acknowledgments
 
-We thank Amir Noori Volandeh for university supervision and support of new ideas, and Dr Arash Fekri, founder of FARDIAT, for education in cognitive neuroscience and review and approval of the original proposal.
+We thank Amir Noori for university supervision and support of new ideas, and Dr Arash Fekri, founder of FARDIAT, for education in cognitive neuroscience and review and approval of the original proposal.
 
 ## Primary sources
 

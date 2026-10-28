@@ -102,6 +102,6 @@ source adapter, transfer experiment, falsifiable stopping rule and reusable
 certificates. No global novelty of diversification, semantic understanding,
 neural mechanism, benchmark leaderboard victory or answer-accuracy gain is claimed.
 
-We thank Amir Noori Volandeh for university supervision and support of new ideas,
+We thank Amir Noori for university supervision and support of new ideas,
 and Dr Arash Fekri, founder of FARDIAT, for cognitive neuroscience education and
 review and approval of the original proposal.

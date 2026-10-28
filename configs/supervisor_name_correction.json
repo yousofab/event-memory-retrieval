@@ -1,0 +1,488 @@
+{
+  "date": "2026-10-28",
+  "base_commit": "9be254226cbce06a5e72f6d64d34c44c19191e4b",
+  "authorization": "Explicit researcher request to correct supervisor name throughout the current repository.",
+  "scope": "Editorial corrections on main; Git history and release tags retained.",
+  "files": {
+    "AGENTS.md": {
+      "original_sha256": "51b72288f46ee455d70fed76dd6b94d63aaf775c8e30147166b5b06ade600831",
+      "corrected_sha256": "f06cef60e79aaa9c7cc6da1f9433e0ff13810b45fcf9cf6f2fe5aea93874682e",
+      "change_kind": "documented_editorial_exception_or_validation"
+    },
+    "README.md": {
+      "original_sha256": "b24d957b70303a0c68f568acfe2f162efc23fda55f96cdc803b3a84296c5a713",
+      "corrected_sha256": "b56fa2cb981dfed55daefa8a37f749ea7e9ba2f2fd202e974201ccbe483654e4",
+      "change_kind": "name_text"
+    },
+    "configs/phase17_release_sha256.txt": {
+      "original_sha256": "95215e7c1188f0ab2cc410a125d032ff3df3d6b82af74ede792fce637c198342",
+      "corrected_sha256": "39e564f1273459936c2a64bc3cf1ebdbfbd84736fa1bc54af9ac4a74d094607c",
+      "change_kind": "release_checksum_refresh"
+    },
+    "configs/phase18_release_sha256.txt": {
+      "original_sha256": "a12a475226288eb32ed34ecf955cfb22356af034bab08be3f193f0732710df75",
+      "corrected_sha256": "4856269ebd9025a04ef24089f5ea614443309f196df14912e9686f0f03598db1",
+      "change_kind": "release_checksum_refresh"
+    },
+    "configs/phase19_release_sha256.txt": {
+      "original_sha256": "91c616edff6cfba5a257c5b01accc1559689eca6cba442b0c65d97c98f7c2f85",
+      "corrected_sha256": "831c3a49ad0eacadedbe443a95942ad03645c011672500609e557be1853b9381",
+      "change_kind": "release_checksum_refresh"
+    },
+    "configs/report_identity.json": {
+      "original_sha256": "2aea7332725a6ee67882f0bcabab5ff5f644379a27d39d8ef759003cd27203db",
+      "corrected_sha256": "88f085f002fbf9c2e351df615f85462f483ec861deeb410fa790f67503d21ac2",
+      "change_kind": "name_text"
+    },
+    "deliverables/phase17_research_report_fa.docx": {
+      "original_sha256": "e56e619fa4ccbb4400bbfe96cd5b70bc0dc9c430eaa04b58e37b9601b1e13e65",
+      "corrected_sha256": "641ee6dcf51e2258f65068c835e4384d20890faca02ccfad6428a4379cf3a8ec",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/phase17_research_report_fa.pdf": {
+      "original_sha256": "4381bb91c163d9d4116ed078af8e04496d262d2465e038eb4d0a49ee3f09bbf5",
+      "corrected_sha256": "86adaae8fc07cc68aee686a4adc333c802c64f8e1ec3603b5429cca33c0fc2fa",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/phase18_research_report_fa.docx": {
+      "original_sha256": "54028cd9ad64ae1571957dccf168c061f6af8ce42efc74166e6b066c600d5b93",
+      "corrected_sha256": "fee1c8ec6282a0f7716b28a7e61fef6bd4c837f57cc3645ce27b1c66e9e94e66",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/phase18_research_report_fa.pdf": {
+      "original_sha256": "3dcfe38a87e00c4a8363e4bd0192f2c47d98eea953dc356cb26c73eaa06afa53",
+      "corrected_sha256": "654ea69523f30aec314e3384a70487641bfe539a125f6e460c7fa2c759b4b54c",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/phase19_research_report_fa.docx": {
+      "original_sha256": "21b2d092ad784fb3160b51c6de1c70c4c97f764d14eed7d9b34b81e4c044590c",
+      "corrected_sha256": "b0b638d100bc17715c600093934773596ecd54aef6df6cd34d9982b6b1ad258d",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/phase19_research_report_fa.pdf": {
+      "original_sha256": "0af767fe174e02face18929123f8305228ebe625da43eac2ed3913b4056667f6",
+      "corrected_sha256": "39f932dc16146304a96d7a590c0284194dcc9fbc355fe9384c0db55b65c2b6ea",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۰-مرزهای-موضوعی.docx": {
+      "original_sha256": "22842be5d9f186ea63a04d662503332d4d1f420bc3634a820a10984122b4b998",
+      "corrected_sha256": "63ff83230e2b28e2d1227f2c8ae8196b54891e7d57f81c7994acb929c160475e",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۰-مرزهای-موضوعی.pdf": {
+      "original_sha256": "28be9eb2acb77ce26530376c611facbe7ca719c93e3b8e080cd1ebf3139e66a7",
+      "corrected_sha256": "f331ed59c899292ccebc1c98ade7cb4ed356d284f3728c43e3da998b86fa88cd",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۱-مسیر-حافظه-تا-شاهد.docx": {
+      "original_sha256": "1f0696f1db5b61f57c08f6e8face94112f4e6a7a0cc4966129d7d3d7c0e3afac",
+      "corrected_sha256": "f6d9ee495c210f83d2a395025569629fe92d32ac027940235c0a58737fa0f7ca",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۱-مسیر-حافظه-تا-شاهد.pdf": {
+      "original_sha256": "4ff1c2a8e0fac076780b5ce5735ef0e0a1208977e288b2ddb4d7cff88426554e",
+      "corrected_sha256": "01b8634fdfc9ac05bf73d6e172737eaca9f527c416129c6b0440f13b96e3b60a",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۲-حافظه-و-اصلاح-اطلاعات.docx": {
+      "original_sha256": "8818668c946281b60a64dfe837d7b4ad88702d3273bf0eb1b38416e3f8b09dcb",
+      "corrected_sha256": "cc3b1db1361700072f6c59e39745bf43c12ecb2fa817d7d50029b20504fc33e9",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۲-حافظه-و-اصلاح-اطلاعات.pdf": {
+      "original_sha256": "16fa238260e60aa87104b3233628d600b403f3ce8e5ec4d9ff608d978ff84ace",
+      "corrected_sha256": "3006f05f1b3a74ad5dd171fd63bcbba71bc1cba87491e691a712c0dc68b4247b",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۳-بازیابی-شاهد-از-دو-جلسه.docx": {
+      "original_sha256": "c33107378ebb8da1a378fe6ce0354447de5a533124c3e14336f93cb19494e43f",
+      "corrected_sha256": "11dd6ccaf2a9742eb96cd15a3b6fe86cd559176ed76efc8009aca1562ff59413",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۳-بازیابی-شاهد-از-دو-جلسه.pdf": {
+      "original_sha256": "fa86cd9761d4e538ce57f4a6a5c52e26563b7197f0cce8a0a12d9d0c813a5219",
+      "corrected_sha256": "36a66fc467ec3dc272b450b44ef8e4ba5aba31dc37d29474986d10f172deea45",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۴-ممیزی-ورودی-Memora.docx": {
+      "original_sha256": "b2673fb739594f8990a68e90bb7dd739de6af1f5238d0445607f28d0728c5888",
+      "corrected_sha256": "8643b1eb827c0452248a4d63e70189185163e0148278d65df40a4ce60aa9f150",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۴-ممیزی-ورودی-Memora.pdf": {
+      "original_sha256": "a219c252213aecdbf40550ddeb4f2415665c85f9564e60f49a96ada4c77a4392",
+      "corrected_sha256": "e7a38ebe6282e5d4a19d12735d0bb3a048555fbaea18323d9f00fcc93b795c4c",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۵-نقش-و-هزینه-Memora.docx": {
+      "original_sha256": "cd0a3901d57b985e8ed5f2684e95610d3eb50cac63d5cbf86d18aaf2f2228670",
+      "corrected_sha256": "7e9f67e6740a32bf12351c99674d25f5e5d57b8b4873e7e98c5c1f006f371c25",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۵-نقش-و-هزینه-Memora.pdf": {
+      "original_sha256": "733e1fdbf85b15151a2b382565191aaeb5adc7667ce9aec05adc78930bedec18",
+      "corrected_sha256": "24558a52f33f4eb9339cc86ee36fe2a1f6a6c875aa04083cf12e1d1209b976bc",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۶-مرزهای-همتعداد.docx": {
+      "original_sha256": "e056f2dd629ce0f7f1744ba9163d78ff3b59584041568d9c8dd73b7ff6b8e270",
+      "corrected_sha256": "59b6e39cc578b15c77250dfa0452ac4ab27e55262381e24b5324bc2c44c9154b",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۱۶-مرزهای-همتعداد.pdf": {
+      "original_sha256": "29a9a089f50b5810cf11cbea55601568a0a00c8e9cca9d05d12e3bb8e4277bcc",
+      "corrected_sha256": "2ae364b8bb3936a32fd930b21c7668a911a9d98656dbfa89cc765f4bc5c46bf9",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۹-کنترل-مرزها.docx": {
+      "original_sha256": "39ee711e98b789efe4f635d53dbe0d5f93e46f3ac32fede524778a3be1cdb584",
+      "corrected_sha256": "a53ab289bcb2cdf4e06672f3b7fd243542266cc104bf940b819231023ffdc586",
+      "change_kind": "name_only_docx_xml"
+    },
+    "deliverables/گزارش-پژوهشی-مرحله-۹-کنترل-مرزها.pdf": {
+      "original_sha256": "a6fe70b83cc7c1c8cb7c3ae79816ca52774bcbacc427901e52ca54ae40ace5b3",
+      "corrected_sha256": "b00e0c9144004c48e5715ec8f0c83bbc70c87121deee4cbad07d4eddea7d65b5",
+      "change_kind": "pdf_reexport_from_name_only_docx"
+    },
+    "docs/phase10.md": {
+      "original_sha256": "64d829d9fa002dc573f40ebbfdfe74fdd1ab107c0b323456cb88b64b6cf5d7d3",
+      "corrected_sha256": "75d2a146f652f9b28b0e5f685d560e74fdc7d61351274b0645787501dc195a42",
+      "change_kind": "name_text"
+    },
+    "docs/phase10_plan.md": {
+      "original_sha256": "782ad5cb069f168edc02fe0497887ce86d5a1946db10f89e83920857ca323277",
+      "corrected_sha256": "657aec8242a462f271deda1cfe7a9a2f7a9e4fa8189cf009c471d3bfd56c4e96",
+      "change_kind": "name_text"
+    },
+    "docs/phase11.md": {
+      "original_sha256": "ffc36c6644ee35120e2c98c8769e147e4186d101ebf53dd54cc575983e763ba1",
+      "corrected_sha256": "39e2e06c87e443674ca8a510f5c692cba4ee4645fbe146f504a670645b93ad13",
+      "change_kind": "name_text"
+    },
+    "docs/phase11_plan.md": {
+      "original_sha256": "bba20ef8bccbe5383e3e521330c59bbae21659fb4a3866c93b5745951dee23a4",
+      "corrected_sha256": "6b253a6f9fe63594705960cdadd7844914ff062a4fcebae2e99059120f8067b0",
+      "change_kind": "name_text"
+    },
+    "docs/phase12.md": {
+      "original_sha256": "76763cf970c7274ac3c7b55e430ae0758dcead319a799332de92c5c12173164a",
+      "corrected_sha256": "c1e9172fccdcd7838aeb1c11449364fb9b97e253da510de711259cfff3e22110",
+      "change_kind": "name_text"
+    },
+    "docs/phase12_plan.md": {
+      "original_sha256": "1eacdeadb178e76358e5c8dd5cd412487a819cb88c12e72e6a9fb085da68b8de",
+      "corrected_sha256": "95cf4f388eb6d78245a8b62d956d80742083e0e297dacde8d2bb691c9e55d03e",
+      "change_kind": "name_text"
+    },
+    "docs/phase13.md": {
+      "original_sha256": "7692bb8934285af533822a00a85016534c2e90821ec3783ced69ba493f3838c7",
+      "corrected_sha256": "77749651843c7f33501629e05df24717ae765740955b27e53fbf57fdbc06fcbc",
+      "change_kind": "name_text"
+    },
+    "docs/phase13_plan.md": {
+      "original_sha256": "e5bb8203d2ec78528a89631ee30c711fe979f0bd4ab8c7d3901a61087499ce22",
+      "corrected_sha256": "98248501c1adf7dcf7e76f12ee6da4f23f61b011e9ddd27977df5a6d48734a33",
+      "change_kind": "name_text"
+    },
+    "docs/phase14.md": {
+      "original_sha256": "b4e7c0b9645318cef25f385aaf04ebcd497bb0847543e9d362445fe46fb58df7",
+      "corrected_sha256": "af3b4361dc83f43e772b5fb9d593c51ea873169fb7cc22261a6bb349a1bc26ba",
+      "change_kind": "name_text"
+    },
+    "docs/phase14_plan.md": {
+      "original_sha256": "434c2b791fa56523ad8900a40683fa46dd3ca28db653c37a23edffcc1686505e",
+      "corrected_sha256": "77c9f55158ba90985a365050e7655b9413427f7405a76e05ec33628ee1254efb",
+      "change_kind": "name_text"
+    },
+    "docs/phase15.md": {
+      "original_sha256": "6f0751f7d2bc9f939305f84b8c3b0282de8bc458ba617cedd42954d4c1d81380",
+      "corrected_sha256": "acc344ff725af459cf2f56b1b07dc674057b93d98cdc93acf4ed836d9ef532f9",
+      "change_kind": "name_text"
+    },
+    "docs/phase15_plan.md": {
+      "original_sha256": "97b3805d57295670e0033e7d1efc8ed266c13fa2b22d089c6e7eb23092352405",
+      "corrected_sha256": "3d9a7704fee62de985e9e58c0a2573e0f5ed684c87c6718997165ac1688cdb91",
+      "change_kind": "name_text"
+    },
+    "docs/phase16.md": {
+      "original_sha256": "7790d101a34c27e9b9d8b2350cd103aeaacd4372b2b68f8f4e994b097f58d817",
+      "corrected_sha256": "b07bd97eace4e482f6ada49ba5d53e53ee8ec69af0ce7c606cb30ddc98e37273",
+      "change_kind": "name_text"
+    },
+    "docs/phase17.md": {
+      "original_sha256": "c01b564f284fe753aedb43dc51cb53eb5673a72dcee562bb839cdbb65ac41f67",
+      "corrected_sha256": "d5db03f1527eb097eca1a26b6bce8edc5fb215903d373290a9f9edf3014c8e2a",
+      "change_kind": "name_text"
+    },
+    "docs/phase17_candidates.md": {
+      "original_sha256": "76d012285074f55e2fa986dd2c7666b8590caf6b31170dc08072969f2338d4fd",
+      "corrected_sha256": "d1e2303ab53ebc13bd769906a338db6dfee6363c25bef69dfca67085543fb6c7",
+      "change_kind": "name_text"
+    },
+    "docs/phase17_frontier_synthesis.md": {
+      "original_sha256": "ccfe4b2077b4488961131447ed1459cf55dd4d1994f0aba59c86c5f6707da20d",
+      "corrected_sha256": "ad9492e95ca9d48e926440e22c1153ad3604c3b351b0e8b8864b449737281088",
+      "change_kind": "name_text"
+    },
+    "docs/phase17_plan.md": {
+      "original_sha256": "696488681863547c0ed547d33b4465127b47563cdf47b5c96e5faa2890acb3a7",
+      "corrected_sha256": "ecaa5f88d0d32b95fb4f4aad1dc84793bdf94cd4697754eea626b9a8bb42cfa8",
+      "change_kind": "name_text"
+    },
+    "docs/phase17_publication.md": {
+      "original_sha256": "4c4b53e3f46ddec74d5e452722b1658940487ac02707f46ce53694a2158b694a",
+      "corrected_sha256": "9ec588c582da4c6c730e7a5861eb92c17d0706f0972bb2f50e3d1d1ddb5615d3",
+      "change_kind": "name_text"
+    },
+    "docs/phase17_release_notes.md": {
+      "original_sha256": "72737bfb2930c1a16c778a9c9ef1a959d9bed945455d2033e2ae1b363822d476",
+      "corrected_sha256": "a7faa3cebf07820845bf61ee2d285239c09095e3bb1c63a0b16e6b8c1c3f4614",
+      "change_kind": "name_text"
+    },
+    "docs/phase17_state_ledger.md": {
+      "original_sha256": "9dddcde8fe5781b09909c39cb2a9a2d294351627c81be8691f39b7ce1ce2d52f",
+      "corrected_sha256": "dc40f07f9144737700e9b9ec6f71bb4a8448addf838b7e9ca265900f5604d264",
+      "change_kind": "name_text"
+    },
+    "docs/phase18.md": {
+      "original_sha256": "3f136ec51ca46d022273d76ddc25747d619363414df3ccd3cc5e71a4b4a9d6b6",
+      "corrected_sha256": "ff9f45b11429be8ebe309d7f53ab9c6f8a7050b1729e6d2da7b5b7f01276d1aa",
+      "change_kind": "name_text"
+    },
+    "docs/phase18_handoff.md": {
+      "original_sha256": "bebc3df6f5bd2b7d356c2b51ed84abeec681f3db23ebe6d5b86723de08899ae4",
+      "corrected_sha256": "a4946197211778897d20d9e3af5077cef715ed0e728038b254c392bcad507a30",
+      "change_kind": "name_text"
+    },
+    "docs/phase18_plan.md": {
+      "original_sha256": "f7eb19bb5ae93dc9e7d375dfc12a23c5aa024e5ac22fe1303af3dc860ff82d28",
+      "corrected_sha256": "2ac0c23ff8b04ab6eaae5f604a1368e65b0a365f0d0be5b86b0768b06fb50514",
+      "change_kind": "name_text"
+    },
+    "docs/phase18_publication.md": {
+      "original_sha256": "94b0d1450640c135fcf8164248430876ae635d000d8acfb75a8dcb7d805c932a",
+      "corrected_sha256": "bf6419d07661f4e8a7716a12e5af2babeb1f5337c956285852ee275f82b8beaa",
+      "change_kind": "name_text"
+    },
+    "docs/phase18_release_notes.md": {
+      "original_sha256": "f48406d1aa2378713e16f6fc89f803c97cea99ce676e387e794bdbf28fb21b93",
+      "corrected_sha256": "8a5b5970335d9ab5fa6b5edf7bdbf4ca51fcf8f1950717f1325ad5eccb0e69be",
+      "change_kind": "name_text"
+    },
+    "docs/phase19.md": {
+      "original_sha256": "0710f384d92528b496c7563fae7462b08d428caec0ebdc174c52f604f32238ca",
+      "corrected_sha256": "209d4ffe031d80d3d6124c1c35e5069bc2ceefa78d8af34052e1fb9ea4efb8a9",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_execution_notes.md": {
+      "original_sha256": "56de703cc2b2b695863ae67f59e1843fb4da82784e33a47cd93ebe8e3ae45f22",
+      "corrected_sha256": "f786e740d341261f2bbb23a4718a685434b2ea8f5ffb560dac0908b3d57d2630",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_formal_contract.md": {
+      "original_sha256": "c080db3cc49e01cc65570b79e088c492a15c892946f8264ea99a904ad878a54b",
+      "corrected_sha256": "82a03132f82c35c03c8fd329b64fa94b5d491c4ea2bb71b2c25483690f4a870f",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_handoff.md": {
+      "original_sha256": "a3510af5a0e50624c79c8652e1cdc5974f9215f1406de458803acf250f027b3d",
+      "corrected_sha256": "73c5dc6e050cf9f18e2932f6784b702db8a0b110f24507bbc364aa3d2fc9ff97",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_literature_atlas.md": {
+      "original_sha256": "b5e1f0ac50e25d42391af1c0cef126da3959c4ee3c6d46af349f36db79fb1f0c",
+      "corrected_sha256": "36027316b73eaf5069fed9907aa876ae0ddae6e3b3eb199b1c7b788e0e71c3e7",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_novelty_audit.md": {
+      "original_sha256": "198c36a0d1064858bcaa91c89f7fc22b3f24b2bdfbd5ba32bdd5629f68cffdae",
+      "corrected_sha256": "cf1fd970782f0e911c0f309b714ee6781843af018de0ecbf95cd32b3b2b29735",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_plan.md": {
+      "original_sha256": "d4e1cf4ff3426ed0cca71cefafce0348d3561929a03b4d8ed7da4604f166433b",
+      "corrected_sha256": "f5f25591adb236f7d626ef9ba3b92b7eff420fec4994a02a136a6fdace4410d2",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_pr_draft.md": {
+      "original_sha256": "810abe04560cce61f9374b95e22c450682cb2cefba207e6623a1e41005a7d31f",
+      "corrected_sha256": "20e58ead00e47d6f93979135110225b874026e29a7f1df6df32313365cd7b212",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_publication.md": {
+      "original_sha256": "44b307f8883ce828d482f859d72631e9f1ac777a24abc34ec4a4ca67e2325a1b",
+      "corrected_sha256": "19c078783059c6088b6a54a80b15d0988211e9415519ce4a0e645eb40d77df12",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_release_notes.md": {
+      "original_sha256": "0f5a82d12ab7250a145c07cbc6728444dd70a2c8e35a83a3e6e4d101b45b6813",
+      "corrected_sha256": "831f58fb79cd7db27984f09749ce4c41e73efcc4a3d49ace4406a97bdaf2b186",
+      "change_kind": "name_text"
+    },
+    "docs/phase19_research_note_en.md": {
+      "original_sha256": "406f69e1853331c6237eb7dc2ec1d37ce84b092fb95bfe18f75ba872ccffd3b7",
+      "corrected_sha256": "ea49fd00352bdc67e55ad0fca009287aafd1499a41a47cb7dd98dd68712ab4bb",
+      "change_kind": "name_text"
+    },
+    "docs/phase19b_amendment.md": {
+      "original_sha256": "6c9d04cfc250010d2e95d8be13f0d73fc9226caba6dada9d84e52e1d0a8542bc",
+      "corrected_sha256": "802a1676687ce4341fbc4023ebe5c005855993c40e0e1990f796a6d38d4f398c",
+      "change_kind": "name_text"
+    },
+    "docs/phase20_handoff.md": {
+      "original_sha256": "76fc9f5aee9f587b00d7dcacd2d6dcd8e616693272d3ec2c1751b595c8b4022e",
+      "corrected_sha256": "0f9380b14046a098f38ce3b4bb5dbe8fa4745b72e5ad0ddb403d2df81f4e5c84",
+      "change_kind": "name_text"
+    },
+    "docs/phase9.md": {
+      "original_sha256": "ed951267fa1b3f0cdc70b786644405cc2a9a7f3c3f83f57e4e0dfa51646387e4",
+      "corrected_sha256": "2944c806f89bfadba9471c2449c9bcd6025233940a4c8ccb702bf2202ebcb618",
+      "change_kind": "name_text"
+    },
+    "docs/phase9_plan.md": {
+      "original_sha256": "d218abb2bef5ba079111ac0f656d2fc17a74136062bf009115a0f4da412c1c3f",
+      "corrected_sha256": "0ce527a9b3ae0a220b9a22914e4db0f747a7beb55e7e1ec3760f71e8cb972f55",
+      "change_kind": "name_text"
+    },
+    "docs/report_identity.md": {
+      "original_sha256": "2ad6859192d94a6523c3c31792bb41c5ce770e6ee311cf3554146b7cc282caa2",
+      "corrected_sha256": "0e596d68800f033e4a8928fef4d9f5491ae012d2a2f03647156c0dd85f32de57",
+      "change_kind": "documented_editorial_exception_or_validation"
+    },
+    "scripts/build_phase19_text.py": {
+      "original_sha256": "376cfc4dd45a7a9d6de732d5dd2b11836c21be5a70534f256e247374a5a1eded",
+      "corrected_sha256": "95fc2671dcacb8b6a62760557c4d6a39376a834696c4814709be1dd59e1b0449",
+      "change_kind": "name_text"
+    },
+    "scripts/build_thesis_evidence.py": {
+      "original_sha256": "f1accf50c78dee4ddfb1219adb2ada084816cf27151cee090dfc3a88257307c3",
+      "corrected_sha256": "ab3643c34e8bef5ff1610b24a52ec2961696e2e2d590ea644ed04af40209c928",
+      "change_kind": "documented_editorial_exception_or_validation"
+    },
+    "scripts/build_thesis_synthesis.py": {
+      "original_sha256": "88451800aed27eaac9fa4919d6500d084c2b1056704df240d3bb26c3b82b75be",
+      "corrected_sha256": "def0ebe6736d2f4d2da91b4f6daa5cf1429964e3c1096ed52c8cf2f827e69127",
+      "change_kind": "documented_editorial_exception_or_validation"
+    },
+    "scripts/package_phase17.py": {
+      "original_sha256": "be2c4ccf4da955b04970aeb663852b189dd9d8191e6ba7d0c9be2622669a1514",
+      "corrected_sha256": "37ec0157cbb49341ead2f2ceb32d373f769851c98528dd4006b508dfe2f8ffb0",
+      "change_kind": "name_text"
+    },
+    "scripts/package_phase18.py": {
+      "original_sha256": "0f47637024d86fc6bf839c47a2caf1913dce806fd544ac837310289ce43b6335",
+      "corrected_sha256": "0fc58b5ffa17d350454a24751cfef8ffcc2bc5748ad31325bb95186396036556",
+      "change_kind": "name_text"
+    },
+    "scripts/package_phase19.py": {
+      "original_sha256": "88b1d26a3925451b9fd5b3db7c827cfda2710fdaf9817975275f8a485b8c87e8",
+      "corrected_sha256": "bf7bae388dc60e7485b6e08d95665c5da983a029106a7271e0886df004587825",
+      "change_kind": "name_text"
+    }
+  },
+  "results_files_unchanged": 62,
+  "docx_xml_only_name_edits_verified": 11,
+  "report_review": [
+    {
+      "file": "deliverables/phase17_research_report_fa.pdf",
+      "pages_before": 15,
+      "pages_after": 15,
+      "changed_pages": [
+        1,
+        9
+      ]
+    },
+    {
+      "file": "deliverables/phase18_research_report_fa.pdf",
+      "pages_before": 13,
+      "pages_after": 13,
+      "changed_pages": [
+        1,
+        11
+      ]
+    },
+    {
+      "file": "deliverables/phase19_research_report_fa.pdf",
+      "pages_before": 13,
+      "pages_after": 13,
+      "changed_pages": [
+        1,
+        4,
+        5,
+        8,
+        11,
+        12
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۱۰-مرزهای-موضوعی.pdf",
+      "pages_before": 4,
+      "pages_after": 4,
+      "changed_pages": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۱۱-مسیر-حافظه-تا-شاهد.pdf",
+      "pages_before": 4,
+      "pages_after": 4,
+      "changed_pages": [
+        4
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۱۲-حافظه-و-اصلاح-اطلاعات.pdf",
+      "pages_before": 3,
+      "pages_after": 3,
+      "changed_pages": [
+        3
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۱۳-بازیابی-شاهد-از-دو-جلسه.pdf",
+      "pages_before": 3,
+      "pages_after": 3,
+      "changed_pages": [
+        3
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۱۴-ممیزی-ورودی-Memora.pdf",
+      "pages_before": 3,
+      "pages_after": 3,
+      "changed_pages": [
+        3
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۱۵-نقش-و-هزینه-Memora.pdf",
+      "pages_before": 4,
+      "pages_after": 4,
+      "changed_pages": [
+        4
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۱۶-مرزهای-همتعداد.pdf",
+      "pages_before": 4,
+      "pages_after": 4,
+      "changed_pages": [
+        4
+      ]
+    },
+    {
+      "file": "deliverables/گزارش-پژوهشی-مرحله-۹-کنترل-مرزها.pdf",
+      "pages_before": 4,
+      "pages_after": 4,
+      "changed_pages": [
+        4
+      ]
+    }
+  ],
+  "report_alphanumeric_character_counts_match_after_name_removal": true,
+  "review_method": "All reports rendered; page counts checked; differing page regions visually inspected; other pages compared pixel-by-pixel. Word XML checked byte-for-byte after name normalization.",
+  "historical_manifests": "Original frozen checksums retained; only audited before/after pairs accepted by validation."
+}
