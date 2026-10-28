@@ -60,5 +60,5 @@ raw baseline and all negative results. A new method should address relevance and
 within-session capacity jointly under a separately registered future protocol.
 The current external set is now seen. No Phase20 experiment is included.
 
-We thank Amir Noori Volandeh, Dr Arash Fekri and FARDIAT for academic guidance,
+We thank Amir Noori, Dr Arash Fekri and FARDIAT for academic guidance,
 cognitive neuroscience education and review of the original proposal.

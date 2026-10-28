@@ -43,3 +43,12 @@ diagnostics only. Do not redistribute raw corpora, supplied textbooks or fonts.
   Use evidence_ledger_integrated.json and references.bib for current drafting.
   Keep the selected-chapter Batch1 reports and their original evidence ledger intact.
   An integrated draft is not final university approval or a submitted paper.
+
+## Authorized supervisor name correction on 2026-10-28
+
+- The researcher explicitly requested removal of the supervisor's suffix throughout
+  the current repository, including earlier reports on main. This is a narrow
+  exception to the historical-file rule above. Preserve Git history and release tags.
+- The original frozen manifests remain intact. Name-only corrections are recorded
+  with before/after hashes in configs/supervisor_name_correction.json; validators
+  accept only those exact editorial hashes. Scientific results stay byte-identical.

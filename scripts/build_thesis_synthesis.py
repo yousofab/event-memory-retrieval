@@ -11,6 +11,7 @@ import re
 import subprocess
 from build_thesis_evidence import build as original_ledger
 from build_thesis_literature import build as literature
+from check_supervisor_name import frozen_file_matches, check as check_supervisor_name
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = '3dff8ac1db62cb8759487b67df322d4b5b458e7d'
@@ -72,7 +73,7 @@ def check():
     assert expected == build(), 'The integrated evidence ledger is stale'
     frozen = json.loads((folder/'batch2_frozen_sha256.json').read_text())
     for name,checksum in frozen.items():
-        assert sha((ROOT/name).read_bytes()) == checksum, 'Historical file changed: '+name
+        assert frozen_file_matches(name, checksum), 'Historical file changed: '+name
     review = json.loads((folder/'literature_review_20261027.json').read_text())
     assert review == literature(), 'Literature metadata differs from the curated record'
     ids = {s['id'] for s in review['sources']}
@@ -82,9 +83,10 @@ def check():
     assert set(re.findall(r'\bP\d{2}\b',text)) == ids, 'Unknown or unused primary-source citation'
     claims = {r['id'] for r in expected['claims']}
     assert set(re.findall(r'\bC\d{2}\b',text)) <= claims, 'Unknown claim reference'
-    assert 'نوری ولنده' not in text
+    assert not re.search(r'نوری\s+\u0648\u0644\u0646\u062f\u0647', text)
     assert 'ۀ' not in text and 'هٔ' not in text
     assert len(CHAPTERS) == 8
+    check_supervisor_name()
     result = {'status':'passed','chapters':8,'claims':len(claims),'primary_sources':len(ids),
               'numeric_sources':len(expected['source_sha256']), 'frozen_files':len(frozen),
               'new_experiments':0,'new_correlations':0,'model_inference_calls':0}
