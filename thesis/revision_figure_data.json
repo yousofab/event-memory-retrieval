@@ -1,0 +1,236 @@
+{
+  "activity": "visualization of existing results; no new experiment",
+  "source_sha256": {
+    "results/phase10_summary.json": "ecb04f16cf6e5e3ac831f5cc6b52988e6accd26e6587d4a0ada13523e1985910",
+    "results/phase11_summary.json": "6972317fc246b2724dc5f3484b25f21bd40a552dd61dd1c4b637cd8bc245bf23",
+    "results/phase17_summary.json": "7b924bc4387f843e418bcdd0ae69f68bf0a9a2e7540212ca3d72aa74891de796",
+    "results/phase18_summary.json": "1a3e14aa87204eb2cb4adfda109b0fc75828afd5f64291fe51ed165356fab1a1",
+    "results/phase19_summary.json": "d54aef34cf576e751fbf6c9231cbedce40fc5631c751c75e783154ed2b555f1f"
+  },
+  "values": {
+    "contrasts": [
+      {
+        "dataset": "locomo",
+        "comparison": "random_mean",
+        "effect_pp": 0.8388869423367442,
+        "interval_pp": [
+          0.06556824165073254,
+          1.5209229146203913
+        ]
+      },
+      {
+        "dataset": "locomo",
+        "comparison": "centered",
+        "effect_pp": 0.35370511841099944,
+        "interval_pp": [
+          -0.285714285714286,
+          1.0567863509039948
+        ]
+      },
+      {
+        "dataset": "qmsum",
+        "comparison": "random_mean",
+        "effect_pp": -0.09180592114363768,
+        "interval_pp": [
+          -0.38576392014777283,
+          0.24284174606579337
+        ]
+      }
+    ],
+    "counts": {
+      "locomo": {
+        "complete_success": 443,
+        "missing_gold_session": 106,
+        "window_geometry_infeasible": 25,
+        "feasible_selection_miss": 25
+      },
+      "qmsum": {
+        "complete_success": 23,
+        "missing_gold_session": 0,
+        "window_geometry_infeasible": 215,
+        "feasible_selection_miss": 6
+      }
+    },
+    "policies": {
+      "locomo": {
+        "bm25": {
+          "all_evidence_count": 443,
+          "all_sessions_count": 493,
+          "budget_words": 1024,
+          "categories": {
+            "complete_success": 443,
+            "feasible_selection_miss": 25,
+            "missing_gold_session": 106,
+            "window_geometry_infeasible": 25
+          },
+          "exact_feasible_count": 468,
+          "macro_all_sessions": 0.8225395102219516,
+          "macro_feasible": 0.7838304125477943,
+          "macro_primary_metric": 0.7419457862889973,
+          "macro_session_recall": 0.8497368500829359,
+          "macro_turn_recall": 0.7661314988515342,
+          "macro_word_recall": 0.7827444312500303,
+          "mean_selected_sessions": 6.30550918196995,
+          "mean_words": 1024,
+          "policy": "bm25",
+          "questions": 599,
+          "selector": "writer"
+        },
+        "reserve4": {
+          "all_evidence_count": 443,
+          "all_sessions_count": 493,
+          "budget_words": 1024,
+          "categories": {
+            "complete_success": 443,
+            "feasible_selection_miss": 25,
+            "missing_gold_session": 106,
+            "window_geometry_infeasible": 25
+          },
+          "exact_feasible_count": 468,
+          "macro_all_sessions": 0.8225395102219516,
+          "macro_feasible": 0.7838304125477943,
+          "macro_primary_metric": 0.7419457862889973,
+          "macro_session_recall": 0.8497368500829359,
+          "macro_turn_recall": 0.7661314988515342,
+          "macro_word_recall": 0.7827444312500303,
+          "mean_selected_sessions": 6.318864774624374,
+          "mean_words": 1024,
+          "policy": "reserve4",
+          "questions": 599,
+          "selector": "writer"
+        },
+        "reserve8": {
+          "all_evidence_count": 401,
+          "all_sessions_count": 507,
+          "budget_words": 1024,
+          "categories": {
+            "complete_success": 401,
+            "feasible_selection_miss": 60,
+            "missing_gold_session": 92,
+            "window_geometry_infeasible": 46
+          },
+          "exact_feasible_count": 461,
+          "macro_all_sessions": 0.845143945935631,
+          "macro_feasible": 0.7686210241672427,
+          "macro_primary_metric": 0.6612386134677156,
+          "macro_session_recall": 0.8717140652114115,
+          "macro_turn_recall": 0.6874627777745868,
+          "macro_word_recall": 0.7247767490207415,
+          "mean_selected_sessions": 8,
+          "mean_words": 1024,
+          "policy": "reserve8",
+          "questions": 599,
+          "selector": "writer"
+        }
+      },
+      "evermem": {
+        "bm25": {
+          "all_evidence_count": 2,
+          "all_sessions_count": 49,
+          "budget_words": 1024,
+          "categories": {
+            "complete_success": 2,
+            "feasible_selection_miss": 1,
+            "missing_gold_session": 560,
+            "window_geometry_infeasible": 46
+          },
+          "exact_feasible_count": 3,
+          "macro_all_sessions": 0.0804773824989928,
+          "macro_feasible": 0.004966887417218543,
+          "macro_primary_metric": 0.1953058434510139,
+          "macro_session_recall": 0.4219418708377898,
+          "macro_turn_recall": 0.1953058434510139,
+          "macro_word_recall": 0.2319493244164427,
+          "mean_selected_sessions": 7.098522167487685,
+          "mean_words": 1024,
+          "policy": "bm25",
+          "questions": 609,
+          "selector": "writer"
+        },
+        "reserve4": {
+          "all_evidence_count": 2,
+          "all_sessions_count": 49,
+          "budget_words": 1024,
+          "categories": {
+            "complete_success": 2,
+            "feasible_selection_miss": 1,
+            "missing_gold_session": 560,
+            "window_geometry_infeasible": 46
+          },
+          "exact_feasible_count": 3,
+          "macro_all_sessions": 0.0804773824989928,
+          "macro_feasible": 0.004966887417218543,
+          "macro_primary_metric": 0.19519546817507571,
+          "macro_session_recall": 0.4219418708377898,
+          "macro_turn_recall": 0.19519546817507571,
+          "macro_word_recall": 0.23183227528661057,
+          "mean_selected_sessions": 7.100164203612479,
+          "mean_words": 1024,
+          "policy": "reserve4",
+          "questions": 609,
+          "selector": "writer"
+        },
+        "reserve8": {
+          "all_evidence_count": 0,
+          "all_sessions_count": 59,
+          "budget_words": 1024,
+          "categories": {
+            "missing_gold_session": 550,
+            "window_geometry_infeasible": 59
+          },
+          "exact_feasible_count": 0,
+          "macro_all_sessions": 0.09694695988918714,
+          "macro_feasible": 0,
+          "macro_primary_metric": 0.15652742415511856,
+          "macro_session_recall": 0.441427895949902,
+          "macro_turn_recall": 0.15652742415511856,
+          "macro_word_recall": 0.190773163112531,
+          "mean_selected_sessions": 8,
+          "mean_words": 1024,
+          "policy": "reserve8",
+          "questions": 609,
+          "selector": "writer"
+        }
+      }
+    },
+    "qmsum_boundary": {
+      "0": {
+        "online_macro": 22.921768707482993,
+        "random_median": 23.799319727891156
+      },
+      "2": {
+        "online_macro": 84.37414965986395,
+        "random_median": 65.90816326530613
+      }
+    },
+    "qmsum_retrieval": {
+      "candidate_gold": 68.93898497921018,
+      "flat_gold": 34.692107100115535,
+      "hier_gold": 16.777295860926046
+    }
+  },
+  "figures": [
+    "01_pipeline",
+    "02_controlled_effects",
+    "03_qmsum_gap",
+    "04_failure_decomposition",
+    "05_access_assembly_locomo",
+    "06_access_assembly_external"
+  ],
+  "text_font": "Nimbus Roman",
+  "new_model_inference_calls": 0,
+  "artifact_sha256": {
+    "figures/thesis_revision/01_pipeline.pdf": "bb5084d9d8824e50ef61eb210837c336989bf46c031f749f669e1903d03440d8",
+    "figures/thesis_revision/01_pipeline.png": "a61d5f18617dace8463d7b76961ab3a7bee20586fbe0b4fab5e3360fa7a4ad24",
+    "figures/thesis_revision/02_controlled_effects.pdf": "523c57b1f517febb861601830af4986c4764cef0fc6d4dc1b1a1144f8cfd537d",
+    "figures/thesis_revision/02_controlled_effects.png": "88ef3a0c37727a6c4c1d2a3a3bb699458e4053d26973b616b16539541f8f3bec",
+    "figures/thesis_revision/03_qmsum_gap.pdf": "7c611269a112773fa0e508630c95136fc4710faa712f8ce1532189b83f81fcc6",
+    "figures/thesis_revision/03_qmsum_gap.png": "afff6decec95a863ff244876e4c72f8020b728154bbada3e4d9bedcd2e5c9488",
+    "figures/thesis_revision/04_failure_decomposition.pdf": "75f20c18f1789145b3aa3f40feb38430b019014f516a090a1ea6d143fb2d9e36",
+    "figures/thesis_revision/04_failure_decomposition.png": "8083a77b93a732247e6a104808e318145ace34f33d716da9361ef29075de5984",
+    "figures/thesis_revision/05_access_assembly_locomo.pdf": "51763f5ef5ebfea7d10832d79e0968f72f535edeeb94ec1ce576c13b77005a34",
+    "figures/thesis_revision/05_access_assembly_locomo.png": "d796a4217bb7a9a09b5125c3decb0910061412b779c9407b7b147a5939c9caaf",
+    "figures/thesis_revision/06_access_assembly_external.pdf": "19e33db199825ed32df6b2af787795ed68baf44770787014c84306a8cbd3f42e",
+    "figures/thesis_revision/06_access_assembly_external.png": "77c034acef9aa167077a76ca9403f8a913acf58cc5c35e64b765d69925393c27"
+  }
+}

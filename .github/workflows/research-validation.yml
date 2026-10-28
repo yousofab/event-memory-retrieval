@@ -44,6 +44,8 @@ jobs:
         run: python scripts/build_thesis_evidence.py --check
       - name: Validate integrated thesis evidence and bibliography
         run: python scripts/build_thesis_synthesis.py --check
+      - name: Validate supervisor editorial revision
+        run: python scripts/validate_thesis_revision.py
 
   publish-phase17:
     name: Publish approved Phase 17 checkpoint

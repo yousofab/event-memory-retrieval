@@ -17,7 +17,14 @@ The QMSum boundary/retrieval gap receives a separate analytical chapter.
 
 [Integrated thesis workspace](thesis/README.md) · [16-source review](thesis/literature_synthesis_fa.md) · [Bibliography](thesis/references.bib) · [Chapter 6](thesis/chapters/06_diagnostics_fa.md) · [Chapter 7](thesis/chapters/07_discussion_fa.md)
 
-[Integrated Persian PDF](deliverables/thesis_integrated_fa.pdf) · [Editable Word manuscript](deliverables/thesis_integrated_fa.docx) · [Archived selected-chapter draft](deliverables/thesis_batch1_fa.pdf)
+[Supervisor-revised Persian PDF](deliverables/thesis_supervisor_revision_fa.pdf) · [Editable revised Word manuscript](deliverables/thesis_supervisor_revision_fa.docx) · [Earlier integrated draft](deliverables/thesis_integrated_fa.pdf) · [Archived selected-chapter draft](deliverables/thesis_batch1_fa.pdf)
+
+The 28 October supervisor revision adds IEEE numbered citations, justified body
+paragraphs, consistent B Nazanin / Nimbus Roman text fonts, two editable 12-point
+equations, six source-backed figures and eight tables with linked lists. A focused
+methods section discloses software, the historical LSA model and generative
+assistance; unavailable historical model snapshots are explicitly unrecorded.
+See [revision review guide](thesis/review_guide_supervisor_revision_fa.md).
 
 The current review draft includes all eight chapters, Persian and English abstracts,
 a clickable contents page, a primary-source bibliography and reproduction appendices.
@@ -31,6 +38,7 @@ and their hashed identity snapshot are preserved.
 ```bash
 python scripts/build_thesis_evidence.py --check
 python scripts/build_thesis_synthesis.py --check
+python scripts/validate_thesis_revision.py
 ```
 
 ## Phase 19 approved research checkpoint
