@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-28",
+  "historical_execution": {
+    "python": "3.12.14",
+    "lsa_dependencies": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0"
+    },
+    "evidence": [
+      "results/phase17_summary.json",
+      "results/phase6_held_out_lsa.json",
+      "configs/phase6_semantic_plan.json",
+      "requirements-phase6.txt"
+    ]
+  },
+  "editorial_execution": {
+    "python": "3.12.14",
+    "packages": {
+      "python-docx": "1.2.0",
+      "matplotlib": "3.10.8",
+      "numpy": "2.3.5",
+      "PyMuPDF": "1.26.6",
+      "Pillow": "12.3.0"
+    },
+    "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5"
+  },
+  "generative_assistance": {
+    "tools": [
+      "ChatGPT",
+      "Codex"
+    ],
+    "roles": [
+      "implementation assistance",
+      "debugging",
+      "literature synthesis",
+      "drafting and document production"
+    ],
+    "exact_past_model_snapshot": "not recorded in available repository evidence",
+    "past_reasoning_configuration": "not recorded",
+    "per_section_model_assignment": "not asserted without execution records"
+  },
+  "evaluation": {
+    "phase18_19_generative_answer_model": null,
+    "phase18_19_llm_judge": null,
+    "new_experiments": 0,
+    "new_model_inference_calls": 0
+  },
+  "fonts": {
+    "persian": "B Nazanin",
+    "latin": "Nimbus Roman",
+    "equations": "editable Word OMML at 12 pt"
+  }
+}

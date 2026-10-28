@@ -6,7 +6,11 @@
 
 ## سند جاری
 
-[پیش‌نویس یکپارچه PDF](../deliverables/thesis_integrated_fa.pdf) و [نسخه‌ی قابل ویرایش Word](../deliverables/thesis_integrated_fa.docx) شامل هر هشت فصل، چکیده‌های فارسی و انگلیسی، فهرست مطالب پیونددار، کتاب‌شناسی و پیوست ریاضی و بازتولید هستند. متن برای بررسی استاد آماده شده است؛ تایید علمی نهایی و تطبیق با شیوه‌نامه‌ی رسمی دانشکده باقی است.
+[نسخه‌ی بازبینی‌شده PDF](../deliverables/thesis_supervisor_revision_fa.pdf) و [Word قابل ویرایش](../deliverables/thesis_supervisor_revision_fa.docx) اصلاحات شش‌گانه‌ی استاد در ۲۸ اکتبر ۲۰۲۶ را اعمال می‌کنند: ارجاع IEEE، تراز دوطرفه، فونت یکدست فارسی و انگلیسی، دو فرمول قابل ویرایش، شش شکل و هشت جدول و توضیح ابزارها و نقش هوش مصنوعی. این نسخه شامل هشت فصل و چکیده‌های فارسی و انگلیسی است. تایید نهایی متن بازبینی‌شده و تطبیق با شیوه‌نامه‌ی رسمی دانشکده باقی است.
+
+[راهنمای بررسی اصلاحات](review_guide_supervisor_revision_fa.md) · [کتاب‌شناسی IEEE](references_ieee.md) · [نگاشت ارجاع‌ها](ieee_reference_map.json) · [ثبت ابزارها و مدل‌ها](tools_and_ai_register.json) · [داده‌ی شکل‌ها](revision_figure_data.json)
+
+[نسخه‌ی یکپارچه‌ی پیش از اصلاحات](../deliverables/thesis_integrated_fa.pdf) برای سابقه حفظ شده است.
 
 ## متن فصل‌ها
 
@@ -31,6 +35,8 @@
 ## اعتبارسنجی و سابقه
 
 `python scripts/build_thesis_evidence.py --check` دفتر بسته‌ی اول را کنترل می‌کند. `python scripts/build_thesis_synthesis.py --check` دفتر یکپارچه، ارجاع‌ها، کتاب‌شناسی و حفظ پرونده‌های تاریخی را بررسی می‌کند. ساخت Word با `python scripts/package_thesis_integrated.py --page-map thesis/integrated_page_map.json` انجام می‌شود و به python-docx و B Nazanin نصب‌شده نیاز دارد. گزارش باید پس از ساخت رندر و بازبینی بصری شود؛ نقشه‌ی صفحه از طرح PDF فعلی می‌آید و پس از تغییر محتوا باید بازسازی شود.
+
+برای نسخه‌ی جاری، شکل‌ها با `python scripts/build_thesis_revision_assets.py` و Word با `python scripts/package_thesis_revision.py --page-map thesis/revision_page_map.json` ساخته می‌شوند. کنترل مستقل نسخه با `python scripts/validate_thesis_revision.py` اجرا می‌شود. نگاشت شماره‌های منابع در هنگام ساخت از ترتیب نخستین استفاده به دست می‌آید؛ کدهای داخلی فصل‌های منبع برای ردیابی باقی‌اند و در Word و PDF به شماره تبدیل می‌شوند.
 
 [گزارش PDF بسته‌ی اول](../deliverables/thesis_batch1_fa.pdf)، [Word بسته‌ی اول](../deliverables/thesis_batch1_fa.docx)، [دفتر ۱۳ ادعای اصلی](evidence_ledger.json) و [راهنمای بازبینی آن بسته](review_guide_fa.md) برای سابقه حفظ شده‌اند. وضعیت کارهای باقی‌مانده را راهنمای جاری مشخص می‌کند.
 
